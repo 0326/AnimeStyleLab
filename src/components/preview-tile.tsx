@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import type { ReactNode } from "react";
 
 import type { AnimeStyle } from "@/data/styles";
@@ -26,6 +27,11 @@ export function PreviewTile({
   const { locale } = useLocale();
   const primaryName = locale === "zh" ? style.nameZh : style.nameEn;
   const secondaryName = locale === "zh" ? style.nameEn : style.nameZh;
+  const coverImage = style.previewImages[0];
+  const imageAlt =
+    locale === "zh"
+      ? (coverImage?.altZh ?? primaryName)
+      : (coverImage?.altEn ?? primaryName);
 
   return (
     <div
@@ -36,8 +42,30 @@ export function PreviewTile({
         background: `linear-gradient(135deg, ${style.preview.accent} 0%, ${style.preview.surface} 44%, var(--surface-ink) 100%)`,
       }}
     >
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,oklch(100%_0_0/0.12)_0,transparent_1px),linear-gradient(0deg,oklch(100%_0_0/0.08)_0,transparent_1px)] bg-[size:28px_28px]" />
-      <div className="absolute inset-y-0 left-0 w-1/3 bg-[linear-gradient(90deg,oklch(8%_0.018_226/0.34),transparent)]" />
+      {coverImage ? (
+        <>
+          <Image
+            src={coverImage.src}
+            alt={imageAlt}
+            width={coverImage.width}
+            height={coverImage.height}
+            className="absolute inset-0 h-full w-full object-cover"
+            sizes={
+              compact
+                ? "(min-width: 1536px) 30vw, (min-width: 768px) 50vw, 100vw"
+                : "(min-width: 1280px) 44vw, 100vw"
+            }
+            priority={!compact}
+          />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,oklch(8%_0.018_226/0.12)_0%,oklch(8%_0.018_226/0.04)_36%,oklch(8%_0.018_226/0.72)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,oklch(8%_0.018_226/0.52),transparent_42%)]" />
+        </>
+      ) : (
+        <>
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,oklch(100%_0_0/0.12)_0,transparent_1px),linear-gradient(0deg,oklch(100%_0_0/0.08)_0,transparent_1px)] bg-[size:28px_28px]" />
+          <div className="absolute inset-y-0 left-0 w-1/3 bg-[linear-gradient(90deg,oklch(8%_0.018_226/0.34),transparent)]" />
+        </>
+      )}
       {bottomSlot ? (
         <div className="absolute right-5 bottom-5 left-5 z-10">
           {bottomSlot}
@@ -48,12 +76,19 @@ export function PreviewTile({
           <span className="border border-white/24 bg-[oklch(10%_0.018_226/0.62)] px-2.5 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-white/84">
             {style.preview.label}
           </span>
-          {topRightSlot ??
-            (showRatio ? (
+          <div className="flex items-start gap-2">
+            {style.previewImages.length > 1 ? (
               <span className="border border-white/20 bg-[oklch(10%_0.018_226/0.48)] px-2.5 py-1 text-[0.68rem] text-white/76">
-                {style.recommendedRatios[0]}
+                {style.previewImages.length} views
               </span>
-            ) : null)}
+            ) : null}
+            {topRightSlot ??
+              (showRatio ? (
+                <span className="border border-white/20 bg-[oklch(10%_0.018_226/0.48)] px-2.5 py-1 text-[0.68rem] text-white/76">
+                  {style.recommendedRatios[0]}
+                </span>
+              ) : null)}
+          </div>
         </div>
         <div className="max-w-xs space-y-2">
           {showNames ? (

@@ -23,42 +23,73 @@ export type PromptResult = {
   usageNotes: string[];
 };
 
-function sentence(parts: string[]) {
-  return parts.filter(Boolean).join(" ");
+function joinUnique(items: string[]) {
+  return Array.from(new Set(items.filter(Boolean)));
 }
 
-function buildConstraintText(
-  style: AnimeStyle,
-  extraConstraints: string[] = [],
-) {
-  const merged = Array.from(
-    new Set([
-      ...extraConstraints,
-      ...style.avoidPrompt.split(", ").slice(0, 6),
-    ]),
-  );
-  return merged.join(", ");
+function formatPromptSections(sections: Array<[string, string]>) {
+  return sections
+    .filter(([, value]) => value.trim().length > 0)
+    .map(([label, value]) => `${label}\n${value}`)
+    .join("\n\n");
+}
+
+function buildNegativeText(style: AnimeStyle) {
+  return joinUnique(style.modelInput.negativeKeywords).join(", ");
+}
+
+function buildLayoutConstraintText(extraConstraints: string[] = []) {
+  return joinUnique(extraConstraints).join(", ");
 }
 
 export function buildPrompt(input: PromptInput): PromptResult {
-  const constraints = buildConstraintText(input.style, input.extraConstraints);
-  const featureText = input.style.visualFeatures.slice(0, 4).join(", ");
+  const negativeText = buildNegativeText(input.style);
+  const layoutConstraintText = buildLayoutConstraintText(
+    input.extraConstraints,
+  );
+  const featureText = input.style.modelInput.featureKeywords
+    .slice(0, 4)
+    .join(", ");
+  const stylePrompt = input.style.modelInput.stylePrompt;
   const qualityText = qualityOptions.slice(0, 3).join(", ");
+  const styleGoal = input.style.modelInput.styleGoal;
+  const preserveText = input.style.modelInput.mustPreserve.join(", ");
   const prompt =
     input.targetModel === "nano-banana"
-      ? sentence([
-          `Generate ${input.useCase} featuring ${input.subject}.`,
-          `Use ${input.style.nameEn} style with ${featureText}.`,
-          `Lighting should be ${input.lighting}. Color direction: ${input.color}.`,
-          `Composition: ${input.composition}.`,
-          `Preserve a polished anime finish and avoid ${constraints}.`,
+      ? formatPromptSections([
+          ["TASK", `Generate ${input.useCase} featuring ${input.subject}.`],
+          ["STYLE REFERENCE", stylePrompt],
+          ["STYLE GOAL", styleGoal],
+          ["STYLE KEYWORDS", featureText],
+          ["SUBJECT", input.subject],
+          ["LIGHTING", input.lighting],
+          ["COLOR PALETTE", input.color],
+          ["COMPOSITION", input.composition],
+          ["MUST PRESERVE", preserveText],
+          layoutConstraintText
+            ? ["LAYOUT CONSTRAINTS", layoutConstraintText]
+            : ["LAYOUT CONSTRAINTS", "None."],
+          [
+            "QUALITY TARGET",
+            "Polished anime finish with strong focal clarity.",
+          ],
+          ["AVOID", negativeText],
         ])
-      : sentence([
-          `Create an anime-style image of ${input.subject}.`,
-          `The visual direction should be ${input.style.nameEn}, with ${featureText}.`,
-          `Use ${input.lighting}, ${input.color}, and ${input.composition}.`,
-          `Make it suitable for ${input.useCase} with ${qualityText}.`,
-          `Avoid ${constraints}.`,
+      : formatPromptSections([
+          ["TASK", `Create ${input.useCase} of ${input.subject}.`],
+          ["STYLE REFERENCE", stylePrompt],
+          ["STYLE GOAL", styleGoal],
+          ["STYLE KEYWORDS", featureText],
+          ["SUBJECT", input.subject],
+          ["LIGHTING", input.lighting],
+          ["COLOR PALETTE", input.color],
+          ["COMPOSITION", input.composition],
+          ["MUST PRESERVE", preserveText],
+          layoutConstraintText
+            ? ["LAYOUT CONSTRAINTS", layoutConstraintText]
+            : ["LAYOUT CONSTRAINTS", "None."],
+          ["QUALITY TARGET", qualityText],
+          ["AVOID", negativeText],
         ]);
 
   return {
@@ -69,18 +100,23 @@ export function buildPrompt(input: PromptInput): PromptResult {
     prompt,
     structure: [
       `Subject: ${input.subject}`,
-      `Style: ${input.style.nameZh}`,
-      `Visual features: ${featureText}`,
+      `Style: ${input.style.nameEn}`,
+      `Style goal: ${styleGoal}`,
+      `Style keywords: ${featureText}`,
       `Lighting and color: ${input.lighting}; ${input.color}`,
-      `Composition and purpose: ${input.composition}; ${input.useCase}`,
-      `Avoid: ${constraints}`,
+      `Composition and use case: ${input.composition}; ${input.useCase}`,
+      `Must preserve: ${preserveText}`,
+      layoutConstraintText
+        ? `Layout constraints: ${layoutConstraintText}`
+        : "Layout constraints: none",
+      `Avoid: ${negativeText}`,
     ],
     ratioHints: input.style.recommendedRatios,
     usageNotes: [
-      input.style.modelTips[
-        input.targetModel === "gpt-image" ? "gptImage" : "nanoBanana"
-      ],
-      `Recommended starting uses: ${input.style.bestFor.slice(0, 2).join("、")}`,
+      input.targetModel === "gpt-image"
+        ? input.style.modelInput.gptGuidance
+        : input.style.modelInput.nanoGuidance,
+      `Recommended ratios: ${input.style.recommendedRatios.join(" / ")}`,
     ],
   };
 }
@@ -91,13 +127,16 @@ export function buildWallpaperPrompt(
   targetModel: TargetModel,
   subject: string,
 ) {
+  const wallpaperColorCue =
+    style.modelInput.featureKeywords[0] ?? "clean anime palette";
+
   return buildPrompt({
     subject,
     style,
     lighting: "controlled cinematic lighting",
-    color: `${style.tags[0]} led palette with clean depth separation`,
+    color: `${wallpaperColorCue} palette with clean depth separation`,
     composition: preset.placement,
-    useCase: `${preset.label} (${preset.ratio})`,
+    useCase: `${preset.promptLabel} (${preset.ratio})`,
     extraConstraints: preset.constraints,
     targetModel,
   });

@@ -1,6 +1,17 @@
 import type { StyleCategory } from "./categories";
 import generatedStyles from "./generated-styles.json";
 
+export type StylePreviewImage = {
+  id: string;
+  src: string;
+  altZh: string;
+  altEn: string;
+  label: string;
+  focus: string;
+  width: number;
+  height: number;
+};
+
 export type AnimeStyle = {
   id: string;
   slug: string;
@@ -27,9 +38,19 @@ export type AnimeStyle = {
     surface: string;
     label: string;
   };
+  previewImages: StylePreviewImage[];
   modelTips: {
     gptImage: string;
     nanoBanana: string;
+  };
+  modelInput: {
+    stylePrompt: string;
+    styleGoal: string;
+    featureKeywords: string[];
+    mustPreserve: string[];
+    negativeKeywords: string[];
+    gptGuidance: string;
+    nanoGuidance: string;
   };
 };
 

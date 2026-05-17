@@ -69,6 +69,32 @@
     "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 雨幕反光 和 蓝橙对比。",
     "nanoBanana": "指令中优先写清 手机壁纸 的构图约束，再强调避免 雨效过密遮住主体。"
   },
+  "modelInput": {
+    "styleGoal": "Prioritize moody cinematic rain, layered depth, and readable subject separation inside a wet neon city scene.",
+    "featureKeywords": [
+      "rainy anime city",
+      "cinematic anime",
+      "wet reflections",
+      "atmospheric depth",
+      "night glow"
+    ],
+    "mustPreserve": [
+      "wet reflections",
+      "atmospheric depth",
+      "night glow"
+    ],
+    "negativeKeywords": [
+      "text",
+      "watermark",
+      "logo",
+      "muddy rendering",
+      "rain obscuring the subject",
+      "over-fogged distance planes",
+      "flat lighting with no wet-surface contrast"
+    ],
+    "gptGuidance": "Write the shot like a film still. Keep wet reflections, layered atmospheric depth, and night glow explicit.",
+    "nanoGuidance": "Lead with scene type and framing. Keep wet reflections, readable depth, and visible light sources explicit."
+  },
   "order": 2
 }
 ---

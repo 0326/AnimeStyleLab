@@ -60,9 +60,9 @@ export function PromptPanel({
         </div>
       </div>
       <div className="mt-6 border border-[var(--line)] bg-[var(--surface-ink)] p-5">
-        <p className="font-mono text-sm leading-7 text-[oklch(88%_0.035_187)]">
+        <pre className="overflow-x-auto whitespace-pre-wrap font-mono text-sm leading-7 text-[oklch(88%_0.035_187)]">
           {result.prompt}
-        </p>
+        </pre>
       </div>
       <div className="mt-6 grid gap-4 xl:grid-cols-[1.2fr_0.8fr]">
         <div className="border border-[var(--line)] bg-[var(--surface-soft)] p-5">

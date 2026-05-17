@@ -9,7 +9,7 @@ import type { PromptResult } from "@/lib/prompt-builder";
 import { CopyButton } from "./copy-button";
 import { FavoriteButton } from "./favorite-button";
 import { useLocale } from "./locale-provider";
-import { PreviewTile } from "./preview-tile";
+import { StylePreviewGallery } from "./style-preview-gallery";
 
 type StyleDetailContentProps = {
   style: AnimeStyle;
@@ -35,7 +35,7 @@ export function StyleDetailContent({
   return (
     <div className="section-frame space-y-10 py-10">
       <div className="grid gap-8 xl:grid-cols-[0.9fr_1.1fr]">
-        <PreviewTile style={style} />
+        <StylePreviewGallery key={style.slug} style={style} />
         <section className="panel-strong p-8">
           <div className="flex items-start justify-between gap-4">
             <div>

@@ -69,6 +69,32 @@
     "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 飘带服饰 和 山水云雾。",
     "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 服装元素乱堆没有形体主线。"
   },
+  "modelInput": {
+    "styleGoal": "Prioritize elegant xianxia costume flow, atmospheric mountain mist, and a readable heroic silhouette grounded in Eastern fantasy.",
+    "featureKeywords": [
+      "xianxia anime",
+      "sword maiden",
+      "flowing ribbons",
+      "misty mountains",
+      "jade accents"
+    ],
+    "mustPreserve": [
+      "flowing ribbons",
+      "misty mountains",
+      "jade accents"
+    ],
+    "negativeKeywords": [
+      "text",
+      "watermark",
+      "logo",
+      "muddy rendering",
+      "overdesigned costume clutter with no silhouette line",
+      "fog so dense that the character feels detached from the scene",
+      "generic fantasy styling with no Eastern identity"
+    ],
+    "gptGuidance": "Describe the costume flow, sword presence, and environment relationship clearly. Keep the ribbons, misty mountains, and jade accents explicit.",
+    "nanoGuidance": "Lead with heroic silhouette and Eastern fantasy scene type. Keep ribbon flow, mountain mist, and jade accents explicit."
+  },
   "order": 42
 }
 ---

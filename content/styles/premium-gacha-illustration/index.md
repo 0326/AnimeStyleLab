@@ -69,6 +69,33 @@
     "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 材质细节充足 和 角色服装层次多。",
     "nanoBanana": "指令中优先写清 角色设定图 的构图约束，再强调避免 服装细节堆叠过多没有主视觉。"
   },
+  "modelInput": {
+    "styleGoal": "Prioritize premium mobile-game character appeal, luxury material rendering, and a strong commercial focal hierarchy.",
+    "featureKeywords": [
+      "gacha illustration",
+      "premium anime render",
+      "luxury costume detail",
+      "hero pose",
+      "commercial lighting",
+      "mobile game key art"
+    ],
+    "mustPreserve": [
+      "premium anime render",
+      "luxury costume detail",
+      "commercial lighting"
+    ],
+    "negativeKeywords": [
+      "text",
+      "watermark",
+      "logo",
+      "muddy rendering",
+      "overloaded costume detail with no focal hierarchy",
+      "flat material rendering",
+      "cheap-looking highlights"
+    ],
+    "gptGuidance": "Describe the character selling points, costume materials, and hero pose clearly. Keep premium lighting and luxury costume detail explicit.",
+    "nanoGuidance": "Lead with hero pose and intended commercial framing. Keep premium render quality and luxury costume detail explicit."
+  },
   "order": 11
 }
 ---

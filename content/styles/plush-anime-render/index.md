@@ -69,6 +69,32 @@
     "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 软绒毛表面 和 圆润体块。",
     "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 毛绒纤维方向混乱显脏。"
   },
+  "modelInput": {
+    "styleGoal": "Prioritize soft plush material readability, rounded toy-like massing, and a cute anime face that still feels collectible.",
+    "featureKeywords": [
+      "plush anime render",
+      "soft fur toy",
+      "rounded proportions",
+      "warm cozy light",
+      "anime face toy"
+    ],
+    "mustPreserve": [
+      "soft fur toy",
+      "rounded proportions",
+      "warm cozy light"
+    ],
+    "negativeKeywords": [
+      "text",
+      "watermark",
+      "logo",
+      "muddy rendering",
+      "dirty or chaotic fur direction",
+      "flat lifeless facial features",
+      "hard plastic-looking material"
+    ],
+    "gptGuidance": "Describe the plush texture, rounded body volume, and warm cozy lighting explicitly. Keep the anime face readable.",
+    "nanoGuidance": "State the plush toy look early. Keep soft fur, rounded body volume, and a readable anime face explicit."
+  },
   "order": 27
 }
 ---

@@ -1,6 +1,7 @@
 export type WallpaperPreset = {
   id: string;
   label: string;
+  promptLabel: string;
   ratio: string;
   placement: string;
   constraints: string[];
@@ -10,6 +11,7 @@ export const wallpaperPresets: WallpaperPreset[] = [
   {
     id: "mobile",
     label: "手机壁纸",
+    promptLabel: "mobile wallpaper",
     ratio: "9:16",
     placement: "centered subject with safe top space",
     constraints: [
@@ -21,6 +23,7 @@ export const wallpaperPresets: WallpaperPreset[] = [
   {
     id: "desktop",
     label: "桌面壁纸",
+    promptLabel: "desktop wallpaper",
     ratio: "16:9",
     placement: "wide composition with balanced center and side breathing room",
     constraints: [
@@ -32,6 +35,7 @@ export const wallpaperPresets: WallpaperPreset[] = [
   {
     id: "ultrawide",
     label: "超宽屏壁纸",
+    promptLabel: "ultrawide wallpaper",
     ratio: "21:9",
     placement: "panoramic composition with anchor elements offset from center",
     constraints: [
@@ -43,6 +47,7 @@ export const wallpaperPresets: WallpaperPreset[] = [
   {
     id: "cover-rednote",
     label: "小红书封面",
+    promptLabel: "Rednote cover image",
     ratio: "3:4",
     placement: "clean central subject with top and side title breathing room",
     constraints: [
@@ -54,6 +59,7 @@ export const wallpaperPresets: WallpaperPreset[] = [
   {
     id: "cover-wechat",
     label: "公众号封面",
+    promptLabel: "WeChat article cover",
     ratio: "2.35:1",
     placement: "wide banner focal point with controlled empty space",
     constraints: [

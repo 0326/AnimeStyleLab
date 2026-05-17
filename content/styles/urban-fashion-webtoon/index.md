@@ -69,6 +69,32 @@
     "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 高光皮肤 和 时装搭配突出。",
     "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 皮肤高光太塑料。"
   },
+  "modelInput": {
+    "styleGoal": "Prioritize polished webtoon character rendering, fashion-forward styling, and clean urban portrait readability.",
+    "featureKeywords": [
+      "urban webtoon",
+      "fashion anime",
+      "glossy skin",
+      "modern city background",
+      "clean line art"
+    ],
+    "mustPreserve": [
+      "glossy skin",
+      "modern city background",
+      "clean line art"
+    ],
+    "negativeKeywords": [
+      "text",
+      "watermark",
+      "logo",
+      "muddy rendering",
+      "plastic-looking skin highlights",
+      "outfit and background blending together",
+      "fashion styling with weak silhouette separation"
+    ],
+    "gptGuidance": "Describe the fashion styling, polished skin treatment, and city portrait context clearly. Keep clean line art and readable contrast explicit.",
+    "nanoGuidance": "Lead with portrait framing and fashion styling. Keep glossy skin, clean line art, and subject-background separation explicit."
+  },
   "order": 46
 }
 ---

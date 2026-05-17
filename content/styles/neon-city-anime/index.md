@@ -69,6 +69,32 @@
     "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 霓虹反射 和 未来广告牌。",
     "nanoBanana": "指令中优先写清 桌面壁纸 的构图约束，再强调避免 霓虹色杂乱导致主体不突出。"
   },
+  "modelInput": {
+    "styleGoal": "Prioritize neon-soaked urban atmosphere, readable signage glow, and strong contrast between reflective surfaces and subject silhouette.",
+    "featureKeywords": [
+      "neon anime city",
+      "cyberpunk streets",
+      "wet asphalt",
+      "future signage",
+      "night reflections"
+    ],
+    "mustPreserve": [
+      "wet asphalt",
+      "future signage",
+      "night reflections"
+    ],
+    "negativeKeywords": [
+      "text",
+      "watermark",
+      "logo",
+      "muddy rendering",
+      "flat neon color wash with no rhythm",
+      "repetitive copy-paste buildings",
+      "subject silhouette blending into the background"
+    ],
+    "gptGuidance": "Describe the city scale, reflective street surfaces, and billboard lighting clearly. Keep the cool-warm contrast and readable silhouette explicit.",
+    "nanoGuidance": "Lead with urban night scene framing. Keep wet reflections, billboard glow, and strong silhouette separation explicit."
+  },
   "order": 29
 }
 ---

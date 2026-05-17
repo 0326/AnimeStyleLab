@@ -69,6 +69,32 @@
     "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 黑金配色 和 魔法符号。",
     "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 黑金比例失衡像土豪风。"
   },
+  "modelInput": {
+    "styleGoal": "Prioritize dramatic black-gold contrast, elegant occult styling, and concentrated symbolic detail without losing focal clarity.",
+    "featureKeywords": [
+      "witchcore anime",
+      "black gold palette",
+      "occult symbols",
+      "luxury gothic",
+      "candle light"
+    ],
+    "mustPreserve": [
+      "black gold palette",
+      "occult symbols",
+      "candle light"
+    ],
+    "negativeKeywords": [
+      "text",
+      "watermark",
+      "logo",
+      "muddy rendering",
+      "gaudy gold overload",
+      "scattered symbols with no focal point",
+      "flat dark clothing with no luxury texture"
+    ],
+    "gptGuidance": "Describe the contrast ratio between black surfaces and gold accents clearly. Keep occult symbols and candle-lit luxury styling explicit.",
+    "nanoGuidance": "Lead with black-gold styling and portrait framing. Keep the symbol cluster and elegant candle-lit contrast explicit."
+  },
   "order": 33
 }
 ---

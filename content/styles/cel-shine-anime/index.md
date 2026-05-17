@@ -69,6 +69,32 @@
     "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 硬朗阴影分层 和 高亮边缘光。",
     "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 高光过曝导致五官丢失。"
   },
+  "modelInput": {
+    "styleGoal": "Prioritize cel-shaded clarity, bright key visual impact, and a polished single-character read at first glance.",
+    "featureKeywords": [
+      "cel shading",
+      "clean color blocks",
+      "anime key visual",
+      "rim light",
+      "sharp line art"
+    ],
+    "mustPreserve": [
+      "cel shading",
+      "clean color blocks",
+      "rim light"
+    ],
+    "negativeKeywords": [
+      "text",
+      "watermark",
+      "logo",
+      "muddy rendering",
+      "overexposed facial highlights",
+      "flat shadow separation",
+      "washed-out color blocks"
+    ],
+    "gptGuidance": "Describe the subject, camera framing, and emotional tone in full sentences. Keep cel shading, clean color blocks, and rim light explicit.",
+    "nanoGuidance": "State the framing and use case early. Keep cel shading, clean color blocks, and readable rim light visible in the final image."
+  },
   "order": 1
 }
 ---

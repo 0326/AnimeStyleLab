@@ -1,5 +1,12 @@
 import { spawnSync } from "node:child_process";
-import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
+import {
+  copyFile,
+  mkdir,
+  readdir,
+  readFile,
+  writeFile,
+} from "node:fs/promises";
+import { createRequire } from "node:module";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -9,8 +16,20 @@ const rootDir = path.resolve(
 );
 const contentDir = path.join(rootDir, "content", "styles");
 const outputPath = path.join(rootDir, "src", "data", "generated-styles.json");
+const publicPreviewDir = path.join(
+  rootDir,
+  "public",
+  "generated",
+  "style-previews",
+);
 const biomePath = path.join(rootDir, "node_modules", ".bin", "biome");
 const checkOnly = process.argv.includes("--check");
+const require = createRequire(import.meta.url);
+const { imageSize } = require("next/dist/compiled/image-size");
+const previewAspectRatio = 4 / 3;
+const previewWidth = 1200;
+const previewHeight = 900;
+const previewAspectRatioTolerance = 0.01;
 
 const validCategories = new Set([
   "japanese-anime",
@@ -25,6 +44,31 @@ const validCategories = new Set([
   "chinese-anime",
   "webtoon",
 ]);
+
+const categoryGoals = {
+  "japanese-anime":
+    "Prioritize readable anime silhouettes, clean line art, and cinematic emotional clarity.",
+  manga:
+    "Prioritize graphic readability, line discipline, and strong panel-like composition.",
+  "game-illustration":
+    "Prioritize commercial character appeal, material separation, and strong focal hierarchy.",
+  "visual-novel":
+    "Prioritize character acting, dialogue-scene readability, and controlled background support.",
+  "kawaii-chibi":
+    "Prioritize simplicity, charm, soft proportions, and instantly readable silhouette design.",
+  "figure-3d-plush":
+    "Prioritize material realism, object-like form clarity, and collectible presentation quality.",
+  "cyber-sci-fi":
+    "Prioritize neon lighting logic, futuristic surface detail, and controlled high-contrast depth.",
+  "dark-gothic":
+    "Prioritize dramatic contrast, symbolic atmosphere, and restrained dark-luxury styling.",
+  "healing-dreamy":
+    "Prioritize softness, breathing room, low-pressure atmosphere, and gentle tonal transitions.",
+  "chinese-anime":
+    "Prioritize Eastern fantasy motifs, elegant costume flow, and coherent environment storytelling.",
+  webtoon:
+    "Prioritize polished character rendering, fashion readability, and clean commercial finish.",
+};
 
 const requiredStringFields = [
   "id",
@@ -50,6 +94,49 @@ const requiredStringArrayFields = [
   "notRecommendedFor",
   "commonFailurePoints",
 ];
+
+function splitCsv(text) {
+  return text
+    .split(",")
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+function isMostlyAscii(text) {
+  return /^[ -~\s"'().:/&+.-]+$/.test(text);
+}
+
+function deriveModelInput(style) {
+  const overrides = style.modelInput ?? {};
+  const negativeKeywords = splitCsv(style.avoidPrompt).filter(isMostlyAscii);
+  const featureKeywords =
+    overrides.featureKeywords?.length > 0
+      ? overrides.featureKeywords
+      : style.promptKeywords.slice(0, 6);
+  const mustPreserve =
+    overrides.mustPreserve?.length > 0
+      ? overrides.mustPreserve
+      : featureKeywords.slice(0, 3);
+  const mergedNegativeKeywords =
+    overrides.negativeKeywords?.length > 0
+      ? overrides.negativeKeywords
+      : negativeKeywords;
+  const preservedKeywords = mustPreserve.slice(0, 2).join(" and ");
+
+  return {
+    stylePrompt: overrides.stylePrompt || style.basePrompt,
+    styleGoal: overrides.styleGoal || categoryGoals[style.category],
+    featureKeywords,
+    mustPreserve,
+    negativeKeywords: mergedNegativeKeywords,
+    gptGuidance:
+      overrides.gptGuidance ||
+      `Describe the subject, camera framing, and mood in full sentences. Preserve ${preservedKeywords}.`,
+    nanoGuidance:
+      overrides.nanoGuidance ||
+      `State composition and intended use early. Keep ${preservedKeywords} visible in the final image.`,
+  };
+}
 
 function assert(condition, message, errors) {
   if (!condition) {
@@ -159,9 +246,175 @@ function validateStyle(style, folderName, errors) {
     `${style.slug ?? folderName}: modelTips must include gptImage and nanoBanana`,
     errors,
   );
+  if (style.modelInput) {
+    assert(
+      typeof style.modelInput === "object",
+      `${style.slug ?? folderName}: modelInput must be an object`,
+      errors,
+    );
+    for (const field of [
+      "stylePrompt",
+      "styleGoal",
+      "gptGuidance",
+      "nanoGuidance",
+    ]) {
+      if (field in style.modelInput) {
+        assert(
+          typeof style.modelInput[field] === "string" &&
+            style.modelInput[field].trim().length > 0,
+          `${style.slug ?? folderName}: modelInput.${field} must be a non-empty string`,
+          errors,
+        );
+      }
+    }
+    for (const field of [
+      "featureKeywords",
+      "mustPreserve",
+      "negativeKeywords",
+    ]) {
+      if (field in style.modelInput) {
+        assert(
+          Array.isArray(style.modelInput[field]) &&
+            style.modelInput[field].length > 0 &&
+            style.modelInput[field].every(
+              (item) => typeof item === "string" && item.trim(),
+            ),
+          `${style.slug ?? folderName}: modelInput.${field} must be a non-empty string array`,
+          errors,
+        );
+      }
+    }
+  }
 }
 
-async function readStyles() {
+async function readPreviewManifest(folderName, errors) {
+  const manifestPath = path.join(contentDir, folderName, "previews.json");
+
+  try {
+    const source = await readFile(manifestPath, "utf8");
+    const items = JSON.parse(source);
+
+    if (!Array.isArray(items)) {
+      errors.push(`${folderName}: previews.json must contain an array`);
+      return [];
+    }
+
+    return items;
+  } catch (error) {
+    if (error?.code === "ENOENT") {
+      return [];
+    }
+
+    errors.push(`${folderName}: invalid previews.json: ${error.message}`);
+    return [];
+  }
+}
+
+function validatePreviewManifestItem(item, folderName, errors, ids, files) {
+  if (!item || typeof item !== "object") {
+    errors.push(`${folderName}: preview entry must be an object`);
+    return false;
+  }
+
+  for (const field of ["id", "file", "altZh", "altEn", "label", "focus"]) {
+    if (typeof item[field] !== "string" || item[field].trim().length === 0) {
+      errors.push(`${folderName}: preview entry missing "${field}"`);
+      return false;
+    }
+  }
+
+  if (ids.has(item.id)) {
+    errors.push(`${folderName}: duplicate preview id "${item.id}"`);
+  }
+  if (files.has(item.file)) {
+    errors.push(`${folderName}: duplicate preview file "${item.file}"`);
+  }
+
+  ids.add(item.id);
+  files.add(item.file);
+  return true;
+}
+
+function validatePreviewDimensions(dimensions, folderName, fileName, errors) {
+  if (
+    !dimensions ||
+    !Number.isInteger(dimensions.width) ||
+    !Number.isInteger(dimensions.height)
+  ) {
+    errors.push(`${folderName}: could not read dimensions for "${fileName}"`);
+    return false;
+  }
+
+  const ratio = dimensions.width / dimensions.height;
+  if (Math.abs(ratio - previewAspectRatio) > previewAspectRatioTolerance) {
+    errors.push(
+      `${folderName}: "${fileName}" must be close to ${previewWidth}x${previewHeight} (4:3), received ${dimensions.width}x${dimensions.height}`,
+    );
+    return false;
+  }
+
+  return true;
+}
+
+async function buildPreviewImages(folderName, errors) {
+  const previewItems = await readPreviewManifest(folderName, errors);
+  if (previewItems.length === 0) {
+    return [];
+  }
+
+  if (previewItems.length > 6) {
+    errors.push(`${folderName}: previewImages cannot exceed 6 entries`);
+  }
+
+  const ids = new Set();
+  const files = new Set();
+  const builtImages = [];
+
+  for (const item of previewItems) {
+    if (!validatePreviewManifestItem(item, folderName, errors, ids, files)) {
+      continue;
+    }
+
+    const sourcePath = path.join(contentDir, folderName, "previews", item.file);
+
+    let buffer;
+    try {
+      buffer = await readFile(sourcePath);
+    } catch (_error) {
+      errors.push(`${folderName}: missing preview file "${item.file}"`);
+      continue;
+    }
+
+    const dimensions = imageSize(buffer);
+    if (!validatePreviewDimensions(dimensions, folderName, item.file, errors)) {
+      continue;
+    }
+
+    const outputDir = path.join(publicPreviewDir, folderName);
+    const outputPath = path.join(outputDir, item.file);
+    const publicPath = `/generated/style-previews/${folderName}/${item.file}`;
+
+    if (!checkOnly) {
+      await mkdir(outputDir, { recursive: true });
+      await copyFile(sourcePath, outputPath);
+    }
+
+    builtImages.push({
+      id: item.id,
+      src: publicPath,
+      altZh: item.altZh.trim(),
+      altEn: item.altEn.trim(),
+      label: item.label.trim(),
+      focus: item.focus.trim(),
+      width: dimensions.width,
+      height: dimensions.height,
+    });
+  }
+
+  return builtImages;
+}
+
+async function readStyles(errors) {
   const entries = await readdir(contentDir, { withFileTypes: true });
   const folders = entries
     .filter((entry) => entry.isDirectory())
@@ -172,9 +425,13 @@ async function readStyles() {
     folders.map(async (folderName) => {
       const filePath = path.join(contentDir, folderName, "index.md");
       const source = await readFile(filePath, "utf8");
+      const previewImages = await buildPreviewImages(folderName, errors);
       return {
         folderName,
-        style: parseStyleMarkdown(source, filePath),
+        style: {
+          ...parseStyleMarkdown(source, filePath),
+          previewImages,
+        },
       };
     }),
   );
@@ -182,7 +439,7 @@ async function readStyles() {
 
 async function main() {
   const errors = [];
-  const styleEntries = await readStyles();
+  const styleEntries = await readStyles(errors);
   const styles = styleEntries.map((entry) => entry.style);
 
   for (const { folderName, style } of styleEntries) {
@@ -220,7 +477,10 @@ async function main() {
 
   const generatedStyles = [...styles]
     .sort((a, b) => a.order - b.order)
-    .map(({ order, ...style }) => style);
+    .map(({ order, ...style }) => ({
+      ...style,
+      modelInput: deriveModelInput(style),
+    }));
   const output = formatJson(`${JSON.stringify(generatedStyles, null, 2)}\n`);
 
   if (checkOnly) {
