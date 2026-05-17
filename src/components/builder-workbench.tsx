@@ -41,13 +41,13 @@ function SelectControl(props: SelectControlProps) {
 
   return (
     <label className="block">
-      <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-slate-400">
+      <span className="mb-2 block text-xs uppercase tracking-[0.12em] text-[oklch(70%_0.026_226)]">
         {props.label}
       </span>
       <select
         value={props.value}
         onChange={(event) => props.onChange(event.target.value)}
-        className="w-full rounded-2xl border border-white/10 bg-slate-950/60 px-4 py-3 text-sm text-white outline-none transition focus:border-cyan-300/40"
+        className="field"
       >
         {options.map((option) => (
           <option key={option.value} value={option.value}>
@@ -91,7 +91,7 @@ export function BuilderWorkbench() {
 
   return (
     <div className="grid gap-8 xl:grid-cols-[360px_minmax(0,1fr)]">
-      <aside className="panel sticky top-28 h-fit rounded-[28px] p-5">
+      <aside className="panel sticky top-28 h-fit p-5">
         <p className="eyebrow">{dictionary.builder.inputEyebrow}</p>
         <h2 className="mt-3 font-display text-3xl text-white">
           {dictionary.builder.controlsTitle}
@@ -151,7 +151,7 @@ export function BuilderWorkbench() {
           onSave={saveEntry}
           saveLabel={`${locale === "zh" ? style.nameZh : style.nameEn} · Nano Banana`}
         />
-        <section className="panel rounded-[28px] p-6">
+        <section className="panel p-6">
           <div className="flex items-end justify-between gap-4">
             <div>
               <p className="eyebrow">{dictionary.builder.workbenchEyebrow}</p>
@@ -159,7 +159,7 @@ export function BuilderWorkbench() {
                 {dictionary.builder.workbenchTitle}
               </h3>
             </div>
-            <p className="text-sm text-slate-300">
+            <p className="text-sm text-[oklch(76%_0.026_226)]">
               {dictionary.builder.workbenchMeta}
             </p>
           </div>
@@ -168,25 +168,25 @@ export function BuilderWorkbench() {
               entries.map((entry) => (
                 <div
                   key={entry.id}
-                  className="rounded-[22px] border border-white/10 bg-slate-950/52 p-4"
+                  className="border border-[var(--line)] bg-[var(--surface-soft)] p-4"
                 >
                   <div className="flex items-center justify-between gap-4">
                     <div>
                       <p className="text-sm font-medium text-white">
                         {entry.label}
                       </p>
-                      <p className="mt-1 text-xs uppercase tracking-[0.2em] text-slate-400">
+                      <p className="mt-1 text-xs uppercase tracking-[0.12em] text-[oklch(70%_0.026_226)]">
                         {entry.model}
                       </p>
                     </div>
                   </div>
-                  <p className="mt-3 font-mono text-xs leading-6 text-slate-300">
+                  <p className="mt-3 font-mono text-xs leading-6 text-[oklch(78%_0.026_226)]">
                     {entry.prompt}
                   </p>
                 </div>
               ))
             ) : (
-              <p className="text-sm leading-6 text-slate-300">
+              <p className="text-sm leading-6 text-[oklch(78%_0.026_226)]">
                 {dictionary.builder.emptyHistory}
               </p>
             )}

@@ -17,7 +17,7 @@ export function StyleCard({ style }: StyleCardProps) {
   const { dictionary } = useLocale();
 
   return (
-    <article className="overflow-hidden rounded-[26px] border border-white/10 bg-white/5 shadow-[0_24px_80px_rgba(3,8,20,0.35)] backdrop-blur-sm">
+    <article className="overflow-hidden border border-[var(--line)] bg-[var(--surface)] transition hover:border-[var(--line-strong)]">
       <PreviewTile
         style={style}
         compact
@@ -35,7 +35,7 @@ export function StyleCard({ style }: StyleCardProps) {
             {style.tags.slice(0, 4).map((tag) => (
               <span
                 key={tag}
-                className="rounded-full border border-white/12 bg-black/28 px-3 py-1 text-xs text-white/88 backdrop-blur-sm"
+                className="border border-white/16 bg-[oklch(10%_0.018_226/0.62)] px-2.5 py-1 text-xs text-white/88"
               >
                 {tag}
               </span>
@@ -43,18 +43,14 @@ export function StyleCard({ style }: StyleCardProps) {
           </div>
         }
       />
-      <div className="space-y-4 p-5">
+      <div className="space-y-4 border-t border-[var(--line)] p-5">
         <div className="space-y-2">
-          <p className="overflow-hidden text-sm leading-6 text-slate-300 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2]">
+          <p className="overflow-hidden text-sm leading-6 text-[oklch(78%_0.026_226)] [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2]">
             {style.summary}
           </p>
         </div>
         <div className="flex items-center gap-3">
-          <Link
-            href={`/styles/${style.slug}`}
-            className="inline-flex items-center justify-center rounded-full border border-white/60 bg-white px-4 py-2 text-sm font-semibold !text-slate-950 shadow-[inset_0_1px_0_rgba(255,255,255,0.5)] transition hover:bg-slate-50"
-            style={{ color: "#020617" }}
-          >
+          <Link href={`/styles/${style.slug}`} className="button-primary">
             {dictionary.styles.viewStyle}
           </Link>
           <CopyButton

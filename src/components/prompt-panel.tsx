@@ -34,7 +34,7 @@ export function PromptPanel({
   }
 
   return (
-    <section className="panel rounded-[28px] p-6">
+    <section className="panel p-6">
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="eyebrow">{result.title}</p>
@@ -52,30 +52,30 @@ export function PromptPanel({
             <button
               type="button"
               onClick={handleSave}
-              className="rounded-full border border-white/14 bg-white/6 px-4 py-2 text-sm font-medium text-white transition hover:border-white/30 hover:bg-white/10"
+              className="button-secondary"
             >
               {dictionary.actions.saveToWorkbench}
             </button>
           ) : null}
         </div>
       </div>
-      <div className="mt-6 rounded-[22px] border border-white/10 bg-slate-950/50 p-5">
-        <p className="font-mono text-sm leading-7 text-cyan-50/88">
+      <div className="mt-6 border border-[var(--line)] bg-[var(--surface-ink)] p-5">
+        <p className="font-mono text-sm leading-7 text-[oklch(88%_0.035_187)]">
           {result.prompt}
         </p>
       </div>
       <div className="mt-6 grid gap-4 xl:grid-cols-[1.2fr_0.8fr]">
-        <div className="rounded-[22px] border border-white/8 bg-white/4 p-5">
+        <div className="border border-[var(--line)] bg-[var(--surface-soft)] p-5">
           <p className="eyebrow">{dictionary.builder.structure}</p>
-          <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-300">
+          <ul className="mt-4 space-y-3 text-sm leading-6 text-[oklch(78%_0.026_226)]">
             {result.structure.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
         </div>
-        <div className="rounded-[22px] border border-white/8 bg-white/4 p-5">
+        <div className="border border-[var(--line)] bg-[var(--surface-soft)] p-5">
           <p className="eyebrow">{dictionary.builder.usageNotes}</p>
-          <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-300">
+          <ul className="mt-4 space-y-3 text-sm leading-6 text-[oklch(78%_0.026_226)]">
             {result.usageNotes.map((note) => (
               <li key={note}>{note}</li>
             ))}
@@ -86,7 +86,7 @@ export function PromptPanel({
               {result.ratioHints.map((ratio) => (
                 <span
                   key={ratio}
-                  className="rounded-full border border-cyan-300/18 bg-cyan-300/8 px-3 py-1 text-xs text-cyan-100"
+                  className="tag border-[var(--accent)] bg-[var(--accent-muted)] text-[oklch(91%_0.05_187)]"
                 >
                   {ratio}
                 </span>

@@ -29,15 +29,15 @@ export function PreviewTile({
 
   return (
     <div
-      className={`relative overflow-hidden rounded-[22px] border border-white/10 ${
+      className={`relative overflow-hidden border border-[var(--line-strong)] ${
         compact ? "min-h-56" : "min-h-80"
       }`}
       style={{
-        background: `radial-gradient(circle at 18% 18%, ${style.preview.glow} 0%, transparent 32%), linear-gradient(140deg, ${style.preview.accent} 0%, ${style.preview.surface} 48%, #080910 100%)`,
+        background: `linear-gradient(135deg, ${style.preview.accent} 0%, ${style.preview.surface} 44%, var(--surface-ink) 100%)`,
       }}
     >
-      <div className="absolute inset-0 bg-[linear-gradient(125deg,rgba(255,255,255,0.14),transparent_26%,transparent_70%,rgba(255,255,255,0.08))]" />
-      <div className="absolute inset-0 opacity-35 [background-image:repeating-linear-gradient(135deg,rgba(255,255,255,0.22)_0,rgba(255,255,255,0.22)_1px,transparent_1px,transparent_18px)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,oklch(100%_0_0/0.12)_0,transparent_1px),linear-gradient(0deg,oklch(100%_0_0/0.08)_0,transparent_1px)] bg-[size:28px_28px]" />
+      <div className="absolute inset-y-0 left-0 w-1/3 bg-[linear-gradient(90deg,oklch(8%_0.018_226/0.34),transparent)]" />
       {bottomSlot ? (
         <div className="absolute right-5 bottom-5 left-5 z-10">
           {bottomSlot}
@@ -45,12 +45,12 @@ export function PreviewTile({
       ) : null}
       <div className="relative flex h-full flex-col justify-between p-5">
         <div className="flex items-start justify-between gap-3">
-          <span className="rounded-full border border-white/20 bg-black/18 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/78">
+          <span className="border border-white/24 bg-[oklch(10%_0.018_226/0.62)] px-2.5 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-white/84">
             {style.preview.label}
           </span>
           {topRightSlot ??
             (showRatio ? (
-              <span className="rounded-full border border-white/16 bg-white/8 px-3 py-1 text-[0.68rem] text-white/72">
+              <span className="border border-white/20 bg-[oklch(10%_0.018_226/0.48)] px-2.5 py-1 text-[0.68rem] text-white/76">
                 {style.recommendedRatios[0]}
               </span>
             ) : null)}
@@ -58,7 +58,7 @@ export function PreviewTile({
         <div className="max-w-xs space-y-2">
           {showNames ? (
             <>
-              <p className="text-[0.72rem] uppercase tracking-[0.22em] text-white/70">
+              <p className="text-[0.72rem] uppercase tracking-[0.12em] text-white/74">
                 {secondaryName}
               </p>
               <h3 className="font-display text-2xl leading-none text-white">

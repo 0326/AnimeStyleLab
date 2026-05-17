@@ -1,15 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #060912;
-  --foreground: #ecf4ff;
-  --surface: #101627;
-  --surface-strong: #162036;
-  --surface-soft: #0e1522;
-  --line: rgba(255, 255, 255, 0.08);
-  --line-strong: rgba(255, 255, 255, 0.16);
-  --glow: rgba(111, 240, 255, 0.18);
-  --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  --background: oklch(13% 0.018 220);
+  --foreground: oklch(93% 0.018 226);
+  --surface: oklch(18% 0.02 226);
+  --surface-strong: oklch(21% 0.026 226);
+  --surface-soft: oklch(15.5% 0.018 226);
+  --surface-ink: oklch(10.5% 0.018 226);
+  --line: oklch(37% 0.026 226);
+  --line-strong: oklch(49% 0.032 226);
+  --accent: oklch(76% 0.13 187);
+  --accent-muted: oklch(23% 0.045 187);
+  --warning: oklch(78% 0.12 78);
+  --font-display: "Avenir Next", "Segoe UI", system-ui, sans-serif;
 }
 
 @theme inline {
@@ -24,13 +27,7 @@
 }
 
 html {
-  background:
-    radial-gradient(circle at top, rgba(0, 229, 255, 0.12), transparent 28%),
-    radial-gradient(
-      circle at 80% 16%,
-      rgba(255, 143, 199, 0.12),
-      transparent 24%
-    ), var(--background);
+  background: var(--background);
 }
 
 body {
@@ -39,9 +36,9 @@ body {
   font-family: "Avenir Next", "Segoe UI", sans-serif;
   min-height: 100vh;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 40px 40px;
+    linear-gradient(oklch(100% 0 0 / 0.026) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(100% 0 0 / 0.026) 1px, transparent 1px);
+  background-size: 32px 32px;
   background-position: center center;
 }
 
@@ -55,8 +52,8 @@ button {
 }
 
 ::selection {
-  background: rgba(111, 240, 255, 0.28);
-  color: white;
+  background: oklch(76% 0.13 187 / 0.32);
+  color: var(--foreground);
 }
 
 .font-display {
@@ -66,23 +63,13 @@ button {
 
 .panel {
   border: 1px solid var(--line);
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.06),
-      rgba(255, 255, 255, 0.03)
-    ), rgba(12, 17, 30, 0.82);
-  box-shadow: 0 30px 80px rgba(1, 6, 16, 0.38);
+  background: var(--surface);
+  box-shadow: none;
 }
 
 .panel-strong {
   border: 1px solid var(--line-strong);
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.08),
-      rgba(255, 255, 255, 0.04)
-    ), rgba(13, 19, 34, 0.92);
+  background: var(--surface-strong);
 }
 
 .section-frame {
@@ -92,17 +79,88 @@ button {
 
 .eyebrow {
   font-size: 0.72rem;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(226, 236, 255, 0.56);
+  color: oklch(72% 0.03 226);
 }
 
 .soft-text {
-  color: rgba(226, 236, 255, 0.72);
+  color: oklch(78% 0.026 226);
 }
 
 .glow-ring {
-  box-shadow:
-    0 0 0 1px rgba(111, 240, 255, 0.14),
-    0 0 32px rgba(111, 240, 255, 0.16);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.field {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: var(--surface-ink);
+  padding: 0.75rem 0.875rem;
+  color: var(--foreground);
+  font-size: 0.875rem;
+  outline: none;
+  transition:
+    border-color 180ms ease-out,
+    background-color 180ms ease-out;
+}
+
+.field:focus {
+  border-color: var(--accent);
+  background: oklch(13% 0.02 226);
+}
+
+.button-primary,
+.button-secondary,
+.button-tonal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition:
+    border-color 180ms ease-out,
+    background-color 180ms ease-out,
+    color 180ms ease-out;
+}
+
+.button-primary {
+  border-color: var(--foreground);
+  background: var(--foreground);
+  color: var(--surface-ink);
+}
+
+.button-primary:hover {
+  background: oklch(87% 0.02 226);
+}
+
+.button-secondary {
+  border-color: var(--line-strong);
+  background: var(--surface-soft);
+  color: var(--foreground);
+}
+
+.button-secondary:hover {
+  border-color: var(--foreground);
+  background: var(--surface);
+}
+
+.button-tonal {
+  border-color: var(--accent);
+  background: var(--accent-muted);
+  color: oklch(91% 0.05 187);
+}
+
+.button-tonal:hover {
+  background: oklch(28% 0.055 187);
+}
+
+.tag {
+  border: 1px solid var(--line);
+  background: var(--surface-soft);
+  padding: 0.25rem 0.5rem;
+  color: oklch(83% 0.026 226);
+  font-size: 0.75rem;
 }

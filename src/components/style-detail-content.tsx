@@ -36,28 +36,25 @@ export function StyleDetailContent({
     <div className="section-frame space-y-10 py-10">
       <div className="grid gap-8 xl:grid-cols-[0.9fr_1.1fr]">
         <PreviewTile style={style} />
-        <section className="panel-strong rounded-[34px] p-8">
+        <section className="panel-strong p-8">
           <div className="flex items-start justify-between gap-4">
             <div>
               <p className="eyebrow">{categoryName}</p>
               <h1 className="mt-3 font-display text-6xl text-white">
                 {primaryName}
               </h1>
-              <p className="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-100/68">
+              <p className="mt-2 text-sm uppercase tracking-[0.12em] text-[oklch(74%_0.04_187)]">
                 {secondaryName}
               </p>
             </div>
             <FavoriteButton slug={style.slug} labels={dictionary.actions} />
           </div>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-[oklch(80%_0.026_226)]">
             {style.description}
           </p>
           <div className="mt-8 flex flex-wrap gap-2">
             {style.tags.map((tag) => (
-              <span
-                key={tag}
-                className="rounded-full border border-white/10 bg-white/6 px-3 py-1 text-xs text-slate-200"
-              >
+              <span key={tag} className="tag">
                 {tag}
               </span>
             ))}
@@ -73,10 +70,7 @@ export function StyleDetailContent({
               label={dictionary.actions.copyAvoidTerms}
               copiedLabel={dictionary.actions.copied}
             />
-            <Link
-              href="/builder"
-              className="rounded-full border border-cyan-300/16 bg-cyan-300/8 px-4 py-2 text-sm font-medium text-cyan-100 transition hover:bg-cyan-300/14"
-            >
+            <Link href="/builder" className="button-tonal">
               {dictionary.detail.remix}
             </Link>
           </div>
@@ -111,22 +105,19 @@ export function StyleDetailContent({
       </section>
 
       <section className="grid gap-6 xl:grid-cols-[0.8fr_1.2fr]">
-        <div className="panel rounded-[28px] p-6">
+        <div className="panel p-6">
           <p className="eyebrow">{dictionary.detail.useCases}</p>
           <h2 className="mt-3 font-display text-4xl text-white">
             {dictionary.detail.whereWorks}
           </h2>
           <div className="mt-6 flex flex-wrap gap-2">
             {style.useCases.map((useCase) => (
-              <span
-                key={useCase}
-                className="rounded-full border border-white/10 bg-white/6 px-3 py-2 text-sm text-slate-200"
-              >
+              <span key={useCase} className="tag px-3 py-2 text-sm">
                 {useCase}
               </span>
             ))}
           </div>
-          <div className="mt-6 space-y-3 text-sm leading-6 text-slate-300">
+          <div className="mt-6 space-y-3 text-sm leading-6 text-[oklch(78%_0.026_226)]">
             <p>
               {dictionary.detail.notRecommendedFor}{" "}
               {style.notRecommendedFor.join("、")}
@@ -142,7 +133,7 @@ export function StyleDetailContent({
             <Link
               key={relatedStyle.slug}
               href={`/styles/${relatedStyle.slug}`}
-              className="panel rounded-[24px] p-4 transition hover:border-white/20 hover:bg-white/6"
+              className="panel p-4 transition hover:border-[var(--line-strong)] hover:bg-[var(--surface-strong)]"
             >
               <p className="eyebrow">
                 {locale === "zh" ? relatedStyle.nameEn : relatedStyle.nameZh}
@@ -150,7 +141,7 @@ export function StyleDetailContent({
               <h3 className="mt-2 font-display text-2xl text-white">
                 {locale === "zh" ? relatedStyle.nameZh : relatedStyle.nameEn}
               </h3>
-              <p className="mt-3 text-sm leading-6 text-slate-300">
+              <p className="mt-3 text-sm leading-6 text-[oklch(78%_0.026_226)]">
                 {relatedStyle.summary}
               </p>
             </Link>
@@ -168,9 +159,9 @@ type InfoPanelProps = {
 
 function InfoPanel({ title, items }: InfoPanelProps) {
   return (
-    <section className="panel rounded-[28px] p-6">
+    <section className="panel p-6">
       <p className="eyebrow">{title}</p>
-      <ul className="mt-5 space-y-3 text-sm leading-7 text-slate-300">
+      <ul className="mt-5 space-y-3 text-sm leading-7 text-[oklch(78%_0.026_226)]">
         {items.map((item) => (
           <li key={item}>{item}</li>
         ))}
@@ -188,13 +179,17 @@ type PromptBlockProps = {
 
 function PromptBlock({ eyebrow, title, prompt, notes }: PromptBlockProps) {
   return (
-    <section className="panel rounded-[28px] p-6">
+    <section className="panel p-6">
       <p className="eyebrow">{eyebrow}</p>
       <h2 className="mt-3 font-display text-4xl text-white">{title}</h2>
-      <div className="mt-6 rounded-[22px] border border-white/10 bg-slate-950/50 p-5">
-        <p className="font-mono text-sm leading-7 text-cyan-50/88">{prompt}</p>
+      <div className="mt-6 border border-[var(--line)] bg-[var(--surface-ink)] p-5">
+        <p className="font-mono text-sm leading-7 text-[oklch(88%_0.035_187)]">
+          {prompt}
+        </p>
       </div>
-      <p className="mt-4 text-sm leading-6 text-slate-300">{notes}</p>
+      <p className="mt-4 text-sm leading-6 text-[oklch(78%_0.026_226)]">
+        {notes}
+      </p>
     </section>
   );
 }

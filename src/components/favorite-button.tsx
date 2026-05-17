@@ -25,10 +25,10 @@ export function FavoriteButton({
       type="button"
       onClick={() => toggleFavorite(slug)}
       aria-pressed={isActive}
-      className={`inline-flex items-center justify-center rounded-full border font-medium transition ${
+      className={`inline-flex items-center justify-center border font-medium transition ${
         isActive
-          ? "border-amber-300/70 bg-amber-300/18 text-amber-50"
-          : "border-white/15 bg-black/22 text-white hover:border-white/35 hover:bg-black/30"
+          ? "border-[var(--warning)] bg-[oklch(24%_0.045_78)] text-[oklch(90%_0.07_78)]"
+          : "border-[var(--line-strong)] bg-[var(--surface-ink)] text-white hover:border-white hover:bg-[var(--surface)]"
       } ${compact ? "px-3 py-1.5 text-xs" : "px-4 py-2 text-sm"}`}
     >
       {isActive ? buttonLabels.saved : buttonLabels.save}

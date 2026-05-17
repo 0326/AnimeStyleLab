@@ -45,26 +45,26 @@ export function StylesBrowser() {
 
   return (
     <div className="grid gap-8 xl:grid-cols-[280px_minmax(0,1fr)]">
-      <aside className="panel sticky top-28 h-fit rounded-[28px] p-5">
+      <aside className="panel sticky top-28 h-fit p-5">
         <div>
           <p className="eyebrow">{dictionary.styles.filtersEyebrow}</p>
           <h2 className="mt-3 font-display text-3xl text-white">
             {dictionary.styles.filtersTitle}
           </h2>
-          <p className="mt-3 text-sm leading-6 text-slate-300">
+          <p className="mt-3 text-sm leading-6 text-[oklch(78%_0.026_226)]">
             {dictionary.styles.filtersIntro}
           </p>
         </div>
         <div className="mt-6 space-y-4">
           <label className="block">
-            <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-slate-400">
+            <span className="mb-2 block text-xs uppercase tracking-[0.12em] text-[oklch(70%_0.026_226)]">
               {dictionary.styles.search}
             </span>
             <input
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               placeholder={dictionary.styles.searchPlaceholder}
-              className="w-full rounded-2xl border border-white/10 bg-slate-950/60 px-4 py-3 text-sm text-white outline-none transition focus:border-cyan-300/40"
+              className="field"
             />
           </label>
           <FilterSelect
@@ -100,10 +100,10 @@ export function StylesBrowser() {
           <button
             type="button"
             onClick={() => setSavedOnly((current) => !current)}
-            className={`flex w-full items-center justify-between rounded-2xl border px-4 py-3 text-sm transition ${
+            className={`flex w-full items-center justify-between border px-4 py-3 text-sm transition ${
               savedOnly
-                ? "border-amber-300/45 bg-amber-300/12 text-amber-100"
-                : "border-white/10 bg-white/4 text-slate-200 hover:border-white/22 hover:bg-white/6"
+                ? "border-[var(--warning)] bg-[oklch(24%_0.045_78)] text-[oklch(90%_0.07_78)]"
+                : "border-[var(--line)] bg-[var(--surface-soft)] text-[oklch(82%_0.026_226)] hover:border-[var(--line-strong)] hover:bg-[var(--surface)]"
             }`}
           >
             {dictionary.styles.savedOnly}
@@ -124,7 +124,7 @@ export function StylesBrowser() {
               )}
             </h2>
           </div>
-          <p className="max-w-xl text-right text-sm leading-6 text-slate-300">
+          <p className="max-w-xl text-right text-sm leading-6 text-[oklch(76%_0.026_226)]">
             {dictionary.styles.resultsIntro}
           </p>
         </div>
@@ -135,12 +135,12 @@ export function StylesBrowser() {
             ))}
           </div>
         ) : (
-          <div className="panel rounded-[30px] p-10">
+          <div className="panel p-10">
             <p className="eyebrow">{dictionary.styles.noMatchEyebrow}</p>
             <h3 className="mt-3 font-display text-3xl text-white">
               {dictionary.styles.noMatchTitle}
             </h3>
-            <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-300">
+            <p className="mt-3 max-w-2xl text-sm leading-7 text-[oklch(78%_0.026_226)]">
               {dictionary.styles.noMatchBody}
             </p>
           </div>
@@ -160,13 +160,13 @@ type FilterSelectProps = {
 function FilterSelect({ label, value, onChange, options }: FilterSelectProps) {
   return (
     <label className="block">
-      <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-slate-400">
+      <span className="mb-2 block text-xs uppercase tracking-[0.12em] text-[oklch(70%_0.026_226)]">
         {label}
       </span>
       <select
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        className="w-full rounded-2xl border border-white/10 bg-slate-950/60 px-4 py-3 text-sm text-white outline-none transition focus:border-cyan-300/40"
+        className="field"
       >
         {options.map((option) => (
           <option key={option.value} value={option.value}>

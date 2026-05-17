@@ -15,31 +15,22 @@ export function HomePageContent() {
   return (
     <div className="space-y-16 py-10">
       <section className="section-frame grid gap-8 xl:grid-cols-[1.15fr_0.85fr]">
-        <div className="panel-strong rounded-[36px] p-10">
+        <div className="panel-strong p-10">
           <p className="eyebrow">{dictionary.home.eyebrow}</p>
           <h1 className="mt-5 max-w-4xl font-display text-6xl leading-[0.95] text-white">
             {dictionary.home.title}
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-[oklch(80%_0.026_226)]">
             {dictionary.home.intro}
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href="/styles"
-              className="rounded-full bg-white px-5 py-3 text-sm font-medium text-slate-950 transition hover:bg-cyan-100"
-            >
+            <Link href="/styles" className="button-primary px-5 py-3">
               {dictionary.home.explore}
             </Link>
-            <Link
-              href="/builder"
-              className="rounded-full border border-white/14 bg-white/6 px-5 py-3 text-sm font-medium text-white transition hover:border-white/30 hover:bg-white/10"
-            >
+            <Link href="/builder" className="button-secondary px-5 py-3">
               {dictionary.home.builder}
             </Link>
-            <Link
-              href="/wallpaper"
-              className="rounded-full border border-cyan-300/18 bg-cyan-300/8 px-5 py-3 text-sm font-medium text-cyan-100 transition hover:bg-cyan-300/14"
-            >
+            <Link href="/wallpaper" className="button-tonal px-5 py-3">
               {dictionary.home.wallpaper}
             </Link>
           </div>
@@ -64,7 +55,7 @@ export function HomePageContent() {
               {dictionary.home.featuredTitle}
             </h2>
           </div>
-          <p className="max-w-xl text-right text-sm leading-6 text-slate-300">
+          <p className="max-w-xl text-right text-sm leading-6 text-[oklch(76%_0.026_226)]">
             {dictionary.home.featuredIntro}
           </p>
         </div>
@@ -76,12 +67,12 @@ export function HomePageContent() {
       </section>
 
       <section className="section-frame grid gap-8 xl:grid-cols-[0.95fr_1.05fr]">
-        <div className="panel rounded-[32px] p-8">
+        <div className="panel p-8">
           <p className="eyebrow">{dictionary.home.flowEyebrow}</p>
           <h2 className="mt-3 font-display text-4xl text-white">
             {dictionary.home.flowTitle}
           </h2>
-          <div className="mt-6 space-y-4 text-sm leading-7 text-slate-300">
+          <div className="mt-6 space-y-4 text-sm leading-7 text-[oklch(78%_0.026_226)]">
             {dictionary.home.flowSteps.map((step) => (
               <p key={step}>{step}</p>
             ))}
@@ -89,14 +80,14 @@ export function HomePageContent() {
         </div>
         <div className="grid gap-4 md:grid-cols-2">
           {categories.map((category) => (
-            <div key={category.id} className="panel rounded-[26px] p-6">
+            <div key={category.id} className="panel p-6">
               <p className="eyebrow">
                 {locale === "zh" ? category.nameEn : category.nameZh}
               </p>
               <h3 className="mt-3 font-display text-3xl text-white">
                 {locale === "zh" ? category.nameZh : category.nameEn}
               </h3>
-              <p className="mt-3 text-sm leading-6 text-slate-300">
+              <p className="mt-3 text-sm leading-6 text-[oklch(78%_0.026_226)]">
                 {category.description}
               </p>
             </div>
@@ -114,8 +105,8 @@ type MetricProps = {
 
 function Metric({ label, value }: MetricProps) {
   return (
-    <div className="rounded-[24px] border border-white/10 bg-white/4 p-5">
-      <p className="text-xs uppercase tracking-[0.2em] text-slate-400">
+    <div className="border border-[var(--line)] bg-[var(--surface-soft)] p-5">
+      <p className="text-xs uppercase tracking-[0.12em] text-[oklch(70%_0.026_226)]">
         {label}
       </p>
       <p className="mt-3 text-sm leading-6 text-white">{value}</p>

@@ -10,7 +10,7 @@ export function LanguageSwitcher() {
   return (
     <nav
       aria-label={dictionary.nav.language}
-      className="flex items-center rounded-full border border-white/10 bg-white/5 p-1"
+      className="flex items-center border border-[var(--line)] bg-[var(--surface-soft)] p-1"
     >
       {locales.map((item) => {
         const isActive = item === locale;
@@ -23,10 +23,10 @@ export function LanguageSwitcher() {
             key={item}
             aria-current={isActive ? "true" : undefined}
             onClick={() => setLocale(item)}
-            className={`rounded-full px-3 py-1.5 text-xs font-medium transition ${
+            className={`border px-3 py-1.5 text-xs font-medium transition ${
               isActive
-                ? "bg-cyan-100 text-slate-950"
-                : "text-slate-300 hover:bg-white/8 hover:text-white"
+                ? "border-[var(--accent)] bg-[var(--accent)] text-[var(--surface-ink)]"
+                : "border-transparent text-[oklch(78%_0.026_226)] hover:bg-[var(--surface)] hover:text-white"
             }`}
           >
             {label}

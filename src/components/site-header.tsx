@@ -15,15 +15,15 @@ export function SiteHeader() {
   ];
 
   return (
-    <header className="sticky top-0 z-30 border-b border-white/8 bg-[rgba(6,9,18,0.72)] backdrop-blur-xl">
+    <header className="sticky top-0 z-30 border-b border-[var(--line)] bg-[var(--surface-ink)]/95">
       <div className="mx-auto flex w-full max-w-[1440px] items-center justify-between gap-8 px-8 py-5">
         <Link href="/" className="flex items-center gap-4">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-200/25 bg-cyan-300/10 text-sm font-semibold tracking-[0.2em] text-cyan-100">
+          <div className="flex h-11 w-11 items-center justify-center border border-[var(--line-strong)] bg-[var(--surface)] text-sm font-semibold tracking-[0.12em] text-[var(--accent)]">
             ASL
           </div>
           <div>
             <p className="font-display text-2xl text-white">AnimeStyleLab</p>
-            <p className="text-xs uppercase tracking-[0.28em] text-white/50">
+            <p className="text-xs uppercase tracking-[0.12em] text-[oklch(70%_0.028_226)]">
               {dictionary.nav.tagline}
             </p>
           </div>
@@ -34,7 +34,7 @@ export function SiteHeader() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-full border border-transparent px-4 py-2 text-sm text-slate-200 transition hover:border-white/14 hover:bg-white/6 hover:text-white"
+                className="border border-transparent px-3 py-2 text-sm text-[oklch(82%_0.026_226)] transition hover:border-[var(--line-strong)] hover:bg-[var(--surface)] hover:text-white"
               >
                 {item.label}
               </Link>
