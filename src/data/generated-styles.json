@@ -203,7 +203,18 @@
       "nanoBanana": "指令中优先写清 桌面壁纸 的构图约束，再强调避免 场景信息不足像半成品。"
     },
     "description": "TV 动画截图风 强调 轻线稿、中低饱和配色、镜头切片构图。整体属于日系动画路径，适合需要 剧情感单帧、场景叙事 的画面。相比相近风格，它更突出 截图风、叙事感、日常，在 PC 端风格库中能快速形成鲜明识别。清晰轮廓、情绪光影与强烈叙事感并存的动画系画风。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/tv-cut-anime-frame/01-cover.png",
+        "altZh": "TV 动画截图风风格预览1",
+        "altEn": "TV Cut Anime Frame preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "tv cut anime frame aesthetic, anime screenshot, episodic frame, slice of life, natural expression, storyboard composition, broadcast anime, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize readable anime silhouettes, clean line art, and cinematic emotional clarity.",
@@ -264,7 +275,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 光效太多导致主体层级混乱。"
     },
     "description": "剧场版海报动画 强调 大体积光、高对比天空层次、戏剧性远近景。整体属于日系动画路径，适合需要 主海报、群像封面 的画面。相比相近风格，它更突出 剧场版、史诗感、大光影，在 PC 端风格库中能快速形成鲜明识别。清晰轮廓、情绪光影与强烈叙事感并存的动画系画风。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/theatrical-anime-poster/01-cover.png",
+        "altZh": "剧场版海报动画风格预览1",
+        "altEn": "Theatrical Anime Poster preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "theatrical anime poster aesthetic, anime theatrical poster, dramatic sky, hero composition, volume light, cinema poster, epic anime, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize readable anime silhouettes, clean line art, and cinematic emotional clarity.",
@@ -329,7 +351,18 @@
       "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 噪点过重压脏肤色。"
     },
     "description": "90 年代复古动画 强调 轻颗粒噪点、偏暖旧胶片色、粗细变化线稿。整体属于日系动画路径，适合需要 怀旧主题、风格对比卡 的画面。相比相近风格，它更突出 90s、怀旧、胶片感，在 PC 端风格库中能快速形成鲜明识别。清晰轮廓、情绪光影与强烈叙事感并存的动画系画风。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/retro-90s-anime/01-cover.png",
+        "altZh": "90 年代复古动画风格预览1",
+        "altEn": "Retro 90s Anime preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "retro 90s anime aesthetic, 90s anime, retro cel, film grain, vintage color, nostalgic glow, classic anime frame, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize readable anime silhouettes, clean line art, and cinematic emotional clarity.",
@@ -393,7 +426,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 网点尺度失控导致摩尔纹感。"
     },
     "description": "网点漫画封面 强调 黑白高反差、网点阴影、标题留白。整体属于漫画系路径，适合需要 黑白封面、漫画品牌感 的画面。相比相近风格，它更突出 黑白漫画、网点、封面，在 PC 端风格库中能快速形成鲜明识别。偏线稿、分镜、网点与纸面表达的漫画视觉语言。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/screentone-manga-cover/01-cover.png",
+        "altZh": "网点漫画封面风格预览1",
+        "altEn": "Screentone Manga Cover preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "screentone manga cover aesthetic, manga cover, screentone, ink contrast, paper texture, black and white manga, cover composition, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize graphic readability, line discipline, and strong panel-like composition.",
@@ -454,7 +498,18 @@
       "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 闪片元素过量压住五官。"
     },
     "description": "少女漫画闪光感 强调 细长睫毛、背景闪片、花瓣和光斑。整体属于漫画系路径，适合需要 情绪特写、恋爱主题封面 的画面。相比相近风格，它更突出 少女漫、闪光、浪漫，在 PC 端风格库中能快速形成鲜明识别。偏线稿、分镜、网点与纸面表达的漫画视觉语言。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/shojo-sparkle-manga/01-cover.png",
+        "altZh": "少女漫画闪光感风格预览1",
+        "altEn": "Shojo Sparkle Manga preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "shojo sparkle manga aesthetic, shojo manga, sparkles, romantic close-up, soft line art, petal background, large expressive eyes, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize graphic readability, line discipline, and strong panel-like composition.",
@@ -515,7 +570,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 速度线太密导致动势变脏。"
     },
     "description": "少年漫冲击格 强调 速度线、爆发构图、透视夸张。整体属于漫画系路径，适合需要 战斗封面、热血动作页 的画面。相比相近风格，它更突出 少年漫、冲击格、速度线，在 PC 端风格库中能快速形成鲜明识别。偏线稿、分镜、网点与纸面表达的漫画视觉语言。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/shonen-impact-manga/01-cover.png",
+        "altZh": "少年漫冲击格风格预览1",
+        "altEn": "Shonen Impact Manga preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "shonen impact manga aesthetic, shonen manga, impact panel, speed lines, dynamic perspective, battle expression, high contrast ink, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize graphic readability, line discipline, and strong panel-like composition.",
@@ -579,7 +645,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 纯黑区域过大丢失信息。"
     },
     "description": "青年漫墨色戏剧 强调 厚重黑块、冷峻线面关系、阴影压迫感。整体属于漫画系路径，适合需要 悬疑主题、成人向视觉 的画面。相比相近风格，它更突出 青年漫、黑白戏剧、悬疑，在 PC 端风格库中能快速形成鲜明识别。偏线稿、分镜、网点与纸面表达的漫画视觉语言。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/seinen-ink-drama/01-cover.png",
+        "altZh": "青年漫墨色戏剧风格预览1",
+        "altEn": "Seinen Ink Drama preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "seinen ink drama aesthetic, seinen manga, ink drama, shadow-heavy, mature anime face, graphic noir, moody panel, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize graphic readability, line discipline, and strong panel-like composition.",
@@ -640,7 +717,18 @@
       "nanoBanana": "指令中优先写清 灵感看板 的构图约束，再强调避免 线稿太乱导致层级不清。"
     },
     "description": "手绘漫画草稿 强调 铅笔线稿、辅助结构线、轻涂灰面。整体属于漫画系路径，适合需要 构思展示、过程感页面 的画面。相比相近风格，它更突出 草稿、概念页、纸感，在 PC 端风格库中能快速形成鲜明识别。偏线稿、分镜、网点与纸面表达的漫画视觉语言。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/hand-draft-manga/01-cover.png",
+        "altZh": "手绘漫画草稿风格预览1",
+        "altEn": "Hand Draft Manga preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "hand draft manga aesthetic, manga draft, pencil sketch, construction lines, rough shading, paper grain, concept manga, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize graphic readability, line discipline, and strong panel-like composition.",
@@ -788,7 +876,18 @@
       "nanoBanana": "指令中优先写清 角色设定图 的构图约束，再强调避免 厚涂过重盖掉二次元轮廓。"
     },
     "description": "半厚涂角色设定 强调 半厚涂笔触、材质解释清楚、角色转面友好。整体属于游戏立绘路径，适合需要 角色设定页、服装展示 的画面。相比相近风格，它更突出 半厚涂、设定页、材质说明，在 PC 端风格库中能快速形成鲜明识别。角色卖点强、材质明确、适合设定图与商业宣传的立绘体系。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/half-painterly-character-sheet/01-cover.png",
+        "altZh": "半厚涂角色设定风格预览1",
+        "altEn": "Half Painterly Character Sheet preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "half painterly character sheet aesthetic, character sheet, semi painterly anime, design sheet, material breakdown, clean render, concept presentation, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize commercial character appeal, material separation, and strong focal hierarchy.",
@@ -853,7 +952,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 特效范围过大把人物吃掉。"
     },
     "description": "幻想 RPG 卡牌插画 强调 法术特效集中、装备装饰华丽、强主次轮廓。整体属于游戏立绘路径，适合需要 奇幻角色、卡面插画 的画面。相比相近风格，它更突出 奇幻、卡牌、法术，在 PC 端风格库中能快速形成鲜明识别。角色卖点强、材质明确、适合设定图与商业宣传的立绘体系。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/fantasy-rpg-card/01-cover.png",
+        "altZh": "幻想 RPG 卡牌插画风格预览1",
+        "altEn": "Fantasy RPG Card preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "fantasy rpg card aesthetic, fantasy anime card art, spell effects, hero silhouette, ornate costume, rpg illustration, dramatic fantasy background, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize commercial character appeal, material separation, and strong focal hierarchy.",
@@ -921,7 +1031,18 @@
       "nanoBanana": "指令中优先写清 角色设定图 的构图约束，再强调避免 肢体动作过大不适合 UI 站位。"
     },
     "description": "看板娘大厅立绘 强调 正向站姿、前景留白、细节集中在上半身。整体属于游戏立绘路径，适合需要 大厅角色、半身互动角色 的画面。相比相近风格，它更突出 看板娘、大厅立绘、Live2D 感，在 PC 端风格库中能快速形成鲜明识别。角色卖点强、材质明确、适合设定图与商业宣传的立绘体系。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/live2d-lobby-heroine/01-cover.png",
+        "altZh": "看板娘大厅立绘风格预览1",
+        "altEn": "Live2D Lobby Heroine preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "live2d lobby heroine aesthetic, lobby heroine, live2d-ready anime, front-facing pose, interactive game character, clean center composition, anime UI character, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize commercial character appeal, material separation, and strong focal hierarchy.",
@@ -986,7 +1107,18 @@
       "nanoBanana": "指令中优先写清 桌面壁纸 的构图约束，再强调避免 金属面太平像塑料。"
     },
     "description": "机甲机库动漫 强调 机甲块面明确、工业灯带、冷色金属反光。整体属于游戏立绘路径，适合需要 机甲题材、宽屏海报 的画面。相比相近风格，它更突出 机甲、工业、金属，在 PC 端风格库中能快速形成鲜明识别。角色卖点强、材质明确、适合设定图与商业宣传的立绘体系。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/mecha-hangar-anime/01-cover.png",
+        "altZh": "机甲机库动漫风格预览1",
+        "altEn": "Mecha Hangar Anime preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "mecha hangar anime aesthetic, anime mecha hangar, industrial lighting, metal reflections, giant robot, tech hud, sci-fi maintenance bay, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize commercial character appeal, material separation, and strong focal hierarchy.",
@@ -1054,7 +1186,18 @@
       "nanoBanana": "指令中优先写清 角色设定图 的构图约束，再强调避免 背景像素材图与角色不融合。"
     },
     "description": "校园恋爱视觉小说 强调 柔和室外光、校园环境细节、角色站位正面。整体属于视觉小说路径，适合需要 剧情封面、恋爱视觉页 的画面。相比相近风格，它更突出 校园、恋爱、VN，在 PC 端风格库中能快速形成鲜明识别。角色表演和氛围背景并重，适合剧情化场景与对话界面。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/school-romance-vn/01-cover.png",
+        "altZh": "校园恋爱视觉小说风格预览1",
+        "altEn": "School Romance VN preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "school romance vn aesthetic, visual novel, school romance anime, front character pose, campus background, dialogue scene, gentle daylight, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize character acting, dialogue-scene readability, and controlled background support.",
@@ -1122,7 +1265,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 线索元素太显眼失去悬疑感。"
     },
     "description": "悬疑视觉小说 强调 室内冷蓝光、窗外背光、角色半身对峙。整体属于视觉小说路径，适合需要 悬疑剧情图、推理封面 的画面。相比相近风格，它更突出 悬疑、冷色、VN，在 PC 端风格库中能快速形成鲜明识别。角色表演和氛围背景并重，适合剧情化场景与对话界面。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/mystery-vn-noir/01-cover.png",
+        "altZh": "悬疑视觉小说风格预览1",
+        "altEn": "Mystery VN Noir preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "mystery vn noir aesthetic, mystery visual novel, anime noir room, cold blue light, detective anime, tense dialogue shot, suspense composition, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize character acting, dialogue-scene readability, and controlled background support.",
@@ -1187,7 +1341,18 @@
       "nanoBanana": "指令中优先写清 桌面壁纸 的构图约束，再强调避免 暖雾过重让物体边界发虚。"
     },
     "description": "治愈系视觉小说 强调 暖色窗光、房间生活细节、柔雾边缘。整体属于视觉小说路径，适合需要 舒缓场景、室内氛围页 的画面。相比相近风格，它更突出 治愈、暖光、VN，在 PC 端风格库中能快速形成鲜明识别。角色表演和氛围背景并重，适合剧情化场景与对话界面。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/healing-visual-novel/01-cover.png",
+        "altZh": "治愈系视觉小说风格预览1",
+        "altEn": "Healing Visual Novel preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "healing visual novel aesthetic, healing visual novel, cozy anime room, soft sunbeam, gentle character expression, slice of life vn, quiet interior, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize character acting, dialogue-scene readability, and controlled background support.",
@@ -1255,7 +1420,18 @@
       "nanoBanana": "指令中优先写清 角色设定图 的构图约束，再强调避免 角色靠边过近导致 UI 空间不足。"
     },
     "description": "高级 UI 角色立绘 强调 角色中心站位、半身到全身可切换感、背景控制克制。整体属于视觉小说路径，适合需要 游戏对话角色、UI 适配立绘 的画面。相比相近风格，它更突出 UI 立绘、对话框、角色立面，在 PC 端风格库中能快速形成鲜明识别。角色表演和氛围背景并重，适合剧情化场景与对话界面。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/premium-ui-vn-portrait/01-cover.png",
+        "altZh": "高级 UI 角色立绘风格预览1",
+        "altEn": "Premium UI VN Portrait preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "premium ui vn portrait aesthetic, ui portrait anime, visual novel character portrait, dialogue UI layout, clean side space, premium bust render, interactive character illustration, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize character acting, dialogue-scene readability, and controlled background support.",
@@ -1323,7 +1499,18 @@
       "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 颜色过多导致视觉噪声高。"
     },
     "description": "Q版偶像吉祥物 强调 大头小身、糖果高饱和配色、圆角轮廓。整体属于萌系 / Q版路径，适合需要 贴纸、表情图 的画面。相比相近风格，它更突出 Q版、偶像、糖果色，在 PC 端风格库中能快速形成鲜明识别。圆润、轻量、亲和，适合贴纸、表情包和轻 IP 化表达。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/chibi-idol-mascot/01-cover.png",
+        "altZh": "Q版偶像吉祥物风格预览1",
+        "altEn": "Chibi Idol Mascot preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "chibi idol mascot aesthetic, chibi anime, idol mascot, cute proportions, candy colors, round silhouette, kawaii sticker look, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize simplicity, charm, soft proportions, and instantly readable silhouette design.",
@@ -1384,7 +1571,18 @@
       "nanoBanana": "指令中优先写清 贴纸 的构图约束，再强调避免 白边过薄导致裁切感差。"
     },
     "description": "粉彩贴纸包 强调 粗白边、粉彩底色、图形化表情。整体属于萌系 / Q版路径，适合需要 贴纸合集、轻运营物料 的画面。相比相近风格，它更突出 贴纸、粉彩、白边，在 PC 端风格库中能快速形成鲜明识别。圆润、轻量、亲和，适合贴纸、表情包和轻 IP 化表达。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/pastel-sticker-pack/01-cover.png",
+        "altZh": "粉彩贴纸包风格预览1",
+        "altEn": "Pastel Sticker Pack preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "pastel sticker pack aesthetic, anime sticker pack, pastel kawaii, clean outline, white border sticker, cute expression, minimal background, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize simplicity, charm, soft proportions, and instantly readable silhouette design.",
@@ -1445,7 +1643,18 @@
       "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 毛绒质感太弱像普通 Q 版。"
     },
     "description": "毛绒吉祥物二次元 强调 软糯毛边、圆润头部轮廓、低攻击性表情。整体属于萌系 / Q版路径，适合需要 IP 角色、品牌 mascot 的画面。相比相近风格，它更突出 毛绒、IP、柔软，在 PC 端风格库中能快速形成鲜明识别。圆润、轻量、亲和，适合贴纸、表情包和轻 IP 化表达。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/plush-mascot-anime/01-cover.png",
+        "altZh": "毛绒吉祥物二次元风格预览1",
+        "altEn": "Plush Mascot Anime preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "plush mascot anime aesthetic, plush mascot anime, soft texture, rounded silhouette, cute mascot, warm pastel light, toy-like anime, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize simplicity, charm, soft proportions, and instantly readable silhouette design.",
@@ -1513,7 +1722,18 @@
       "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 极简过头导致角色没记忆点。"
     },
     "description": "极简萌系伙伴 强调 极简线稿、大面积纯色、低细节五官。整体属于萌系 / Q版路径，适合需要 头像图标、轻量品牌角标 的画面。相比相近风格，它更突出 极简、伙伴角色、纯色，在 PC 端风格库中能快速形成鲜明识别。圆润、轻量、亲和，适合贴纸、表情包和轻 IP 化表达。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/minimal-line-buddy/01-cover.png",
+        "altZh": "极简萌系伙伴风格预览1",
+        "altEn": "Minimal Line Buddy preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "minimal line buddy aesthetic, minimal kawaii anime, simple mascot, flat color, clean silhouette, cute icon character, reduced detail, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize simplicity, charm, soft proportions, and instantly readable silhouette design.",
@@ -1577,7 +1797,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 塑料反光太假像橡胶。"
     },
     "description": "动漫手办渲染 强调 PVC 高光、底座展示感、三维转面清楚。整体属于3D / 手办 / 毛绒路径，适合需要 手办展示页、收藏感角色图 的画面。相比相近风格，它更突出 手办、PVC、收藏感，在 PC 端风格库中能快速形成鲜明识别。材质感主导的二次元衍生视觉，强调玩具、毛绒和展示感。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/anime-figure-render/01-cover.png",
+        "altZh": "动漫手办渲染风格预览1",
+        "altEn": "Anime Figure Render preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "anime figure render aesthetic, anime figure render, pvc toy gloss, display base, studio product light, collectible anime, toy photography look, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize material realism, object-like form clarity, and collectible presentation quality.",
@@ -1638,7 +1869,18 @@
       "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 比例不够统一像普通 3D。"
     },
     "description": "黏土人展示风 强调 超大头短身、光滑玩具面、盒内展示感。整体属于3D / 手办 / 毛绒路径，适合需要 可爱收藏图、玩具海报 的画面。相比相近风格，它更突出 黏土人、展示、玩具摄影，在 PC 端风格库中能快速形成鲜明识别。材质感主导的二次元衍生视觉，强调玩具、毛绒和展示感。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/nendoroid-showcase/01-cover.png",
+        "altZh": "黏土人展示风风格预览1",
+        "altEn": "Nendoroid Showcase preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "nendoroid showcase aesthetic, nendoroid style, toy showcase, smooth plastic finish, big head small body, cute collectible, display shelf, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize material realism, object-like form clarity, and collectible presentation quality.",
@@ -1703,7 +1945,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 潮玩轮廓不够干净。"
     },
     "description": "盲盒潮玩风 强调 圆润潮玩体块、低细节但高识别、盒玩陈列语境。整体属于3D / 手办 / 毛绒路径，适合需要 潮玩品牌视觉、陈列主题封面 的画面。相比相近风格，它更突出 盲盒、潮玩、陈列，在 PC 端风格库中能快速形成鲜明识别。材质感主导的二次元衍生视觉，强调玩具、毛绒和展示感。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/blind-box-vinyl-toy/01-cover.png",
+        "altZh": "盲盒潮玩风风格预览1",
+        "altEn": "Blind Box Vinyl Toy preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "blind box vinyl toy aesthetic, blind box toy, vinyl anime toy, designer toy, rounded body, collector shelf, cute fashion object, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize material realism, object-like form clarity, and collectible presentation quality.",
@@ -1847,7 +2100,18 @@
       "nanoBanana": "指令中优先写清 贴纸 的构图约束，再强调避免 透明度过高像玻璃不是软糖。"
     },
     "description": "软糖质感角色 强调 半透明果冻高光、柔软弹性边缘、圆润微反射。整体属于3D / 手办 / 毛绒路径，适合需要 可爱商业物料、糖果感品牌视觉 的画面。相比相近风格，它更突出 软糖、果冻质感、可爱 3D，在 PC 端风格库中能快速形成鲜明识别。材质感主导的二次元衍生视觉，强调玩具、毛绒和展示感。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/soft-gummy-character/01-cover.png",
+        "altZh": "软糖质感角色风格预览1",
+        "altEn": "Soft Gummy Character preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "soft gummy character aesthetic, gummy anime character, jelly material, soft translucent toy, candy color, cute 3d mascot, glossy soft render, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize material realism, object-like form clarity, and collectible presentation quality.",
@@ -1997,7 +2261,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 全息元素太碎让脸部失焦。"
     },
     "description": "数字空间偶像 强调 全息粒子、数字舞台、冷粉双色灯。整体属于赛博 / 科幻路径，适合需要 未来偶像海报、角色主视觉 的画面。相比相近风格，它更突出 虚拟偶像、数字空间、全息，在 PC 端风格库中能快速形成鲜明识别。霓虹、全息、机甲与数字空间的未来动漫表达。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/digital-space-idol/01-cover.png",
+        "altZh": "数字空间偶像风格预览1",
+        "altEn": "Digital Space Idol preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "digital space idol aesthetic, virtual idol anime, digital particles, holographic stage, futuristic fashion, cold pink lighting, cyber pop anime, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize neon lighting logic, futuristic surface detail, and controlled high-contrast depth.",
@@ -2062,7 +2337,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 透明材质边界不清像塑料壳。"
     },
     "description": "全息时装实验室 强调 透明面板、硬质高光服饰、实验室空间。整体属于赛博 / 科幻路径，适合需要 时尚科技封面、角色概念发布图 的画面。相比相近风格，它更突出 全息、时装、实验室，在 PC 端风格库中能快速形成鲜明识别。霓虹、全息、机甲与数字空间的未来动漫表达。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/hologram-fashion-lab/01-cover.png",
+        "altZh": "全息时装实验室风格预览1",
+        "altEn": "Hologram Fashion Lab preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "hologram fashion lab aesthetic, hologram fashion anime, futuristic lab, transparent panels, runway pose, cold white glow, sci-fi couture, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize neon lighting logic, futuristic surface detail, and controlled high-contrast depth.",
@@ -2130,7 +2416,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 羽翼结构太碎像粒子噪声。"
     },
     "description": "赛博天使合唱 强调 发光羽翼结构、冷白全息边缘、舞台式纵深。整体属于赛博 / 科幻路径，适合需要 幻想科技主视觉、舞台感角色海报 的画面。相比相近风格，它更突出 赛博天使、发光羽翼、未来幻想，在 PC 端风格库中能快速形成鲜明识别。霓虹、全息、机甲与数字空间的未来动漫表达。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/cyber-angel-chorus/01-cover.png",
+        "altZh": "赛博天使合唱风格预览1",
+        "altEn": "Cyber Angel Chorus preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "cyber angel chorus aesthetic, cyber angel anime, holographic wings, holy sci-fi stage, cold white glow, futuristic halo, tech fantasy heroine, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize neon lighting logic, futuristic surface detail, and controlled high-contrast depth.",
@@ -2280,7 +2577,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 红色点缀太多破坏优雅冷感。"
     },
     "description": "月下吸血鬼动漫 强调 冷白月光、尖窗剪影、红色点睛。整体属于暗黑 / 哥特路径，适合需要 暗夜题材海报、冷调角色壁纸 的画面。相比相近风格，它更突出 吸血鬼、月光、古堡，在 PC 端风格库中能快速形成鲜明识别。高对比、宗教感、古堡感与神秘叙事构成的暗色系视觉。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/vampire-moon-anime/01-cover.png",
+        "altZh": "月下吸血鬼动漫风格预览1",
+        "altEn": "Vampire Moon Anime preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "vampire moon anime aesthetic, vampire anime, moonlit gothic, castle window shadows, crimson accents, pale skin, dramatic cloak, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize dramatic contrast, symbolic atmosphere, and restrained dark-luxury styling.",
@@ -2345,7 +2653,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 建筑细节过多抢掉角色。"
     },
     "description": "哥特教堂动漫 强调 尖拱结构、彩窗投影、高纵深圣堂。整体属于暗黑 / 哥特路径，适合需要 大场景海报、暗黑幻想设定 的画面。相比相近风格，它更突出 哥特、教堂、仪式感，在 PC 端风格库中能快速形成鲜明识别。高对比、宗教感、古堡感与神秘叙事构成的暗色系视觉。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/gothic-cathedral-anime/01-cover.png",
+        "altZh": "哥特教堂动漫风格预览1",
+        "altEn": "Gothic Cathedral Anime preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "gothic cathedral anime aesthetic, gothic cathedral anime, stained glass light, grand nave, ritual composition, holy architecture, dark fantasy anime, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize dramatic contrast, symbolic atmosphere, and restrained dark-luxury styling.",
@@ -2410,7 +2729,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 珠饰细节均匀铺满没有重点。"
     },
     "description": "暗黑歌剧奢华风 强调 酒红天鹅绒、金属珠饰、聚光灯焦点。整体属于暗黑 / 哥特路径，适合需要 高戏剧服饰海报、角色奢华主视觉 的画面。相比相近风格，它更突出 歌剧、奢华、舞台，在 PC 端风格库中能快速形成鲜明识别。高对比、宗教感、古堡感与神秘叙事构成的暗色系视觉。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/luxury-opera-gothic/01-cover.png",
+        "altZh": "暗黑歌剧奢华风风格预览1",
+        "altEn": "Luxury Opera Gothic preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "luxury opera gothic aesthetic, gothic opera anime, velvet red, luxury embellishment, spotlight stage, dramatic fashion, dark elegance, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize dramatic contrast, symbolic atmosphere, and restrained dark-luxury styling.",
@@ -2475,7 +2805,18 @@
       "nanoBanana": "指令中优先写清 桌面壁纸 的构图约束，再强调避免 亮度过高失去层次。"
     },
     "description": "云海治愈动画 强调 大片云海、蓝白柔光、轻空气透视。整体属于治愈 / 梦幻路径，适合需要 背景壁纸、舒缓头图 的画面。相比相近风格，它更突出 云海、治愈、高明度，在 PC 端风格库中能快速形成鲜明识别。柔光、粉雾、梦境气氛与低压情绪的舒缓系画风。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/healing-cloudscape-anime/01-cover.png",
+        "altZh": "云海治愈动画风格预览1",
+        "altEn": "Healing Cloudscape Anime preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "healing cloudscape anime aesthetic, healing anime sky, cloudscape, soft daylight, gentle blue white palette, airy composition, dreamy anime scene, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize softness, breathing room, low-pressure atmosphere, and gentle tonal transitions.",
@@ -2536,7 +2877,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 晕染太散导致五官糊化。"
     },
     "description": "水彩梦境二次元 强调 边缘晕染、纸面肌理、粉蓝粉紫过渡。整体属于治愈 / 梦幻路径，适合需要 梦境人物图、柔和封面 的画面。相比相近风格，它更突出 水彩、梦境、纸感，在 PC 端风格库中能快速形成鲜明识别。柔光、粉雾、梦境气氛与低压情绪的舒缓系画风。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/watercolor-dream-anime/01-cover.png",
+        "altZh": "水彩梦境二次元风格预览1",
+        "altEn": "Watercolor Dream Anime preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "watercolor dream anime aesthetic, watercolor anime, paper texture, soft wash edges, dreamy pastel, floating composition, delicate line art, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize softness, breathing room, low-pressure atmosphere, and gentle tonal transitions.",
@@ -2597,7 +2949,18 @@
       "nanoBanana": "指令中优先写清 桌面壁纸 的构图约束，再强调避免 摆件太多导致画面拥堵。"
     },
     "description": "柔光治愈房间 强调 窗边柔光、植物和布艺、低饱和暖色。整体属于治愈 / 梦幻路径，适合需要 室内壁纸、情绪背景 的画面。相比相近风格，它更突出 房间、治愈、植物，在 PC 端风格库中能快速形成鲜明识别。柔光、粉雾、梦境气氛与低压情绪的舒缓系画风。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/soft-healing-room/01-cover.png",
+        "altZh": "柔光治愈房间风格预览1",
+        "altEn": "Soft Healing Room preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "soft healing room aesthetic, cozy anime room, soft interior light, plants and fabric, low saturation warm tones, healing space, quiet lifestyle anime, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize softness, breathing room, low-pressure atmosphere, and gentle tonal transitions.",
@@ -2662,7 +3025,18 @@
       "nanoBanana": "指令中优先写清 桌面壁纸 的构图约束，再强调避免 紫色过多变俗气。"
     },
     "description": "月下梦游二次元 强调 蓝紫月光、轻纱云层、安静留白。整体属于治愈 / 梦幻路径，适合需要 夜间治愈图、安静封面 的画面。相比相近风格，它更突出 月光、夜梦、蓝紫，在 PC 端风格库中能快速形成鲜明识别。柔光、粉雾、梦境气氛与低压情绪的舒缓系画风。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/moonlit-reverie-anime/01-cover.png",
+        "altZh": "月下梦游二次元风格预览1",
+        "altEn": "Moonlit Reverie Anime preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "moonlit reverie anime aesthetic, moonlit anime, dreamy night, lavender blue glow, quiet composition, soft wind, reverie atmosphere, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize softness, breathing room, low-pressure atmosphere, and gentle tonal transitions.",
@@ -2723,7 +3097,18 @@
       "nanoBanana": "指令中优先写清 桌面壁纸 的构图约束，再强调避免 暖光分布太平均失去焦点。"
     },
     "description": "森灯治愈幻想 强调 林间微雾、暖色灯笼点光、苔藓和木质细节。整体属于治愈 / 梦幻路径，适合需要 静谧场景壁纸、治愈幻想封面 的画面。相比相近风格，它更突出 森林、灯笼、治愈幻想，在 PC 端风格库中能快速形成鲜明识别。柔光、粉雾、梦境气氛与低压情绪的舒缓系画风。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/forest-lantern-healing/01-cover.png",
+        "altZh": "森灯治愈幻想风格预览1",
+        "altEn": "Forest Lantern Healing preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "forest lantern healing aesthetic, healing forest anime, lantern glow, misty woodland, moss details, cozy fantasy night, gentle depth, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize softness, breathing room, low-pressure atmosphere, and gentle tonal transitions.",
@@ -2867,7 +3252,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 墨色太实失去空灵感。"
     },
     "description": "水墨灵境二次元 强调 墨色层次、留白空间、山石雾气。整体属于国风二次元路径，适合需要 东方场景图、意境封面 的画面。相比相近风格，它更突出 水墨、留白、山石，在 PC 端风格库中能快速形成鲜明识别。新中式、仙侠、水墨与国潮配色驱动的东方幻想表达。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/ink-wash-spiritscape/01-cover.png",
+        "altZh": "水墨灵境二次元风格预览1",
+        "altEn": "Ink Wash Spiritscape preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "ink wash spiritscape aesthetic, ink wash anime, spirit landscape, blank space composition, misty mountains, washed ink, eastern fantasy scene, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize Eastern fantasy motifs, elegant costume flow, and coherent environment storytelling.",
@@ -2932,7 +3328,18 @@
       "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 红金比例失衡导致俗气。"
     },
     "description": "新国潮动漫 强调 红金撞色、东方纹样、潮流剪影。整体属于国风二次元路径，适合需要 国潮封面、节庆主题图 的画面。相比相近风格，它更突出 国潮、红金、东方纹样，在 PC 端风格库中能快速形成鲜明识别。新中式、仙侠、水墨与国潮配色驱动的东方幻想表达。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/neo-guochao-anime/01-cover.png",
+        "altZh": "新国潮动漫风格预览1",
+        "altEn": "Neo Guochao Anime preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "neo guochao anime aesthetic, guochao anime, red gold palette, eastern motifs, fashion eastern heroine, modern traditional fusion, bold cultural design, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize Eastern fantasy motifs, elegant costume flow, and coherent environment storytelling.",
@@ -2993,7 +3400,18 @@
       "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 发饰细节均匀堆满没有主次。"
     },
     "description": "宫廷幻想肖像 强调 精细发饰、宫廷纹样、柔和面部高光。整体属于国风二次元路径，适合需要 华丽肖像、古风角色海报 的画面。相比相近风格，它更突出 宫廷、华美、发饰，在 PC 端风格库中能快速形成鲜明识别。新中式、仙侠、水墨与国潮配色驱动的东方幻想表达。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/palace-fantasy-portrait/01-cover.png",
+        "altZh": "宫廷幻想肖像风格预览1",
+        "altEn": "Palace Fantasy Portrait preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "palace fantasy portrait aesthetic, palace fantasy anime, ornate hairpieces, court costume, regal portrait, elegant eastern heroine, refined makeup light, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize Eastern fantasy motifs, elegant costume flow, and coherent environment storytelling.",
@@ -3141,7 +3559,18 @@
       "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 皮肤磨皮过度像滤镜图。"
     },
     "description": "浪漫恋爱韩漫 强调 粉雾氛围、细致睫毛和唇色、亲密双人构图。整体属于韩漫 Webtoon路径，适合需要 恋爱封面、角色关系图 的画面。相比相近风格，它更突出 恋爱、粉雾、韩漫，在 PC 端风格库中能快速形成鲜明识别。高光皮肤、都市时装感与长条漫画节奏鲜明的现代韩漫风格。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/romance-webtoon/01-cover.png",
+        "altZh": "浪漫恋爱韩漫风格预览1",
+        "altEn": "Romance Webtoon preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "romance webtoon aesthetic, romance webtoon, soft pink glow, couple close-up, glossy lips, delicate eyelashes, webtoon love scene, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize polished character rendering, fashion readability, and clean commercial finish.",
@@ -3202,7 +3631,18 @@
       "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 高光分布不真实像涂油。"
     },
     "description": "高光质感韩漫 强调 头发丝高光清晰、皮肤油亮但平滑、现代轮廓线。整体属于韩漫 Webtoon路径，适合需要 精修头像、角色封面 的画面。相比相近风格，它更突出 高光、精修、韩漫，在 PC 端风格库中能快速形成鲜明识别。高光皮肤、都市时装感与长条漫画节奏鲜明的现代韩漫风格。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/high-gloss-webtoon/01-cover.png",
+        "altZh": "高光质感韩漫风格预览1",
+        "altEn": "High Gloss Webtoon preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "high gloss webtoon aesthetic, high gloss webtoon, shiny hair, smooth skin, fashion anime portrait, clean modern line art, beauty webtoon, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize polished character rendering, fashion readability, and clean commercial finish.",
@@ -3266,7 +3706,18 @@
       "nanoBanana": "指令中优先写清 手机壁纸 的构图约束，再强调避免 纵向节奏平均缺少高潮段。"
     },
     "description": "动作长条韩漫 强调 纵向长构图、速度残影、人物切边。整体属于韩漫 Webtoon路径，适合需要 纵向动作封面、卷轴式主视觉 的画面。相比相近风格，它更突出 动作、长条、韩漫，在 PC 端风格库中能快速形成鲜明识别。高光皮肤、都市时装感与长条漫画节奏鲜明的现代韩漫风格。",
-    "previewImages": [],
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/action-webtoon-panel/01-cover.png",
+        "altZh": "动作长条韩漫风格预览1",
+        "altEn": "Action Webtoon Panel preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ],
     "modelInput": {
       "stylePrompt": "action webtoon panel aesthetic, action webtoon, vertical panel, speed blur, scrolling composition, combat focus, dynamic long frame, clean anime composition, high detail illustration",
       "styleGoal": "Prioritize polished character rendering, fashion readability, and clean commercial finish.",
