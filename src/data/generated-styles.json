@@ -1,0 +1,2209 @@
+[
+  {
+    "id": "cel-shine-anime",
+    "slug": "cel-shine-anime",
+    "nameZh": "高亮赛璐璐",
+    "nameEn": "Cel Shine Anime",
+    "category": "japanese-anime",
+    "summary": "清爽赛璐璐与舞台灯感结合，适合角色主视觉。",
+    "tags": ["赛璐璐", "主视觉", "清透", "舞台光"],
+    "visualFeatures": [
+      "硬朗阴影分层",
+      "高亮边缘光",
+      "清洁色块",
+      "镜头感构图",
+      "角色五官利落"
+    ],
+    "promptKeywords": [
+      "cel shading",
+      "clean color blocks",
+      "anime key visual",
+      "rim light",
+      "studio finish",
+      "sharp line art"
+    ],
+    "basePrompt": "cel shine anime aesthetic, cel shading, clean color blocks, anime key visual, rim light, studio finish, sharp line art, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 高光过曝导致五官丢失, 阴影层次太少让发灰",
+    "useCases": ["头像", "角色设定图", "海报"],
+    "recommendedRatios": ["4:5", "3:4"],
+    "compatibleStyles": [
+      "rainlit-cinematic-anime",
+      "premium-gacha-illustration"
+    ],
+    "similarStyles": ["tv-cut-anime-frame", "theatrical-anime-poster"],
+    "bestFor": ["角色主视觉", "封面级立绘", "强识别单人角色"],
+    "notRecommendedFor": ["超复杂群像", "低对比氛围图"],
+    "commonFailurePoints": ["高光过曝导致五官丢失", "阴影层次太少让画面发灰"],
+    "preview": {
+      "accent": "#ff7a90",
+      "glow": "#ffd4db",
+      "surface": "#231733",
+      "label": "CEL"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 硬朗阴影分层 和 高亮边缘光。",
+      "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 高光过曝导致五官丢失。"
+    },
+    "description": "高亮赛璐璐 强调 硬朗阴影分层、高亮边缘光、清洁色块。整体属于日系动画路径，适合需要 角色主视觉、封面级立绘 的画面。相比相近风格，它更突出 赛璐璐、主视觉、清透，在 PC 端风格库中能快速形成鲜明识别。清晰轮廓、情绪光影与强烈叙事感并存的动画系画风。"
+  },
+  {
+    "id": "rainlit-cinematic-anime",
+    "slug": "rainlit-cinematic-anime",
+    "nameZh": "雨夜电影感动画",
+    "nameEn": "Rainlit Cinematic Anime",
+    "category": "japanese-anime",
+    "summary": "潮湿霓虹和远景空气感拉满的城市动画风格。",
+    "tags": ["电影感", "城市夜景", "空气感", "雨夜"],
+    "visualFeatures": [
+      "雨幕反光",
+      "蓝橙对比",
+      "景深空气透视",
+      "柔亮街灯",
+      "电影式留白"
+    ],
+    "promptKeywords": [
+      "rainy anime city",
+      "cinematic anime",
+      "wet reflections",
+      "atmospheric depth",
+      "night glow",
+      "emotional lighting"
+    ],
+    "basePrompt": "rainlit cinematic anime aesthetic, rainy anime city, cinematic anime, wet reflections, atmospheric depth, night glow, emotional lighting, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 雨效过密遮住, 远景雾化过头导致层次糊掉",
+    "useCases": ["手机壁纸", "桌面壁纸", "海报"],
+    "recommendedRatios": ["16:9", "9:16"],
+    "compatibleStyles": ["neon-city-anime", "healing-cloudscape-anime"],
+    "similarStyles": ["theatrical-anime-poster", "tv-cut-anime-frame"],
+    "bestFor": ["剧情感场景", "壁纸", "氛围封面"],
+    "notRecommendedFor": ["Q版贴纸", "纯白背景头像"],
+    "commonFailurePoints": ["雨效过密遮住主体", "远景雾化过头导致层次糊掉"],
+    "preview": {
+      "accent": "#53a8ff",
+      "glow": "#a4d3ff",
+      "surface": "#101a2f",
+      "label": "RAIN"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 雨幕反光 和 蓝橙对比。",
+      "nanoBanana": "指令中优先写清 手机壁纸 的构图约束，再强调避免 雨效过密遮住主体。"
+    },
+    "description": "雨夜电影感动画 强调 雨幕反光、蓝橙对比、景深空气透视。整体属于日系动画路径，适合需要 剧情感场景、壁纸 的画面。相比相近风格，它更突出 电影感、城市夜景、空气感，在 PC 端风格库中能快速形成鲜明识别。清晰轮廓、情绪光影与强烈叙事感并存的动画系画风。"
+  },
+  {
+    "id": "tv-cut-anime-frame",
+    "slug": "tv-cut-anime-frame",
+    "nameZh": "TV 动画截图风",
+    "nameEn": "TV Cut Anime Frame",
+    "category": "japanese-anime",
+    "summary": "像动画剧集中截出的关键帧，生活感和叙事节奏突出。",
+    "tags": ["截图风", "叙事感", "日常", "自然表情"],
+    "visualFeatures": [
+      "轻线稿",
+      "中低饱和配色",
+      "镜头切片构图",
+      "日常场景细节",
+      "自然表情"
+    ],
+    "promptKeywords": [
+      "anime screenshot",
+      "episodic frame",
+      "slice of life",
+      "natural expression",
+      "storyboard composition",
+      "broadcast anime"
+    ],
+    "basePrompt": "tv cut anime frame aesthetic, anime screenshot, episodic frame, slice of life, natural expression, storyboard composition, broadcast anime, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 场景信息不足像半成品, 姿态僵硬缺少生活感",
+    "useCases": ["桌面壁纸", "故事封面", "灵感看板"],
+    "recommendedRatios": ["16:9", "3:2"],
+    "compatibleStyles": ["school-romance-vn", "soft-healing-room"],
+    "similarStyles": ["theatrical-anime-poster", "cel-shine-anime"],
+    "bestFor": ["剧情感单帧", "场景叙事", "参考镜头"],
+    "notRecommendedFor": ["商业大海报", "强商品展示"],
+    "commonFailurePoints": ["场景信息不足像半成品", "角色姿态僵硬缺少生活感"],
+    "preview": {
+      "accent": "#ffd56a",
+      "glow": "#ffe8a9",
+      "surface": "#20243a",
+      "label": "TV"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 轻线稿 和 中低饱和配色。",
+      "nanoBanana": "指令中优先写清 桌面壁纸 的构图约束，再强调避免 场景信息不足像半成品。"
+    },
+    "description": "TV 动画截图风 强调 轻线稿、中低饱和配色、镜头切片构图。整体属于日系动画路径，适合需要 剧情感单帧、场景叙事 的画面。相比相近风格，它更突出 截图风、叙事感、日常，在 PC 端风格库中能快速形成鲜明识别。清晰轮廓、情绪光影与强烈叙事感并存的动画系画风。"
+  },
+  {
+    "id": "theatrical-anime-poster",
+    "slug": "theatrical-anime-poster",
+    "nameZh": "剧场版海报动画",
+    "nameEn": "Theatrical Anime Poster",
+    "category": "japanese-anime",
+    "summary": "剧场版级别的戏剧光影和情绪张力。",
+    "tags": ["剧场版", "史诗感", "大光影", "海报"],
+    "visualFeatures": [
+      "大体积光",
+      "高对比天空层次",
+      "戏剧性远近景",
+      "情绪主色统一",
+      "电影海报构图"
+    ],
+    "promptKeywords": [
+      "anime theatrical poster",
+      "dramatic sky",
+      "hero composition",
+      "volume light",
+      "cinema poster",
+      "epic anime"
+    ],
+    "basePrompt": "theatrical anime poster aesthetic, anime theatrical poster, dramatic sky, hero composition, volume light, cinema poster, epic anime, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 光效太多导致层级混乱, 群像站位平均缺少主次",
+    "useCases": ["海报", "桌面壁纸", "封面头图"],
+    "recommendedRatios": ["2:3", "16:9"],
+    "compatibleStyles": ["fantasy-rpg-card", "gothic-cathedral-anime"],
+    "similarStyles": ["rainlit-cinematic-anime", "cel-shine-anime"],
+    "bestFor": ["主海报", "群像封面", "史诗幻想"],
+    "notRecommendedFor": ["极简贴纸", "小图标头像"],
+    "commonFailurePoints": ["光效太多导致主体层级混乱", "群像站位平均缺少主次"],
+    "preview": {
+      "accent": "#ffb37c",
+      "glow": "#ffd6b4",
+      "surface": "#25151c",
+      "label": "EPIC"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 大体积光 和 高对比天空层次。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 光效太多导致主体层级混乱。"
+    },
+    "description": "剧场版海报动画 强调 大体积光、高对比天空层次、戏剧性远近景。整体属于日系动画路径，适合需要 主海报、群像封面 的画面。相比相近风格，它更突出 剧场版、史诗感、大光影，在 PC 端风格库中能快速形成鲜明识别。清晰轮廓、情绪光影与强烈叙事感并存的动画系画风。"
+  },
+  {
+    "id": "retro-90s-anime",
+    "slug": "retro-90s-anime",
+    "nameZh": "90 年代复古动画",
+    "nameEn": "Retro 90s Anime",
+    "category": "japanese-anime",
+    "summary": "颗粒色块和复古光晕带来的旧时代动画感。",
+    "tags": ["90s", "怀旧", "胶片感", "赛璐璐"],
+    "visualFeatures": [
+      "轻颗粒噪点",
+      "偏暖旧胶片色",
+      "粗细变化线稿",
+      "赛璐璐阴影",
+      "复古光晕"
+    ],
+    "promptKeywords": [
+      "90s anime",
+      "retro cel",
+      "film grain",
+      "vintage color",
+      "nostalgic glow",
+      "classic anime frame"
+    ],
+    "basePrompt": "retro 90s anime aesthetic, 90s anime, retro cel, film grain, vintage color, nostalgic glow, classic anime frame, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 噪点过重压脏肤色, 复古滤镜覆盖掉识别",
+    "useCases": ["头像", "海报", "收藏图"],
+    "recommendedRatios": ["1:1", "4:5"],
+    "compatibleStyles": ["screentone-manga-cover", "fashion-webtoon"],
+    "similarStyles": ["cel-shine-anime", "tv-cut-anime-frame"],
+    "bestFor": ["怀旧主题", "风格对比卡", "复古角色展示"],
+    "notRecommendedFor": ["超写实材质", "现代 UI 头图"],
+    "commonFailurePoints": ["噪点过重压脏肤色", "复古滤镜覆盖掉角色识别"],
+    "preview": {
+      "accent": "#f08c61",
+      "glow": "#f7c29b",
+      "surface": "#2c1a18",
+      "label": "90S"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 轻颗粒噪点 和 偏暖旧胶片色。",
+      "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 噪点过重压脏肤色。"
+    },
+    "description": "90 年代复古动画 强调 轻颗粒噪点、偏暖旧胶片色、粗细变化线稿。整体属于日系动画路径，适合需要 怀旧主题、风格对比卡 的画面。相比相近风格，它更突出 90s、怀旧、胶片感，在 PC 端风格库中能快速形成鲜明识别。清晰轮廓、情绪光影与强烈叙事感并存的动画系画风。"
+  },
+  {
+    "id": "screentone-manga-cover",
+    "slug": "screentone-manga-cover",
+    "nameZh": "网点漫画封面",
+    "nameEn": "Screentone Manga Cover",
+    "category": "manga",
+    "summary": "以纸面肌理和网点排布建立封面识别的漫画系样式。",
+    "tags": ["黑白漫画", "网点", "封面", "纸感"],
+    "visualFeatures": [
+      "黑白高反差",
+      "网点阴影",
+      "标题留白",
+      "纸张肌理",
+      "夸张线性节奏"
+    ],
+    "promptKeywords": [
+      "manga cover",
+      "screentone",
+      "ink contrast",
+      "paper texture",
+      "black and white manga",
+      "cover composition"
+    ],
+    "basePrompt": "screentone manga cover aesthetic, manga cover, screentone, ink contrast, paper texture, black and white manga, cover composition, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 网点尺度失控导致摩尔纹感, 黑白层次不清让糊成一片",
+    "useCases": ["海报", "封面头图", "故事概念图"],
+    "recommendedRatios": ["2:3", "4:5"],
+    "compatibleStyles": ["retro-90s-anime", "action-webtoon-panel"],
+    "similarStyles": ["shojo-sparkle-manga", "seinen-ink-drama"],
+    "bestFor": ["黑白封面", "漫画品牌感", "角色主题页"],
+    "notRecommendedFor": ["高饱和梦幻图", "3D 材质展示"],
+    "commonFailurePoints": [
+      "网点尺度失控导致摩尔纹感",
+      "黑白层次不清让主体糊成一片"
+    ],
+    "preview": {
+      "accent": "#f5f1e6",
+      "glow": "#ffffff",
+      "surface": "#111111",
+      "label": "INK"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 黑白高反差 和 网点阴影。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 网点尺度失控导致摩尔纹感。"
+    },
+    "description": "网点漫画封面 强调 黑白高反差、网点阴影、标题留白。整体属于漫画系路径，适合需要 黑白封面、漫画品牌感 的画面。相比相近风格，它更突出 黑白漫画、网点、封面，在 PC 端风格库中能快速形成鲜明识别。偏线稿、分镜、网点与纸面表达的漫画视觉语言。"
+  },
+  {
+    "id": "shojo-sparkle-manga",
+    "slug": "shojo-sparkle-manga",
+    "nameZh": "少女漫画闪光感",
+    "nameEn": "Shojo Sparkle Manga",
+    "category": "manga",
+    "summary": "花瓣、闪光和大眼情绪线构成的浪漫少女漫表达。",
+    "tags": ["少女漫", "闪光", "浪漫", "特写"],
+    "visualFeatures": [
+      "细长睫毛",
+      "背景闪片",
+      "花瓣和光斑",
+      "柔线稿",
+      "情绪化留白"
+    ],
+    "promptKeywords": [
+      "shojo manga",
+      "sparkles",
+      "romantic close-up",
+      "soft line art",
+      "petal background",
+      "large expressive eyes"
+    ],
+    "basePrompt": "shojo sparkle manga aesthetic, shojo manga, sparkles, romantic close-up, soft line art, petal background, large expressive eyes, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 闪片元素过量压住五官, 线条过软导致脸部结构塌陷",
+    "useCases": ["头像", "小红书封面", "角色海报"],
+    "recommendedRatios": ["1:1", "3:4"],
+    "compatibleStyles": ["romance-webtoon", "school-romance-vn"],
+    "similarStyles": ["screentone-manga-cover", "watercolor-dream-anime"],
+    "bestFor": ["情绪特写", "恋爱主题封面", "角色立面海报"],
+    "notRecommendedFor": ["硬核战斗场景", "高机械密度画面"],
+    "commonFailurePoints": ["闪片元素过量压住五官", "线条过软导致脸部结构塌陷"],
+    "preview": {
+      "accent": "#ff8fc7",
+      "glow": "#ffd5ef",
+      "surface": "#31172a",
+      "label": "SHOJO"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 细长睫毛 和 背景闪片。",
+      "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 闪片元素过量压住五官。"
+    },
+    "description": "少女漫画闪光感 强调 细长睫毛、背景闪片、花瓣和光斑。整体属于漫画系路径，适合需要 情绪特写、恋爱主题封面 的画面。相比相近风格，它更突出 少女漫、闪光、浪漫，在 PC 端风格库中能快速形成鲜明识别。偏线稿、分镜、网点与纸面表达的漫画视觉语言。"
+  },
+  {
+    "id": "shonen-impact-manga",
+    "slug": "shonen-impact-manga",
+    "nameZh": "少年漫冲击格",
+    "nameEn": "Shonen Impact Manga",
+    "category": "manga",
+    "summary": "速度线、夸张透视和爆发情绪构成的热血画格。",
+    "tags": ["少年漫", "冲击格", "速度线", "战斗"],
+    "visualFeatures": [
+      "速度线",
+      "爆发构图",
+      "透视夸张",
+      "高压黑白对撞",
+      "张力表情"
+    ],
+    "promptKeywords": [
+      "shonen manga",
+      "impact panel",
+      "speed lines",
+      "dynamic perspective",
+      "battle expression",
+      "high contrast ink"
+    ],
+    "basePrompt": "shonen impact manga aesthetic, shonen manga, impact panel, speed lines, dynamic perspective, battle expression, high contrast ink, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 速度线太密导致动势变脏, 透视夸张过头让肢体失真",
+    "useCases": ["海报", "封面头图", "剧情卡面"],
+    "recommendedRatios": ["3:4", "16:9"],
+    "compatibleStyles": ["action-webtoon-panel", "mecha-hangar-anime"],
+    "similarStyles": ["seinen-ink-drama", "screentone-manga-cover"],
+    "bestFor": ["战斗封面", "热血动作页", "情绪高潮瞬间"],
+    "notRecommendedFor": ["治愈静物", "产品贴纸"],
+    "commonFailurePoints": ["速度线太密导致动势变脏", "透视夸张过头让肢体失真"],
+    "preview": {
+      "accent": "#ff4f4f",
+      "glow": "#ffb0b0",
+      "surface": "#1a1116",
+      "label": "IMPACT"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 速度线 和 爆发构图。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 速度线太密导致动势变脏。"
+    },
+    "description": "少年漫冲击格 强调 速度线、爆发构图、透视夸张。整体属于漫画系路径，适合需要 战斗封面、热血动作页 的画面。相比相近风格，它更突出 少年漫、冲击格、速度线，在 PC 端风格库中能快速形成鲜明识别。偏线稿、分镜、网点与纸面表达的漫画视觉语言。"
+  },
+  {
+    "id": "seinen-ink-drama",
+    "slug": "seinen-ink-drama",
+    "nameZh": "青年漫墨色戏剧",
+    "nameEn": "Seinen Ink Drama",
+    "category": "manga",
+    "summary": "更克制成熟的黑白戏剧语言，适合悬疑与压抑情境。",
+    "tags": ["青年漫", "黑白戏剧", "悬疑", "压迫感"],
+    "visualFeatures": [
+      "厚重黑块",
+      "冷峻线面关系",
+      "阴影压迫感",
+      "成人五官比例",
+      "镜头式剪影"
+    ],
+    "promptKeywords": [
+      "seinen manga",
+      "ink drama",
+      "shadow-heavy",
+      "mature anime face",
+      "graphic noir",
+      "moody panel"
+    ],
+    "basePrompt": "seinen ink drama aesthetic, seinen manga, ink drama, shadow-heavy, mature anime face, graphic noir, moody panel, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 纯黑区域过大丢失信息, 人物五官写实过头失去二次元感",
+    "useCases": ["海报", "剧情封面", "专题头图"],
+    "recommendedRatios": ["4:5", "16:9"],
+    "compatibleStyles": ["mystery-vn-noir", "ruin-apocalypse-anime"],
+    "similarStyles": ["shonen-impact-manga", "screentone-manga-cover"],
+    "bestFor": ["悬疑主题", "成人向视觉", "黑白高压场景"],
+    "notRecommendedFor": ["萌系贴纸", "糖果色场景"],
+    "commonFailurePoints": [
+      "纯黑区域过大丢失信息",
+      "人物五官写实过头失去二次元感"
+    ],
+    "preview": {
+      "accent": "#b8c0cc",
+      "glow": "#eef1f5",
+      "surface": "#0f1014",
+      "label": "NOIR"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 厚重黑块 和 冷峻线面关系。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 纯黑区域过大丢失信息。"
+    },
+    "description": "青年漫墨色戏剧 强调 厚重黑块、冷峻线面关系、阴影压迫感。整体属于漫画系路径，适合需要 悬疑主题、成人向视觉 的画面。相比相近风格，它更突出 青年漫、黑白戏剧、悬疑，在 PC 端风格库中能快速形成鲜明识别。偏线稿、分镜、网点与纸面表达的漫画视觉语言。"
+  },
+  {
+    "id": "hand-draft-manga",
+    "slug": "hand-draft-manga",
+    "nameZh": "手绘漫画草稿",
+    "nameEn": "Hand Draft Manga",
+    "category": "manga",
+    "summary": "保留创作过程感的草图纸面表达，适合灵感与概念页。",
+    "tags": ["草稿", "概念页", "纸感", "铅笔线"],
+    "visualFeatures": [
+      "铅笔线稿",
+      "辅助结构线",
+      "轻涂灰面",
+      "手作纸感",
+      "未完成留白"
+    ],
+    "promptKeywords": [
+      "manga draft",
+      "pencil sketch",
+      "construction lines",
+      "rough shading",
+      "paper grain",
+      "concept manga"
+    ],
+    "basePrompt": "hand draft manga aesthetic, manga draft, pencil sketch, construction lines, rough shading, paper grain, concept manga, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 线稿太乱导致层级不清, 草图感不足反而像画崩",
+    "useCases": ["灵感看板", "概念展示", "设定说明"],
+    "recommendedRatios": ["4:5", "A4 portrait"],
+    "compatibleStyles": ["half-painterly-character-sheet", "school-romance-vn"],
+    "similarStyles": ["screentone-manga-cover", "seinen-ink-drama"],
+    "bestFor": ["构思展示", "过程感页面", "角色概念草图"],
+    "notRecommendedFor": ["成品宣传图", "强商业封面"],
+    "commonFailurePoints": ["线稿太乱导致层级不清", "草图感不足反而像画崩"],
+    "preview": {
+      "accent": "#d8c5ae",
+      "glow": "#f3e6d7",
+      "surface": "#231d1a",
+      "label": "DRAFT"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 铅笔线稿 和 辅助结构线。",
+      "nanoBanana": "指令中优先写清 灵感看板 的构图约束，再强调避免 线稿太乱导致层级不清。"
+    },
+    "description": "手绘漫画草稿 强调 铅笔线稿、辅助结构线、轻涂灰面。整体属于漫画系路径，适合需要 构思展示、过程感页面 的画面。相比相近风格，它更突出 草稿、概念页、纸感，在 PC 端风格库中能快速形成鲜明识别。偏线稿、分镜、网点与纸面表达的漫画视觉语言。"
+  },
+  {
+    "id": "premium-gacha-illustration",
+    "slug": "premium-gacha-illustration",
+    "nameZh": "高端手游立绘",
+    "nameEn": "Premium Gacha Illustration",
+    "category": "game-illustration",
+    "summary": "高完成度、卖点明确的二游角色立绘体系。",
+    "tags": ["二游", "高完成度", "商业立绘", "高质感"],
+    "visualFeatures": [
+      "材质细节充足",
+      "角色服装层次多",
+      "商业级打光",
+      "高饱和点缀",
+      "卡面姿态明确"
+    ],
+    "promptKeywords": [
+      "gacha illustration",
+      "premium anime render",
+      "luxury costume detail",
+      "hero pose",
+      "commercial lighting",
+      "mobile game key art"
+    ],
+    "basePrompt": "premium gacha illustration aesthetic, gacha illustration, premium anime render, luxury costume detail, hero pose, commercial lighting, mobile game key art, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 服装细节堆叠过多没有主视觉, 材质处理平均导致贵气不足",
+    "useCases": ["角色设定图", "海报", "封面头图"],
+    "recommendedRatios": ["3:4", "2:3"],
+    "compatibleStyles": ["fantasy-rpg-card", "luxury-opera-gothic"],
+    "similarStyles": ["half-painterly-character-sheet", "live2d-lobby-heroine"],
+    "bestFor": ["商业主立绘", "角色卖点展示", "卡面封面"],
+    "notRecommendedFor": ["极简 icon", "轻日常场景"],
+    "commonFailurePoints": [
+      "服装细节堆叠过多没有主视觉",
+      "材质处理平均导致贵气不足"
+    ],
+    "preview": {
+      "accent": "#86ffe2",
+      "glow": "#c2fff0",
+      "surface": "#11272b",
+      "label": "GACHA"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 材质细节充足 和 角色服装层次多。",
+      "nanoBanana": "指令中优先写清 角色设定图 的构图约束，再强调避免 服装细节堆叠过多没有主视觉。"
+    },
+    "description": "高端手游立绘 强调 材质细节充足、角色服装层次多、商业级打光。整体属于游戏立绘路径，适合需要 商业主立绘、角色卖点展示 的画面。相比相近风格，它更突出 二游、高完成度、商业立绘，在 PC 端风格库中能快速形成鲜明识别。角色卖点强、材质明确、适合设定图与商业宣传的立绘体系。"
+  },
+  {
+    "id": "half-painterly-character-sheet",
+    "slug": "half-painterly-character-sheet",
+    "nameZh": "半厚涂角色设定",
+    "nameEn": "Half Painterly Character Sheet",
+    "category": "game-illustration",
+    "summary": "兼顾设定说明和角色氛围的半厚涂设定页。",
+    "tags": ["半厚涂", "设定页", "材质说明", "概念设计"],
+    "visualFeatures": [
+      "半厚涂笔触",
+      "材质解释清楚",
+      "角色转面友好",
+      "设定标签留白",
+      "服装结构清晰"
+    ],
+    "promptKeywords": [
+      "character sheet",
+      "semi painterly anime",
+      "design sheet",
+      "material breakdown",
+      "clean render",
+      "concept presentation"
+    ],
+    "basePrompt": "half painterly character sheet aesthetic, character sheet, semi painterly anime, design sheet, material breakdown, clean render, concept presentation, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 厚涂过重盖掉二次元轮廓, 说明区排布混乱像拼贴",
+    "useCases": ["角色设定图", "概念展示", "团队评审图"],
+    "recommendedRatios": ["4:5", "16:10"],
+    "compatibleStyles": ["hand-draft-manga", "premium-gacha-illustration"],
+    "similarStyles": ["fantasy-rpg-card", "live2d-lobby-heroine"],
+    "bestFor": ["角色设定页", "服装展示", "开发中概念稿"],
+    "notRecommendedFor": ["壁纸氛围图", "纯头像特写"],
+    "commonFailurePoints": ["厚涂过重盖掉二次元轮廓", "说明区排布混乱像拼贴"],
+    "preview": {
+      "accent": "#9cc2ff",
+      "glow": "#d8e6ff",
+      "surface": "#192134",
+      "label": "SHEET"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 半厚涂笔触 和 材质解释清楚。",
+      "nanoBanana": "指令中优先写清 角色设定图 的构图约束，再强调避免 厚涂过重盖掉二次元轮廓。"
+    },
+    "description": "半厚涂角色设定 强调 半厚涂笔触、材质解释清楚、角色转面友好。整体属于游戏立绘路径，适合需要 角色设定页、服装展示 的画面。相比相近风格，它更突出 半厚涂、设定页、材质说明，在 PC 端风格库中能快速形成鲜明识别。角色卖点强、材质明确、适合设定图与商业宣传的立绘体系。"
+  },
+  {
+    "id": "fantasy-rpg-card",
+    "slug": "fantasy-rpg-card",
+    "nameZh": "幻想 RPG 卡牌插画",
+    "nameEn": "Fantasy RPG Card",
+    "category": "game-illustration",
+    "summary": "奇幻装备、法术特效和英雄姿态都服务于卡牌识别。",
+    "tags": ["奇幻", "卡牌", "法术", "英雄姿态"],
+    "visualFeatures": [
+      "法术特效集中",
+      "装备装饰华丽",
+      "强主次轮廓",
+      "戏剧背景",
+      "卡面可读性强"
+    ],
+    "promptKeywords": [
+      "fantasy anime card art",
+      "spell effects",
+      "hero silhouette",
+      "ornate costume",
+      "rpg illustration",
+      "dramatic fantasy background"
+    ],
+    "basePrompt": "fantasy rpg card aesthetic, fantasy anime card art, spell effects, hero silhouette, ornate costume, rpg illustration, dramatic fantasy background, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 特效范围过大把人物吃掉, 装备细节没有主副节奏",
+    "useCases": ["海报", "角色设定图", "卡面头图"],
+    "recommendedRatios": ["3:4", "4:5"],
+    "compatibleStyles": ["theatrical-anime-poster", "xianxia-sword-maiden"],
+    "similarStyles": ["premium-gacha-illustration", "gothic-cathedral-anime"],
+    "bestFor": ["奇幻角色", "卡面插画", "技能主题封面"],
+    "notRecommendedFor": ["低饱和日常", "超简洁品牌页"],
+    "commonFailurePoints": ["特效范围过大把人物吃掉", "装备细节没有主副节奏"],
+    "preview": {
+      "accent": "#d0a6ff",
+      "glow": "#ead7ff",
+      "surface": "#26183a",
+      "label": "RPG"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 法术特效集中 和 装备装饰华丽。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 特效范围过大把人物吃掉。"
+    },
+    "description": "幻想 RPG 卡牌插画 强调 法术特效集中、装备装饰华丽、强主次轮廓。整体属于游戏立绘路径，适合需要 奇幻角色、卡面插画 的画面。相比相近风格，它更突出 奇幻、卡牌、法术，在 PC 端风格库中能快速形成鲜明识别。角色卖点强、材质明确、适合设定图与商业宣传的立绘体系。"
+  },
+  {
+    "id": "live2d-lobby-heroine",
+    "slug": "live2d-lobby-heroine",
+    "nameZh": "看板娘大厅立绘",
+    "nameEn": "Live2D Lobby Heroine",
+    "category": "game-illustration",
+    "summary": "适合游戏大厅站位的可交互看板娘视觉。",
+    "tags": ["看板娘", "大厅立绘", "Live2D 感", "互动"],
+    "visualFeatures": [
+      "正向站姿",
+      "前景留白",
+      "细节集中在上半身",
+      "亲和微表情",
+      "屏幕中心适配"
+    ],
+    "promptKeywords": [
+      "lobby heroine",
+      "live2d-ready anime",
+      "front-facing pose",
+      "interactive game character",
+      "clean center composition",
+      "anime UI character"
+    ],
+    "basePrompt": "live2d lobby heroine aesthetic, lobby heroine, live2d-ready anime, front-facing pose, interactive game character, clean center composition, anime UI character, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 肢体动作过大不适合 UI 站位, 背景元素太多削弱亲和度",
+    "useCases": ["角色设定图", "海报", "公众号封面"],
+    "recommendedRatios": ["9:16", "3:4"],
+    "compatibleStyles": ["school-romance-vn", "urban-fashion-webtoon"],
+    "similarStyles": ["premium-gacha-illustration", "chibi-idol-mascot"],
+    "bestFor": ["大厅角色", "半身互动角色", "UI 中心位角色"],
+    "notRecommendedFor": ["群像史诗图", "超宽场景图"],
+    "commonFailurePoints": [
+      "肢体动作过大不适合 UI 站位",
+      "背景元素太多削弱角色亲和度"
+    ],
+    "preview": {
+      "accent": "#75f8c8",
+      "glow": "#c9ffec",
+      "surface": "#122e29",
+      "label": "LOBBY"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 正向站姿 和 前景留白。",
+      "nanoBanana": "指令中优先写清 角色设定图 的构图约束，再强调避免 肢体动作过大不适合 UI 站位。"
+    },
+    "description": "看板娘大厅立绘 强调 正向站姿、前景留白、细节集中在上半身。整体属于游戏立绘路径，适合需要 大厅角色、半身互动角色 的画面。相比相近风格，它更突出 看板娘、大厅立绘、Live2D 感，在 PC 端风格库中能快速形成鲜明识别。角色卖点强、材质明确、适合设定图与商业宣传的立绘体系。"
+  },
+  {
+    "id": "mecha-hangar-anime",
+    "slug": "mecha-hangar-anime",
+    "nameZh": "机甲机库动漫",
+    "nameEn": "Mecha Hangar Anime",
+    "category": "game-illustration",
+    "summary": "工业结构和冷光反射主导的机甲题材插画。",
+    "tags": ["机甲", "工业", "金属", "科幻"],
+    "visualFeatures": [
+      "机甲块面明确",
+      "工业灯带",
+      "冷色金属反光",
+      "仓库纵深",
+      "技术感 HUD 元素"
+    ],
+    "promptKeywords": [
+      "anime mecha hangar",
+      "industrial lighting",
+      "metal reflections",
+      "giant robot",
+      "tech hud",
+      "sci-fi maintenance bay"
+    ],
+    "basePrompt": "mecha hangar anime aesthetic, anime mecha hangar, industrial lighting, metal reflections, giant robot, tech hud, sci-fi maintenance bay, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 金属面太平像塑料, 背景结构复杂但缺少焦点",
+    "useCases": ["桌面壁纸", "海报", "概念展示"],
+    "recommendedRatios": ["16:9", "21:9"],
+    "compatibleStyles": ["neon-city-anime", "digital-space-idol"],
+    "similarStyles": ["shonen-impact-manga", "hologram-fashion-lab"],
+    "bestFor": ["机甲题材", "宽屏海报", "科幻概念页"],
+    "notRecommendedFor": ["萌系头像", "柔光恋爱图"],
+    "commonFailurePoints": ["金属面太平像塑料", "背景结构复杂但缺少焦点"],
+    "preview": {
+      "accent": "#7cb4ff",
+      "glow": "#b9d7ff",
+      "surface": "#121a27",
+      "label": "MECHA"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 机甲块面明确 和 工业灯带。",
+      "nanoBanana": "指令中优先写清 桌面壁纸 的构图约束，再强调避免 金属面太平像塑料。"
+    },
+    "description": "机甲机库动漫 强调 机甲块面明确、工业灯带、冷色金属反光。整体属于游戏立绘路径，适合需要 机甲题材、宽屏海报 的画面。相比相近风格，它更突出 机甲、工业、金属，在 PC 端风格库中能快速形成鲜明识别。角色卖点强、材质明确、适合设定图与商业宣传的立绘体系。"
+  },
+  {
+    "id": "school-romance-vn",
+    "slug": "school-romance-vn",
+    "nameZh": "校园恋爱视觉小说",
+    "nameEn": "School Romance VN",
+    "category": "visual-novel",
+    "summary": "校园日常背景和温柔角色表演相结合的经典 VN 感。",
+    "tags": ["校园", "恋爱", "VN", "日常"],
+    "visualFeatures": [
+      "柔和室外光",
+      "校园环境细节",
+      "角色站位正面",
+      "对话场景构图",
+      "清爽肤色"
+    ],
+    "promptKeywords": [
+      "visual novel",
+      "school romance anime",
+      "front character pose",
+      "campus background",
+      "dialogue scene",
+      "gentle daylight"
+    ],
+    "basePrompt": "school romance vn aesthetic, visual novel, school romance anime, front character pose, campus background, dialogue scene, gentle daylight, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 背景像素材图与不融合, 站姿过僵缺少对话感",
+    "useCases": ["角色设定图", "海报", "封面头图"],
+    "recommendedRatios": ["16:9", "3:4"],
+    "compatibleStyles": ["shojo-sparkle-manga", "live2d-lobby-heroine"],
+    "similarStyles": ["healing-visual-novel", "tv-cut-anime-frame"],
+    "bestFor": ["剧情封面", "恋爱视觉页", "校园角色展示"],
+    "notRecommendedFor": ["暗黑悬疑海报", "极简 icon"],
+    "commonFailurePoints": [
+      "背景像素材图与角色不融合",
+      "角色站姿过僵缺少对话感"
+    ],
+    "preview": {
+      "accent": "#ffb3b8",
+      "glow": "#ffe0e3",
+      "surface": "#2b1a24",
+      "label": "VN"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 柔和室外光 和 校园环境细节。",
+      "nanoBanana": "指令中优先写清 角色设定图 的构图约束，再强调避免 背景像素材图与角色不融合。"
+    },
+    "description": "校园恋爱视觉小说 强调 柔和室外光、校园环境细节、角色站位正面。整体属于视觉小说路径，适合需要 剧情封面、恋爱视觉页 的画面。相比相近风格，它更突出 校园、恋爱、VN，在 PC 端风格库中能快速形成鲜明识别。角色表演和氛围背景并重，适合剧情化场景与对话界面。"
+  },
+  {
+    "id": "mystery-vn-noir",
+    "slug": "mystery-vn-noir",
+    "nameZh": "悬疑视觉小说",
+    "nameEn": "Mystery VN Noir",
+    "category": "visual-novel",
+    "summary": "偏冷色、强阴影和室内悬疑氛围的 VN 表现。",
+    "tags": ["悬疑", "冷色", "VN", "室内对峙"],
+    "visualFeatures": [
+      "室内冷蓝光",
+      "窗外背光",
+      "角色半身对峙",
+      "信息点藏在背景",
+      "压抑静态构图"
+    ],
+    "promptKeywords": [
+      "mystery visual novel",
+      "anime noir room",
+      "cold blue light",
+      "detective anime",
+      "tense dialogue shot",
+      "suspense composition"
+    ],
+    "basePrompt": "mystery vn noir aesthetic, mystery visual novel, anime noir room, cold blue light, detective anime, tense dialogue shot, suspense composition, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 线索元素太显眼失去悬疑感, 冷色覆盖过头让肤色发灰",
+    "useCases": ["海报", "故事封面", "桌面壁纸"],
+    "recommendedRatios": ["16:9", "4:5"],
+    "compatibleStyles": ["seinen-ink-drama", "gothic-cathedral-anime"],
+    "similarStyles": ["school-romance-vn", "moonlit-reverie-anime"],
+    "bestFor": ["悬疑剧情图", "推理封面", "对峙场景"],
+    "notRecommendedFor": ["可爱贴纸", "明快节庆图"],
+    "commonFailurePoints": [
+      "线索元素太显眼失去悬疑感",
+      "冷色覆盖过头让肤色发灰"
+    ],
+    "preview": {
+      "accent": "#89a8ff",
+      "glow": "#cad8ff",
+      "surface": "#141928",
+      "label": "MYST"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 室内冷蓝光 和 窗外背光。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 线索元素太显眼失去悬疑感。"
+    },
+    "description": "悬疑视觉小说 强调 室内冷蓝光、窗外背光、角色半身对峙。整体属于视觉小说路径，适合需要 悬疑剧情图、推理封面 的画面。相比相近风格，它更突出 悬疑、冷色、VN，在 PC 端风格库中能快速形成鲜明识别。角色表演和氛围背景并重，适合剧情化场景与对话界面。"
+  },
+  {
+    "id": "healing-visual-novel",
+    "slug": "healing-visual-novel",
+    "nameZh": "治愈系视觉小说",
+    "nameEn": "Healing Visual Novel",
+    "category": "visual-novel",
+    "summary": "偏暖色、安静留白和温柔室内细节的治愈向 VN 风格。",
+    "tags": ["治愈", "暖光", "VN", "室内"],
+    "visualFeatures": [
+      "暖色窗光",
+      "房间生活细节",
+      "柔雾边缘",
+      "角色轻表情",
+      "低压力构图"
+    ],
+    "promptKeywords": [
+      "healing visual novel",
+      "cozy anime room",
+      "soft sunbeam",
+      "gentle character expression",
+      "slice of life vn",
+      "quiet interior"
+    ],
+    "basePrompt": "healing visual novel aesthetic, healing visual novel, cozy anime room, soft sunbeam, gentle character expression, slice of life vn, quiet interior, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 暖雾过重让物体边界发虚, 室内摆件太乱抢掉",
+    "useCases": ["桌面壁纸", "封面头图", "灵感看板"],
+    "recommendedRatios": ["16:9", "4:3"],
+    "compatibleStyles": ["soft-healing-room", "watercolor-dream-anime"],
+    "similarStyles": ["school-romance-vn", "healing-cloudscape-anime"],
+    "bestFor": ["舒缓场景", "室内氛围页", "背景+角色组合"],
+    "notRecommendedFor": ["高冲突战斗图", "高密度商业卡面"],
+    "commonFailurePoints": ["暖雾过重让物体边界发虚", "室内摆件太乱抢掉主体"],
+    "preview": {
+      "accent": "#ffc991",
+      "glow": "#ffe5c6",
+      "surface": "#2a2018",
+      "label": "COZY"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 暖色窗光 和 房间生活细节。",
+      "nanoBanana": "指令中优先写清 桌面壁纸 的构图约束，再强调避免 暖雾过重让物体边界发虚。"
+    },
+    "description": "治愈系视觉小说 强调 暖色窗光、房间生活细节、柔雾边缘。整体属于视觉小说路径，适合需要 舒缓场景、室内氛围页 的画面。相比相近风格，它更突出 治愈、暖光、VN，在 PC 端风格库中能快速形成鲜明识别。角色表演和氛围背景并重，适合剧情化场景与对话界面。"
+  },
+  {
+    "id": "premium-ui-vn-portrait",
+    "slug": "premium-ui-vn-portrait",
+    "nameZh": "高级 UI 角色立绘",
+    "nameEn": "Premium UI VN Portrait",
+    "category": "visual-novel",
+    "summary": "服务于对话 UI 的高精度角色立绘，留白和站位更克制。",
+    "tags": ["UI 立绘", "对话框", "角色立面", "精致"],
+    "visualFeatures": [
+      "角色中心站位",
+      "半身到全身可切换感",
+      "背景控制克制",
+      "头部细节充足",
+      "适配对话框空间"
+    ],
+    "promptKeywords": [
+      "ui portrait anime",
+      "visual novel character portrait",
+      "dialogue UI layout",
+      "clean side space",
+      "premium bust render",
+      "interactive character illustration"
+    ],
+    "basePrompt": "premium ui vn portrait aesthetic, ui portrait anime, visual novel character portrait, dialogue UI layout, clean side space, premium bust render, interactive character illustration, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 靠边过近导致 UI 空间不足, 细节集中不够让立绘显得廉价",
+    "useCases": ["角色设定图", "海报", "公众号封面"],
+    "recommendedRatios": ["3:4", "9:16"],
+    "compatibleStyles": ["live2d-lobby-heroine", "urban-fashion-webtoon"],
+    "similarStyles": ["school-romance-vn", "premium-gacha-illustration"],
+    "bestFor": ["游戏对话角色", "UI 适配立绘", "半身主视觉"],
+    "notRecommendedFor": ["超宽屏场景", "复杂环境叙事"],
+    "commonFailurePoints": [
+      "角色靠边过近导致 UI 空间不足",
+      "细节集中不够让立绘显得廉价"
+    ],
+    "preview": {
+      "accent": "#9cf7ff",
+      "glow": "#d9fcff",
+      "surface": "#102529",
+      "label": "UI"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 角色中心站位 和 半身到全身可切换感。",
+      "nanoBanana": "指令中优先写清 角色设定图 的构图约束，再强调避免 角色靠边过近导致 UI 空间不足。"
+    },
+    "description": "高级 UI 角色立绘 强调 角色中心站位、半身到全身可切换感、背景控制克制。整体属于视觉小说路径，适合需要 游戏对话角色、UI 适配立绘 的画面。相比相近风格，它更突出 UI 立绘、对话框、角色立面，在 PC 端风格库中能快速形成鲜明识别。角色表演和氛围背景并重，适合剧情化场景与对话界面。"
+  },
+  {
+    "id": "chibi-idol-mascot",
+    "slug": "chibi-idol-mascot",
+    "nameZh": "Q版偶像吉祥物",
+    "nameEn": "Chibi Idol Mascot",
+    "category": "kawaii-chibi",
+    "summary": "头身比夸张、舞台糖果色鲜明的 Q 版偶像风。",
+    "tags": ["Q版", "偶像", "糖果色", "吉祥物"],
+    "visualFeatures": [
+      "大头小身",
+      "糖果高饱和配色",
+      "圆角轮廓",
+      "表情符号化",
+      "舞台闪片点缀"
+    ],
+    "promptKeywords": [
+      "chibi anime",
+      "idol mascot",
+      "cute proportions",
+      "candy colors",
+      "round silhouette",
+      "kawaii sticker look"
+    ],
+    "basePrompt": "chibi idol mascot aesthetic, chibi anime, idol mascot, cute proportions, candy colors, round silhouette, kawaii sticker look, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 颜色过多导致视觉噪声高, 比例不统一让不够可爱",
+    "useCases": ["头像", "表情包", "贴纸"],
+    "recommendedRatios": ["1:1", "3:4"],
+    "compatibleStyles": ["pastel-sticker-pack", "blind-box-vinyl-toy"],
+    "similarStyles": ["plush-mascot-anime", "minimal-line-buddy"],
+    "bestFor": ["贴纸", "表情图", "轻 IP 角色"],
+    "notRecommendedFor": ["史诗场景", "成熟戏剧题材"],
+    "commonFailurePoints": [
+      "颜色过多导致视觉噪声高",
+      "比例不统一让角色不够可爱"
+    ],
+    "preview": {
+      "accent": "#ffde59",
+      "glow": "#fff2b8",
+      "surface": "#281f3f",
+      "label": "CHIBI"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 大头小身 和 糖果高饱和配色。",
+      "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 颜色过多导致视觉噪声高。"
+    },
+    "description": "Q版偶像吉祥物 强调 大头小身、糖果高饱和配色、圆角轮廓。整体属于萌系 / Q版路径，适合需要 贴纸、表情图 的画面。相比相近风格，它更突出 Q版、偶像、糖果色，在 PC 端风格库中能快速形成鲜明识别。圆润、轻量、亲和，适合贴纸、表情包和轻 IP 化表达。"
+  },
+  {
+    "id": "pastel-sticker-pack",
+    "slug": "pastel-sticker-pack",
+    "nameZh": "粉彩贴纸包",
+    "nameEn": "Pastel Sticker Pack",
+    "category": "kawaii-chibi",
+    "summary": "轮廓干净、信息轻量、适合一组贴纸批量生产。",
+    "tags": ["贴纸", "粉彩", "白边", "裁切友好"],
+    "visualFeatures": [
+      "粗白边",
+      "粉彩底色",
+      "图形化表情",
+      "背景极简",
+      "边界易裁切"
+    ],
+    "promptKeywords": [
+      "anime sticker pack",
+      "pastel kawaii",
+      "clean outline",
+      "white border sticker",
+      "cute expression",
+      "minimal background"
+    ],
+    "basePrompt": "pastel sticker pack aesthetic, anime sticker pack, pastel kawaii, clean outline, white border sticker, cute expression, minimal background, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 白边过薄导致裁切感差, 表情不够夸张失去贴纸价值",
+    "useCases": ["贴纸", "表情包", "小红书封面"],
+    "recommendedRatios": ["1:1", "4:5"],
+    "compatibleStyles": ["chibi-idol-mascot", "soft-gummy-character"],
+    "similarStyles": ["minimal-line-buddy", "plush-mascot-anime"],
+    "bestFor": ["贴纸合集", "轻运营物料", "社交表情包"],
+    "notRecommendedFor": ["厚重背景海报", "写实材质展示"],
+    "commonFailurePoints": ["白边过薄导致裁切感差", "表情不够夸张失去贴纸价值"],
+    "preview": {
+      "accent": "#bda8ff",
+      "glow": "#e4dbff",
+      "surface": "#231a35",
+      "label": "PACK"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 粗白边 和 粉彩底色。",
+      "nanoBanana": "指令中优先写清 贴纸 的构图约束，再强调避免 白边过薄导致裁切感差。"
+    },
+    "description": "粉彩贴纸包 强调 粗白边、粉彩底色、图形化表情。整体属于萌系 / Q版路径，适合需要 贴纸合集、轻运营物料 的画面。相比相近风格，它更突出 贴纸、粉彩、白边，在 PC 端风格库中能快速形成鲜明识别。圆润、轻量、亲和，适合贴纸、表情包和轻 IP 化表达。"
+  },
+  {
+    "id": "plush-mascot-anime",
+    "slug": "plush-mascot-anime",
+    "nameZh": "毛绒吉祥物二次元",
+    "nameEn": "Plush Mascot Anime",
+    "category": "kawaii-chibi",
+    "summary": "把毛绒材质和圆润比例结合到二维角色 IP 中。",
+    "tags": ["毛绒", "IP", "柔软", "吉祥物"],
+    "visualFeatures": [
+      "软糯毛边",
+      "圆润头部轮廓",
+      "低攻击性表情",
+      "暖色柔光",
+      "玩偶材质感"
+    ],
+    "promptKeywords": [
+      "plush mascot anime",
+      "soft texture",
+      "rounded silhouette",
+      "cute mascot",
+      "warm pastel light",
+      "toy-like anime"
+    ],
+    "basePrompt": "plush mascot anime aesthetic, plush mascot anime, soft texture, rounded silhouette, cute mascot, warm pastel light, toy-like anime, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 毛绒质感太弱像普通 Q 版, 边缘蓬松过度变脏",
+    "useCases": ["头像", "贴纸", "公众号封面"],
+    "recommendedRatios": ["1:1", "3:4"],
+    "compatibleStyles": ["plush-anime-render", "pastel-sticker-pack"],
+    "similarStyles": ["chibi-idol-mascot", "soft-gummy-character"],
+    "bestFor": ["IP 角色", "品牌 mascot", "温和治愈小图"],
+    "notRecommendedFor": ["硬核机甲", "高冲突剧情图"],
+    "commonFailurePoints": ["毛绒质感太弱像普通 Q 版", "边缘蓬松过度变脏"],
+    "preview": {
+      "accent": "#ffd28d",
+      "glow": "#ffebc5",
+      "surface": "#2a1f17",
+      "label": "PLUSH"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 软糯毛边 和 圆润头部轮廓。",
+      "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 毛绒质感太弱像普通 Q 版。"
+    },
+    "description": "毛绒吉祥物二次元 强调 软糯毛边、圆润头部轮廓、低攻击性表情。整体属于萌系 / Q版路径，适合需要 IP 角色、品牌 mascot 的画面。相比相近风格，它更突出 毛绒、IP、柔软，在 PC 端风格库中能快速形成鲜明识别。圆润、轻量、亲和，适合贴纸、表情包和轻 IP 化表达。"
+  },
+  {
+    "id": "minimal-line-buddy",
+    "slug": "minimal-line-buddy",
+    "nameZh": "极简萌系伙伴",
+    "nameEn": "Minimal Line Buddy",
+    "category": "kawaii-chibi",
+    "summary": "减少信息密度，以线条和体块关系维持可爱度。",
+    "tags": ["极简", "伙伴角色", "纯色", "图标感"],
+    "visualFeatures": [
+      "极简线稿",
+      "大面积纯色",
+      "低细节五官",
+      "留白背景",
+      "图标级轮廓"
+    ],
+    "promptKeywords": [
+      "minimal kawaii anime",
+      "simple mascot",
+      "flat color",
+      "clean silhouette",
+      "cute icon character",
+      "reduced detail"
+    ],
+    "basePrompt": "minimal line buddy aesthetic, minimal kawaii anime, simple mascot, flat color, clean silhouette, cute icon character, reduced detail, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 极简过头导致没记忆点, 纯色块比例失衡导致不耐看",
+    "useCases": ["头像", "贴纸", "公众号封面"],
+    "recommendedRatios": ["1:1", "4:5"],
+    "compatibleStyles": ["pastel-sticker-pack", "blind-box-vinyl-toy"],
+    "similarStyles": ["chibi-idol-mascot", "soft-gummy-character"],
+    "bestFor": ["头像图标", "轻量品牌角标", "极简萌系角色"],
+    "notRecommendedFor": ["高细节立绘", "复杂场景海报"],
+    "commonFailurePoints": [
+      "极简过头导致角色没记忆点",
+      "纯色块比例失衡导致不耐看"
+    ],
+    "preview": {
+      "accent": "#8ef2ff",
+      "glow": "#d2fbff",
+      "surface": "#16272d",
+      "label": "MINI"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 极简线稿 和 大面积纯色。",
+      "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 极简过头导致角色没记忆点。"
+    },
+    "description": "极简萌系伙伴 强调 极简线稿、大面积纯色、低细节五官。整体属于萌系 / Q版路径，适合需要 头像图标、轻量品牌角标 的画面。相比相近风格，它更突出 极简、伙伴角色、纯色，在 PC 端风格库中能快速形成鲜明识别。圆润、轻量、亲和，适合贴纸、表情包和轻 IP 化表达。"
+  },
+  {
+    "id": "anime-figure-render",
+    "slug": "anime-figure-render",
+    "nameZh": "动漫手办渲染",
+    "nameEn": "Anime Figure Render",
+    "category": "figure-3d-plush",
+    "summary": "突出 PVC 光泽、底座和收藏级摆拍感的手办风格。",
+    "tags": ["手办", "PVC", "收藏感", "展示"],
+    "visualFeatures": [
+      "PVC 高光",
+      "底座展示感",
+      "三维转面清楚",
+      "摄影棚背景",
+      "收藏品打光"
+    ],
+    "promptKeywords": [
+      "anime figure render",
+      "pvc toy gloss",
+      "display base",
+      "studio product light",
+      "collectible anime",
+      "toy photography look"
+    ],
+    "basePrompt": "anime figure render aesthetic, anime figure render, pvc toy gloss, display base, studio product light, collectible anime, toy photography look, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 塑料反光太假像橡胶, 底座存在感不足失去收藏品语境",
+    "useCases": ["海报", "公众号封面", "桌面壁纸"],
+    "recommendedRatios": ["3:4", "4:5"],
+    "compatibleStyles": ["blind-box-vinyl-toy", "premium-gacha-illustration"],
+    "similarStyles": ["nendoroid-showcase", "plush-anime-render"],
+    "bestFor": ["手办展示页", "收藏感角色图", "产品式海报"],
+    "notRecommendedFor": ["平面纸感漫画", "日常背景剧情图"],
+    "commonFailurePoints": [
+      "塑料反光太假像橡胶",
+      "底座存在感不足失去收藏品语境"
+    ],
+    "preview": {
+      "accent": "#c7ffe9",
+      "glow": "#ecfff8",
+      "surface": "#14211d",
+      "label": "FIG"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 PVC 高光 和 底座展示感。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 塑料反光太假像橡胶。"
+    },
+    "description": "动漫手办渲染 强调 PVC 高光、底座展示感、三维转面清楚。整体属于3D / 手办 / 毛绒路径，适合需要 手办展示页、收藏感角色图 的画面。相比相近风格，它更突出 手办、PVC、收藏感，在 PC 端风格库中能快速形成鲜明识别。材质感主导的二次元衍生视觉，强调玩具、毛绒和展示感。"
+  },
+  {
+    "id": "nendoroid-showcase",
+    "slug": "nendoroid-showcase",
+    "nameZh": "黏土人展示风",
+    "nameEn": "Nendoroid Showcase",
+    "category": "figure-3d-plush",
+    "summary": "超短身比例和玩具摄影氛围结合的展示风格。",
+    "tags": ["黏土人", "展示", "玩具摄影", "Q版"],
+    "visualFeatures": [
+      "超大头短身",
+      "光滑玩具面",
+      "盒内展示感",
+      "可替换表情视觉",
+      "简洁工作台背景"
+    ],
+    "promptKeywords": [
+      "nendoroid style",
+      "toy showcase",
+      "smooth plastic finish",
+      "big head small body",
+      "cute collectible",
+      "display shelf"
+    ],
+    "basePrompt": "nendoroid showcase aesthetic, nendoroid style, toy showcase, smooth plastic finish, big head small body, cute collectible, display shelf, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 比例不够统一像普通 3D, 塑料面太哑缺少收藏感",
+    "useCases": ["头像", "贴纸", "封面头图"],
+    "recommendedRatios": ["1:1", "4:5"],
+    "compatibleStyles": ["anime-figure-render", "chibi-idol-mascot"],
+    "similarStyles": ["blind-box-vinyl-toy", "soft-gummy-character"],
+    "bestFor": ["可爱收藏图", "玩具海报", "产品橱窗视觉"],
+    "notRecommendedFor": ["长腿立绘", "现实风景场景"],
+    "commonFailurePoints": ["比例不够统一像普通 3D", "塑料面太哑缺少收藏感"],
+    "preview": {
+      "accent": "#ffd4ec",
+      "glow": "#fff0f7",
+      "surface": "#2a1722",
+      "label": "NENDO"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 超大头短身 和 光滑玩具面。",
+      "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 比例不够统一像普通 3D。"
+    },
+    "description": "黏土人展示风 强调 超大头短身、光滑玩具面、盒内展示感。整体属于3D / 手办 / 毛绒路径，适合需要 可爱收藏图、玩具海报 的画面。相比相近风格，它更突出 黏土人、展示、玩具摄影，在 PC 端风格库中能快速形成鲜明识别。材质感主导的二次元衍生视觉，强调玩具、毛绒和展示感。"
+  },
+  {
+    "id": "blind-box-vinyl-toy",
+    "slug": "blind-box-vinyl-toy",
+    "nameZh": "盲盒潮玩风",
+    "nameEn": "Blind Box Vinyl Toy",
+    "category": "figure-3d-plush",
+    "summary": "更潮玩、更潮流陈列化的二次元衍生风格。",
+    "tags": ["盲盒", "潮玩", "陈列", "圆润"],
+    "visualFeatures": [
+      "圆润潮玩体块",
+      "低细节但高识别",
+      "盒玩陈列语境",
+      "柔哑光表面",
+      "时尚背景配色"
+    ],
+    "promptKeywords": [
+      "blind box toy",
+      "vinyl anime toy",
+      "designer toy",
+      "rounded body",
+      "collector shelf",
+      "cute fashion object"
+    ],
+    "basePrompt": "blind box vinyl toy aesthetic, blind box toy, vinyl anime toy, designer toy, rounded body, collector shelf, cute fashion object, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 潮玩轮廓不够干净, 背景太写实破坏产品化观感",
+    "useCases": ["海报", "贴纸", "小红书封面"],
+    "recommendedRatios": ["1:1", "4:5"],
+    "compatibleStyles": ["anime-figure-render", "minimal-line-buddy"],
+    "similarStyles": ["nendoroid-showcase", "soft-gummy-character"],
+    "bestFor": ["潮玩品牌视觉", "陈列主题封面", "轻商业运营图"],
+    "notRecommendedFor": ["复杂剧情场景", "高写实角色脸"],
+    "commonFailurePoints": ["潮玩轮廓不够干净", "背景太写实破坏产品化观感"],
+    "preview": {
+      "accent": "#9cf0d0",
+      "glow": "#dcfff2",
+      "surface": "#122522",
+      "label": "BOX"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 圆润潮玩体块 和 低细节但高识别。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 潮玩轮廓不够干净。"
+    },
+    "description": "盲盒潮玩风 强调 圆润潮玩体块、低细节但高识别、盒玩陈列语境。整体属于3D / 手办 / 毛绒路径，适合需要 潮玩品牌视觉、陈列主题封面 的画面。相比相近风格，它更突出 盲盒、潮玩、陈列，在 PC 端风格库中能快速形成鲜明识别。材质感主导的二次元衍生视觉，强调玩具、毛绒和展示感。"
+  },
+  {
+    "id": "plush-anime-render",
+    "slug": "plush-anime-render",
+    "nameZh": "毛绒二次元渲染",
+    "nameEn": "Plush Anime Render",
+    "category": "figure-3d-plush",
+    "summary": "兼具毛绒材质和二次元面部特征的治愈系渲染。",
+    "tags": ["毛绒渲染", "柔光", "玩偶", "治愈"],
+    "visualFeatures": [
+      "软绒毛表面",
+      "圆润体块",
+      "柔和暖色灯",
+      "玩偶式站姿",
+      "眼部保留动漫感"
+    ],
+    "promptKeywords": [
+      "plush anime render",
+      "soft fur toy",
+      "rounded proportions",
+      "warm cozy light",
+      "anime face toy",
+      "cute render"
+    ],
+    "basePrompt": "plush anime render aesthetic, plush anime render, soft fur toy, rounded proportions, warm cozy light, anime face toy, cute render, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 毛绒纤维方向混乱显脏, 五官太平失去动漫精气神",
+    "useCases": ["头像", "桌面壁纸", "品牌封面"],
+    "recommendedRatios": ["1:1", "3:4"],
+    "compatibleStyles": ["plush-mascot-anime", "soft-gummy-character"],
+    "similarStyles": ["anime-figure-render", "nendoroid-showcase"],
+    "bestFor": ["治愈 IP", "桌面收藏图", "柔软风角色展示"],
+    "notRecommendedFor": ["硬金属科幻", "高反差黑白图"],
+    "commonFailurePoints": ["毛绒纤维方向混乱显脏", "五官太平失去动漫精气神"],
+    "preview": {
+      "accent": "#ffca9d",
+      "glow": "#ffe7d0",
+      "surface": "#241a16",
+      "label": "FUR"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 软绒毛表面 和 圆润体块。",
+      "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 毛绒纤维方向混乱显脏。"
+    },
+    "description": "毛绒二次元渲染 强调 软绒毛表面、圆润体块、柔和暖色灯。整体属于3D / 手办 / 毛绒路径，适合需要 治愈 IP、桌面收藏图 的画面。相比相近风格，它更突出 毛绒渲染、柔光、玩偶，在 PC 端风格库中能快速形成鲜明识别。材质感主导的二次元衍生视觉，强调玩具、毛绒和展示感。"
+  },
+  {
+    "id": "soft-gummy-character",
+    "slug": "soft-gummy-character",
+    "nameZh": "软糖质感角色",
+    "nameEn": "Soft Gummy Character",
+    "category": "figure-3d-plush",
+    "summary": "介于玩具和糖果之间的半透明柔软角色材质。",
+    "tags": ["软糖", "果冻质感", "可爱 3D", "糖果色"],
+    "visualFeatures": [
+      "半透明果冻高光",
+      "柔软弹性边缘",
+      "圆润微反射",
+      "糖果调配色",
+      "轻产品摄影背景"
+    ],
+    "promptKeywords": [
+      "gummy anime character",
+      "jelly material",
+      "soft translucent toy",
+      "candy color",
+      "cute 3d mascot",
+      "glossy soft render"
+    ],
+    "basePrompt": "soft gummy character aesthetic, gummy anime character, jelly material, soft translucent toy, candy color, cute 3d mascot, glossy soft render, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 透明度过高像玻璃不是软糖, 高光位置杂乱显廉价",
+    "useCases": ["贴纸", "海报", "封面头图"],
+    "recommendedRatios": ["1:1", "4:5"],
+    "compatibleStyles": ["blind-box-vinyl-toy", "pastel-sticker-pack"],
+    "similarStyles": ["plush-anime-render", "nendoroid-showcase"],
+    "bestFor": ["可爱商业物料", "糖果感品牌视觉", "轻产品化主角"],
+    "notRecommendedFor": ["写实古风", "复杂环境大场景"],
+    "commonFailurePoints": ["透明度过高像玻璃不是软糖", "高光位置杂乱显廉价"],
+    "preview": {
+      "accent": "#f5a9ff",
+      "glow": "#fbd6ff",
+      "surface": "#251631",
+      "label": "GUMMY"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 半透明果冻高光 和 柔软弹性边缘。",
+      "nanoBanana": "指令中优先写清 贴纸 的构图约束，再强调避免 透明度过高像玻璃不是软糖。"
+    },
+    "description": "软糖质感角色 强调 半透明果冻高光、柔软弹性边缘、圆润微反射。整体属于3D / 手办 / 毛绒路径，适合需要 可爱商业物料、糖果感品牌视觉 的画面。相比相近风格，它更突出 软糖、果冻质感、可爱 3D，在 PC 端风格库中能快速形成鲜明识别。材质感主导的二次元衍生视觉，强调玩具、毛绒和展示感。"
+  },
+  {
+    "id": "neon-city-anime",
+    "slug": "neon-city-anime",
+    "nameZh": "霓虹都市动漫",
+    "nameEn": "Neon City Anime",
+    "category": "cyber-sci-fi",
+    "summary": "街区霓虹和未来广告牌塑造的都市赛博动漫氛围。",
+    "tags": ["霓虹", "赛博都市", "夜景", "潮湿地面"],
+    "visualFeatures": [
+      "霓虹反射",
+      "未来广告牌",
+      "夜间冷暖对撞",
+      "高空街区层次",
+      "潮湿路面"
+    ],
+    "promptKeywords": [
+      "neon anime city",
+      "cyberpunk streets",
+      "wet asphalt",
+      "future signage",
+      "night reflections",
+      "anime sci-fi skyline"
+    ],
+    "basePrompt": "neon city anime aesthetic, neon anime city, cyberpunk streets, wet asphalt, future signage, night reflections, anime sci-fi skyline, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 霓虹色杂乱导致不突出, 建筑重复度太高像素材拼接",
+    "useCases": ["桌面壁纸", "海报", "封面头图"],
+    "recommendedRatios": ["16:9", "21:9"],
+    "compatibleStyles": ["rainlit-cinematic-anime", "digital-space-idol"],
+    "similarStyles": ["mecha-hangar-anime", "hologram-fashion-lab"],
+    "bestFor": ["赛博壁纸", "城市头图", "未来感氛围页"],
+    "notRecommendedFor": ["极简贴纸", "暖色治愈室内"],
+    "commonFailurePoints": [
+      "霓虹色杂乱导致主体不突出",
+      "建筑重复度太高像素材拼接"
+    ],
+    "preview": {
+      "accent": "#00f0ff",
+      "glow": "#9fffff",
+      "surface": "#111428",
+      "label": "NEON"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 霓虹反射 和 未来广告牌。",
+      "nanoBanana": "指令中优先写清 桌面壁纸 的构图约束，再强调避免 霓虹色杂乱导致主体不突出。"
+    },
+    "description": "霓虹都市动漫 强调 霓虹反射、未来广告牌、夜间冷暖对撞。整体属于赛博 / 科幻路径，适合需要 赛博壁纸、城市头图 的画面。相比相近风格，它更突出 霓虹、赛博都市、夜景，在 PC 端风格库中能快速形成鲜明识别。霓虹、全息、机甲与数字空间的未来动漫表达。"
+  },
+  {
+    "id": "digital-space-idol",
+    "slug": "digital-space-idol",
+    "nameZh": "数字空间偶像",
+    "nameEn": "Digital Space Idol",
+    "category": "cyber-sci-fi",
+    "summary": "以虚拟舞台和数字粒子包装的未来偶像风格。",
+    "tags": ["虚拟偶像", "数字空间", "全息", "舞台"],
+    "visualFeatures": [
+      "全息粒子",
+      "数字舞台",
+      "冷粉双色灯",
+      "透明材质配件",
+      "悬浮界面元素"
+    ],
+    "promptKeywords": [
+      "virtual idol anime",
+      "digital particles",
+      "holographic stage",
+      "futuristic fashion",
+      "cold pink lighting",
+      "cyber pop anime"
+    ],
+    "basePrompt": "digital space idol aesthetic, virtual idol anime, digital particles, holographic stage, futuristic fashion, cold pink lighting, cyber pop anime, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 全息元素太碎让脸部失焦, 服装科技细节堆砌但轮廓不清",
+    "useCases": ["海报", "头像", "小红书封面"],
+    "recommendedRatios": ["4:5", "3:4"],
+    "compatibleStyles": ["neon-city-anime", "high-gloss-webtoon"],
+    "similarStyles": ["hologram-fashion-lab", "premium-gacha-illustration"],
+    "bestFor": ["未来偶像海报", "角色主视觉", "数字舞台感封面"],
+    "notRecommendedFor": ["古风仙侠", "纸质黑白漫画"],
+    "commonFailurePoints": [
+      "全息元素太碎让脸部失焦",
+      "服装科技细节堆砌但轮廓不清"
+    ],
+    "preview": {
+      "accent": "#72d6ff",
+      "glow": "#d8f3ff",
+      "surface": "#142036",
+      "label": "IDOL"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 全息粒子 和 数字舞台。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 全息元素太碎让脸部失焦。"
+    },
+    "description": "数字空间偶像 强调 全息粒子、数字舞台、冷粉双色灯。整体属于赛博 / 科幻路径，适合需要 未来偶像海报、角色主视觉 的画面。相比相近风格，它更突出 虚拟偶像、数字空间、全息，在 PC 端风格库中能快速形成鲜明识别。霓虹、全息、机甲与数字空间的未来动漫表达。"
+  },
+  {
+    "id": "hologram-fashion-lab",
+    "slug": "hologram-fashion-lab",
+    "nameZh": "全息时装实验室",
+    "nameEn": "Hologram Fashion Lab",
+    "category": "cyber-sci-fi",
+    "summary": "更偏时装秀和实验室产品发布感的科幻二次元风。",
+    "tags": ["全息", "时装", "实验室", "高冷"],
+    "visualFeatures": [
+      "透明面板",
+      "硬质高光服饰",
+      "实验室空间",
+      "时装走秀站姿",
+      "冷白蓝光"
+    ],
+    "promptKeywords": [
+      "hologram fashion anime",
+      "futuristic lab",
+      "transparent panels",
+      "runway pose",
+      "cold white glow",
+      "sci-fi couture"
+    ],
+    "basePrompt": "hologram fashion lab aesthetic, hologram fashion anime, futuristic lab, transparent panels, runway pose, cold white glow, sci-fi couture, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 透明材质边界不清像塑料壳, 姿态太平像商品目录",
+    "useCases": ["海报", "封面头图", "角色设定图"],
+    "recommendedRatios": ["4:5", "16:9"],
+    "compatibleStyles": ["digital-space-idol", "urban-fashion-webtoon"],
+    "similarStyles": ["neon-city-anime", "mecha-hangar-anime"],
+    "bestFor": ["时尚科技封面", "角色概念发布图", "高冷未来题材"],
+    "notRecommendedFor": ["温暖治愈风", "Q 版贴纸"],
+    "commonFailurePoints": ["透明材质边界不清像塑料壳", "姿态太平像商品目录"],
+    "preview": {
+      "accent": "#9bf3ff",
+      "glow": "#ecffff",
+      "surface": "#0f1e26",
+      "label": "LAB"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 透明面板 和 硬质高光服饰。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 透明材质边界不清像塑料壳。"
+    },
+    "description": "全息时装实验室 强调 透明面板、硬质高光服饰、实验室空间。整体属于赛博 / 科幻路径，适合需要 时尚科技封面、角色概念发布图 的画面。相比相近风格，它更突出 全息、时装、实验室，在 PC 端风格库中能快速形成鲜明识别。霓虹、全息、机甲与数字空间的未来动漫表达。"
+  },
+  {
+    "id": "cyber-angel-chorus",
+    "slug": "cyber-angel-chorus",
+    "nameZh": "赛博天使合唱",
+    "nameEn": "Cyber Angel Chorus",
+    "category": "cyber-sci-fi",
+    "summary": "把圣洁光翼与赛博舞台感混合在一起的未来幻想风。",
+    "tags": ["赛博天使", "发光羽翼", "未来幻想", "冷白光"],
+    "visualFeatures": [
+      "发光羽翼结构",
+      "冷白全息边缘",
+      "舞台式纵深",
+      "玻璃材质配件",
+      "神圣与科技混搭"
+    ],
+    "promptKeywords": [
+      "cyber angel anime",
+      "holographic wings",
+      "holy sci-fi stage",
+      "cold white glow",
+      "futuristic halo",
+      "tech fantasy heroine"
+    ],
+    "basePrompt": "cyber angel chorus aesthetic, cyber angel anime, holographic wings, holy sci-fi stage, cold white glow, futuristic halo, tech fantasy heroine, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 羽翼结构太碎像粒子噪声, 神圣元素和科技元素比例失衡",
+    "useCases": ["海报", "角色设定图", "桌面壁纸"],
+    "recommendedRatios": ["2:3", "16:9"],
+    "compatibleStyles": ["digital-space-idol", "gothic-cathedral-anime"],
+    "similarStyles": ["hologram-fashion-lab", "black-gold-witchcore"],
+    "bestFor": ["幻想科技主视觉", "舞台感角色海报", "未来宗教感封面"],
+    "notRecommendedFor": ["极简贴纸", "写意水墨场景"],
+    "commonFailurePoints": [
+      "羽翼结构太碎像粒子噪声",
+      "神圣元素和科技元素比例失衡"
+    ],
+    "preview": {
+      "accent": "#c4fbff",
+      "glow": "#f0ffff",
+      "surface": "#111b29",
+      "label": "ANGEL"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 发光羽翼结构 和 冷白全息边缘。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 羽翼结构太碎像粒子噪声。"
+    },
+    "description": "赛博天使合唱 强调 发光羽翼结构、冷白全息边缘、舞台式纵深。整体属于赛博 / 科幻路径，适合需要 幻想科技主视觉、舞台感角色海报 的画面。相比相近风格，它更突出 赛博天使、发光羽翼、未来幻想，在 PC 端风格库中能快速形成鲜明识别。霓虹、全息、机甲与数字空间的未来动漫表达。"
+  },
+  {
+    "id": "black-gold-witchcore",
+    "slug": "black-gold-witchcore",
+    "nameZh": "黑金魔女系",
+    "nameEn": "Black Gold Witchcore",
+    "category": "dark-gothic",
+    "summary": "黑金对比和神秘饰品构成的高贵暗黑风。",
+    "tags": ["黑金", "魔女", "暗黑", "高贵"],
+    "visualFeatures": [
+      "黑金配色",
+      "魔法符号",
+      "高领层叠服装",
+      "暗室烛光",
+      "冷艳面部塑形"
+    ],
+    "promptKeywords": [
+      "witchcore anime",
+      "black gold palette",
+      "occult symbols",
+      "luxury gothic",
+      "candle light",
+      "mystic fashion"
+    ],
+    "basePrompt": "black gold witchcore aesthetic, witchcore anime, black gold palette, occult symbols, luxury gothic, candle light, mystic fashion, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 黑金比例失衡像土豪风, 符号元素太散导致主题不聚焦",
+    "useCases": ["海报", "头像", "封面头图"],
+    "recommendedRatios": ["4:5", "3:4"],
+    "compatibleStyles": [
+      "premium-gacha-illustration",
+      "gothic-cathedral-anime"
+    ],
+    "similarStyles": ["luxury-opera-gothic", "vampire-moon-anime"],
+    "bestFor": ["暗黑角色主视觉", "时装型魔法题材", "高辨识海报"],
+    "notRecommendedFor": ["儿童贴纸", "低对比日常场景"],
+    "commonFailurePoints": [
+      "黑金比例失衡像土豪风",
+      "符号元素太散导致主题不聚焦"
+    ],
+    "preview": {
+      "accent": "#d8ad48",
+      "glow": "#f7e4a8",
+      "surface": "#170f14",
+      "label": "HEX"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 黑金配色 和 魔法符号。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 黑金比例失衡像土豪风。"
+    },
+    "description": "黑金魔女系 强调 黑金配色、魔法符号、高领层叠服装。整体属于暗黑 / 哥特路径，适合需要 暗黑角色主视觉、时装型魔法题材 的画面。相比相近风格，它更突出 黑金、魔女、暗黑，在 PC 端风格库中能快速形成鲜明识别。高对比、宗教感、古堡感与神秘叙事构成的暗色系视觉。"
+  },
+  {
+    "id": "vampire-moon-anime",
+    "slug": "vampire-moon-anime",
+    "nameZh": "月下吸血鬼动漫",
+    "nameEn": "Vampire Moon Anime",
+    "category": "dark-gothic",
+    "summary": "月光、古堡窗影和冷色皮肤塑造的吸血鬼题材风格。",
+    "tags": ["吸血鬼", "月光", "古堡", "暗红"],
+    "visualFeatures": [
+      "冷白月光",
+      "尖窗剪影",
+      "红色点睛",
+      "长披风动态",
+      "苍白肤色"
+    ],
+    "promptKeywords": [
+      "vampire anime",
+      "moonlit gothic",
+      "castle window shadows",
+      "crimson accents",
+      "pale skin",
+      "dramatic cloak"
+    ],
+    "basePrompt": "vampire moon anime aesthetic, vampire anime, moonlit gothic, castle window shadows, crimson accents, pale skin, dramatic cloak, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 红色点缀太多破坏优雅冷感, 月光过亮导致肤色死白",
+    "useCases": ["海报", "桌面壁纸", "头像"],
+    "recommendedRatios": ["2:3", "16:9"],
+    "compatibleStyles": ["mystery-vn-noir", "moonlit-reverie-anime"],
+    "similarStyles": ["black-gold-witchcore", "gothic-cathedral-anime"],
+    "bestFor": ["暗夜题材海报", "冷调角色壁纸", "戏剧特写"],
+    "notRecommendedFor": ["糖果色运营图", "轻量品牌 icon"],
+    "commonFailurePoints": ["红色点缀太多破坏优雅冷感", "月光过亮导致肤色死白"],
+    "preview": {
+      "accent": "#ff6a7f",
+      "glow": "#ffc0cb",
+      "surface": "#171625",
+      "label": "MOON"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 冷白月光 和 尖窗剪影。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 红色点缀太多破坏优雅冷感。"
+    },
+    "description": "月下吸血鬼动漫 强调 冷白月光、尖窗剪影、红色点睛。整体属于暗黑 / 哥特路径，适合需要 暗夜题材海报、冷调角色壁纸 的画面。相比相近风格，它更突出 吸血鬼、月光、古堡，在 PC 端风格库中能快速形成鲜明识别。高对比、宗教感、古堡感与神秘叙事构成的暗色系视觉。"
+  },
+  {
+    "id": "gothic-cathedral-anime",
+    "slug": "gothic-cathedral-anime",
+    "nameZh": "哥特教堂动漫",
+    "nameEn": "Gothic Cathedral Anime",
+    "category": "dark-gothic",
+    "summary": "尖拱建筑和宗教空间感强烈的哥特幻想风。",
+    "tags": ["哥特", "教堂", "仪式感", "建筑"],
+    "visualFeatures": [
+      "尖拱结构",
+      "彩窗投影",
+      "高纵深圣堂",
+      "庄严冷色空气",
+      "仪式感构图"
+    ],
+    "promptKeywords": [
+      "gothic cathedral anime",
+      "stained glass light",
+      "grand nave",
+      "ritual composition",
+      "holy architecture",
+      "dark fantasy anime"
+    ],
+    "basePrompt": "gothic cathedral anime aesthetic, gothic cathedral anime, stained glass light, grand nave, ritual composition, holy architecture, dark fantasy anime, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 建筑细节过多抢掉, 彩窗光色混乱导致脏",
+    "useCases": ["海报", "桌面壁纸", "封面头图"],
+    "recommendedRatios": ["16:9", "2:3"],
+    "compatibleStyles": ["black-gold-witchcore", "fantasy-rpg-card"],
+    "similarStyles": ["vampire-moon-anime", "luxury-opera-gothic"],
+    "bestFor": ["大场景海报", "暗黑幻想设定", "宗教空间题材"],
+    "notRecommendedFor": ["极简头像", "贴纸运营图"],
+    "commonFailurePoints": ["建筑细节过多抢掉角色", "彩窗光色混乱导致画面脏"],
+    "preview": {
+      "accent": "#92b0ff",
+      "glow": "#dfe8ff",
+      "surface": "#14111f",
+      "label": "CATH"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 尖拱结构 和 彩窗投影。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 建筑细节过多抢掉角色。"
+    },
+    "description": "哥特教堂动漫 强调 尖拱结构、彩窗投影、高纵深圣堂。整体属于暗黑 / 哥特路径，适合需要 大场景海报、暗黑幻想设定 的画面。相比相近风格，它更突出 哥特、教堂、仪式感，在 PC 端风格库中能快速形成鲜明识别。高对比、宗教感、古堡感与神秘叙事构成的暗色系视觉。"
+  },
+  {
+    "id": "luxury-opera-gothic",
+    "slug": "luxury-opera-gothic",
+    "nameZh": "暗黑歌剧奢华风",
+    "nameEn": "Luxury Opera Gothic",
+    "category": "dark-gothic",
+    "summary": "更偏舞台与奢华服饰的暗黑歌剧风格。",
+    "tags": ["歌剧", "奢华", "舞台", "酒红"],
+    "visualFeatures": [
+      "酒红天鹅绒",
+      "金属珠饰",
+      "聚光灯焦点",
+      "奢华台口空间",
+      "高戏剧性姿态"
+    ],
+    "promptKeywords": [
+      "gothic opera anime",
+      "velvet red",
+      "luxury embellishment",
+      "spotlight stage",
+      "dramatic fashion",
+      "dark elegance"
+    ],
+    "basePrompt": "luxury opera gothic aesthetic, gothic opera anime, velvet red, luxury embellishment, spotlight stage, dramatic fashion, dark elegance, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 珠饰细节均匀铺满没有重点, 酒红过多让肤色显脏",
+    "useCases": ["海报", "头像", "封面头图"],
+    "recommendedRatios": ["4:5", "2:3"],
+    "compatibleStyles": ["premium-gacha-illustration", "digital-space-idol"],
+    "similarStyles": ["black-gold-witchcore", "vampire-moon-anime"],
+    "bestFor": ["高戏剧服饰海报", "角色奢华主视觉", "舞台题材封面"],
+    "notRecommendedFor": ["校园日常", "极简 icon"],
+    "commonFailurePoints": ["珠饰细节均匀铺满没有重点", "酒红过多让肤色显脏"],
+    "preview": {
+      "accent": "#c75971",
+      "glow": "#efbcc6",
+      "surface": "#211118",
+      "label": "OPERA"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 酒红天鹅绒 和 金属珠饰。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 珠饰细节均匀铺满没有重点。"
+    },
+    "description": "暗黑歌剧奢华风 强调 酒红天鹅绒、金属珠饰、聚光灯焦点。整体属于暗黑 / 哥特路径，适合需要 高戏剧服饰海报、角色奢华主视觉 的画面。相比相近风格，它更突出 歌剧、奢华、舞台，在 PC 端风格库中能快速形成鲜明识别。高对比、宗教感、古堡感与神秘叙事构成的暗色系视觉。"
+  },
+  {
+    "id": "healing-cloudscape-anime",
+    "slug": "healing-cloudscape-anime",
+    "nameZh": "云海治愈动画",
+    "nameEn": "Healing Cloudscape Anime",
+    "category": "healing-dreamy",
+    "summary": "云层、天光和柔和配色带来的开阔治愈感。",
+    "tags": ["云海", "治愈", "高明度", "开阔"],
+    "visualFeatures": [
+      "大片云海",
+      "蓝白柔光",
+      "轻空气透视",
+      "低对比高明度",
+      "安静构图"
+    ],
+    "promptKeywords": [
+      "healing anime sky",
+      "cloudscape",
+      "soft daylight",
+      "gentle blue white palette",
+      "airy composition",
+      "dreamy anime scene"
+    ],
+    "basePrompt": "healing cloudscape anime aesthetic, healing anime sky, cloudscape, soft daylight, gentle blue white palette, airy composition, dreamy anime scene, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 亮度过高失去层次, 云形过于平均像素材拼接",
+    "useCases": ["桌面壁纸", "手机壁纸", "封面头图"],
+    "recommendedRatios": ["16:9", "9:16"],
+    "compatibleStyles": ["rainlit-cinematic-anime", "healing-visual-novel"],
+    "similarStyles": ["moonlit-reverie-anime", "watercolor-dream-anime"],
+    "bestFor": ["背景壁纸", "舒缓头图", "梦境场景"],
+    "notRecommendedFor": ["暗黑角色海报", "黑白漫画页"],
+    "commonFailurePoints": ["亮度过高失去层次", "云形过于平均像素材拼接"],
+    "preview": {
+      "accent": "#92d8ff",
+      "glow": "#def5ff",
+      "surface": "#14232f",
+      "label": "CLOUD"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 大片云海 和 蓝白柔光。",
+      "nanoBanana": "指令中优先写清 桌面壁纸 的构图约束，再强调避免 亮度过高失去层次。"
+    },
+    "description": "云海治愈动画 强调 大片云海、蓝白柔光、轻空气透视。整体属于治愈 / 梦幻路径，适合需要 背景壁纸、舒缓头图 的画面。相比相近风格，它更突出 云海、治愈、高明度，在 PC 端风格库中能快速形成鲜明识别。柔光、粉雾、梦境气氛与低压情绪的舒缓系画风。"
+  },
+  {
+    "id": "watercolor-dream-anime",
+    "slug": "watercolor-dream-anime",
+    "nameZh": "水彩梦境二次元",
+    "nameEn": "Watercolor Dream Anime",
+    "category": "healing-dreamy",
+    "summary": "水彩扩散和纸面晕染营造的梦境感二次元画风。",
+    "tags": ["水彩", "梦境", "纸感", "粉蓝紫"],
+    "visualFeatures": [
+      "边缘晕染",
+      "纸面肌理",
+      "粉蓝粉紫过渡",
+      "轻线稿",
+      "漂浮感构图"
+    ],
+    "promptKeywords": [
+      "watercolor anime",
+      "paper texture",
+      "soft wash edges",
+      "dreamy pastel",
+      "floating composition",
+      "delicate line art"
+    ],
+    "basePrompt": "watercolor dream anime aesthetic, watercolor anime, paper texture, soft wash edges, dreamy pastel, floating composition, delicate line art, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 晕染太散导致五官糊化, 纸纹过强压制",
+    "useCases": ["海报", "头像", "小红书封面"],
+    "recommendedRatios": ["4:5", "1:1"],
+    "compatibleStyles": ["shojo-sparkle-manga", "healing-visual-novel"],
+    "similarStyles": ["healing-cloudscape-anime", "soft-healing-room"],
+    "bestFor": ["梦境人物图", "柔和封面", "轻文艺主题"],
+    "notRecommendedFor": ["硬边机甲", "超商业产品渲染"],
+    "commonFailurePoints": ["晕染太散导致五官糊化", "纸纹过强压制主体"],
+    "preview": {
+      "accent": "#b8b5ff",
+      "glow": "#e4e3ff",
+      "surface": "#1a1731",
+      "label": "WASH"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 边缘晕染 和 纸面肌理。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 晕染太散导致五官糊化。"
+    },
+    "description": "水彩梦境二次元 强调 边缘晕染、纸面肌理、粉蓝粉紫过渡。整体属于治愈 / 梦幻路径，适合需要 梦境人物图、柔和封面 的画面。相比相近风格，它更突出 水彩、梦境、纸感，在 PC 端风格库中能快速形成鲜明识别。柔光、粉雾、梦境气氛与低压情绪的舒缓系画风。"
+  },
+  {
+    "id": "soft-healing-room",
+    "slug": "soft-healing-room",
+    "nameZh": "柔光治愈房间",
+    "nameEn": "Soft Healing Room",
+    "category": "healing-dreamy",
+    "summary": "房间、植物和窗光构成的低压治愈场景。",
+    "tags": ["房间", "治愈", "植物", "窗光"],
+    "visualFeatures": [
+      "窗边柔光",
+      "植物和布艺",
+      "低饱和暖色",
+      "舒适空间层级",
+      "静态生活感"
+    ],
+    "promptKeywords": [
+      "cozy anime room",
+      "soft interior light",
+      "plants and fabric",
+      "low saturation warm tones",
+      "healing space",
+      "quiet lifestyle anime"
+    ],
+    "basePrompt": "soft healing room aesthetic, cozy anime room, soft interior light, plants and fabric, low saturation warm tones, healing space, quiet lifestyle anime, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 摆件太多导致拥堵, 暖光泛黄过度像旧滤镜",
+    "useCases": ["桌面壁纸", "公众号封面", "灵感看板"],
+    "recommendedRatios": ["16:9", "4:3"],
+    "compatibleStyles": ["healing-visual-novel", "school-romance-vn"],
+    "similarStyles": ["watercolor-dream-anime", "healing-cloudscape-anime"],
+    "bestFor": ["室内壁纸", "情绪背景", "舒缓氛围图"],
+    "notRecommendedFor": ["群像战斗", "高饱和科幻"],
+    "commonFailurePoints": ["摆件太多导致画面拥堵", "暖光泛黄过度像旧滤镜"],
+    "preview": {
+      "accent": "#ffd8a1",
+      "glow": "#fff0d6",
+      "surface": "#241f1a",
+      "label": "ROOM"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 窗边柔光 和 植物和布艺。",
+      "nanoBanana": "指令中优先写清 桌面壁纸 的构图约束，再强调避免 摆件太多导致画面拥堵。"
+    },
+    "description": "柔光治愈房间 强调 窗边柔光、植物和布艺、低饱和暖色。整体属于治愈 / 梦幻路径，适合需要 室内壁纸、情绪背景 的画面。相比相近风格，它更突出 房间、治愈、植物，在 PC 端风格库中能快速形成鲜明识别。柔光、粉雾、梦境气氛与低压情绪的舒缓系画风。"
+  },
+  {
+    "id": "moonlit-reverie-anime",
+    "slug": "moonlit-reverie-anime",
+    "nameZh": "月下梦游二次元",
+    "nameEn": "Moonlit Reverie Anime",
+    "category": "healing-dreamy",
+    "summary": "月色、轻风和低饱和蓝紫交织出的宁静夜梦感。",
+    "tags": ["月光", "夜梦", "蓝紫", "安静"],
+    "visualFeatures": [
+      "蓝紫月光",
+      "轻纱云层",
+      "安静留白",
+      "夜间微亮主体",
+      "空气感边缘"
+    ],
+    "promptKeywords": [
+      "moonlit anime",
+      "dreamy night",
+      "lavender blue glow",
+      "quiet composition",
+      "soft wind",
+      "reverie atmosphere"
+    ],
+    "basePrompt": "moonlit reverie anime aesthetic, moonlit anime, dreamy night, lavender blue glow, quiet composition, soft wind, reverie atmosphere, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 紫色过多变俗气, 月光打点不清导致灰平",
+    "useCases": ["桌面壁纸", "头像", "封面头图"],
+    "recommendedRatios": ["16:9", "1:1"],
+    "compatibleStyles": ["vampire-moon-anime", "healing-cloudscape-anime"],
+    "similarStyles": ["watercolor-dream-anime", "mystery-vn-noir"],
+    "bestFor": ["夜间治愈图", "安静封面", "情绪人物图"],
+    "notRecommendedFor": ["高亮产品图", "强对抗戏剧图"],
+    "commonFailurePoints": ["紫色过多变俗气", "月光打点不清导致画面灰平"],
+    "preview": {
+      "accent": "#9ea3ff",
+      "glow": "#d8dbff",
+      "surface": "#171a2b",
+      "label": "MOOD"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 蓝紫月光 和 轻纱云层。",
+      "nanoBanana": "指令中优先写清 桌面壁纸 的构图约束，再强调避免 紫色过多变俗气。"
+    },
+    "description": "月下梦游二次元 强调 蓝紫月光、轻纱云层、安静留白。整体属于治愈 / 梦幻路径，适合需要 夜间治愈图、安静封面 的画面。相比相近风格，它更突出 月光、夜梦、蓝紫，在 PC 端风格库中能快速形成鲜明识别。柔光、粉雾、梦境气氛与低压情绪的舒缓系画风。"
+  },
+  {
+    "id": "forest-lantern-healing",
+    "slug": "forest-lantern-healing",
+    "nameZh": "森灯治愈幻想",
+    "nameEn": "Forest Lantern Healing",
+    "category": "healing-dreamy",
+    "summary": "树影、灯笼和湿润空气构成的轻幻想治愈场景。",
+    "tags": ["森林", "灯笼", "治愈幻想", "微雾"],
+    "visualFeatures": [
+      "林间微雾",
+      "暖色灯笼点光",
+      "苔藓和木质细节",
+      "低压留白",
+      "夜间柔和景深"
+    ],
+    "promptKeywords": [
+      "healing forest anime",
+      "lantern glow",
+      "misty woodland",
+      "moss details",
+      "cozy fantasy night",
+      "gentle depth"
+    ],
+    "basePrompt": "forest lantern healing aesthetic, healing forest anime, lantern glow, misty woodland, moss details, cozy fantasy night, gentle depth, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 暖光分布太平均失去焦点, 树影细节过乱让场景显脏",
+    "useCases": ["桌面壁纸", "封面头图", "灵感看板"],
+    "recommendedRatios": ["16:9", "4:3"],
+    "compatibleStyles": ["soft-healing-room", "ink-wash-spiritscape"],
+    "similarStyles": ["healing-cloudscape-anime", "moonlit-reverie-anime"],
+    "bestFor": ["静谧场景壁纸", "治愈幻想封面", "环境氛围图"],
+    "notRecommendedFor": ["高光时装肖像", "硬边机甲图"],
+    "commonFailurePoints": ["暖光分布太平均失去焦点", "树影细节过乱让场景显脏"],
+    "preview": {
+      "accent": "#d9b96f",
+      "glow": "#f7ead0",
+      "surface": "#182117",
+      "label": "FOREST"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 林间微雾 和 暖色灯笼点光。",
+      "nanoBanana": "指令中优先写清 桌面壁纸 的构图约束，再强调避免 暖光分布太平均失去焦点。"
+    },
+    "description": "森灯治愈幻想 强调 林间微雾、暖色灯笼点光、苔藓和木质细节。整体属于治愈 / 梦幻路径，适合需要 静谧场景壁纸、治愈幻想封面 的画面。相比相近风格，它更突出 森林、灯笼、治愈幻想，在 PC 端风格库中能快速形成鲜明识别。柔光、粉雾、梦境气氛与低压情绪的舒缓系画风。"
+  },
+  {
+    "id": "xianxia-sword-maiden",
+    "slug": "xianxia-sword-maiden",
+    "nameZh": "仙侠执剑少女",
+    "nameEn": "Xianxia Sword Maiden",
+    "category": "chinese-anime",
+    "summary": "仙侠服饰、山水云雾与侠气姿态共存的国风二次元。",
+    "tags": ["仙侠", "执剑", "山水", "飘带"],
+    "visualFeatures": [
+      "飘带服饰",
+      "山水云雾",
+      "冷暖玉色点缀",
+      "剑器高光",
+      "仙侠站姿"
+    ],
+    "promptKeywords": [
+      "xianxia anime",
+      "sword maiden",
+      "flowing ribbons",
+      "misty mountains",
+      "jade accents",
+      "eastern fantasy heroine"
+    ],
+    "basePrompt": "xianxia sword maiden aesthetic, xianxia anime, sword maiden, flowing ribbons, misty mountains, jade accents, eastern fantasy heroine, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 服装元素乱堆没有形体主线, 云雾太厚导致人物漂浮",
+    "useCases": ["海报", "角色设定图", "桌面壁纸"],
+    "recommendedRatios": ["2:3", "16:9"],
+    "compatibleStyles": ["fantasy-rpg-card", "ink-wash-spiritscape"],
+    "similarStyles": ["neo-guochao-anime", "palace-fantasy-portrait"],
+    "bestFor": ["仙侠主角海报", "东方幻想封面", "国风立绘"],
+    "notRecommendedFor": ["现代都市漫画", "贴纸表情包"],
+    "commonFailurePoints": ["服装元素乱堆没有形体主线", "云雾太厚导致人物漂浮"],
+    "preview": {
+      "accent": "#88f3d3",
+      "glow": "#d6fff2",
+      "surface": "#10231f",
+      "label": "XIAN"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 飘带服饰 和 山水云雾。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 服装元素乱堆没有形体主线。"
+    },
+    "description": "仙侠执剑少女 强调 飘带服饰、山水云雾、冷暖玉色点缀。整体属于国风二次元路径，适合需要 仙侠主角海报、东方幻想封面 的画面。相比相近风格，它更突出 仙侠、执剑、山水，在 PC 端风格库中能快速形成鲜明识别。新中式、仙侠、水墨与国潮配色驱动的东方幻想表达。"
+  },
+  {
+    "id": "ink-wash-spiritscape",
+    "slug": "ink-wash-spiritscape",
+    "nameZh": "水墨灵境二次元",
+    "nameEn": "Ink Wash Spiritscape",
+    "category": "chinese-anime",
+    "summary": "让水墨留白和灵气山水进入二次元角色环境。",
+    "tags": ["水墨", "留白", "山石", "灵境"],
+    "visualFeatures": [
+      "墨色层次",
+      "留白空间",
+      "山石雾气",
+      "淡彩点色",
+      "写意空间感"
+    ],
+    "promptKeywords": [
+      "ink wash anime",
+      "spirit landscape",
+      "blank space composition",
+      "misty mountains",
+      "washed ink",
+      "eastern fantasy scene"
+    ],
+    "basePrompt": "ink wash spiritscape aesthetic, ink wash anime, spirit landscape, blank space composition, misty mountains, washed ink, eastern fantasy scene, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 墨色太实失去空灵感, 和背景风格断裂",
+    "useCases": ["海报", "桌面壁纸", "封面头图"],
+    "recommendedRatios": ["16:9", "3:4"],
+    "compatibleStyles": ["watercolor-dream-anime", "xianxia-sword-maiden"],
+    "similarStyles": ["neo-guochao-anime", "healing-cloudscape-anime"],
+    "bestFor": ["东方场景图", "意境封面", "长卷感视觉"],
+    "notRecommendedFor": ["高反光 3D 玩具", "高饱和霓虹都市场景"],
+    "commonFailurePoints": ["墨色太实失去空灵感", "角色和背景风格断裂"],
+    "preview": {
+      "accent": "#c7d3dc",
+      "glow": "#eef3f7",
+      "surface": "#1a1e22",
+      "label": "INK"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 墨色层次 和 留白空间。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 墨色太实失去空灵感。"
+    },
+    "description": "水墨灵境二次元 强调 墨色层次、留白空间、山石雾气。整体属于国风二次元路径，适合需要 东方场景图、意境封面 的画面。相比相近风格，它更突出 水墨、留白、山石，在 PC 端风格库中能快速形成鲜明识别。新中式、仙侠、水墨与国潮配色驱动的东方幻想表达。"
+  },
+  {
+    "id": "neo-guochao-anime",
+    "slug": "neo-guochao-anime",
+    "nameZh": "新国潮动漫",
+    "nameEn": "Neo Guochao Anime",
+    "category": "chinese-anime",
+    "summary": "更鲜明的国潮配色和时尚化东方装饰语言。",
+    "tags": ["国潮", "红金", "东方纹样", "时尚"],
+    "visualFeatures": [
+      "红金撞色",
+      "东方纹样",
+      "潮流剪影",
+      "现代发型搭配古风服饰",
+      "品牌感强"
+    ],
+    "promptKeywords": [
+      "guochao anime",
+      "red gold palette",
+      "eastern motifs",
+      "fashion eastern heroine",
+      "modern traditional fusion",
+      "bold cultural design"
+    ],
+    "basePrompt": "neo guochao anime aesthetic, guochao anime, red gold palette, eastern motifs, fashion eastern heroine, modern traditional fusion, bold cultural design, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 红金比例失衡导致俗气, 传统纹样密度过高压住脸部",
+    "useCases": ["海报", "小红书封面", "角色设定图"],
+    "recommendedRatios": ["4:5", "3:4"],
+    "compatibleStyles": ["black-gold-witchcore", "premium-gacha-illustration"],
+    "similarStyles": ["xianxia-sword-maiden", "palace-fantasy-portrait"],
+    "bestFor": ["国潮封面", "节庆主题图", "文化向主视觉"],
+    "notRecommendedFor": ["极简线稿图标", "冷色赛博空间"],
+    "commonFailurePoints": ["红金比例失衡导致俗气", "传统纹样密度过高压住脸部"],
+    "preview": {
+      "accent": "#ff7f4e",
+      "glow": "#ffc8aa",
+      "surface": "#2c1711",
+      "label": "潮"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 红金撞色 和 东方纹样。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 红金比例失衡导致俗气。"
+    },
+    "description": "新国潮动漫 强调 红金撞色、东方纹样、潮流剪影。整体属于国风二次元路径，适合需要 国潮封面、节庆主题图 的画面。相比相近风格，它更突出 国潮、红金、东方纹样，在 PC 端风格库中能快速形成鲜明识别。新中式、仙侠、水墨与国潮配色驱动的东方幻想表达。"
+  },
+  {
+    "id": "palace-fantasy-portrait",
+    "slug": "palace-fantasy-portrait",
+    "nameZh": "宫廷幻想肖像",
+    "nameEn": "Palace Fantasy Portrait",
+    "category": "chinese-anime",
+    "summary": "宫廷礼饰和细腻面部刻画构成的华美国风肖像。",
+    "tags": ["宫廷", "华美", "发饰", "肖像"],
+    "visualFeatures": [
+      "精细发饰",
+      "宫廷纹样",
+      "柔和面部高光",
+      "端正构图",
+      "高贵色彩层次"
+    ],
+    "promptKeywords": [
+      "palace fantasy anime",
+      "ornate hairpieces",
+      "court costume",
+      "regal portrait",
+      "elegant eastern heroine",
+      "refined makeup light"
+    ],
+    "basePrompt": "palace fantasy portrait aesthetic, palace fantasy anime, ornate hairpieces, court costume, regal portrait, elegant eastern heroine, refined makeup light, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 发饰细节均匀堆满没有主次, 妆面高光处理僵硬",
+    "useCases": ["头像", "海报", "封面头图"],
+    "recommendedRatios": ["1:1", "4:5"],
+    "compatibleStyles": ["premium-gacha-illustration", "luxury-opera-gothic"],
+    "similarStyles": ["neo-guochao-anime", "xianxia-sword-maiden"],
+    "bestFor": ["华丽肖像", "古风角色海报", "精致头像"],
+    "notRecommendedFor": ["超宽场景", "玩具化衍生风"],
+    "commonFailurePoints": ["发饰细节均匀堆满没有主次", "妆面高光处理僵硬"],
+    "preview": {
+      "accent": "#ffb47c",
+      "glow": "#ffe1c0",
+      "surface": "#2a180f",
+      "label": "COURT"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 精细发饰 和 宫廷纹样。",
+      "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 发饰细节均匀堆满没有主次。"
+    },
+    "description": "宫廷幻想肖像 强调 精细发饰、宫廷纹样、柔和面部高光。整体属于国风二次元路径，适合需要 华丽肖像、古风角色海报 的画面。相比相近风格，它更突出 宫廷、华美、发饰，在 PC 端风格库中能快速形成鲜明识别。新中式、仙侠、水墨与国潮配色驱动的东方幻想表达。"
+  },
+  {
+    "id": "urban-fashion-webtoon",
+    "slug": "urban-fashion-webtoon",
+    "nameZh": "都市时装韩漫",
+    "nameEn": "Urban Fashion Webtoon",
+    "category": "webtoon",
+    "summary": "服饰造型、清爽肤质和都市背景结合的韩漫主流表达。",
+    "tags": ["都市", "时装", "韩漫", "高光皮肤"],
+    "visualFeatures": [
+      "高光皮肤",
+      "时装搭配突出",
+      "都市背景虚化",
+      "线稿利落",
+      "角色身形修长"
+    ],
+    "promptKeywords": [
+      "urban webtoon",
+      "fashion anime",
+      "glossy skin",
+      "modern city background",
+      "clean line art",
+      "tall proportions"
+    ],
+    "basePrompt": "urban fashion webtoon aesthetic, urban webtoon, fashion anime, glossy skin, modern city background, clean line art, tall proportions, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 皮肤高光太塑料, 服装和背景同色导致人物不跳",
+    "useCases": ["头像", "海报", "小红书封面"],
+    "recommendedRatios": ["4:5", "3:4"],
+    "compatibleStyles": ["premium-ui-vn-portrait", "hologram-fashion-lab"],
+    "similarStyles": ["romance-webtoon", "high-gloss-webtoon"],
+    "bestFor": ["都市人物封面", "时装角色图", "社交媒体角色页"],
+    "notRecommendedFor": ["古风仙侠", "硬核机甲"],
+    "commonFailurePoints": ["皮肤高光太塑料", "服装和背景同色导致人物不跳"],
+    "preview": {
+      "accent": "#7dd3ff",
+      "glow": "#d5f2ff",
+      "surface": "#13222d",
+      "label": "URBAN"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 高光皮肤 和 时装搭配突出。",
+      "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 皮肤高光太塑料。"
+    },
+    "description": "都市时装韩漫 强调 高光皮肤、时装搭配突出、都市背景虚化。整体属于韩漫 Webtoon路径，适合需要 都市人物封面、时装角色图 的画面。相比相近风格，它更突出 都市、时装、韩漫，在 PC 端风格库中能快速形成鲜明识别。高光皮肤、都市时装感与长条漫画节奏鲜明的现代韩漫风格。"
+  },
+  {
+    "id": "romance-webtoon",
+    "slug": "romance-webtoon",
+    "nameZh": "浪漫恋爱韩漫",
+    "nameEn": "Romance Webtoon",
+    "category": "webtoon",
+    "summary": "偏粉雾和亲密镜头的浪漫韩漫表达。",
+    "tags": ["恋爱", "粉雾", "韩漫", "亲密构图"],
+    "visualFeatures": [
+      "粉雾氛围",
+      "细致睫毛和唇色",
+      "亲密双人构图",
+      "柔软高光",
+      "浅景深背景"
+    ],
+    "promptKeywords": [
+      "romance webtoon",
+      "soft pink glow",
+      "couple close-up",
+      "glossy lips",
+      "delicate eyelashes",
+      "webtoon love scene"
+    ],
+    "basePrompt": "romance webtoon aesthetic, romance webtoon, soft pink glow, couple close-up, glossy lips, delicate eyelashes, webtoon love scene, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 皮肤磨皮过度像滤镜图, 双人构图主次关系含糊",
+    "useCases": ["头像", "海报", "封面头图"],
+    "recommendedRatios": ["4:5", "1:1"],
+    "compatibleStyles": ["shojo-sparkle-manga", "school-romance-vn"],
+    "similarStyles": ["urban-fashion-webtoon", "high-gloss-webtoon"],
+    "bestFor": ["恋爱封面", "角色关系图", "温柔近景人像"],
+    "notRecommendedFor": ["战斗主视觉", "黑白网点漫画"],
+    "commonFailurePoints": ["皮肤磨皮过度像滤镜图", "双人构图主次关系含糊"],
+    "preview": {
+      "accent": "#ff94bf",
+      "glow": "#ffd5e8",
+      "surface": "#291723",
+      "label": "LOVE"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 粉雾氛围 和 细致睫毛和唇色。",
+      "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 皮肤磨皮过度像滤镜图。"
+    },
+    "description": "浪漫恋爱韩漫 强调 粉雾氛围、细致睫毛和唇色、亲密双人构图。整体属于韩漫 Webtoon路径，适合需要 恋爱封面、角色关系图 的画面。相比相近风格，它更突出 恋爱、粉雾、韩漫，在 PC 端风格库中能快速形成鲜明识别。高光皮肤、都市时装感与长条漫画节奏鲜明的现代韩漫风格。"
+  },
+  {
+    "id": "high-gloss-webtoon",
+    "slug": "high-gloss-webtoon",
+    "nameZh": "高光质感韩漫",
+    "nameEn": "High Gloss Webtoon",
+    "category": "webtoon",
+    "summary": "强调皮肤、头发和服饰反光质感的精修韩漫风。",
+    "tags": ["高光", "精修", "韩漫", "妆面"],
+    "visualFeatures": [
+      "头发丝高光清晰",
+      "皮肤油亮但平滑",
+      "现代轮廓线",
+      "干净背景",
+      "修饰感妆面"
+    ],
+    "promptKeywords": [
+      "high gloss webtoon",
+      "shiny hair",
+      "smooth skin",
+      "fashion anime portrait",
+      "clean modern line art",
+      "beauty webtoon"
+    ],
+    "basePrompt": "high gloss webtoon aesthetic, high gloss webtoon, shiny hair, smooth skin, fashion anime portrait, clean modern line art, beauty webtoon, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 高光分布不真实像涂油, 五官修饰过头失去个性",
+    "useCases": ["头像", "海报", "小红书封面"],
+    "recommendedRatios": ["1:1", "4:5"],
+    "compatibleStyles": ["urban-fashion-webtoon", "digital-space-idol"],
+    "similarStyles": ["romance-webtoon", "premium-ui-vn-portrait"],
+    "bestFor": ["精修头像", "角色封面", "美型展示图"],
+    "notRecommendedFor": ["粗粝黑白漫画", "朴素室内治愈图"],
+    "commonFailurePoints": ["高光分布不真实像涂油", "五官修饰过头失去个性"],
+    "preview": {
+      "accent": "#8ef7ef",
+      "glow": "#d8fffb",
+      "surface": "#122324",
+      "label": "GLOSS"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 头发丝高光清晰 和 皮肤油亮但平滑。",
+      "nanoBanana": "指令中优先写清 头像 的构图约束，再强调避免 高光分布不真实像涂油。"
+    },
+    "description": "高光质感韩漫 强调 头发丝高光清晰、皮肤油亮但平滑、现代轮廓线。整体属于韩漫 Webtoon路径，适合需要 精修头像、角色封面 的画面。相比相近风格，它更突出 高光、精修、韩漫，在 PC 端风格库中能快速形成鲜明识别。高光皮肤、都市时装感与长条漫画节奏鲜明的现代韩漫风格。"
+  },
+  {
+    "id": "action-webtoon-panel",
+    "slug": "action-webtoon-panel",
+    "nameZh": "动作长条韩漫",
+    "nameEn": "Action Webtoon Panel",
+    "category": "webtoon",
+    "summary": "适合纵向滚动阅读的动作型长条漫画视觉。",
+    "tags": ["动作", "长条", "韩漫", "滚动阅读"],
+    "visualFeatures": [
+      "纵向长构图",
+      "速度残影",
+      "人物切边",
+      "节奏型留白",
+      "高对比动作焦点"
+    ],
+    "promptKeywords": [
+      "action webtoon",
+      "vertical panel",
+      "speed blur",
+      "scrolling composition",
+      "combat focus",
+      "dynamic long frame"
+    ],
+    "basePrompt": "action webtoon panel aesthetic, action webtoon, vertical panel, speed blur, scrolling composition, combat focus, dynamic long frame, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 纵向节奏平均缺少高潮段, 残影和特效重叠让动作看不清",
+    "useCases": ["手机壁纸", "海报", "剧情卡面"],
+    "recommendedRatios": ["9:16", "4:5"],
+    "compatibleStyles": ["shonen-impact-manga", "neon-city-anime"],
+    "similarStyles": ["urban-fashion-webtoon", "high-gloss-webtoon"],
+    "bestFor": ["纵向动作封面", "卷轴式主视觉", "节奏感展示页"],
+    "notRecommendedFor": ["头像近景", "静态治愈室内"],
+    "commonFailurePoints": [
+      "纵向节奏平均缺少高潮段",
+      "残影和特效重叠让动作看不清"
+    ],
+    "preview": {
+      "accent": "#a0ff7b",
+      "glow": "#dcffc8",
+      "surface": "#182514",
+      "label": "SCROLL"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 纵向长构图 和 速度残影。",
+      "nanoBanana": "指令中优先写清 手机壁纸 的构图约束，再强调避免 纵向节奏平均缺少高潮段。"
+    },
+    "description": "动作长条韩漫 强调 纵向长构图、速度残影、人物切边。整体属于韩漫 Webtoon路径，适合需要 纵向动作封面、卷轴式主视觉 的画面。相比相近风格，它更突出 动作、长条、韩漫，在 PC 端风格库中能快速形成鲜明识别。高光皮肤、都市时装感与长条漫画节奏鲜明的现代韩漫风格。"
+  }
+]

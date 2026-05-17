@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "styles:build": "node scripts/build-styles.mjs",
+    "styles:check": "node scripts/build-styles.mjs --check",
+    "build": "node scripts/build-styles.mjs && next build --webpack",
     "start": "next start",
-    "lint": "biome check",
+    "lint": "node scripts/build-styles.mjs --check && biome check",
     "format": "biome format --write"
   },
   "dependencies": {
