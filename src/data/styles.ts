@@ -4,6 +4,7 @@ import generatedStyles from "./generated-styles.json";
 export type StylePreviewImage = {
   id: string;
   src: string;
+  originalSrc: string;
   altZh: string;
   altEn: string;
   label: string;

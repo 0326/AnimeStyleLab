@@ -29,6 +29,8 @@ const { imageSize } = require("next/dist/compiled/image-size");
 const previewAspectRatio = 4 / 3;
 const previewWidth = 1200;
 const previewHeight = 900;
+const optimizedPreviewWidth = 600;
+const optimizedPreviewHeight = 450;
 const previewAspectRatioTolerance = 0.01;
 
 const validCategories = new Set([
@@ -181,6 +183,57 @@ function formatJson(source) {
   }
 
   return result.stdout;
+}
+
+function formatOptimizedFileName(fileName) {
+  return fileName.replace(/\.(png|webp|jpg|jpeg)$/i, ".webp");
+}
+
+function optimizePreviewImage(sourcePath, outputPath) {
+  const cwebpResult = spawnSync(
+    "cwebp",
+    [
+      "-quiet",
+      "-resize",
+      String(optimizedPreviewWidth),
+      String(optimizedPreviewHeight),
+      "-q",
+      "82",
+      sourcePath,
+      "-o",
+      outputPath,
+    ],
+    { encoding: "utf8" },
+  );
+
+  if (cwebpResult.status === 0) {
+    return;
+  }
+
+  const magickResult = spawnSync(
+    "magick",
+    [
+      sourcePath,
+      "-resize",
+      `${optimizedPreviewWidth}x${optimizedPreviewHeight}!`,
+      "-quality",
+      "82",
+      outputPath,
+    ],
+    { encoding: "utf8" },
+  );
+
+  if (magickResult.status !== 0) {
+    throw new Error(
+      [
+        `Failed to optimize "${sourcePath}"`,
+        cwebpResult.stderr,
+        magickResult.stderr,
+      ]
+        .filter(Boolean)
+        .join("\n"),
+    );
+  }
 }
 
 function validateStyle(style, folderName, errors) {
@@ -431,23 +484,28 @@ async function buildPreviewImages(folderName, style, errors) {
     }
 
     const outputDir = path.join(publicPreviewDir, folderName);
-    const outputPath = path.join(outputDir, item.file);
-    const publicPath = `/generated/style-previews/${folderName}/${item.file}`;
+    const optimizedFileName = formatOptimizedFileName(item.file);
+    const originalOutputPath = path.join(outputDir, item.file);
+    const optimizedOutputPath = path.join(outputDir, optimizedFileName);
+    const publicPath = `/generated/style-previews/${folderName}/${optimizedFileName}`;
+    const originalPublicPath = `/generated/style-previews/${folderName}/${item.file}`;
 
     if (!checkOnly) {
       await mkdir(outputDir, { recursive: true });
-      await copyFile(sourcePath, outputPath);
+      await copyFile(sourcePath, originalOutputPath);
+      optimizePreviewImage(sourcePath, optimizedOutputPath);
     }
 
     builtImages.push({
       id: item.id,
       src: publicPath,
+      originalSrc: originalPublicPath,
       altZh: item.altZh.trim(),
       altEn: item.altEn.trim(),
       label: item.label.trim(),
       focus: item.focus.trim(),
-      width: dimensions.width,
-      height: dimensions.height,
+      width: optimizedPreviewWidth,
+      height: optimizedPreviewHeight,
     });
   }
 

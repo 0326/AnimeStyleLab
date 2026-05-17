@@ -49,6 +49,20 @@ export function StyleDetailContent({
             </div>
             <FavoriteButton slug={style.slug} labels={dictionary.actions} />
           </div>
+          <div className="mt-6 grid gap-3 sm:grid-cols-3">
+            <MetricTile
+              label={dictionary.detail.useCases}
+              value={String(style.useCases.length)}
+            />
+            <MetricTile
+              label={dictionary.detail.startingRatios}
+              value={style.recommendedRatios[0]}
+            />
+            <MetricTile
+              label="Preview"
+              value={`${style.previewImages.length}`}
+            />
+          </div>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-[oklch(80%_0.026_226)]">
             {style.description}
           </p>
@@ -133,17 +147,41 @@ export function StyleDetailContent({
             <Link
               key={relatedStyle.slug}
               href={`/styles/${relatedStyle.slug}`}
-              className="panel p-4 transition hover:border-[var(--line-strong)] hover:bg-[var(--surface-strong)]"
+              className="group panel overflow-hidden transition hover:border-[var(--line-strong)] hover:bg-[var(--surface-strong)]"
             >
-              <p className="eyebrow">
-                {locale === "zh" ? relatedStyle.nameEn : relatedStyle.nameZh}
-              </p>
-              <h3 className="mt-2 font-display text-2xl text-white">
-                {locale === "zh" ? relatedStyle.nameZh : relatedStyle.nameEn}
-              </h3>
-              <p className="mt-3 text-sm leading-6 text-[oklch(78%_0.026_226)]">
-                {relatedStyle.summary}
-              </p>
+              <div className="relative aspect-[4/3] overflow-hidden border-b border-[var(--line)] bg-[var(--surface-ink)]">
+                <img
+                  src={relatedStyle.previewImages[0]?.src}
+                  alt={
+                    locale === "zh"
+                      ? (relatedStyle.previewImages[0]?.altZh ??
+                        relatedStyle.nameZh)
+                      : (relatedStyle.previewImages[0]?.altEn ??
+                        relatedStyle.nameEn)
+                  }
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_22%,oklch(8%_0.018_226/0.74)_100%)]" />
+                <div className="absolute right-4 bottom-4 left-4">
+                  <p className="eyebrow">
+                    {locale === "zh"
+                      ? relatedStyle.nameEn
+                      : relatedStyle.nameZh}
+                  </p>
+                  <h3 className="mt-2 font-display text-2xl text-white">
+                    {locale === "zh"
+                      ? relatedStyle.nameZh
+                      : relatedStyle.nameEn}
+                  </h3>
+                </div>
+              </div>
+              <div className="p-4">
+                <p className="text-sm leading-6 text-[oklch(78%_0.026_226)]">
+                  {relatedStyle.summary}
+                </p>
+              </div>
             </Link>
           ))}
         </div>
@@ -191,5 +229,23 @@ function PromptBlock({ eyebrow, title, prompt, notes }: PromptBlockProps) {
         {notes}
       </p>
     </section>
+  );
+}
+
+type MetricTileProps = {
+  label: string;
+  value: string;
+};
+
+function MetricTile({ label, value }: MetricTileProps) {
+  return (
+    <div className="border border-[var(--line)] bg-[var(--surface-ink)] px-4 py-3">
+      <p className="text-[0.68rem] uppercase tracking-[0.12em] text-[oklch(70%_0.026_226)]">
+        {label}
+      </p>
+      <p className="mt-2 font-display text-2xl leading-none text-white">
+        {value}
+      </p>
+    </div>
   );
 }
