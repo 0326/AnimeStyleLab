@@ -68,7 +68,18 @@
       "nanoGuidance": "State the framing and use case early. Keep cel shading, clean color blocks, and readable rim light visible in the final image."
     },
     "description": "高亮赛璐璐 强调 硬朗阴影分层、高亮边缘光、清洁色块。整体属于日系动画路径，适合需要 角色主视觉、封面级立绘 的画面。相比相近风格，它更突出 赛璐璐、主视觉、清透，在 PC 端风格库中能快速形成鲜明识别。清晰轮廓、情绪光影与强烈叙事感并存的动画系画风。",
-    "previewImages": []
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/cel-shine-anime/01-cover.png",
+        "altZh": "高亮赛璐璐风格主预览",
+        "altEn": "Cel Shine Anime primary preview",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ]
   },
   {
     "id": "rainlit-cinematic-anime",
@@ -136,7 +147,18 @@
       "nanoGuidance": "Lead with scene type and framing. Keep wet reflections, readable depth, and visible light sources explicit."
     },
     "description": "雨夜电影感动画 强调 雨幕反光、蓝橙对比、景深空气透视。整体属于日系动画路径，适合需要 剧情感场景、壁纸 的画面。相比相近风格，它更突出 电影感、城市夜景、空气感，在 PC 端风格库中能快速形成鲜明识别。清晰轮廓、情绪光影与强烈叙事感并存的动画系画风。",
-    "previewImages": []
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/rainlit-cinematic-anime/01-cover.png",
+        "altZh": "雨夜电影感动画风格预览1",
+        "altEn": "Rainlit Cinematic Anime preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ]
   },
   {
     "id": "tv-cut-anime-frame",
@@ -710,7 +732,18 @@
       "nanoGuidance": "Lead with hero pose and intended commercial framing. Keep premium render quality and luxury costume detail explicit."
     },
     "description": "高端手游立绘 强调 材质细节充足、角色服装层次多、商业级打光。整体属于游戏立绘路径，适合需要 商业主立绘、角色卖点展示 的画面。相比相近风格，它更突出 二游、高完成度、商业立绘，在 PC 端风格库中能快速形成鲜明识别。角色卖点强、材质明确、适合设定图与商业宣传的立绘体系。",
-    "previewImages": []
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/premium-gacha-illustration/01-cover.png",
+        "altZh": "高端手游立绘风格预览1",
+        "altEn": "Premium Gacha Illustration preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ]
   },
   {
     "id": "half-painterly-character-sheet",
@@ -1758,7 +1791,18 @@
       "nanoGuidance": "State the plush toy look early. Keep soft fur, rounded body volume, and a readable anime face explicit."
     },
     "description": "毛绒二次元渲染 强调 软绒毛表面、圆润体块、柔和暖色灯。整体属于3D / 手办 / 毛绒路径，适合需要 治愈 IP、桌面收藏图 的画面。相比相近风格，它更突出 毛绒渲染、柔光、玩偶，在 PC 端风格库中能快速形成鲜明识别。材质感主导的二次元衍生视觉，强调玩具、毛绒和展示感。",
-    "previewImages": []
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/plush-anime-render/01-cover.png",
+        "altZh": "毛绒二次元渲染风格预览1",
+        "altEn": "Plush Anime Render preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ]
   },
   {
     "id": "soft-gummy-character",
@@ -1894,7 +1938,18 @@
       "nanoGuidance": "Lead with urban night scene framing. Keep wet reflections, billboard glow, and strong silhouette separation explicit."
     },
     "description": "霓虹都市动漫 强调 霓虹反射、未来广告牌、夜间冷暖对撞。整体属于赛博 / 科幻路径，适合需要 赛博壁纸、城市头图 的画面。相比相近风格，它更突出 霓虹、赛博都市、夜景，在 PC 端风格库中能快速形成鲜明识别。霓虹、全息、机甲与数字空间的未来动漫表达。",
-    "previewImages": []
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/neon-city-anime/01-cover.png",
+        "altZh": "霓虹都市动漫风格预览1",
+        "altEn": "Neon City Anime preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ]
   },
   {
     "id": "digital-space-idol",
@@ -2169,7 +2224,18 @@
       "nanoGuidance": "Lead with black-gold styling and portrait framing. Keep the symbol cluster and elegant candle-lit contrast explicit."
     },
     "description": "黑金魔女系 强调 黑金配色、魔法符号、高领层叠服装。整体属于暗黑 / 哥特路径，适合需要 暗黑角色主视觉、时装型魔法题材 的画面。相比相近风格，它更突出 黑金、魔女、暗黑，在 PC 端风格库中能快速形成鲜明识别。高对比、宗教感、古堡感与神秘叙事构成的暗色系视觉。",
-    "previewImages": []
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/black-gold-witchcore/01-cover.png",
+        "altZh": "黑金魔女系风格预览1",
+        "altEn": "Black Gold Witchcore preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ]
   },
   {
     "id": "vampire-moon-anime",
@@ -2745,7 +2811,18 @@
       "nanoGuidance": "Lead with heroic silhouette and Eastern fantasy scene type. Keep ribbon flow, mountain mist, and jade accents explicit."
     },
     "description": "仙侠执剑少女 强调 飘带服饰、山水云雾、冷暖玉色点缀。整体属于国风二次元路径，适合需要 仙侠主角海报、东方幻想封面 的画面。相比相近风格，它更突出 仙侠、执剑、山水，在 PC 端风格库中能快速形成鲜明识别。新中式、仙侠、水墨与国潮配色驱动的东方幻想表达。",
-    "previewImages": []
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/xianxia-sword-maiden/01-cover.png",
+        "altZh": "仙侠执剑少女风格预览1",
+        "altEn": "Xianxia Sword Maiden preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ]
   },
   {
     "id": "ink-wash-spiritscape",
@@ -3008,7 +3085,18 @@
       "nanoGuidance": "Lead with portrait framing and fashion styling. Keep glossy skin, clean line art, and subject-background separation explicit."
     },
     "description": "都市时装韩漫 强调 高光皮肤、时装搭配突出、都市背景虚化。整体属于韩漫 Webtoon路径，适合需要 都市人物封面、时装角色图 的画面。相比相近风格，它更突出 都市、时装、韩漫，在 PC 端风格库中能快速形成鲜明识别。高光皮肤、都市时装感与长条漫画节奏鲜明的现代韩漫风格。",
-    "previewImages": []
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "/generated/style-previews/urban-fashion-webtoon/01-cover.png",
+        "altZh": "都市时装韩漫风格预览1",
+        "altEn": "Urban Fashion Webtoon preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 1200,
+        "height": 900
+      }
+    ]
   },
   {
     "id": "romance-webtoon",

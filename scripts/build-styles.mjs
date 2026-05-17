@@ -310,6 +310,25 @@ async function readPreviewManifest(folderName, errors) {
   }
 }
 
+async function readPreviewDirectoryFiles(folderName) {
+  const previewDir = path.join(contentDir, folderName, "previews");
+
+  try {
+    const entries = await readdir(previewDir, { withFileTypes: true });
+    return entries
+      .filter((entry) => entry.isFile())
+      .map((entry) => entry.name)
+      .filter((fileName) => /\.(png|webp|jpg|jpeg)$/i.test(fileName))
+      .sort((a, b) => a.localeCompare(b));
+  } catch (error) {
+    if (error?.code === "ENOENT") {
+      return [];
+    }
+
+    throw error;
+  }
+}
+
 function validatePreviewManifestItem(item, folderName, errors, ids, files) {
   if (!item || typeof item !== "object") {
     errors.push(`${folderName}: preview entry must be an object`);
@@ -356,13 +375,34 @@ function validatePreviewDimensions(dimensions, folderName, fileName, errors) {
   return true;
 }
 
-async function buildPreviewImages(folderName, errors) {
-  const previewItems = await readPreviewManifest(folderName, errors);
-  if (previewItems.length === 0) {
+function createFallbackPreviewManifest(style, previewFiles) {
+  if (previewFiles.length === 0) {
     return [];
   }
 
-  if (previewItems.length > 6) {
+  return previewFiles.map((fileName, index) => ({
+    id: index === 0 ? "cover" : `preview-${index + 1}`,
+    file: fileName,
+    altZh: `${style.nameZh}风格预览${index + 1}`,
+    altEn: `${style.nameEn} preview ${index + 1}`,
+    label: index === 0 ? "Hero" : `View ${index + 1}`,
+    focus: index === 0 ? "overall-style" : "style-variation",
+  }));
+}
+
+async function buildPreviewImages(folderName, style, errors) {
+  const previewItems = await readPreviewManifest(folderName, errors);
+  const previewFiles = await readPreviewDirectoryFiles(folderName);
+  const normalizedPreviewItems =
+    previewItems.length > 0
+      ? previewItems
+      : createFallbackPreviewManifest(style, previewFiles);
+
+  if (normalizedPreviewItems.length === 0) {
+    return [];
+  }
+
+  if (normalizedPreviewItems.length > 6) {
     errors.push(`${folderName}: previewImages cannot exceed 6 entries`);
   }
 
@@ -370,7 +410,7 @@ async function buildPreviewImages(folderName, errors) {
   const files = new Set();
   const builtImages = [];
 
-  for (const item of previewItems) {
+  for (const item of normalizedPreviewItems) {
     if (!validatePreviewManifestItem(item, folderName, errors, ids, files)) {
       continue;
     }
@@ -425,11 +465,16 @@ async function readStyles(errors) {
     folders.map(async (folderName) => {
       const filePath = path.join(contentDir, folderName, "index.md");
       const source = await readFile(filePath, "utf8");
-      const previewImages = await buildPreviewImages(folderName, errors);
+      const parsedStyle = parseStyleMarkdown(source, filePath);
+      const previewImages = await buildPreviewImages(
+        folderName,
+        parsedStyle,
+        errors,
+      );
       return {
         folderName,
         style: {
-          ...parseStyleMarkdown(source, filePath),
+          ...parsedStyle,
           previewImages,
         },
       };

@@ -23,11 +23,14 @@ export const dictionaries = {
     actions: {
       copy: "Copy",
       copied: "Copied",
+      copyPromptSuccess: "Prompt copied",
       copyBasePrompt: "Copy Base Prompt",
       copyAvoidTerms: "Copy Avoid Terms",
       copyPrompt: "Copy Prompt",
       save: "Save",
       saved: "Saved",
+      savedSuccess: "Saved",
+      removedSuccess: "Removed",
       saveToWorkbench: "Save to Workbench",
     },
     home: {
@@ -171,11 +174,14 @@ export const dictionaries = {
     actions: {
       copy: "复制",
       copied: "已复制",
+      copyPromptSuccess: "复制提示词成功",
       copyBasePrompt: "复制基础提示词",
       copyAvoidTerms: "复制规避词",
       copyPrompt: "复制提示词",
       save: "收藏",
       saved: "已收藏",
+      savedSuccess: "收藏成功",
+      removedSuccess: "已取消收藏",
       saveToWorkbench: "保存到工作台",
     },
     home: {

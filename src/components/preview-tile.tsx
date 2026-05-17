@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import type { ReactNode } from "react";
 
 import type { AnimeStyle } from "@/data/styles";
@@ -12,6 +11,8 @@ type PreviewTileProps = {
   compact?: boolean;
   showRatio?: boolean;
   showNames?: boolean;
+  showFeatureSummary?: boolean;
+  topLeftLabel?: string;
   topRightSlot?: ReactNode;
   bottomSlot?: ReactNode;
 };
@@ -21,6 +22,8 @@ export function PreviewTile({
   compact = false,
   showRatio = true,
   showNames = true,
+  showFeatureSummary = true,
+  topLeftLabel,
   topRightSlot,
   bottomSlot,
 }: PreviewTileProps) {
@@ -44,18 +47,14 @@ export function PreviewTile({
     >
       {coverImage ? (
         <>
-          <Image
+          <img
             src={coverImage.src}
             alt={imageAlt}
             width={coverImage.width}
             height={coverImage.height}
             className="absolute inset-0 h-full w-full object-cover"
-            sizes={
-              compact
-                ? "(min-width: 1536px) 30vw, (min-width: 768px) 50vw, 100vw"
-                : "(min-width: 1280px) 44vw, 100vw"
-            }
-            priority={!compact}
+            loading={compact ? "lazy" : "eager"}
+            decoding="async"
           />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,oklch(8%_0.018_226/0.12)_0%,oklch(8%_0.018_226/0.04)_36%,oklch(8%_0.018_226/0.72)_100%)]" />
           <div className="absolute inset-0 bg-[linear-gradient(90deg,oklch(8%_0.018_226/0.52),transparent_42%)]" />
@@ -73,8 +72,14 @@ export function PreviewTile({
       ) : null}
       <div className="relative flex h-full flex-col justify-between p-5">
         <div className="flex items-start justify-between gap-3">
-          <span className="border border-white/24 bg-[oklch(10%_0.018_226/0.62)] px-2.5 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-white/84">
-            {style.preview.label}
+          <span
+            className={`border border-white/24 bg-[oklch(10%_0.018_226/0.62)] px-2.5 py-1 font-semibold text-white/84 ${
+              topLeftLabel
+                ? "min-w-0 max-w-[78%] break-words text-sm leading-6"
+                : "text-[0.68rem] uppercase tracking-[0.12em]"
+            }`}
+          >
+            {topLeftLabel ?? style.preview.label}
           </span>
           <div className="flex items-start gap-2">
             {style.previewImages.length > 1 ? (
@@ -101,9 +106,11 @@ export function PreviewTile({
               </h3>
             </>
           ) : null}
-          <p className="max-w-sm text-sm leading-6 text-white/78">
-            {style.visualFeatures.slice(0, compact ? 2 : 3).join(" · ")}
-          </p>
+          {showFeatureSummary ? (
+            <p className="max-w-sm text-sm leading-6 text-white/78">
+              {style.visualFeatures.slice(0, compact ? 2 : 3).join(" · ")}
+            </p>
+          ) : null}
         </div>
       </div>
     </div>

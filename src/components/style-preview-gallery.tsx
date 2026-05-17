@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 
 import type { AnimeStyle } from "@/data/styles";
@@ -27,15 +26,15 @@ export function StylePreviewGallery({ style }: StylePreviewGalleryProps) {
   return (
     <section className="space-y-4">
       <div className="relative overflow-hidden border border-[var(--line-strong)] bg-[var(--surface-ink)]">
-        <Image
+        <img
           key={currentImage.src}
           src={currentImage.src}
           alt={currentAlt}
           width={currentImage.width}
           height={currentImage.height}
           className="aspect-[4/3] w-full object-cover"
-          sizes="(min-width: 1280px) 44vw, 100vw"
-          priority
+          loading="eager"
+          decoding="async"
         />
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_0%,transparent_58%,oklch(8%_0.018_226/0.72)_100%)]" />
         <div className="absolute inset-x-0 top-0 flex items-start justify-between gap-3 p-5">
@@ -103,13 +102,14 @@ export function StylePreviewGallery({ style }: StylePreviewGalleryProps) {
                     : "border-[var(--line)] bg-[var(--surface)] hover:border-[var(--line-strong)]"
                 }`}
               >
-                <Image
+                <img
                   src={image.src}
                   alt={alt}
                   width={image.width}
                   height={image.height}
                   className="aspect-[4/3] w-full object-cover transition group-hover:scale-[1.02]"
-                  sizes="(min-width: 1280px) 14vw, 30vw"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="border-t border-[var(--line)] px-3 py-2">
                   <p className="text-[0.68rem] uppercase tracking-[0.12em] text-[oklch(72%_0.03_226)]">

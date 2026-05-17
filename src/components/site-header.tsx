@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { LanguageSwitcher } from "./language-switcher";
 import { useLocale } from "./locale-provider";
 
 export function SiteHeader() {
   const { dictionary } = useLocale();
+  const pathname = usePathname();
   const navItems = [
     { href: "/", label: dictionary.nav.overview },
     { href: "/styles", label: dictionary.nav.styles },
@@ -31,18 +33,43 @@ export function SiteHeader() {
         <div className="flex items-center gap-3">
           <nav className="flex items-center gap-3">
             {navItems.map((item) => (
-              <Link
+              <NavLink
                 key={item.href}
                 href={item.href}
-                className="border border-transparent px-3 py-2 text-sm text-[oklch(82%_0.026_226)] transition hover:border-[var(--line-strong)] hover:bg-[var(--surface)] hover:text-white"
-              >
-                {item.label}
-              </Link>
+                label={item.label}
+                isActive={
+                  item.href === "/"
+                    ? pathname === item.href
+                    : pathname.startsWith(item.href)
+                }
+              />
             ))}
           </nav>
           <LanguageSwitcher />
         </div>
       </div>
     </header>
+  );
+}
+
+type NavLinkProps = {
+  href: string;
+  label: string;
+  isActive: boolean;
+};
+
+function NavLink({ href, label, isActive }: NavLinkProps) {
+  return (
+    <Link
+      href={href}
+      aria-current={isActive ? "page" : undefined}
+      className={`border px-3 py-2 text-sm transition ${
+        isActive
+          ? "border-[var(--accent)] bg-[var(--accent-muted)] text-[var(--accent)]"
+          : "border-transparent text-[oklch(82%_0.026_226)] hover:border-[var(--line-strong)] hover:bg-[var(--surface)] hover:text-white"
+      }`}
+    >
+      {label}
+    </Link>
   );
 }

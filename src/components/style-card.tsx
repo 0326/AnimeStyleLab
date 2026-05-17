@@ -14,7 +14,8 @@ type StyleCardProps = {
 };
 
 export function StyleCard({ style }: StyleCardProps) {
-  const { dictionary } = useLocale();
+  const { dictionary, locale } = useLocale();
+  const styleName = locale === "zh" ? style.nameZh : style.nameEn;
 
   return (
     <article className="overflow-hidden border border-[var(--line)] bg-[var(--surface)] transition hover:border-[var(--line-strong)]">
@@ -23,25 +24,8 @@ export function StyleCard({ style }: StyleCardProps) {
         compact
         showRatio={false}
         showNames={false}
-        topRightSlot={
-          <FavoriteButton
-            slug={style.slug}
-            labels={dictionary.actions}
-            compact
-          />
-        }
-        bottomSlot={
-          <div className="flex flex-wrap gap-2">
-            {style.tags.slice(0, 4).map((tag) => (
-              <span
-                key={tag}
-                className="border border-white/16 bg-[oklch(10%_0.018_226/0.62)] px-2.5 py-1 text-xs text-white/88"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        }
+        showFeatureSummary={false}
+        topLeftLabel={styleName}
       />
       <div className="space-y-4 border-t border-[var(--line)] p-5">
         <div className="space-y-2">
@@ -49,15 +33,24 @@ export function StyleCard({ style }: StyleCardProps) {
             {style.summary}
           </p>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center justify-between gap-4">
           <Link href={`/styles/${style.slug}`} className="button-primary">
             {dictionary.styles.viewStyle}
           </Link>
-          <CopyButton
-            value={style.basePrompt}
-            label={dictionary.actions.copyPrompt}
-            copiedLabel={dictionary.actions.copied}
-          />
+          <div className="flex items-center gap-2">
+            <FavoriteButton
+              slug={style.slug}
+              labels={dictionary.actions}
+              variant="icon"
+            />
+            <CopyButton
+              value={style.basePrompt}
+              label={dictionary.actions.copyPrompt}
+              copiedLabel={dictionary.actions.copied}
+              copySuccessLabel={dictionary.actions.copyPromptSuccess}
+              variant="icon"
+            />
+          </div>
         </div>
       </div>
     </article>
