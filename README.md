@@ -29,6 +29,7 @@ Then open [http://localhost:3000](http://localhost:3000).
 - `pnpm format` — format code with `biome`.
 
 > You can also run these commands with `npm` if you prefer.
+> Preview optimization prefers `cwebp` or `magick` when available, and falls back to macOS `sips` automatically in local builds.
 
 ## Project structure
 

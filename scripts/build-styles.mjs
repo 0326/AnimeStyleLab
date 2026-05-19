@@ -32,6 +32,9 @@ const previewHeight = 900;
 const optimizedPreviewWidth = 600;
 const optimizedPreviewHeight = 450;
 const previewAspectRatioTolerance = 0.01;
+const hasCwebp = checkCommandAvailable("cwebp");
+const hasMagick = checkCommandAvailable("magick");
+const hasSips = checkCommandAvailable("sips");
 
 const validCategories = new Set([
   "japanese-anime",
@@ -186,54 +189,107 @@ function formatJson(source) {
 }
 
 function formatOptimizedFileName(fileName) {
-  return fileName.replace(/\.(png|webp|jpg|jpeg)$/i, ".webp");
+  if (hasCwebp || hasMagick) {
+    return fileName.replace(/\.(png|webp|jpg|jpeg)$/i, ".webp");
+  }
+
+  return fileName.replace(
+    /\.(png|webp|jpg|jpeg)$/i,
+    `.optimized${path.extname(fileName)}`,
+  );
+}
+
+function checkCommandAvailable(command) {
+  const result = spawnSync("which", [command], { encoding: "utf8" });
+  return result.status === 0;
 }
 
 function optimizePreviewImage(sourcePath, outputPath) {
-  const cwebpResult = spawnSync(
-    "cwebp",
-    [
-      "-quiet",
-      "-resize",
-      String(optimizedPreviewWidth),
-      String(optimizedPreviewHeight),
-      "-q",
-      "82",
-      sourcePath,
-      "-o",
-      outputPath,
-    ],
-    { encoding: "utf8" },
-  );
-
-  if (cwebpResult.status === 0) {
-    return;
-  }
-
-  const magickResult = spawnSync(
-    "magick",
-    [
-      sourcePath,
-      "-resize",
-      `${optimizedPreviewWidth}x${optimizedPreviewHeight}!`,
-      "-quality",
-      "82",
-      outputPath,
-    ],
-    { encoding: "utf8" },
-  );
-
-  if (magickResult.status !== 0) {
-    throw new Error(
+  if (hasCwebp) {
+    const cwebpResult = spawnSync(
+      "cwebp",
       [
-        `Failed to optimize "${sourcePath}"`,
-        cwebpResult.stderr,
-        magickResult.stderr,
-      ]
-        .filter(Boolean)
-        .join("\n"),
+        "-quiet",
+        "-resize",
+        String(optimizedPreviewWidth),
+        String(optimizedPreviewHeight),
+        "-q",
+        "82",
+        sourcePath,
+        "-o",
+        outputPath,
+      ],
+      { encoding: "utf8" },
     );
+
+    if (cwebpResult.status === 0) {
+      return;
+    }
   }
+
+  if (hasMagick) {
+    const magickResult = spawnSync(
+      "magick",
+      [
+        sourcePath,
+        "-resize",
+        `${optimizedPreviewWidth}x${optimizedPreviewHeight}!`,
+        "-quality",
+        "82",
+        outputPath,
+      ],
+      { encoding: "utf8" },
+    );
+
+    if (magickResult.status === 0) {
+      return;
+    }
+  }
+
+  if (hasSips) {
+    const sipsResult = spawnSync(
+      "sips",
+      [
+        "-s",
+        "formatOptions",
+        "82",
+        "-z",
+        String(optimizedPreviewHeight),
+        String(optimizedPreviewWidth),
+        sourcePath,
+        "--out",
+        outputPath,
+      ],
+      { encoding: "utf8" },
+    );
+
+    if (sipsResult.status === 0) {
+      return;
+    }
+  }
+
+  throw new Error(
+    [
+      `Failed to optimize "${sourcePath}"`,
+      hasCwebp ? "Tried cwebp." : "cwebp not installed.",
+      hasMagick ? "Tried ImageMagick." : "ImageMagick not installed.",
+      hasSips ? "Tried sips." : "sips not installed.",
+    ].join("\n"),
+  );
+}
+
+function getOptimizedPreviewDimensions(fileName) {
+  if (hasCwebp || hasMagick || hasSips) {
+    return {
+      width: optimizedPreviewWidth,
+      height: optimizedPreviewHeight,
+    };
+  }
+
+  return {
+    width: previewWidth,
+    height: previewHeight,
+  };
 }
 
 function validateStyle(style, folderName, errors) {
@@ -489,6 +545,7 @@ async function buildPreviewImages(folderName, style, errors) {
     const optimizedOutputPath = path.join(outputDir, optimizedFileName);
     const publicPath = `/generated/style-previews/${folderName}/${optimizedFileName}`;
     const originalPublicPath = `/generated/style-previews/${folderName}/${item.file}`;
+    const optimizedDimensions = getOptimizedPreviewDimensions(item.file);
 
     if (!checkOnly) {
       await mkdir(outputDir, { recursive: true });
@@ -504,8 +561,8 @@ async function buildPreviewImages(folderName, style, errors) {
       altEn: item.altEn.trim(),
       label: item.label.trim(),
       focus: item.focus.trim(),
-      width: optimizedPreviewWidth,
-      height: optimizedPreviewHeight,
+      width: optimizedDimensions.width,
+      height: optimizedDimensions.height,
     });
   }
 
