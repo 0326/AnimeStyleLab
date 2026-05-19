@@ -6,6 +6,11 @@ import {
   colorOptions,
   compositionOptions,
   lightingOptions,
+  localizedColorOptions,
+  localizedCompositionOptions,
+  localizedLightingOptions,
+  localizedSubjects,
+  localizedUseCaseOptions,
   subjects,
   useCaseOptions,
 } from "@/data/prompt-segments";
@@ -68,6 +73,7 @@ export function BuilderWorkbench() {
   const [useCase, setUseCase] = useState(useCaseOptions[0]);
   const { entries, saveEntry } = useWorkbench();
   const { dictionary, locale } = useLocale();
+  const localizedLabelKey = locale === "zh" ? "labelZh" : "labelEn";
 
   const style = styles.find((item) => item.slug === styleSlug) ?? styles[0];
   const gptPrompt = buildPrompt({
@@ -101,7 +107,10 @@ export function BuilderWorkbench() {
             label={dictionary.builder.subject}
             value={subject}
             onChange={setSubject}
-            options={subjects}
+            options={localizedSubjects.map((item) => ({
+              value: item.value,
+              label: item[localizedLabelKey],
+            }))}
           />
           <SelectControl
             label={dictionary.builder.style}
@@ -116,25 +125,37 @@ export function BuilderWorkbench() {
             label={dictionary.builder.lighting}
             value={lighting}
             onChange={setLighting}
-            options={lightingOptions}
+            options={localizedLightingOptions.map((item) => ({
+              value: item.value,
+              label: item[localizedLabelKey],
+            }))}
           />
           <SelectControl
             label={dictionary.builder.color}
             value={color}
             onChange={setColor}
-            options={colorOptions}
+            options={localizedColorOptions.map((item) => ({
+              value: item.value,
+              label: item[localizedLabelKey],
+            }))}
           />
           <SelectControl
             label={dictionary.builder.composition}
             value={composition}
             onChange={setComposition}
-            options={compositionOptions}
+            options={localizedCompositionOptions.map((item) => ({
+              value: item.value,
+              label: item[localizedLabelKey],
+            }))}
           />
           <SelectControl
             label={dictionary.builder.useCase}
             value={useCase}
             onChange={setUseCase}
-            options={useCaseOptions}
+            options={localizedUseCaseOptions.map((item) => ({
+              value: item.value,
+              label: item[localizedLabelKey],
+            }))}
           />
         </div>
       </aside>
