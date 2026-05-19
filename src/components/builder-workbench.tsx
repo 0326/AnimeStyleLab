@@ -140,16 +140,19 @@ export function BuilderWorkbench() {
       </aside>
       <div className="space-y-6">
         <PromptPanel
-          result={gptPrompt}
-          model="gpt-image"
           onSave={saveEntry}
-          saveLabel={`${locale === "zh" ? style.nameZh : style.nameEn} · GPT Image`}
-        />
-        <PromptPanel
-          result={nanoPrompt}
-          model="nano-banana"
-          onSave={saveEntry}
-          saveLabel={`${locale === "zh" ? style.nameZh : style.nameEn} · Nano Banana`}
+          outputs={[
+            {
+              result: gptPrompt,
+              model: "gpt-image",
+              saveLabel: `${locale === "zh" ? style.nameZh : style.nameEn} · GPT Image`,
+            },
+            {
+              result: nanoPrompt,
+              model: "nano-banana",
+              saveLabel: `${locale === "zh" ? style.nameZh : style.nameEn} · Nano Banana`,
+            },
+          ]}
         />
         <section className="panel p-6">
           <div className="flex items-end justify-between gap-4">

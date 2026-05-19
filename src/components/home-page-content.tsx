@@ -12,7 +12,7 @@ import { StyleCard } from "./style-card";
 export function HomePageContent() {
   const { dictionary, locale } = useLocale();
   const heroStyle = featuredStyles[0];
-  const supportStyles = featuredStyles.slice(1, 4);
+  const supportStyles = featuredStyles.slice(1, 3);
 
   return (
     <div className="space-y-16 py-10">
@@ -45,16 +45,16 @@ export function HomePageContent() {
         <div className="grid gap-6">
           <Link
             href={`/styles/${heroStyle.slug}`}
-            className="panel overflow-hidden transition hover:border-[var(--line-strong)] hover:bg-[var(--surface-strong)]"
+            className="block overflow-hidden"
           >
             <PreviewTile style={heroStyle} />
           </Link>
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-2">
             {supportStyles.map((style) => (
               <Link
                 key={style.slug}
                 href={`/styles/${style.slug}`}
-                className="panel overflow-hidden transition hover:border-[var(--line-strong)] hover:bg-[var(--surface-strong)]"
+                className="block overflow-hidden"
               >
                 <PreviewTile
                   style={style}

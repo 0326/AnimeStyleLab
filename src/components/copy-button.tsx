@@ -7,7 +7,7 @@ type CopyButtonProps = {
   label?: string;
   copiedLabel?: string;
   copySuccessLabel?: string;
-  variant?: "default" | "icon";
+  variant?: "default" | "icon" | "overlay";
 };
 
 export function CopyButton({
@@ -25,7 +25,7 @@ export function CopyButton({
     window.setTimeout(() => setCopied(false), 1500);
   }
 
-  if (variant === "icon") {
+  if (variant === "icon" || variant === "overlay") {
     return (
       <div className="relative">
         {copied ? (
@@ -38,11 +38,19 @@ export function CopyButton({
           onClick={handleCopy}
           aria-label={label}
           title={label}
-          className={`inline-flex h-10 w-10 items-center justify-center border transition ${
-            copied
-              ? "border-[var(--accent)] bg-[var(--accent-muted)] text-[oklch(91%_0.05_187)]"
-              : "border-[var(--line-strong)] bg-[var(--surface-soft)] text-[oklch(82%_0.026_226)] hover:border-[var(--accent)] hover:bg-[var(--surface)] hover:text-white"
-          }`}
+          className={
+            variant === "overlay"
+              ? `inline-flex h-10 w-10 items-center justify-center border border-[var(--line)] bg-[oklch(9%_0.015_226/0.56)] text-[oklch(82%_0.026_226/0.78)] backdrop-blur-sm transition ${
+                  copied
+                    ? "border-[var(--accent)] bg-[var(--accent-muted)] text-[oklch(91%_0.05_187)] opacity-100"
+                    : "opacity-60 hover:border-[var(--accent)] hover:bg-[oklch(9%_0.015_226/0.88)] hover:text-white hover:opacity-100 focus-visible:opacity-100"
+                }`
+              : `inline-flex h-10 w-10 items-center justify-center border transition ${
+                  copied
+                    ? "border-[var(--accent)] bg-[var(--accent-muted)] text-[oklch(91%_0.05_187)]"
+                    : "border-[var(--line-strong)] bg-[var(--surface-soft)] text-[oklch(82%_0.026_226)] hover:border-[var(--accent)] hover:bg-[var(--surface)] hover:text-white"
+                }`
+          }
         >
           <CopyIcon />
         </button>

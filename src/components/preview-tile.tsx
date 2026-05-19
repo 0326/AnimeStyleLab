@@ -52,7 +52,7 @@ export function PreviewTile({
             alt={imageAlt}
             width={coverImage.width}
             height={coverImage.height}
-            className="absolute inset-0 h-full w-full object-cover transition duration-500 ease-out group-hover:scale-[1.035]"
+            className="absolute inset-0 block h-full w-full object-cover object-center transition duration-500 ease-out group-hover:scale-[1.035]"
             loading={compact ? "lazy" : "eager"}
             decoding="async"
           />

@@ -9,6 +9,7 @@ import type { PromptResult } from "@/lib/prompt-builder";
 import { CopyButton } from "./copy-button";
 import { FavoriteButton } from "./favorite-button";
 import { useLocale } from "./locale-provider";
+import { PromptModelTabs } from "./prompt-model-tabs";
 import { StylePreviewGallery } from "./style-preview-gallery";
 
 type StyleDetailContentProps = {
@@ -103,18 +104,43 @@ export function StyleDetailContent({
         />
       </section>
 
-      <section className="grid gap-6 xl:grid-cols-2">
-        <PromptBlock
-          eyebrow="GPT Image"
-          title={dictionary.detail.gptTitle}
-          prompt={gptPrompt.prompt}
-          notes={style.modelTips.gptImage}
-        />
-        <PromptBlock
-          eyebrow="Nano Banana"
-          title={dictionary.detail.nanoTitle}
-          prompt={nanoPrompt.prompt}
-          notes={style.modelTips.nanoBanana}
+      <section className="panel p-6">
+        <PromptModelTabs
+          tabs={[
+            { id: "gpt-image", label: "GPT Image" },
+            { id: "nano-banana", label: "Nano Banana" },
+          ]}
+          renderHeader={(activeTabId, tabList) => (
+            <div className="flex flex-wrap items-end justify-between gap-4">
+              <div className="min-w-0">
+                <p className="eyebrow">
+                  {activeTabId === "gpt-image" ? "GPT Image" : "Nano Banana"}
+                </p>
+                <h2 className="mt-2 font-display text-4xl text-white">
+                  {activeTabId === "gpt-image"
+                    ? dictionary.detail.gptTitle
+                    : dictionary.detail.nanoTitle}
+                </h2>
+              </div>
+              <div className="flex flex-wrap items-center justify-end gap-4">
+                {tabList}
+              </div>
+            </div>
+          )}
+          renderPanel={(activeTabId) => (
+            <PromptBlock
+              prompt={
+                activeTabId === "gpt-image"
+                  ? gptPrompt.prompt
+                  : nanoPrompt.prompt
+              }
+              notes={
+                activeTabId === "gpt-image"
+                  ? style.modelTips.gptImage
+                  : style.modelTips.nanoBanana
+              }
+            />
+          )}
         />
       </section>
 
@@ -209,18 +235,24 @@ function InfoPanel({ title, items }: InfoPanelProps) {
 }
 
 type PromptBlockProps = {
-  eyebrow: string;
-  title: string;
   prompt: string;
   notes: string;
 };
 
-function PromptBlock({ eyebrow, title, prompt, notes }: PromptBlockProps) {
+function PromptBlock({ prompt, notes }: PromptBlockProps) {
+  const { dictionary } = useLocale();
+
   return (
-    <section className="panel p-6">
-      <p className="eyebrow">{eyebrow}</p>
-      <h2 className="mt-3 font-display text-4xl text-white">{title}</h2>
-      <div className="mt-6 border border-[var(--line)] bg-[var(--surface-ink)] p-5">
+    <div>
+      <div className="relative border border-[var(--line)] bg-[var(--surface-ink)] p-5 pr-18">
+        <div className="absolute right-4 bottom-4">
+          <CopyButton
+            value={prompt}
+            label={dictionary.actions.copyPrompt}
+            copiedLabel={dictionary.actions.copied}
+            variant="overlay"
+          />
+        </div>
         <p className="font-mono text-sm leading-7 text-[oklch(88%_0.035_187)]">
           {prompt}
         </p>
@@ -228,7 +260,7 @@ function PromptBlock({ eyebrow, title, prompt, notes }: PromptBlockProps) {
       <p className="mt-4 text-sm leading-6 text-[oklch(78%_0.026_226)]">
         {notes}
       </p>
-    </section>
+    </div>
   );
 }
 

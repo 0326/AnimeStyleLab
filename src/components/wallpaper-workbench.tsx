@@ -93,16 +93,19 @@ export function WallpaperWorkbench() {
       </aside>
       <div className="space-y-6">
         <PromptPanel
-          result={gptPrompt}
-          model="gpt-image"
           onSave={saveEntry}
-          saveLabel={`${preset.label} · ${locale === "zh" ? style.nameZh : style.nameEn} · GPT Image`}
-        />
-        <PromptPanel
-          result={nanoPrompt}
-          model="nano-banana"
-          onSave={saveEntry}
-          saveLabel={`${preset.label} · ${locale === "zh" ? style.nameZh : style.nameEn} · Nano Banana`}
+          outputs={[
+            {
+              result: gptPrompt,
+              model: "gpt-image",
+              saveLabel: `${preset.label} · ${locale === "zh" ? style.nameZh : style.nameEn} · GPT Image`,
+            },
+            {
+              result: nanoPrompt,
+              model: "nano-banana",
+              saveLabel: `${preset.label} · ${locale === "zh" ? style.nameZh : style.nameEn} · Nano Banana`,
+            },
+          ]}
         />
       </div>
     </div>
