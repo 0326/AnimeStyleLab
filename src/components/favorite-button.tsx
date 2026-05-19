@@ -75,7 +75,7 @@ export function FavoriteButton({
         isActive
           ? "border-[var(--warning)] bg-[oklch(24%_0.045_78)] text-[oklch(90%_0.07_78)]"
           : "border-[var(--line-strong)] bg-[var(--surface-ink)] text-white hover:border-white hover:bg-[var(--surface)]"
-      } ${compact ? "px-3 py-1.5 text-xs" : "px-4 py-2 text-sm"}`}
+      } ${compact ? "h-8 px-3 text-xs" : "h-10 px-4 text-sm"}`}
     >
       {isActive ? buttonLabels.saved : buttonLabels.save}
     </button>

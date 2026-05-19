@@ -28,81 +28,78 @@ export function StyleDetailContent({
   const { dictionary, locale } = useLocale();
   const primaryName = locale === "zh" ? style.nameZh : style.nameEn;
   const secondaryName = locale === "zh" ? style.nameEn : style.nameZh;
+  const relatedTitle = locale === "zh" ? "其他推荐图谱" : "Related Style Atlas";
   const categoryName =
     locale === "zh"
       ? categoryMap[style.category].nameZh
       : categoryMap[style.category].nameEn;
+  const copyGptLabel =
+    locale === "zh" ? "复制 GPT Image 提示词" : "Copy GPT Image Prompt";
+  const copyNanoLabel =
+    locale === "zh" ? "复制 BANANA 提示词" : "Copy BANANA Prompt";
 
   return (
     <div className="section-frame space-y-10 py-10">
-      <div className="grid gap-8 xl:grid-cols-[0.9fr_1.1fr]">
-        <StylePreviewGallery key={style.slug} style={style} />
-        <section className="panel-strong p-8">
-          <div className="flex items-start justify-between gap-4">
-            <div>
-              <p className="eyebrow">{categoryName}</p>
-              <h1 className="mt-3 font-display text-6xl text-white">
-                {primaryName}
-              </h1>
-              <p className="mt-2 text-sm uppercase tracking-[0.12em] text-[oklch(74%_0.04_187)]">
-                {secondaryName}
-              </p>
-            </div>
-            <FavoriteButton slug={style.slug} labels={dictionary.actions} />
-          </div>
-          <div className="mt-6 grid gap-3 sm:grid-cols-3">
-            <MetricTile
-              label={dictionary.detail.useCases}
-              value={String(style.useCases.length)}
-            />
-            <MetricTile
-              label={dictionary.detail.startingRatios}
-              value={style.recommendedRatios[0]}
-            />
-            <MetricTile
-              label="Preview"
-              value={`${style.previewImages.length}`}
-            />
-          </div>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-[oklch(80%_0.026_226)]">
-            {style.description}
-          </p>
-          <div className="mt-8 flex flex-wrap gap-2">
-            {style.tags.map((tag) => (
-              <span key={tag} className="tag">
-                {tag}
-              </span>
-            ))}
-          </div>
-          <div className="mt-8 flex flex-wrap gap-3">
+      <div className="grid items-start gap-8 grid-cols-[600px_minmax(0,1fr)]">
+        <div className="w-[600px]">
+          <StylePreviewGallery key={style.slug} style={style} />
+          <div className="mt-4 flex items-center gap-3">
             <CopyButton
-              value={style.basePrompt}
-              label={dictionary.actions.copyBasePrompt}
+              value={gptPrompt.prompt}
+              label={copyGptLabel}
               copiedLabel={dictionary.actions.copied}
+              copySuccessLabel={dictionary.actions.copyPromptSuccess}
+              feedbackMode="toast"
             />
             <CopyButton
-              value={style.avoidPrompt}
-              label={dictionary.actions.copyAvoidTerms}
+              value={nanoPrompt.prompt}
+              label={copyNanoLabel}
               copiedLabel={dictionary.actions.copied}
+              copySuccessLabel={dictionary.actions.copyPromptSuccess}
+              feedbackMode="toast"
             />
             <Link href="/builder" className="button-tonal">
               {dictionary.detail.remix}
             </Link>
+            <div className="ml-auto">
+              <FavoriteButton slug={style.slug} labels={dictionary.actions} />
+            </div>
+          </div>
+        </div>
+        <section className="panel-strong h-[506px] overflow-hidden">
+          <div className="h-full overflow-y-auto px-6 py-6">
+            <div className="flex items-start gap-4">
+              <div>
+                <p className="eyebrow">{categoryName}</p>
+                <h1 className="mt-3 font-display text-[2.8rem] leading-none text-white">
+                  {primaryName}
+                </h1>
+                <p className="mt-2 text-sm uppercase tracking-[0.12em] text-[oklch(74%_0.04_187)]">
+                  {secondaryName}
+                </p>
+              </div>
+            </div>
+            <p className="mt-4 text-[0.95rem] leading-7 text-[oklch(80%_0.026_226)]">
+              {style.description}
+            </p>
+            <div className="mt-5 grid gap-4 border-t border-[var(--line)] pt-5">
+              <DetailTextBlock title="Tags" content={style.tags.join(" · ")} />
+              <DetailTextBlock
+                title={dictionary.detail.visualFeatures}
+                content={style.visualFeatures.join(" · ")}
+              />
+              <DetailTextBlock
+                title={dictionary.detail.bestFor}
+                content={style.bestFor.join(" · ")}
+              />
+              <DetailTextBlock
+                title={dictionary.detail.useCases}
+                content={style.useCases.join(" · ")}
+              />
+            </div>
           </div>
         </section>
       </div>
-
-      <section className="grid gap-6 xl:grid-cols-3">
-        <InfoPanel
-          title={dictionary.detail.visualFeatures}
-          items={style.visualFeatures}
-        />
-        <InfoPanel title={dictionary.detail.bestFor} items={style.bestFor} />
-        <InfoPanel
-          title={dictionary.detail.avoid}
-          items={style.commonFailurePoints}
-        />
-      </section>
 
       <section className="panel p-6">
         <PromptModelTabs
@@ -144,31 +141,14 @@ export function StyleDetailContent({
         />
       </section>
 
-      <section className="grid gap-6 xl:grid-cols-[0.8fr_1.2fr]">
-        <div className="panel p-6">
-          <p className="eyebrow">{dictionary.detail.useCases}</p>
+      <section className="space-y-5">
+        <div>
+          <p className="eyebrow">{categoryName}</p>
           <h2 className="mt-3 font-display text-4xl text-white">
-            {dictionary.detail.whereWorks}
+            {relatedTitle}
           </h2>
-          <div className="mt-6 flex flex-wrap gap-2">
-            {style.useCases.map((useCase) => (
-              <span key={useCase} className="tag px-3 py-2 text-sm">
-                {useCase}
-              </span>
-            ))}
-          </div>
-          <div className="mt-6 space-y-3 text-sm leading-6 text-[oklch(78%_0.026_226)]">
-            <p>
-              {dictionary.detail.notRecommendedFor}{" "}
-              {style.notRecommendedFor.join("、")}
-            </p>
-            <p>
-              {dictionary.detail.startingRatios}{" "}
-              {style.recommendedRatios.join(" · ")}
-            </p>
-          </div>
         </div>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-4 gap-6">
           {relatedStyles.map((relatedStyle) => (
             <Link
               key={relatedStyle.slug}
@@ -216,20 +196,18 @@ export function StyleDetailContent({
   );
 }
 
-type InfoPanelProps = {
+type DetailTextBlockProps = {
   title: string;
-  items: string[];
+  content: string;
 };
 
-function InfoPanel({ title, items }: InfoPanelProps) {
+function DetailTextBlock({ title, content }: DetailTextBlockProps) {
   return (
-    <section className="panel p-6">
+    <section>
       <p className="eyebrow">{title}</p>
-      <ul className="mt-5 space-y-3 text-sm leading-7 text-[oklch(78%_0.026_226)]">
-        {items.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
+      <p className="mt-2 text-sm leading-6 text-[oklch(78%_0.026_226)]">
+        {content}
+      </p>
     </section>
   );
 }
@@ -240,43 +218,15 @@ type PromptBlockProps = {
 };
 
 function PromptBlock({ prompt, notes }: PromptBlockProps) {
-  const { dictionary } = useLocale();
-
   return (
     <div>
-      <div className="relative border border-[var(--line)] bg-[var(--surface-ink)] p-5 pr-18">
-        <div className="absolute right-4 bottom-4">
-          <CopyButton
-            value={prompt}
-            label={dictionary.actions.copyPrompt}
-            copiedLabel={dictionary.actions.copied}
-            variant="overlay"
-          />
-        </div>
+      <div className="border border-[var(--line)] bg-[var(--surface-ink)] p-5">
         <p className="font-mono text-sm leading-7 text-[oklch(88%_0.035_187)]">
           {prompt}
         </p>
       </div>
       <p className="mt-4 text-sm leading-6 text-[oklch(78%_0.026_226)]">
         {notes}
-      </p>
-    </div>
-  );
-}
-
-type MetricTileProps = {
-  label: string;
-  value: string;
-};
-
-function MetricTile({ label, value }: MetricTileProps) {
-  return (
-    <div className="border border-[var(--line)] bg-[var(--surface-ink)] px-4 py-3">
-      <p className="text-[0.68rem] uppercase tracking-[0.12em] text-[oklch(70%_0.026_226)]">
-        {label}
-      </p>
-      <p className="mt-2 font-display text-2xl leading-none text-white">
-        {value}
       </p>
     </div>
   );

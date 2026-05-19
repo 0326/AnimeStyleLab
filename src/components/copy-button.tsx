@@ -2,11 +2,14 @@
 
 import { useState } from "react";
 
+const APP_TOAST_EVENT = "app-toast";
+
 type CopyButtonProps = {
   value: string;
   label?: string;
   copiedLabel?: string;
   copySuccessLabel?: string;
+  feedbackMode?: "inline" | "toast";
   variant?: "default" | "icon" | "overlay";
 };
 
@@ -15,12 +18,21 @@ export function CopyButton({
   label = "Copy",
   copiedLabel = "Copied",
   copySuccessLabel,
+  feedbackMode = "inline",
   variant = "default",
 }: CopyButtonProps) {
   const [copied, setCopied] = useState(false);
 
   async function handleCopy() {
     await navigator.clipboard.writeText(value);
+    if (feedbackMode === "toast") {
+      window.dispatchEvent(
+        new CustomEvent(APP_TOAST_EVENT, {
+          detail: { message: copySuccessLabel ?? copiedLabel },
+        }),
+      );
+      return;
+    }
     setCopied(true);
     window.setTimeout(() => setCopied(false), 1500);
   }

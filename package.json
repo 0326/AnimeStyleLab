@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node scripts/build-styles.mjs && next dev -p 3326",
     "styles:build": "node scripts/build-styles.mjs",
     "styles:check": "node scripts/build-styles.mjs --check",
     "build": "node scripts/build-styles.mjs && next build --webpack",

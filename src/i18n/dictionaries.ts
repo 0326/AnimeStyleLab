@@ -7,7 +7,7 @@ export const dictionaries = {
         "Explore anime visual styles, compare mood systems, and generate GPT Image and Nano Banana prompts from a PC-first style workbench.",
     },
     nav: {
-      tagline: "Style Atlas · Prompt Workbench",
+      tagline: "动漫风格图谱 · 提示词实验室",
       overview: "Overview",
       styles: "Style Atlas",
       builder: "Prompt Builder",
@@ -42,23 +42,19 @@ export const dictionaries = {
       explore: "Explore Style Atlas",
       builder: "Open Prompt Builder",
       wallpaper: "Launch Wallpaper Lab",
-      metrics: [
-        ["Curated styles", "50"],
-        ["Prompt outputs", "GPT Image · Nano Banana"],
-        ["Target surface", "PC widths 1280-2560"],
-      ],
+      styleCountLabel: "Curated styles",
+      promptOutputsLabel: "Prompt outputs",
+      dynamicComboLabel: "Dynamic remix",
+      dynamicComboValue: "Infinite combinations",
       featuredEyebrow: "Featured Lanes",
       featuredTitle: "Styles worth opening first",
       featuredIntro:
         "Each card is a style lane, not just a prompt snippet. The previews are meant to signal material, mood, and rendering behavior before you open the detail page.",
-      flowEyebrow: "Builder Flow",
-      flowTitle: "Prompt structure before prompt volume",
-      flowSteps: [
-        "1. Pick a subject and a style lane.",
-        "2. Lock the lighting, color palette, and composition.",
-        "3. Generate one prompt for GPT Image and one for Nano Banana.",
-        "4. Save strong outputs locally and compare them in the workbench.",
-      ],
+      moreEyebrow: "See More",
+      moreTitle: "Open the full atlas and compare the whole style field.",
+      moreIntro:
+        "Go beyond the featured lanes and scan the broader style map by mood, material, use case, and prompt language.",
+      moreCta: "Enter Style Atlas",
     },
     styles: {
       metadataTitle: "Style Atlas",
@@ -158,7 +154,7 @@ export const dictionaries = {
         "在 PC 优先的动漫风格工作台中探索画风、比较情绪系统，并生成 GPT Image 与 Nano Banana 提示词。",
     },
     nav: {
-      tagline: "风格图谱 · 提示词工作台",
+      tagline: "动漫风格图谱 · 提示词实验室",
       overview: "总览",
       styles: "风格图谱",
       builder: "提示词生成器",
@@ -186,29 +182,25 @@ export const dictionaries = {
     },
     home: {
       eyebrow: "动漫风格图谱",
-      title: "先理解动漫视觉系统，再把它变成可用提示词。",
+      title: "构造你的动漫风格提示词系统",
       intro:
-        "AnimeStyleLab 是一个 PC 优先的风格工作台，用来比较动漫风格中的情绪、材质、构图和提示词语言。",
+        "AnimeStyleLab 是一个专注动漫风格的文生图提示词平台，通过主体、风格、光线、色彩、构图和用途六大维度拆分，构建出科学、灵活、可扩展的提示词系统。",
       explore: "浏览风格图谱",
       builder: "打开提示词生成器",
       wallpaper: "启动壁纸实验室",
-      metrics: [
-        ["精选风格", "50"],
-        ["提示词输出", "GPT Image · Nano Banana"],
-        ["目标界面", "PC 宽度 1280-2560"],
-      ],
+      styleCountLabel: "精选风格",
+      promptOutputsLabel: "提示词输出",
+      dynamicComboLabel: "动态组合",
+      dynamicComboValue: "组合方式无限延展",
       featuredEyebrow: "精选风格",
       featuredTitle: "优先打开这些风格",
       featuredIntro:
         "每张卡片都是一条风格路径，而不只是提示词片段。预览图会先传达材质、情绪和渲染倾向，再进入详情页阅读。",
-      flowEyebrow: "生成流程",
-      flowTitle: "先定结构，再扩充提示词",
-      flowSteps: [
-        "1. 选择主体与风格路径。",
-        "2. 锁定光线、色彩和构图。",
-        "3. 分别生成 GPT Image 与 Nano Banana 提示词。",
-        "4. 将强输出保存到本地工作台并进行对比。",
-      ],
+      moreEyebrow: "查看更多",
+      moreTitle: "进入完整风格图谱，对比更广的画风场景。",
+      moreIntro:
+        "从精选入口继续展开，按情绪、材质、用途和提示词语言浏览整套风格路径。",
+      moreCta: "前往风格图谱",
     },
     styles: {
       metadataTitle: "风格图谱",

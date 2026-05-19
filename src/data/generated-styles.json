@@ -71,7 +71,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/cel-shine-anime/01-cover.optimized.png",
+        "src": "/generated/style-previews/cel-shine-anime/01-cover.webp",
         "originalSrc": "/generated/style-previews/cel-shine-anime/01-cover.png",
         "altZh": "高亮赛璐璐风格主预览",
         "altEn": "Cel Shine Anime primary preview",
@@ -151,7 +151,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/rainlit-cinematic-anime/01-cover.optimized.png",
+        "src": "/generated/style-previews/rainlit-cinematic-anime/01-cover.webp",
         "originalSrc": "/generated/style-previews/rainlit-cinematic-anime/01-cover.png",
         "altZh": "雨夜电影感动画风格预览1",
         "altEn": "Rainlit Cinematic Anime preview 1",
@@ -208,7 +208,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/tv-cut-anime-frame/01-cover.optimized.png",
+        "src": "/generated/style-previews/tv-cut-anime-frame/01-cover.webp",
         "originalSrc": "/generated/style-previews/tv-cut-anime-frame/01-cover.png",
         "altZh": "TV 动画截图风风格预览1",
         "altEn": "TV Cut Anime Frame preview 1",
@@ -281,7 +281,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/theatrical-anime-poster/01-cover.optimized.png",
+        "src": "/generated/style-previews/theatrical-anime-poster/01-cover.webp",
         "originalSrc": "/generated/style-previews/theatrical-anime-poster/01-cover.png",
         "altZh": "剧场版海报动画风格预览1",
         "altEn": "Theatrical Anime Poster preview 1",
@@ -358,7 +358,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/retro-90s-anime/01-cover.optimized.png",
+        "src": "/generated/style-previews/retro-90s-anime/01-cover.webp",
         "originalSrc": "/generated/style-previews/retro-90s-anime/01-cover.png",
         "altZh": "90 年代复古动画风格预览1",
         "altEn": "Retro 90s Anime preview 1",
@@ -434,7 +434,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/screentone-manga-cover/01-cover.optimized.png",
+        "src": "/generated/style-previews/screentone-manga-cover/01-cover.webp",
         "originalSrc": "/generated/style-previews/screentone-manga-cover/01-cover.png",
         "altZh": "网点漫画封面风格预览1",
         "altEn": "Screentone Manga Cover preview 1",
@@ -507,7 +507,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/shojo-sparkle-manga/01-cover.optimized.png",
+        "src": "/generated/style-previews/shojo-sparkle-manga/01-cover.webp",
         "originalSrc": "/generated/style-previews/shojo-sparkle-manga/01-cover.png",
         "altZh": "少女漫画闪光感风格预览1",
         "altEn": "Shojo Sparkle Manga preview 1",
@@ -580,7 +580,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/shonen-impact-manga/01-cover.optimized.png",
+        "src": "/generated/style-previews/shonen-impact-manga/01-cover.webp",
         "originalSrc": "/generated/style-previews/shonen-impact-manga/01-cover.png",
         "altZh": "少年漫冲击格风格预览1",
         "altEn": "Shonen Impact Manga preview 1",
@@ -656,7 +656,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/seinen-ink-drama/01-cover.optimized.png",
+        "src": "/generated/style-previews/seinen-ink-drama/01-cover.webp",
         "originalSrc": "/generated/style-previews/seinen-ink-drama/01-cover.png",
         "altZh": "青年漫墨色戏剧风格预览1",
         "altEn": "Seinen Ink Drama preview 1",
@@ -729,7 +729,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/hand-draft-manga/01-cover.optimized.png",
+        "src": "/generated/style-previews/hand-draft-manga/01-cover.webp",
         "originalSrc": "/generated/style-previews/hand-draft-manga/01-cover.png",
         "altZh": "手绘漫画草稿风格预览1",
         "altEn": "Hand Draft Manga preview 1",
@@ -833,7 +833,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/premium-gacha-illustration/01-cover.optimized.png",
+        "src": "/generated/style-previews/premium-gacha-illustration/01-cover.webp",
         "originalSrc": "/generated/style-previews/premium-gacha-illustration/01-cover.png",
         "altZh": "高端手游立绘风格预览1",
         "altEn": "Premium Gacha Illustration preview 1",
@@ -890,7 +890,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/half-painterly-character-sheet/01-cover.optimized.png",
+        "src": "/generated/style-previews/half-painterly-character-sheet/01-cover.webp",
         "originalSrc": "/generated/style-previews/half-painterly-character-sheet/01-cover.png",
         "altZh": "半厚涂角色设定风格预览1",
         "altEn": "Half Painterly Character Sheet preview 1",
@@ -967,7 +967,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/fantasy-rpg-card/01-cover.optimized.png",
+        "src": "/generated/style-previews/fantasy-rpg-card/01-cover.webp",
         "originalSrc": "/generated/style-previews/fantasy-rpg-card/01-cover.png",
         "altZh": "幻想 RPG 卡牌插画风格预览1",
         "altEn": "Fantasy RPG Card preview 1",
@@ -1047,7 +1047,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/live2d-lobby-heroine/01-cover.optimized.png",
+        "src": "/generated/style-previews/live2d-lobby-heroine/01-cover.webp",
         "originalSrc": "/generated/style-previews/live2d-lobby-heroine/01-cover.png",
         "altZh": "看板娘大厅立绘风格预览1",
         "altEn": "Live2D Lobby Heroine preview 1",
@@ -1124,7 +1124,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/mecha-hangar-anime/01-cover.optimized.png",
+        "src": "/generated/style-previews/mecha-hangar-anime/01-cover.webp",
         "originalSrc": "/generated/style-previews/mecha-hangar-anime/01-cover.png",
         "altZh": "机甲机库动漫风格预览1",
         "altEn": "Mecha Hangar Anime preview 1",
@@ -1204,7 +1204,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/school-romance-vn/01-cover.optimized.png",
+        "src": "/generated/style-previews/school-romance-vn/01-cover.webp",
         "originalSrc": "/generated/style-previews/school-romance-vn/01-cover.png",
         "altZh": "校园恋爱视觉小说风格预览1",
         "altEn": "School Romance VN preview 1",
@@ -1284,7 +1284,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/mystery-vn-noir/01-cover.optimized.png",
+        "src": "/generated/style-previews/mystery-vn-noir/01-cover.webp",
         "originalSrc": "/generated/style-previews/mystery-vn-noir/01-cover.png",
         "altZh": "悬疑视觉小说风格预览1",
         "altEn": "Mystery VN Noir preview 1",
@@ -1361,7 +1361,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/healing-visual-novel/01-cover.optimized.png",
+        "src": "/generated/style-previews/healing-visual-novel/01-cover.webp",
         "originalSrc": "/generated/style-previews/healing-visual-novel/01-cover.png",
         "altZh": "治愈系视觉小说风格预览1",
         "altEn": "Healing Visual Novel preview 1",
@@ -1441,7 +1441,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/premium-ui-vn-portrait/01-cover.optimized.png",
+        "src": "/generated/style-previews/premium-ui-vn-portrait/01-cover.webp",
         "originalSrc": "/generated/style-previews/premium-ui-vn-portrait/01-cover.png",
         "altZh": "高级 UI 角色立绘风格预览1",
         "altEn": "Premium UI VN Portrait preview 1",
@@ -1521,7 +1521,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/chibi-idol-mascot/01-cover.optimized.png",
+        "src": "/generated/style-previews/chibi-idol-mascot/01-cover.webp",
         "originalSrc": "/generated/style-previews/chibi-idol-mascot/01-cover.png",
         "altZh": "Q版偶像吉祥物风格预览1",
         "altEn": "Chibi Idol Mascot preview 1",
@@ -1594,7 +1594,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/pastel-sticker-pack/01-cover.optimized.png",
+        "src": "/generated/style-previews/pastel-sticker-pack/01-cover.webp",
         "originalSrc": "/generated/style-previews/pastel-sticker-pack/01-cover.png",
         "altZh": "粉彩贴纸包风格预览1",
         "altEn": "Pastel Sticker Pack preview 1",
@@ -1667,7 +1667,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/plush-mascot-anime/01-cover.optimized.png",
+        "src": "/generated/style-previews/plush-mascot-anime/01-cover.webp",
         "originalSrc": "/generated/style-previews/plush-mascot-anime/01-cover.png",
         "altZh": "毛绒吉祥物二次元风格预览1",
         "altEn": "Plush Mascot Anime preview 1",
@@ -1747,7 +1747,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/minimal-line-buddy/01-cover.optimized.png",
+        "src": "/generated/style-previews/minimal-line-buddy/01-cover.webp",
         "originalSrc": "/generated/style-previews/minimal-line-buddy/01-cover.png",
         "altZh": "极简萌系伙伴风格预览1",
         "altEn": "Minimal Line Buddy preview 1",
@@ -1823,7 +1823,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/anime-figure-render/01-cover.optimized.png",
+        "src": "/generated/style-previews/anime-figure-render/01-cover.webp",
         "originalSrc": "/generated/style-previews/anime-figure-render/01-cover.png",
         "altZh": "动漫手办渲染风格预览1",
         "altEn": "Anime Figure Render preview 1",
@@ -1896,7 +1896,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/nendoroid-showcase/01-cover.optimized.png",
+        "src": "/generated/style-previews/nendoroid-showcase/01-cover.webp",
         "originalSrc": "/generated/style-previews/nendoroid-showcase/01-cover.png",
         "altZh": "黏土人展示风风格预览1",
         "altEn": "Nendoroid Showcase preview 1",
@@ -1973,7 +1973,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/blind-box-vinyl-toy/01-cover.optimized.png",
+        "src": "/generated/style-previews/blind-box-vinyl-toy/01-cover.webp",
         "originalSrc": "/generated/style-previews/blind-box-vinyl-toy/01-cover.png",
         "altZh": "盲盒潮玩风风格预览1",
         "altEn": "Blind Box Vinyl Toy preview 1",
@@ -2073,7 +2073,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/plush-anime-render/01-cover.optimized.png",
+        "src": "/generated/style-previews/plush-anime-render/01-cover.webp",
         "originalSrc": "/generated/style-previews/plush-anime-render/01-cover.png",
         "altZh": "毛绒二次元渲染风格预览1",
         "altEn": "Plush Anime Render preview 1",
@@ -2130,7 +2130,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/soft-gummy-character/01-cover.optimized.png",
+        "src": "/generated/style-previews/soft-gummy-character/01-cover.webp",
         "originalSrc": "/generated/style-previews/soft-gummy-character/01-cover.png",
         "altZh": "软糖质感角色风格预览1",
         "altEn": "Soft Gummy Character preview 1",
@@ -2233,7 +2233,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/neon-city-anime/01-cover.optimized.png",
+        "src": "/generated/style-previews/neon-city-anime/01-cover.webp",
         "originalSrc": "/generated/style-previews/neon-city-anime/01-cover.png",
         "altZh": "霓虹都市动漫风格预览1",
         "altEn": "Neon City Anime preview 1",
@@ -2293,7 +2293,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/digital-space-idol/01-cover.optimized.png",
+        "src": "/generated/style-previews/digital-space-idol/01-cover.webp",
         "originalSrc": "/generated/style-previews/digital-space-idol/01-cover.png",
         "altZh": "数字空间偶像风格预览1",
         "altEn": "Digital Space Idol preview 1",
@@ -2370,10 +2370,21 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/hologram-fashion-lab/01-cover.optimized.png",
+        "src": "/generated/style-previews/hologram-fashion-lab/01-cover.webp",
         "originalSrc": "/generated/style-previews/hologram-fashion-lab/01-cover.png",
         "altZh": "全息时装实验室风格预览1",
         "altEn": "Hologram Fashion Lab preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 600,
+        "height": 450
+      },
+      {
+        "id": "02",
+        "src": "/generated/style-previews/hologram-fashion-lab/02.webp",
+        "originalSrc": "/generated/style-previews/hologram-fashion-lab/02.png",
+        "altZh": "全息时装实验室风格预览2",
+        "altEn": "Hologram Fashion Lab preview 2",
         "label": "Hero",
         "focus": "overall-style",
         "width": 600,
@@ -2450,7 +2461,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/cyber-angel-chorus/01-cover.optimized.png",
+        "src": "/generated/style-previews/cyber-angel-chorus/01-cover.webp",
         "originalSrc": "/generated/style-previews/cyber-angel-chorus/01-cover.png",
         "altZh": "赛博天使合唱风格预览1",
         "altEn": "Cyber Angel Chorus preview 1",
@@ -2556,7 +2567,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/black-gold-witchcore/01-cover.optimized.png",
+        "src": "/generated/style-previews/black-gold-witchcore/01-cover.webp",
         "originalSrc": "/generated/style-previews/black-gold-witchcore/01-cover.png",
         "altZh": "黑金魔女系风格预览1",
         "altEn": "Black Gold Witchcore preview 1",
@@ -2613,7 +2624,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/vampire-moon-anime/01-cover.optimized.png",
+        "src": "/generated/style-previews/vampire-moon-anime/01-cover.webp",
         "originalSrc": "/generated/style-previews/vampire-moon-anime/01-cover.png",
         "altZh": "月下吸血鬼动漫风格预览1",
         "altEn": "Vampire Moon Anime preview 1",
@@ -2690,7 +2701,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/gothic-cathedral-anime/01-cover.optimized.png",
+        "src": "/generated/style-previews/gothic-cathedral-anime/01-cover.webp",
         "originalSrc": "/generated/style-previews/gothic-cathedral-anime/01-cover.png",
         "altZh": "哥特教堂动漫风格预览1",
         "altEn": "Gothic Cathedral Anime preview 1",
@@ -2767,7 +2778,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/luxury-opera-gothic/01-cover.optimized.png",
+        "src": "/generated/style-previews/luxury-opera-gothic/01-cover.webp",
         "originalSrc": "/generated/style-previews/luxury-opera-gothic/01-cover.png",
         "altZh": "暗黑歌剧奢华风风格预览1",
         "altEn": "Luxury Opera Gothic preview 1",
@@ -2844,7 +2855,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/healing-cloudscape-anime/01-cover.optimized.png",
+        "src": "/generated/style-previews/healing-cloudscape-anime/01-cover.webp",
         "originalSrc": "/generated/style-previews/healing-cloudscape-anime/01-cover.png",
         "altZh": "云海治愈动画风格预览1",
         "altEn": "Healing Cloudscape Anime preview 1",
@@ -2917,7 +2928,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/watercolor-dream-anime/01-cover.optimized.png",
+        "src": "/generated/style-previews/watercolor-dream-anime/01-cover.webp",
         "originalSrc": "/generated/style-previews/watercolor-dream-anime/01-cover.png",
         "altZh": "水彩梦境二次元风格预览1",
         "altEn": "Watercolor Dream Anime preview 1",
@@ -2990,7 +3001,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/soft-healing-room/01-cover.optimized.png",
+        "src": "/generated/style-previews/soft-healing-room/01-cover.webp",
         "originalSrc": "/generated/style-previews/soft-healing-room/01-cover.png",
         "altZh": "柔光治愈房间风格预览1",
         "altEn": "Soft Healing Room preview 1",
@@ -3067,7 +3078,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/moonlit-reverie-anime/01-cover.optimized.png",
+        "src": "/generated/style-previews/moonlit-reverie-anime/01-cover.webp",
         "originalSrc": "/generated/style-previews/moonlit-reverie-anime/01-cover.png",
         "altZh": "月下梦游二次元风格预览1",
         "altEn": "Moonlit Reverie Anime preview 1",
@@ -3140,7 +3151,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/forest-lantern-healing/01-cover.optimized.png",
+        "src": "/generated/style-previews/forest-lantern-healing/01-cover.webp",
         "originalSrc": "/generated/style-previews/forest-lantern-healing/01-cover.png",
         "altZh": "森灯治愈幻想风格预览1",
         "altEn": "Forest Lantern Healing preview 1",
@@ -3240,7 +3251,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/xianxia-sword-maiden/01-cover.optimized.png",
+        "src": "/generated/style-previews/xianxia-sword-maiden/01-cover.webp",
         "originalSrc": "/generated/style-previews/xianxia-sword-maiden/01-cover.png",
         "altZh": "仙侠执剑少女风格预览1",
         "altEn": "Xianxia Sword Maiden preview 1",
@@ -3297,7 +3308,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/ink-wash-spiritscape/01-cover.optimized.png",
+        "src": "/generated/style-previews/ink-wash-spiritscape/01-cover.webp",
         "originalSrc": "/generated/style-previews/ink-wash-spiritscape/01-cover.png",
         "altZh": "水墨灵境二次元风格预览1",
         "altEn": "Ink Wash Spiritscape preview 1",
@@ -3374,7 +3385,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/neo-guochao-anime/01-cover.optimized.png",
+        "src": "/generated/style-previews/neo-guochao-anime/01-cover.webp",
         "originalSrc": "/generated/style-previews/neo-guochao-anime/01-cover.png",
         "altZh": "新国潮动漫风格预览1",
         "altEn": "Neo Guochao Anime preview 1",
@@ -3447,7 +3458,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/palace-fantasy-portrait/01-cover.optimized.png",
+        "src": "/generated/style-previews/palace-fantasy-portrait/01-cover.webp",
         "originalSrc": "/generated/style-previews/palace-fantasy-portrait/01-cover.png",
         "altZh": "宫廷幻想肖像风格预览1",
         "altEn": "Palace Fantasy Portrait preview 1",
@@ -3551,7 +3562,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/urban-fashion-webtoon/01-cover.optimized.png",
+        "src": "/generated/style-previews/urban-fashion-webtoon/01-cover.webp",
         "originalSrc": "/generated/style-previews/urban-fashion-webtoon/01-cover.png",
         "altZh": "都市时装韩漫风格预览1",
         "altEn": "Urban Fashion Webtoon preview 1",
@@ -3608,7 +3619,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/romance-webtoon/01-cover.optimized.png",
+        "src": "/generated/style-previews/romance-webtoon/01-cover.webp",
         "originalSrc": "/generated/style-previews/romance-webtoon/01-cover.png",
         "altZh": "浪漫恋爱韩漫风格预览1",
         "altEn": "Romance Webtoon preview 1",
@@ -3681,7 +3692,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/high-gloss-webtoon/01-cover.optimized.png",
+        "src": "/generated/style-previews/high-gloss-webtoon/01-cover.webp",
         "originalSrc": "/generated/style-previews/high-gloss-webtoon/01-cover.png",
         "altZh": "高光质感韩漫风格预览1",
         "altEn": "High Gloss Webtoon preview 1",
@@ -3757,7 +3768,7 @@
     "previewImages": [
       {
         "id": "cover",
-        "src": "/generated/style-previews/action-webtoon-panel/01-cover.optimized.png",
+        "src": "/generated/style-previews/action-webtoon-panel/01-cover.webp",
         "originalSrc": "/generated/style-previews/action-webtoon-panel/01-cover.png",
         "altZh": "动作长条韩漫风格预览1",
         "altEn": "Action Webtoon Panel preview 1",

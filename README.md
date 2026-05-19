@@ -16,11 +16,11 @@ pnpm install
 pnpm dev
 ```
 
-Then open [http://localhost:3000](http://localhost:3000).
+Then open [http://localhost:3326](http://localhost:3326).
 
 ## Available scripts
 
-- `pnpm dev` — start the local development server.
+- `pnpm dev` — regenerate style JSON data, then start the local development server on port `3326`.
 - `pnpm build` — validate style content, generate `src/data/generated-styles.json`, and build the production app.
 - `pnpm start` — run the built app locally.
 - `pnpm styles:build` — validate `content/styles` and regenerate style JSON data.
@@ -70,6 +70,8 @@ This regenerates `src/data/generated-styles.json` and validates:
 - `category` belongs to the approved category set.
 - required fields, arrays, and preview metadata exist.
 - preview manifests match actual files in `previews/`.
+
+`pnpm dev` also regenerates this data once before the app starts, so newly added preview entries are reflected after a dev server restart.
 
 ## Dependencies
 

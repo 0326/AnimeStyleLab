@@ -6,5 +6,13 @@
     "altEn": "Hologram Fashion Lab preview 1",
     "label": "Hero",
     "focus": "overall-style"
+  },
+  {
+    "id": "02",
+    "file": "02.png",
+    "altZh": "全息时装实验室风格预览2",
+    "altEn": "Hologram Fashion Lab preview 2",
+    "label": "Hero",
+    "focus": "overall-style"
   }
 ]

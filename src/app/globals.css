@@ -73,7 +73,7 @@ button {
 }
 
 .section-frame {
-  width: min(1440px, calc(100vw - 64px));
+  width: min(1440px, calc(100vw - 32px));
   margin-inline: auto;
 }
 
