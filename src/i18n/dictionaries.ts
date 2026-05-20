@@ -207,7 +207,7 @@ export const dictionaries = {
       metadataDescription:
         "按情绪、材质、用途和提示词语言浏览 50 个动漫风格路径。",
       eyebrow: "风格图谱",
-      title: "按视觉语言检索，而不是靠随机提示词碎片。",
+      title: "按视觉语言检索",
       intro:
         "通过缩略预览、提示词词汇、使用场景和失败模式比较风格，先选定路径再开始生成。",
       filtersEyebrow: "风格筛选",
@@ -228,7 +228,7 @@ export const dictionaries = {
       results: "结果",
       resultsTitle: "当前聚焦 {count} 个风格",
       resultsIntro:
-        "图谱保持 PC 优先：信息密度足够支撑比较，同时仍能并排扫描提示词系统与预览语言。",
+        "信息密度足够支撑比较，同时仍能并排扫描提示词系统与预览语言。",
       noMatchEyebrow: "无匹配",
       noMatchTitle: "重置筛选路径",
       noMatchBody:

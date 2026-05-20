@@ -23,7 +23,7 @@ export function StyleCard({ style }: StyleCardProps) {
       : categoryMap[style.category].nameEn;
 
   return (
-    <article className="group overflow-hidden border border-[var(--line)] bg-[var(--surface)] transition hover:border-[var(--line-strong)] hover:bg-[var(--surface-strong)]">
+    <article className="group flex h-full flex-col overflow-hidden border border-[var(--line)] bg-[var(--surface)] transition hover:border-[var(--line-strong)] hover:bg-[var(--surface-strong)]">
       <Link href={`/styles/${style.slug}`} className="block">
         <PreviewTile
           style={style}
@@ -51,7 +51,7 @@ export function StyleCard({ style }: StyleCardProps) {
           }
         />
       </Link>
-      <div className="space-y-4 border-t border-[var(--line)] p-5">
+      <div className="flex flex-1 flex-col gap-4 border-t border-[var(--line)] p-5">
         <div className="space-y-2">
           <div className="flex items-center justify-between gap-4">
             <p className="eyebrow">{categoryName}</p>
@@ -63,7 +63,7 @@ export function StyleCard({ style }: StyleCardProps) {
           <h3 className="font-display text-[1.7rem] leading-none text-white transition group-hover:text-[oklch(96%_0.02_226)]">
             {styleName}
           </h3>
-          <p className="overflow-hidden text-sm leading-6 text-[oklch(78%_0.026_226)] [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2]">
+          <p className="min-h-[3rem] overflow-hidden text-sm leading-6 text-[oklch(78%_0.026_226)] [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2]">
             {style.summary}
           </p>
         </div>
@@ -74,7 +74,7 @@ export function StyleCard({ style }: StyleCardProps) {
             </span>
           ))}
         </div>
-        <div className="flex items-center justify-between gap-4">
+        <div className="mt-auto flex items-center justify-between gap-4">
           <Link href={`/styles/${style.slug}`} className="button-primary">
             {dictionary.styles.viewStyle}
           </Link>

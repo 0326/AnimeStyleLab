@@ -25,11 +25,10 @@ export function StylePreviewGallery({ style }: StylePreviewGalleryProps) {
   const currentAlt =
     locale === "zh" ? (currentImage?.altZh ?? "") : (currentImage?.altEn ?? "");
   const currentOriginalSrc = currentImage?.originalSrc ?? "";
+  const currentPreviewSrc = currentImage?.src ?? "";
   const originalImageLabel = locale === "zh" ? "查看原图" : "View original";
-  const currentDisplaySrc =
-    currentImage && loadedOriginals.has(currentOriginalSrc)
-      ? currentOriginalSrc
-      : (currentImage?.src ?? "");
+  const hasDecodedOriginal =
+    !!currentImage && loadedOriginals.has(currentOriginalSrc);
 
   useEffect(() => {
     if (
@@ -43,7 +42,13 @@ export function StylePreviewGallery({ style }: StylePreviewGalleryProps) {
 
     const originalImage = new window.Image();
     loadingOriginalsRef.current.add(currentOriginalSrc);
-    originalImage.onload = () => {
+    originalImage.onload = async () => {
+      try {
+        await originalImage.decode?.();
+      } catch {
+        // Keep the eager swap path when decode is unavailable or fails.
+      }
+
       loadingOriginalsRef.current.delete(currentOriginalSrc);
       setLoadedOriginals((currentLoaded) => {
         if (currentLoaded.has(currentOriginalSrc)) {
@@ -90,12 +95,23 @@ export function StylePreviewGallery({ style }: StylePreviewGalleryProps) {
     <section className="min-w-0 max-w-[600px]">
       <div className="relative aspect-[4/3] overflow-hidden border border-[var(--line-strong)] bg-[var(--surface-ink)] shadow-[0_30px_90px_oklch(5%_0.01_220/0.28)]">
         <img
-          key={currentDisplaySrc}
-          src={currentDisplaySrc}
+          src={currentPreviewSrc}
           alt={currentAlt}
           width={currentImage.width}
           height={currentImage.height}
-          className="h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover"
+          loading="eager"
+          decoding="async"
+        />
+        <img
+          src={currentOriginalSrc}
+          alt=""
+          aria-hidden="true"
+          width={currentImage.width}
+          height={currentImage.height}
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-300 ease-out ${
+            hasDecodedOriginal ? "opacity-100" : "opacity-0"
+          }`}
           loading="eager"
           decoding="async"
         />
@@ -212,11 +228,22 @@ export function StylePreviewGallery({ style }: StylePreviewGalleryProps) {
           ) : null}
           <div className="relative z-10 h-full w-full p-6">
             <img
+              src={currentPreviewSrc}
+              alt={currentAlt}
+              width={currentImage.width}
+              height={currentImage.height}
+              className="absolute inset-0 h-full w-full object-contain p-6 shadow-[0_30px_90px_oklch(0%_0_0/0.38)]"
+              loading="eager"
+              decoding="async"
+            />
+            <img
               src={currentOriginalSrc}
               alt={currentAlt}
               width={currentImage.width}
               height={currentImage.height}
-              className="h-full w-full object-contain shadow-[0_30px_90px_oklch(0%_0_0/0.38)]"
+              className={`absolute inset-0 h-full w-full object-contain p-6 shadow-[0_30px_90px_oklch(0%_0_0/0.38)] transition-opacity duration-300 ease-out ${
+                hasDecodedOriginal ? "opacity-100" : "opacity-0"
+              }`}
               loading="eager"
               decoding="async"
             />

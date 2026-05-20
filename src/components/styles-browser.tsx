@@ -44,7 +44,7 @@ export function StylesBrowser() {
   });
 
   return (
-    <div className="grid gap-8 xl:grid-cols-[280px_minmax(0,1fr)]">
+    <div className="grid gap-8 min-[960px]:grid-cols-[280px_minmax(0,1fr)]">
       <aside className="panel sticky top-28 h-fit p-5">
         <div>
           <p className="eyebrow">{dictionary.styles.filtersEyebrow}</p>
@@ -114,7 +114,7 @@ export function StylesBrowser() {
         </div>
       </aside>
       <section>
-        <div className="mb-5 flex items-end justify-between gap-6">
+        <div className="mb-5 flex gap-6 min-[960px]:items-end min-[960px]:justify-between">
           <div>
             <p className="eyebrow">{dictionary.styles.results}</p>
             <h2 className="mt-2 font-display text-4xl text-white">
@@ -124,7 +124,7 @@ export function StylesBrowser() {
               )}
             </h2>
           </div>
-          <p className="max-w-xl text-right text-sm leading-6 text-[oklch(76%_0.026_226)]">
+          <p className="max-w-xl text-sm leading-6 text-[oklch(76%_0.026_226)] min-[960px]:text-right">
             {dictionary.styles.resultsIntro}
           </p>
         </div>

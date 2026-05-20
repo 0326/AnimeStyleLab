@@ -7,7 +7,7 @@ export function StylesPageContent() {
   const { dictionary } = useLocale();
 
   return (
-    <div className="section-frame space-y-8 py-10">
+    <div className="section-frame min-w-[960px] space-y-8 py-10">
       <div className="max-w-4xl">
         <p className="eyebrow">{dictionary.styles.eyebrow}</p>
         <h1 className="mt-3 font-display text-6xl text-white">
