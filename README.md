@@ -7,7 +7,7 @@ AnimeStyleLab is a content-driven Next.js app for browsing, previewing, and buil
 - Renders a static prompt lab using `Next.js` app router and Tailwind CSS v4.
 - Uses `content/styles/*` folders as the source of truth for anime style records.
 - Generates runtime JSON data from Markdown style content with `scripts/build-styles.mjs`.
-- Supports static export via `next export` and unoptimized image handling for preview assets.
+- Supports static export via `next export`, with local `webp` preview assets and CDN-backed original previews.
 
 ## Quick start
 
@@ -37,7 +37,7 @@ Then open [http://localhost:3326](http://localhost:3326).
 - `src/components/` — reusable UI components for the builder, styles browser, cards, and detail views.
 - `src/data/generated-styles.json` — generated style metadata consumed by the app.
 - `content/styles/` — source style folders with Markdown data and optional preview images.
-- `public/generated/style-previews/` — generated preview image assets copied from each style folder.
+- `public/generated/style-previews/` — generated compressed `webp` preview image assets used by cards and default detail previews.
 - `scripts/build-styles.mjs` — loader/validator that converts `content/styles` into app-ready JSON.
 
 ## Style content authoring
@@ -64,12 +64,18 @@ After editing or adding style content, run:
 pnpm styles:build
 ```
 
-This regenerates `src/data/generated-styles.json` and validates:
+This regenerates `src/data/generated-styles.json`, refreshes local `webp` preview assets, and validates:
 
 - `slug` matches the folder name and is unique.
 - `category` belongs to the approved category set.
 - required fields, arrays, and preview metadata exist.
 - preview manifests match actual files in `previews/`.
+
+Generated preview behavior:
+
+- The build keeps only compressed preview images under `public/generated/style-previews/`.
+- `previewImages.originalSrc` points to jsDelivr-backed GitHub assets by default: `https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/...`
+- Override that base with `STYLE_ORIGINAL_CDN_BASE_URL` if the repo owner, branch, or CDN path changes.
 
 `pnpm dev` also regenerates this data once before the app starts, so newly added preview entries are reflected after a dev server restart.
 
