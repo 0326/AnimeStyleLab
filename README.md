@@ -50,7 +50,6 @@ Example structure:
 content/styles/
   cel-shine-anime/
     index.md
-    previews.json
     previews/
       01-cover.webp
       02-scene.webp
@@ -69,7 +68,7 @@ This regenerates `src/data/generated-styles.json`, refreshes local preview thumb
 - `slug` matches the folder name and is unique.
 - `category` belongs to the approved category set.
 - required fields, arrays, and preview metadata exist.
-- preview manifests match actual files in `previews/`.
+- preview source files in `previews/` can be read successfully.
 
 Generated preview behavior:
 
@@ -77,6 +76,7 @@ Generated preview behavior:
 - `previewImages.src` points to the jsDelivr CDN path for those generated thumbs.
 - `previewImages.originalSrc` points to jsDelivr-backed GitHub assets by default: `https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/...`
 - Override that base with `STYLE_ORIGINAL_CDN_BASE_URL` if the repo owner, branch, or CDN path changes.
+- Preview metadata is generated automatically by scanning `previews/` in filename order.
 
 `pnpm dev` also regenerates this data once before the app starts, so newly added preview entries are reflected after a dev server restart.
 

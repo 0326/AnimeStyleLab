@@ -415,29 +415,6 @@ function validateStyle(style, folderName, errors) {
   }
 }
 
-async function readPreviewManifest(folderName, errors) {
-  const manifestPath = path.join(contentDir, folderName, "previews.json");
-
-  try {
-    const source = await readFile(manifestPath, "utf8");
-    const items = JSON.parse(source);
-
-    if (!Array.isArray(items)) {
-      errors.push(`${folderName}: previews.json must contain an array`);
-      return [];
-    }
-
-    return items;
-  } catch (error) {
-    if (error?.code === "ENOENT") {
-      return [];
-    }
-
-    errors.push(`${folderName}: invalid previews.json: ${error.message}`);
-    return [];
-  }
-}
-
 async function readPreviewDirectoryFiles(folderName) {
   const previewDir = path.join(contentDir, folderName, "previews");
 
@@ -457,31 +434,6 @@ async function readPreviewDirectoryFiles(folderName) {
   }
 }
 
-function validatePreviewManifestItem(item, folderName, errors, ids, files) {
-  if (!item || typeof item !== "object") {
-    errors.push(`${folderName}: preview entry must be an object`);
-    return false;
-  }
-
-  for (const field of ["id", "file", "altZh", "altEn", "label", "focus"]) {
-    if (typeof item[field] !== "string" || item[field].trim().length === 0) {
-      errors.push(`${folderName}: preview entry missing "${field}"`);
-      return false;
-    }
-  }
-
-  if (ids.has(item.id)) {
-    errors.push(`${folderName}: duplicate preview id "${item.id}"`);
-  }
-  if (files.has(item.file)) {
-    errors.push(`${folderName}: duplicate preview file "${item.file}"`);
-  }
-
-  ids.add(item.id);
-  files.add(item.file);
-  return true;
-}
-
 function validatePreviewDimensions(dimensions, folderName, fileName, errors) {
   if (
     !dimensions ||
@@ -492,18 +444,10 @@ function validatePreviewDimensions(dimensions, folderName, fileName, errors) {
     return false;
   }
 
-  const ratio = dimensions.width / dimensions.height;
-  if (Math.abs(ratio - previewAspectRatio) > previewAspectRatioTolerance) {
-    errors.push(
-      `${folderName}: "${fileName}" must be close to ${previewWidth}x${previewHeight} (4:3), received ${dimensions.width}x${dimensions.height}`,
-    );
-    return false;
-  }
-
   return true;
 }
 
-function createFallbackPreviewManifest(style, previewFiles) {
+function createPreviewMetadata(style, previewFiles) {
   if (previewFiles.length === 0) {
     return [];
   }
@@ -537,13 +481,9 @@ async function generatePreviewThumbs(folderName, previewFiles) {
 }
 
 async function buildPreviewImages(folderName, style, errors) {
-  const previewItems = await readPreviewManifest(folderName, errors);
   const previewFiles = await readPreviewDirectoryFiles(folderName);
   await generatePreviewThumbs(folderName, previewFiles);
-  const normalizedPreviewItems =
-    previewItems.length > 0
-      ? previewItems
-      : createFallbackPreviewManifest(style, previewFiles);
+  const normalizedPreviewItems = createPreviewMetadata(style, previewFiles);
 
   if (normalizedPreviewItems.length === 0) {
     return [];
@@ -553,15 +493,9 @@ async function buildPreviewImages(folderName, style, errors) {
     errors.push(`${folderName}: previewImages cannot exceed 6 entries`);
   }
 
-  const ids = new Set();
-  const files = new Set();
   const builtImages = [];
 
   for (const item of normalizedPreviewItems) {
-    if (!validatePreviewManifestItem(item, folderName, errors, ids, files)) {
-      continue;
-    }
-
     const sourcePath = path.join(contentDir, folderName, "previews", item.file);
 
     let buffer;

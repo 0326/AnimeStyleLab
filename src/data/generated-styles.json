@@ -73,12 +73,23 @@
         "id": "cover",
         "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/cel-shine-anime/thumb/01-cover.webp",
         "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/cel-shine-anime/previews/01-cover.png",
-        "altZh": "高亮赛璐璐风格主预览",
-        "altEn": "Cel Shine Anime primary preview",
+        "altZh": "高亮赛璐璐风格预览1",
+        "altEn": "Cel Shine Anime preview 1",
         "label": "Hero",
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/cel-shine-anime/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/cel-shine-anime/previews/1086x1448.png",
+        "altZh": "高亮赛璐璐风格预览2",
+        "altEn": "Cel Shine Anime preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ]
   },
@@ -159,6 +170,28 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/rainlit-cinematic-anime/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/rainlit-cinematic-anime/previews/1086x1448.png",
+        "altZh": "雨夜电影感动画风格预览2",
+        "altEn": "Rainlit Cinematic Anime preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
+      },
+      {
+        "id": "preview-3",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/rainlit-cinematic-anime/thumb/900x1200.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/rainlit-cinematic-anime/previews/900x1200.png",
+        "altZh": "雨夜电影感动画风格预览3",
+        "altEn": "Rainlit Cinematic Anime preview 3",
+        "label": "View 3",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ]
   },
@@ -216,6 +249,28 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/tv-cut-anime-frame/thumb/02.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/tv-cut-anime-frame/previews/02.png",
+        "altZh": "TV 动画截图风风格预览2",
+        "altEn": "TV Cut Anime Frame preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 600,
+        "height": 450
+      },
+      {
+        "id": "preview-3",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/tv-cut-anime-frame/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/tv-cut-anime-frame/previews/1086x1448.png",
+        "altZh": "TV 动画截图风风格预览3",
+        "altEn": "TV Cut Anime Frame preview 3",
+        "label": "View 3",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -289,6 +344,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/theatrical-anime-poster/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/theatrical-anime-poster/previews/1086x1448.png",
+        "altZh": "剧场版海报动画风格预览2",
+        "altEn": "Theatrical Anime Poster preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -366,6 +432,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/retro-90s-anime/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/retro-90s-anime/previews/1086x1448.png",
+        "altZh": "90 年代复古动画风格预览2",
+        "altEn": "Retro 90s Anime preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -442,6 +519,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/screentone-manga-cover/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/screentone-manga-cover/previews/1086x1448.png",
+        "altZh": "网点漫画封面风格预览2",
+        "altEn": "Screentone Manga Cover preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -515,6 +603,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/shojo-sparkle-manga/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/shojo-sparkle-manga/previews/1086x1448.png",
+        "altZh": "少女漫画闪光感风格预览2",
+        "altEn": "Shojo Sparkle Manga preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -588,6 +687,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/shonen-impact-manga/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/shonen-impact-manga/previews/1086x1448.png",
+        "altZh": "少年漫冲击格风格预览2",
+        "altEn": "Shonen Impact Manga preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -664,6 +774,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/seinen-ink-drama/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/seinen-ink-drama/previews/1086x1448.png",
+        "altZh": "青年漫墨色戏剧风格预览2",
+        "altEn": "Seinen Ink Drama preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -737,6 +858,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/hand-draft-manga/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/hand-draft-manga/previews/1086x1448.png",
+        "altZh": "手绘漫画草稿风格预览2",
+        "altEn": "Hand Draft Manga preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -841,6 +973,28 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/premium-gacha-illustration/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/premium-gacha-illustration/previews/1086x1448.png",
+        "altZh": "高端手游立绘风格预览2",
+        "altEn": "Premium Gacha Illustration preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
+      },
+      {
+        "id": "preview-3",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/premium-gacha-illustration/thumb/900x1200.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/premium-gacha-illustration/previews/900x1200.png",
+        "altZh": "高端手游立绘风格预览3",
+        "altEn": "Premium Gacha Illustration preview 3",
+        "label": "View 3",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ]
   },
@@ -898,6 +1052,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/half-painterly-character-sheet/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/half-painterly-character-sheet/previews/1086x1448.png",
+        "altZh": "半厚涂角色设定风格预览2",
+        "altEn": "Half Painterly Character Sheet preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -975,6 +1140,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/fantasy-rpg-card/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/fantasy-rpg-card/previews/1086x1448.png",
+        "altZh": "幻想 RPG 卡牌插画风格预览2",
+        "altEn": "Fantasy RPG Card preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -1055,6 +1231,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/live2d-lobby-heroine/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/live2d-lobby-heroine/previews/1086x1448.png",
+        "altZh": "看板娘大厅立绘风格预览2",
+        "altEn": "Live2D Lobby Heroine preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -1132,6 +1319,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/mecha-hangar-anime/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/mecha-hangar-anime/previews/1086x1448.png",
+        "altZh": "机甲机库动漫风格预览2",
+        "altEn": "Mecha Hangar Anime preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -1212,6 +1410,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/school-romance-vn/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/school-romance-vn/previews/1086x1448.png",
+        "altZh": "校园恋爱视觉小说风格预览2",
+        "altEn": "School Romance VN preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -1292,6 +1501,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/mystery-vn-noir/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/mystery-vn-noir/previews/1086x1448.png",
+        "altZh": "悬疑视觉小说风格预览2",
+        "altEn": "Mystery VN Noir preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -1369,6 +1589,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/healing-visual-novel/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/healing-visual-novel/previews/1086x1448.png",
+        "altZh": "治愈系视觉小说风格预览2",
+        "altEn": "Healing Visual Novel preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -1449,6 +1680,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/premium-ui-vn-portrait/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/premium-ui-vn-portrait/previews/1086x1448.png",
+        "altZh": "高级 UI 角色立绘风格预览2",
+        "altEn": "Premium UI VN Portrait preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -1529,6 +1771,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/chibi-idol-mascot/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/chibi-idol-mascot/previews/1086x1448.png",
+        "altZh": "Q版偶像吉祥物风格预览2",
+        "altEn": "Chibi Idol Mascot preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -1602,6 +1855,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/pastel-sticker-pack/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/pastel-sticker-pack/previews/1086x1448.png",
+        "altZh": "粉彩贴纸包风格预览2",
+        "altEn": "Pastel Sticker Pack preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -1675,6 +1939,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/plush-mascot-anime/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/plush-mascot-anime/previews/1086x1448.png",
+        "altZh": "毛绒吉祥物二次元风格预览2",
+        "altEn": "Plush Mascot Anime preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -1755,6 +2030,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/minimal-line-buddy/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/minimal-line-buddy/previews/1086x1448.png",
+        "altZh": "极简萌系伙伴风格预览2",
+        "altEn": "Minimal Line Buddy preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -1831,6 +2117,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/anime-figure-render/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/anime-figure-render/previews/1086x1448.png",
+        "altZh": "动漫手办渲染风格预览2",
+        "altEn": "Anime Figure Render preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -1904,6 +2201,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/nendoroid-showcase/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/nendoroid-showcase/previews/1086x1448.png",
+        "altZh": "黏土人展示风风格预览2",
+        "altEn": "Nendoroid Showcase preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -1981,6 +2289,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/blind-box-vinyl-toy/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/blind-box-vinyl-toy/previews/1086x1448.png",
+        "altZh": "盲盒潮玩风风格预览2",
+        "altEn": "Blind Box Vinyl Toy preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -2081,6 +2400,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/plush-anime-render/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/plush-anime-render/previews/1086x1448.png",
+        "altZh": "毛绒二次元渲染风格预览2",
+        "altEn": "Plush Anime Render preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ]
   },
@@ -2138,6 +2468,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/soft-gummy-character/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/soft-gummy-character/previews/1086x1448.png",
+        "altZh": "软糖质感角色风格预览2",
+        "altEn": "Soft Gummy Character preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -2241,6 +2582,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/neon-city-anime/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/neon-city-anime/previews/1086x1448.png",
+        "altZh": "霓虹都市动漫风格预览2",
+        "altEn": "Neon City Anime preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ]
   },
@@ -2301,6 +2653,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/digital-space-idol/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/digital-space-idol/previews/1086x1448.png",
+        "altZh": "数字空间偶像风格预览2",
+        "altEn": "Digital Space Idol preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -2380,15 +2743,26 @@
         "height": 450
       },
       {
-        "id": "02",
+        "id": "preview-2",
         "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/hologram-fashion-lab/thumb/02.webp",
         "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/hologram-fashion-lab/previews/02.png",
         "altZh": "全息时装实验室风格预览2",
         "altEn": "Hologram Fashion Lab preview 2",
-        "label": "Hero",
-        "focus": "overall-style",
+        "label": "View 2",
+        "focus": "style-variation",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-3",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/hologram-fashion-lab/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/hologram-fashion-lab/previews/1086x1448.png",
+        "altZh": "全息时装实验室风格预览3",
+        "altEn": "Hologram Fashion Lab preview 3",
+        "label": "View 3",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -2469,6 +2843,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/cyber-angel-chorus/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/cyber-angel-chorus/previews/1086x1448.png",
+        "altZh": "赛博天使合唱风格预览2",
+        "altEn": "Cyber Angel Chorus preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -2575,6 +2960,28 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/black-gold-witchcore/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/black-gold-witchcore/previews/1086x1448.png",
+        "altZh": "黑金魔女系风格预览2",
+        "altEn": "Black Gold Witchcore preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
+      },
+      {
+        "id": "preview-3",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/black-gold-witchcore/thumb/900x1200.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/black-gold-witchcore/previews/900x1200.png",
+        "altZh": "黑金魔女系风格预览3",
+        "altEn": "Black Gold Witchcore preview 3",
+        "label": "View 3",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ]
   },
@@ -2632,6 +3039,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/vampire-moon-anime/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/vampire-moon-anime/previews/1086x1448.png",
+        "altZh": "月下吸血鬼动漫风格预览2",
+        "altEn": "Vampire Moon Anime preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -2709,6 +3127,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/gothic-cathedral-anime/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/gothic-cathedral-anime/previews/1086x1448.png",
+        "altZh": "哥特教堂动漫风格预览2",
+        "altEn": "Gothic Cathedral Anime preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -2786,6 +3215,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/luxury-opera-gothic/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/luxury-opera-gothic/previews/1086x1448.png",
+        "altZh": "暗黑歌剧奢华风风格预览2",
+        "altEn": "Luxury Opera Gothic preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -2863,6 +3303,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/healing-cloudscape-anime/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/healing-cloudscape-anime/previews/1086x1448.png",
+        "altZh": "云海治愈动画风格预览2",
+        "altEn": "Healing Cloudscape Anime preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -2936,6 +3387,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/watercolor-dream-anime/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/watercolor-dream-anime/previews/1086x1448.png",
+        "altZh": "水彩梦境二次元风格预览2",
+        "altEn": "Watercolor Dream Anime preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -3009,6 +3471,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/soft-healing-room/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/soft-healing-room/previews/1086x1448.png",
+        "altZh": "柔光治愈房间风格预览2",
+        "altEn": "Soft Healing Room preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -3086,6 +3559,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/moonlit-reverie-anime/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/moonlit-reverie-anime/previews/1086x1448.png",
+        "altZh": "月下梦游二次元风格预览2",
+        "altEn": "Moonlit Reverie Anime preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -3159,6 +3643,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/forest-lantern-healing/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/forest-lantern-healing/previews/1086x1448.png",
+        "altZh": "森灯治愈幻想风格预览2",
+        "altEn": "Forest Lantern Healing preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -3259,6 +3754,28 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/xianxia-sword-maiden/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/xianxia-sword-maiden/previews/1086x1448.png",
+        "altZh": "仙侠执剑少女风格预览2",
+        "altEn": "Xianxia Sword Maiden preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
+      },
+      {
+        "id": "preview-3",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/xianxia-sword-maiden/thumb/900x1200.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/xianxia-sword-maiden/previews/900x1200.png",
+        "altZh": "仙侠执剑少女风格预览3",
+        "altEn": "Xianxia Sword Maiden preview 3",
+        "label": "View 3",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ]
   },
@@ -3316,6 +3833,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/ink-wash-spiritscape/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/ink-wash-spiritscape/previews/1086x1448.png",
+        "altZh": "水墨灵境二次元风格预览2",
+        "altEn": "Ink Wash Spiritscape preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -3393,6 +3921,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/neo-guochao-anime/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/neo-guochao-anime/previews/1086x1448.png",
+        "altZh": "新国潮动漫风格预览2",
+        "altEn": "Neo Guochao Anime preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
@@ -3466,6 +4005,17 @@
         "focus": "overall-style",
         "width": 600,
         "height": 450
+      },
+      {
+        "id": "preview-2",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/palace-fantasy-portrait/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/palace-fantasy-portrait/previews/1086x1448.png",
+        "altZh": "宫廷幻想肖像风格预览2",
+        "altEn": "Palace Fantasy Portrait preview 2",
+        "label": "View 2",
+        "focus": "style-variation",
+        "width": 450,
+        "height": 600
       }
     ],
     "modelInput": {
