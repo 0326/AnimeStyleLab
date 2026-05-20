@@ -1,9 +1,9 @@
 import { spawnSync } from "node:child_process";
 import {
-  copyFile,
   mkdir,
   readdir,
   readFile,
+  rm,
   writeFile,
 } from "node:fs/promises";
 import { createRequire } from "node:module";
@@ -16,12 +16,9 @@ const rootDir = path.resolve(
 );
 const contentDir = path.join(rootDir, "content", "styles");
 const outputPath = path.join(rootDir, "src", "data", "generated-styles.json");
-const publicPreviewDir = path.join(
-  rootDir,
-  "public",
-  "generated",
-  "style-previews",
-);
+const originalPreviewCdnBaseUrl =
+  process.env.STYLE_ORIGINAL_CDN_BASE_URL ??
+  "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles";
 const biomePath = path.join(rootDir, "node_modules", ".bin", "biome");
 const checkOnly = process.argv.includes("--check");
 const require = createRequire(import.meta.url);
@@ -29,8 +26,7 @@ const { imageSize } = require("next/dist/compiled/image-size");
 const previewAspectRatio = 4 / 3;
 const previewWidth = 1200;
 const previewHeight = 900;
-const optimizedPreviewWidth = 600;
-const optimizedPreviewHeight = 450;
+const optimizedPreviewMinSide = 450;
 const previewAspectRatioTolerance = 0.01;
 const hasCwebp = checkCommandAvailable("cwebp");
 const hasMagick = checkCommandAvailable("magick");
@@ -199,20 +195,57 @@ function formatOptimizedFileName(fileName) {
   );
 }
 
+function trimTrailingSlash(value) {
+  return value.replace(/\/+$/u, "");
+}
+
+function getOriginalPreviewCdnUrl(folderName, fileName) {
+  const baseUrl = trimTrailingSlash(originalPreviewCdnBaseUrl);
+  return `${baseUrl}/${folderName}/previews/${fileName}`;
+}
+
+function getOptimizedPreviewOutputDir(folderName) {
+  return path.join(contentDir, folderName, "thumb");
+}
+
+function getOptimizedPreviewCdnUrl(folderName, fileName) {
+  const baseUrl = trimTrailingSlash(originalPreviewCdnBaseUrl);
+  return `${baseUrl}/${folderName}/thumb/${fileName}`;
+}
+
 function checkCommandAvailable(command) {
   const result = spawnSync("which", [command], { encoding: "utf8" });
   return result.status === 0;
 }
 
-function optimizePreviewImage(sourcePath, outputPath) {
+function getOptimizedPreviewDimensions(dimensions) {
+  if (!hasCwebp && !hasMagick && !hasSips) {
+    return {
+      width: dimensions.width,
+      height: dimensions.height,
+    };
+  }
+
+  const shorterSide = Math.min(dimensions.width, dimensions.height);
+  const scale = optimizedPreviewMinSide / shorterSide;
+
+  return {
+    width: Math.max(1, Math.round(dimensions.width * scale)),
+    height: Math.max(1, Math.round(dimensions.height * scale)),
+  };
+}
+
+function optimizePreviewImage(sourcePath, outputPath, dimensions) {
+  const optimizedDimensions = getOptimizedPreviewDimensions(dimensions);
+
   if (hasCwebp) {
     const cwebpResult = spawnSync(
       "cwebp",
       [
         "-quiet",
         "-resize",
-        String(optimizedPreviewWidth),
-        String(optimizedPreviewHeight),
+        String(optimizedDimensions.width),
+        String(optimizedDimensions.height),
         "-q",
         "82",
         sourcePath,
@@ -233,7 +266,7 @@ function optimizePreviewImage(sourcePath, outputPath) {
       [
         sourcePath,
         "-resize",
-        `${optimizedPreviewWidth}x${optimizedPreviewHeight}!`,
+        `${optimizedDimensions.width}x${optimizedDimensions.height}!`,
         "-quality",
         "82",
         outputPath,
@@ -254,8 +287,8 @@ function optimizePreviewImage(sourcePath, outputPath) {
         "formatOptions",
         "82",
         "-z",
-        String(optimizedPreviewHeight),
-        String(optimizedPreviewWidth),
+        String(optimizedDimensions.height),
+        String(optimizedDimensions.width),
         sourcePath,
         "--out",
         outputPath,
@@ -276,20 +309,6 @@ function optimizePreviewImage(sourcePath, outputPath) {
       hasSips ? "Tried sips." : "sips not installed.",
     ].join("\n"),
   );
-}
-
-function getOptimizedPreviewDimensions(fileName) {
-  if (hasCwebp || hasMagick || hasSips) {
-    return {
-      width: optimizedPreviewWidth,
-      height: optimizedPreviewHeight,
-    };
-  }
-
-  return {
-    width: previewWidth,
-    height: previewHeight,
-  };
 }
 
 function validateStyle(style, folderName, errors) {
@@ -499,9 +518,28 @@ function createFallbackPreviewManifest(style, previewFiles) {
   }));
 }
 
+async function generatePreviewThumbs(folderName, previewFiles) {
+  if (checkOnly || previewFiles.length === 0) {
+    return;
+  }
+
+  const outputDir = getOptimizedPreviewOutputDir(folderName);
+  await mkdir(outputDir, { recursive: true });
+
+  for (const fileName of previewFiles) {
+    const sourcePath = path.join(contentDir, folderName, "previews", fileName);
+    const buffer = await readFile(sourcePath);
+    const dimensions = imageSize(buffer);
+    const optimizedFileName = formatOptimizedFileName(fileName);
+    const optimizedOutputPath = path.join(outputDir, optimizedFileName);
+    optimizePreviewImage(sourcePath, optimizedOutputPath, dimensions);
+  }
+}
+
 async function buildPreviewImages(folderName, style, errors) {
   const previewItems = await readPreviewManifest(folderName, errors);
   const previewFiles = await readPreviewDirectoryFiles(folderName);
+  await generatePreviewThumbs(folderName, previewFiles);
   const normalizedPreviewItems =
     previewItems.length > 0
       ? previewItems
@@ -539,19 +577,10 @@ async function buildPreviewImages(folderName, style, errors) {
       continue;
     }
 
-    const outputDir = path.join(publicPreviewDir, folderName);
     const optimizedFileName = formatOptimizedFileName(item.file);
-    const originalOutputPath = path.join(outputDir, item.file);
-    const optimizedOutputPath = path.join(outputDir, optimizedFileName);
-    const publicPath = `/generated/style-previews/${folderName}/${optimizedFileName}`;
-    const originalPublicPath = `/generated/style-previews/${folderName}/${item.file}`;
-    const optimizedDimensions = getOptimizedPreviewDimensions(item.file);
-
-    if (!checkOnly) {
-      await mkdir(outputDir, { recursive: true });
-      await copyFile(sourcePath, originalOutputPath);
-      optimizePreviewImage(sourcePath, optimizedOutputPath);
-    }
+    const publicPath = getOptimizedPreviewCdnUrl(folderName, optimizedFileName);
+    const originalPublicPath = getOriginalPreviewCdnUrl(folderName, item.file);
+    const optimizedDimensions = getOptimizedPreviewDimensions(dimensions);
 
     builtImages.push({
       id: item.id,
@@ -567,6 +596,25 @@ async function buildPreviewImages(folderName, style, errors) {
   }
 
   return builtImages;
+}
+
+async function clearGeneratedPreviewThumbs() {
+  const entries = await readdir(contentDir, { withFileTypes: true });
+
+  await Promise.all(
+    entries
+      .filter((entry) => entry.isDirectory())
+      .flatMap((entry) => [
+        rm(path.join(contentDir, entry.name, "previews", "thumb"), {
+          recursive: true,
+          force: true,
+        }),
+        rm(path.join(contentDir, entry.name, "thumb"), {
+          recursive: true,
+          force: true,
+        }),
+      ]),
+  );
 }
 
 async function readStyles(errors) {
@@ -599,6 +647,11 @@ async function readStyles(errors) {
 
 async function main() {
   const errors = [];
+
+  if (!checkOnly) {
+    await clearGeneratedPreviewThumbs();
+  }
+
   const styleEntries = await readStyles(errors);
   const styles = styleEntries.map((entry) => entry.style);
 

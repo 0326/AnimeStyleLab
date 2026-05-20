@@ -24,41 +24,42 @@ export function StylePreviewGallery({ style }: StylePreviewGalleryProps) {
   const currentImage = images[activeIndex] ?? images[0] ?? null;
   const currentAlt =
     locale === "zh" ? (currentImage?.altZh ?? "") : (currentImage?.altEn ?? "");
+  const currentOriginalSrc = currentImage?.originalSrc ?? "";
   const originalImageLabel = locale === "zh" ? "查看原图" : "View original";
   const currentDisplaySrc =
-    currentImage && loadedOriginals.has(currentImage.originalSrc)
-      ? currentImage.originalSrc
+    currentImage && loadedOriginals.has(currentOriginalSrc)
+      ? currentOriginalSrc
       : (currentImage?.src ?? "");
 
   useEffect(() => {
     if (
       !currentImage ||
       typeof window === "undefined" ||
-      loadedOriginals.has(currentImage.originalSrc) ||
-      loadingOriginalsRef.current.has(currentImage.originalSrc)
+      loadedOriginals.has(currentOriginalSrc) ||
+      loadingOriginalsRef.current.has(currentOriginalSrc)
     ) {
       return;
     }
 
     const originalImage = new window.Image();
-    loadingOriginalsRef.current.add(currentImage.originalSrc);
+    loadingOriginalsRef.current.add(currentOriginalSrc);
     originalImage.onload = () => {
-      loadingOriginalsRef.current.delete(currentImage.originalSrc);
+      loadingOriginalsRef.current.delete(currentOriginalSrc);
       setLoadedOriginals((currentLoaded) => {
-        if (currentLoaded.has(currentImage.originalSrc)) {
+        if (currentLoaded.has(currentOriginalSrc)) {
           return currentLoaded;
         }
 
         const nextLoaded = new Set(currentLoaded);
-        nextLoaded.add(currentImage.originalSrc);
+        nextLoaded.add(currentOriginalSrc);
         return nextLoaded;
       });
     };
     originalImage.onerror = () => {
-      loadingOriginalsRef.current.delete(currentImage.originalSrc);
+      loadingOriginalsRef.current.delete(currentOriginalSrc);
     };
-    originalImage.src = currentImage.originalSrc;
-  }, [currentImage, loadedOriginals]);
+    originalImage.src = currentOriginalSrc;
+  }, [currentImage, currentOriginalSrc, loadedOriginals]);
 
   useEffect(() => {
     if (!isPreviewOpen) {
@@ -211,7 +212,7 @@ export function StylePreviewGallery({ style }: StylePreviewGalleryProps) {
           ) : null}
           <div className="relative z-10 h-full w-full p-6">
             <img
-              src={currentDisplaySrc}
+              src={currentOriginalSrc}
               alt={currentAlt}
               width={currentImage.width}
               height={currentImage.height}

@@ -36,9 +36,9 @@ After editing styles, run:
 npm run styles:build
 ```
 
-This validates the content, regenerates `src/data/generated-styles.json`, and refreshes the compressed `webp` previews under `public/generated/style-previews/`.
+This validates the content, regenerates `src/data/generated-styles.json`, and refreshes the compressed preview thumbs under each style's `thumb/` folder.
 
-Original preview files are not copied into `public/`. The generated `originalSrc` metadata points to the jsDelivr GitHub CDN by default.
+Original preview files are not copied into `public/`. Generated `src` and `originalSrc` metadata point to the jsDelivr GitHub CDN by default.
 
 The validator checks:
 

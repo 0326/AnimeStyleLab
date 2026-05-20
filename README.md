@@ -37,7 +37,7 @@ Then open [http://localhost:3326](http://localhost:3326).
 - `src/components/` — reusable UI components for the builder, styles browser, cards, and detail views.
 - `src/data/generated-styles.json` — generated style metadata consumed by the app.
 - `content/styles/` — source style folders with Markdown data and optional preview images.
-- `public/generated/style-previews/` — generated compressed `webp` preview image assets used by cards and default detail previews.
+- `content/styles/*/thumb/` — generated compressed preview assets derived from each source preview.
 - `scripts/build-styles.mjs` — loader/validator that converts `content/styles` into app-ready JSON.
 
 ## Style content authoring
@@ -64,7 +64,7 @@ After editing or adding style content, run:
 pnpm styles:build
 ```
 
-This regenerates `src/data/generated-styles.json`, refreshes local `webp` preview assets, and validates:
+This regenerates `src/data/generated-styles.json`, refreshes local preview thumbs, and validates:
 
 - `slug` matches the folder name and is unique.
 - `category` belongs to the approved category set.
@@ -73,7 +73,8 @@ This regenerates `src/data/generated-styles.json`, refreshes local `webp` previe
 
 Generated preview behavior:
 
-- The build keeps only compressed preview images under `public/generated/style-previews/`.
+- The build writes compressed preview thumbs under each style's `content/styles/<slug>/thumb/` folder.
+- `previewImages.src` points to the jsDelivr CDN path for those generated thumbs.
 - `previewImages.originalSrc` points to jsDelivr-backed GitHub assets by default: `https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/...`
 - Override that base with `STYLE_ORIGINAL_CDN_BASE_URL` if the repo owner, branch, or CDN path changes.
 
