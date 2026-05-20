@@ -38,10 +38,6 @@
     "16:9",
     "1:1"
   ],
-  "compatibleStyles": [
-    "vampire-moon-anime",
-    "healing-cloudscape-anime"
-  ],
   "similarStyles": [
     "watercolor-dream-anime",
     "mystery-vn-noir"
@@ -50,14 +46,6 @@
     "夜间治愈图",
     "安静封面",
     "情绪人物图"
-  ],
-  "notRecommendedFor": [
-    "高亮产品图",
-    "强对抗戏剧图"
-  ],
-  "commonFailurePoints": [
-    "紫色过多变俗气",
-    "月光打点不清导致画面灰平"
   ],
   "preview": {
     "accent": "#9ea3ff",

@@ -38,10 +38,6 @@
     "16:9",
     "9:16"
   ],
-  "compatibleStyles": [
-    "rainlit-cinematic-anime",
-    "healing-visual-novel"
-  ],
   "similarStyles": [
     "moonlit-reverie-anime",
     "watercolor-dream-anime"
@@ -50,14 +46,6 @@
     "背景壁纸",
     "舒缓头图",
     "梦境场景"
-  ],
-  "notRecommendedFor": [
-    "暗黑角色海报",
-    "黑白漫画页"
-  ],
-  "commonFailurePoints": [
-    "亮度过高失去层次",
-    "云形过于平均像素材拼接"
   ],
   "preview": {
     "accent": "#92d8ff",

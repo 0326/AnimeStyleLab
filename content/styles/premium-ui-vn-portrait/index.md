@@ -38,10 +38,6 @@
     "3:4",
     "9:16"
   ],
-  "compatibleStyles": [
-    "live2d-lobby-heroine",
-    "urban-fashion-webtoon"
-  ],
   "similarStyles": [
     "school-romance-vn",
     "premium-gacha-illustration"
@@ -50,14 +46,6 @@
     "游戏对话角色",
     "UI 适配立绘",
     "半身主视觉"
-  ],
-  "notRecommendedFor": [
-    "超宽屏场景",
-    "复杂环境叙事"
-  ],
-  "commonFailurePoints": [
-    "角色靠边过近导致 UI 空间不足",
-    "细节集中不够让立绘显得廉价"
   ],
   "preview": {
     "accent": "#9cf7ff",

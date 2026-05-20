@@ -38,10 +38,6 @@
     "3:4",
     "4:5"
   ],
-  "compatibleStyles": [
-    "blind-box-vinyl-toy",
-    "premium-gacha-illustration"
-  ],
   "similarStyles": [
     "nendoroid-showcase",
     "plush-anime-render"
@@ -50,14 +46,6 @@
     "手办展示页",
     "收藏感角色图",
     "产品式海报"
-  ],
-  "notRecommendedFor": [
-    "平面纸感漫画",
-    "日常背景剧情图"
-  ],
-  "commonFailurePoints": [
-    "塑料反光太假像橡胶",
-    "底座存在感不足失去收藏品语境"
   ],
   "preview": {
     "accent": "#c7ffe9",

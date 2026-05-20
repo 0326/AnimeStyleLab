@@ -38,10 +38,6 @@
     "1:1",
     "4:5"
   ],
-  "compatibleStyles": [
-    "urban-fashion-webtoon",
-    "digital-space-idol"
-  ],
   "similarStyles": [
     "romance-webtoon",
     "premium-ui-vn-portrait"
@@ -50,14 +46,6 @@
     "精修头像",
     "角色封面",
     "美型展示图"
-  ],
-  "notRecommendedFor": [
-    "粗粝黑白漫画",
-    "朴素室内治愈图"
-  ],
-  "commonFailurePoints": [
-    "高光分布不真实像涂油",
-    "五官修饰过头失去个性"
   ],
   "preview": {
     "accent": "#8ef7ef",

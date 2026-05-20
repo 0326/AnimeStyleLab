@@ -38,10 +38,6 @@
     "4:5",
     "3:4"
   ],
-  "compatibleStyles": [
-    "premium-ui-vn-portrait",
-    "hologram-fashion-lab"
-  ],
   "similarStyles": [
     "romance-webtoon",
     "high-gloss-webtoon"
@@ -50,14 +46,6 @@
     "都市人物封面",
     "时装角色图",
     "社交媒体角色页"
-  ],
-  "notRecommendedFor": [
-    "古风仙侠",
-    "硬核机甲"
-  ],
-  "commonFailurePoints": [
-    "皮肤高光太塑料",
-    "服装和背景同色导致人物不跳"
   ],
   "preview": {
     "accent": "#7dd3ff",

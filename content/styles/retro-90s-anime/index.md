@@ -38,10 +38,6 @@
     "1:1",
     "4:5"
   ],
-  "compatibleStyles": [
-    "screentone-manga-cover",
-    "fashion-webtoon"
-  ],
   "similarStyles": [
     "cel-shine-anime",
     "tv-cut-anime-frame"
@@ -50,14 +46,6 @@
     "怀旧主题",
     "风格对比卡",
     "复古角色展示"
-  ],
-  "notRecommendedFor": [
-    "超写实材质",
-    "现代 UI 头图"
-  ],
-  "commonFailurePoints": [
-    "噪点过重压脏肤色",
-    "复古滤镜覆盖掉角色识别"
   ],
   "preview": {
     "accent": "#f08c61",

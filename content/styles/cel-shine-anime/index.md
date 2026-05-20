@@ -38,10 +38,6 @@
     "4:5",
     "3:4"
   ],
-  "compatibleStyles": [
-    "rainlit-cinematic-anime",
-    "premium-gacha-illustration"
-  ],
   "similarStyles": [
     "tv-cut-anime-frame",
     "theatrical-anime-poster"
@@ -50,14 +46,6 @@
     "角色主视觉",
     "封面级立绘",
     "强识别单人角色"
-  ],
-  "notRecommendedFor": [
-    "超复杂群像",
-    "低对比氛围图"
-  ],
-  "commonFailurePoints": [
-    "高光过曝导致五官丢失",
-    "阴影层次太少让画面发灰"
   ],
   "preview": {
     "accent": "#ff7a90",

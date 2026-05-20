@@ -38,10 +38,6 @@
     "16:9",
     "9:16"
   ],
-  "compatibleStyles": [
-    "neon-city-anime",
-    "healing-cloudscape-anime"
-  ],
   "similarStyles": [
     "theatrical-anime-poster",
     "tv-cut-anime-frame"
@@ -50,14 +46,6 @@
     "剧情感场景",
     "壁纸",
     "氛围封面"
-  ],
-  "notRecommendedFor": [
-    "Q版贴纸",
-    "纯白背景头像"
-  ],
-  "commonFailurePoints": [
-    "雨效过密遮住主体",
-    "远景雾化过头导致层次糊掉"
   ],
   "preview": {
     "accent": "#53a8ff",

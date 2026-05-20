@@ -38,10 +38,6 @@
     "16:9",
     "21:9"
   ],
-  "compatibleStyles": [
-    "neon-city-anime",
-    "digital-space-idol"
-  ],
   "similarStyles": [
     "shonen-impact-manga",
     "hologram-fashion-lab"
@@ -50,14 +46,6 @@
     "机甲题材",
     "宽屏海报",
     "科幻概念页"
-  ],
-  "notRecommendedFor": [
-    "萌系头像",
-    "柔光恋爱图"
-  ],
-  "commonFailurePoints": [
-    "金属面太平像塑料",
-    "背景结构复杂但缺少焦点"
   ],
   "preview": {
     "accent": "#7cb4ff",

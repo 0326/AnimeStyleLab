@@ -38,10 +38,6 @@
     "1:1",
     "3:4"
   ],
-  "compatibleStyles": [
-    "plush-anime-render",
-    "pastel-sticker-pack"
-  ],
   "similarStyles": [
     "chibi-idol-mascot",
     "soft-gummy-character"
@@ -50,14 +46,6 @@
     "IP 角色",
     "品牌 mascot",
     "温和治愈小图"
-  ],
-  "notRecommendedFor": [
-    "硬核机甲",
-    "高冲突剧情图"
-  ],
-  "commonFailurePoints": [
-    "毛绒质感太弱像普通 Q 版",
-    "边缘蓬松过度变脏"
   ],
   "preview": {
     "accent": "#ffd28d",

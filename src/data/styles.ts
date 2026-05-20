@@ -28,11 +28,8 @@ export type AnimeStyle = {
   avoidPrompt: string;
   useCases: string[];
   recommendedRatios: string[];
-  compatibleStyles: string[];
   similarStyles: string[];
   bestFor: string[];
-  notRecommendedFor: string[];
-  commonFailurePoints: string[];
   preview: {
     accent: string;
     glow: string;

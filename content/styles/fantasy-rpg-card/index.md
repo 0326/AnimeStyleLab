@@ -38,10 +38,6 @@
     "3:4",
     "4:5"
   ],
-  "compatibleStyles": [
-    "theatrical-anime-poster",
-    "xianxia-sword-maiden"
-  ],
   "similarStyles": [
     "premium-gacha-illustration",
     "gothic-cathedral-anime"
@@ -50,14 +46,6 @@
     "奇幻角色",
     "卡面插画",
     "技能主题封面"
-  ],
-  "notRecommendedFor": [
-    "低饱和日常",
-    "超简洁品牌页"
-  ],
-  "commonFailurePoints": [
-    "特效范围过大把人物吃掉",
-    "装备细节没有主副节奏"
   ],
   "preview": {
     "accent": "#d0a6ff",

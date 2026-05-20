@@ -38,10 +38,6 @@
     "1:1",
     "4:5"
   ],
-  "compatibleStyles": [
-    "pastel-sticker-pack",
-    "blind-box-vinyl-toy"
-  ],
   "similarStyles": [
     "chibi-idol-mascot",
     "soft-gummy-character"
@@ -50,14 +46,6 @@
     "头像图标",
     "轻量品牌角标",
     "极简萌系角色"
-  ],
-  "notRecommendedFor": [
-    "高细节立绘",
-    "复杂场景海报"
-  ],
-  "commonFailurePoints": [
-    "极简过头导致角色没记忆点",
-    "纯色块比例失衡导致不耐看"
   ],
   "preview": {
     "accent": "#8ef2ff",

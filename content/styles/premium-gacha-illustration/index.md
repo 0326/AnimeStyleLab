@@ -38,10 +38,6 @@
     "3:4",
     "2:3"
   ],
-  "compatibleStyles": [
-    "fantasy-rpg-card",
-    "luxury-opera-gothic"
-  ],
   "similarStyles": [
     "half-painterly-character-sheet",
     "live2d-lobby-heroine"
@@ -50,14 +46,6 @@
     "商业主立绘",
     "角色卖点展示",
     "卡面封面"
-  ],
-  "notRecommendedFor": [
-    "极简 icon",
-    "轻日常场景"
-  ],
-  "commonFailurePoints": [
-    "服装细节堆叠过多没有主视觉",
-    "材质处理平均导致贵气不足"
   ],
   "preview": {
     "accent": "#86ffe2",

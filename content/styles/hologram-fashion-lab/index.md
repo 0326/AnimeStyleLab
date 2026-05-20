@@ -38,10 +38,6 @@
     "4:5",
     "16:9"
   ],
-  "compatibleStyles": [
-    "digital-space-idol",
-    "urban-fashion-webtoon"
-  ],
   "similarStyles": [
     "neon-city-anime",
     "mecha-hangar-anime"
@@ -50,14 +46,6 @@
     "时尚科技封面",
     "角色概念发布图",
     "高冷未来题材"
-  ],
-  "notRecommendedFor": [
-    "温暖治愈风",
-    "Q 版贴纸"
-  ],
-  "commonFailurePoints": [
-    "透明材质边界不清像塑料壳",
-    "姿态太平像商品目录"
   ],
   "preview": {
     "accent": "#9bf3ff",

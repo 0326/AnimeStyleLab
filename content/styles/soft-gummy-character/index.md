@@ -38,10 +38,6 @@
     "1:1",
     "4:5"
   ],
-  "compatibleStyles": [
-    "blind-box-vinyl-toy",
-    "pastel-sticker-pack"
-  ],
   "similarStyles": [
     "plush-anime-render",
     "nendoroid-showcase"
@@ -50,14 +46,6 @@
     "可爱商业物料",
     "糖果感品牌视觉",
     "轻产品化主角"
-  ],
-  "notRecommendedFor": [
-    "写实古风",
-    "复杂环境大场景"
-  ],
-  "commonFailurePoints": [
-    "透明度过高像玻璃不是软糖",
-    "高光位置杂乱显廉价"
   ],
   "preview": {
     "accent": "#f5a9ff",

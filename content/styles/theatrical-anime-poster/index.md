@@ -38,10 +38,6 @@
     "2:3",
     "16:9"
   ],
-  "compatibleStyles": [
-    "fantasy-rpg-card",
-    "gothic-cathedral-anime"
-  ],
   "similarStyles": [
     "rainlit-cinematic-anime",
     "cel-shine-anime"
@@ -50,14 +46,6 @@
     "主海报",
     "群像封面",
     "史诗幻想"
-  ],
-  "notRecommendedFor": [
-    "极简贴纸",
-    "小图标头像"
-  ],
-  "commonFailurePoints": [
-    "光效太多导致主体层级混乱",
-    "群像站位平均缺少主次"
   ],
   "preview": {
     "accent": "#ffb37c",

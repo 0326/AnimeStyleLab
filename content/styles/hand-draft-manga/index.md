@@ -38,10 +38,6 @@
     "4:5",
     "A4 portrait"
   ],
-  "compatibleStyles": [
-    "half-painterly-character-sheet",
-    "school-romance-vn"
-  ],
   "similarStyles": [
     "screentone-manga-cover",
     "seinen-ink-drama"
@@ -50,14 +46,6 @@
     "构思展示",
     "过程感页面",
     "角色概念草图"
-  ],
-  "notRecommendedFor": [
-    "成品宣传图",
-    "强商业封面"
-  ],
-  "commonFailurePoints": [
-    "线稿太乱导致层级不清",
-    "草图感不足反而像画崩"
   ],
   "preview": {
     "accent": "#d8c5ae",

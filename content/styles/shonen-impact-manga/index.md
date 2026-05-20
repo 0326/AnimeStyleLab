@@ -38,10 +38,6 @@
     "3:4",
     "16:9"
   ],
-  "compatibleStyles": [
-    "action-webtoon-panel",
-    "mecha-hangar-anime"
-  ],
   "similarStyles": [
     "seinen-ink-drama",
     "screentone-manga-cover"
@@ -50,14 +46,6 @@
     "战斗封面",
     "热血动作页",
     "情绪高潮瞬间"
-  ],
-  "notRecommendedFor": [
-    "治愈静物",
-    "产品贴纸"
-  ],
-  "commonFailurePoints": [
-    "速度线太密导致动势变脏",
-    "透视夸张过头让肢体失真"
   ],
   "preview": {
     "accent": "#ff4f4f",

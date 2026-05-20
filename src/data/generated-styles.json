@@ -26,14 +26,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 高光过曝导致五官丢失, 阴影层次太少让发灰",
     "useCases": ["头像", "角色设定图", "海报"],
     "recommendedRatios": ["4:5", "3:4"],
-    "compatibleStyles": [
-      "rainlit-cinematic-anime",
-      "premium-gacha-illustration"
-    ],
     "similarStyles": ["tv-cut-anime-frame", "theatrical-anime-poster"],
     "bestFor": ["角色主视觉", "封面级立绘", "强识别单人角色"],
-    "notRecommendedFor": ["超复杂群像", "低对比氛围图"],
-    "commonFailurePoints": ["高光过曝导致五官丢失", "阴影层次太少让画面发灰"],
     "preview": {
       "accent": "#ff7a90",
       "glow": "#ffd4db",
@@ -120,11 +114,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 雨效过密遮住, 远景雾化过头导致层次糊掉",
     "useCases": ["手机壁纸", "桌面壁纸", "海报"],
     "recommendedRatios": ["16:9", "9:16"],
-    "compatibleStyles": ["neon-city-anime", "healing-cloudscape-anime"],
     "similarStyles": ["theatrical-anime-poster", "tv-cut-anime-frame"],
     "bestFor": ["剧情感场景", "壁纸", "氛围封面"],
-    "notRecommendedFor": ["Q版贴纸", "纯白背景头像"],
-    "commonFailurePoints": ["雨效过密遮住主体", "远景雾化过头导致层次糊掉"],
     "preview": {
       "accent": "#53a8ff",
       "glow": "#a4d3ff",
@@ -222,11 +213,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 场景信息不足像半成品, 姿态僵硬缺少生活感",
     "useCases": ["桌面壁纸", "故事封面", "灵感看板"],
     "recommendedRatios": ["16:9", "3:2"],
-    "compatibleStyles": ["school-romance-vn", "soft-healing-room"],
     "similarStyles": ["theatrical-anime-poster", "cel-shine-anime"],
     "bestFor": ["剧情感单帧", "场景叙事", "参考镜头"],
-    "notRecommendedFor": ["商业大海报", "强商品展示"],
-    "commonFailurePoints": ["场景信息不足像半成品", "角色姿态僵硬缺少生活感"],
     "preview": {
       "accent": "#ffd56a",
       "glow": "#ffe8a9",
@@ -317,11 +305,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 光效太多导致层级混乱, 群像站位平均缺少主次",
     "useCases": ["海报", "桌面壁纸", "封面头图"],
     "recommendedRatios": ["2:3", "16:9"],
-    "compatibleStyles": ["fantasy-rpg-card", "gothic-cathedral-anime"],
     "similarStyles": ["rainlit-cinematic-anime", "cel-shine-anime"],
     "bestFor": ["主海报", "群像封面", "史诗幻想"],
-    "notRecommendedFor": ["极简贴纸", "小图标头像"],
-    "commonFailurePoints": ["光效太多导致主体层级混乱", "群像站位平均缺少主次"],
     "preview": {
       "accent": "#ffb37c",
       "glow": "#ffd6b4",
@@ -405,11 +390,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 噪点过重压脏肤色, 复古滤镜覆盖掉识别",
     "useCases": ["头像", "海报", "收藏图"],
     "recommendedRatios": ["1:1", "4:5"],
-    "compatibleStyles": ["screentone-manga-cover", "fashion-webtoon"],
     "similarStyles": ["cel-shine-anime", "tv-cut-anime-frame"],
     "bestFor": ["怀旧主题", "风格对比卡", "复古角色展示"],
-    "notRecommendedFor": ["超写实材质", "现代 UI 头图"],
-    "commonFailurePoints": ["噪点过重压脏肤色", "复古滤镜覆盖掉角色识别"],
     "preview": {
       "accent": "#f08c61",
       "glow": "#f7c29b",
@@ -489,14 +471,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 网点尺度失控导致摩尔纹感, 黑白层次不清让糊成一片",
     "useCases": ["海报", "封面头图", "故事概念图"],
     "recommendedRatios": ["2:3", "4:5"],
-    "compatibleStyles": ["retro-90s-anime", "action-webtoon-panel"],
     "similarStyles": ["shojo-sparkle-manga", "seinen-ink-drama"],
     "bestFor": ["黑白封面", "漫画品牌感", "角色主题页"],
-    "notRecommendedFor": ["高饱和梦幻图", "3D 材质展示"],
-    "commonFailurePoints": [
-      "网点尺度失控导致摩尔纹感",
-      "黑白层次不清让主体糊成一片"
-    ],
     "preview": {
       "accent": "#f5f1e6",
       "glow": "#ffffff",
@@ -576,11 +552,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 闪片元素过量压住五官, 线条过软导致脸部结构塌陷",
     "useCases": ["头像", "小红书封面", "角色海报"],
     "recommendedRatios": ["1:1", "3:4"],
-    "compatibleStyles": ["romance-webtoon", "school-romance-vn"],
     "similarStyles": ["screentone-manga-cover", "watercolor-dream-anime"],
     "bestFor": ["情绪特写", "恋爱主题封面", "角色立面海报"],
-    "notRecommendedFor": ["硬核战斗场景", "高机械密度画面"],
-    "commonFailurePoints": ["闪片元素过量压住五官", "线条过软导致脸部结构塌陷"],
     "preview": {
       "accent": "#ff8fc7",
       "glow": "#ffd5ef",
@@ -660,11 +633,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 速度线太密导致动势变脏, 透视夸张过头让肢体失真",
     "useCases": ["海报", "封面头图", "剧情卡面"],
     "recommendedRatios": ["3:4", "16:9"],
-    "compatibleStyles": ["action-webtoon-panel", "mecha-hangar-anime"],
     "similarStyles": ["seinen-ink-drama", "screentone-manga-cover"],
     "bestFor": ["战斗封面", "热血动作页", "情绪高潮瞬间"],
-    "notRecommendedFor": ["治愈静物", "产品贴纸"],
-    "commonFailurePoints": ["速度线太密导致动势变脏", "透视夸张过头让肢体失真"],
     "preview": {
       "accent": "#ff4f4f",
       "glow": "#ffb0b0",
@@ -744,14 +714,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 纯黑区域过大丢失信息, 人物五官写实过头失去二次元感",
     "useCases": ["海报", "剧情封面", "专题头图"],
     "recommendedRatios": ["4:5", "16:9"],
-    "compatibleStyles": ["mystery-vn-noir", "ruin-apocalypse-anime"],
     "similarStyles": ["shonen-impact-manga", "screentone-manga-cover"],
     "bestFor": ["悬疑主题", "成人向视觉", "黑白高压场景"],
-    "notRecommendedFor": ["萌系贴纸", "糖果色场景"],
-    "commonFailurePoints": [
-      "纯黑区域过大丢失信息",
-      "人物五官写实过头失去二次元感"
-    ],
     "preview": {
       "accent": "#b8c0cc",
       "glow": "#eef1f5",
@@ -831,11 +795,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 线稿太乱导致层级不清, 草图感不足反而像画崩",
     "useCases": ["灵感看板", "概念展示", "设定说明"],
     "recommendedRatios": ["4:5", "A4 portrait"],
-    "compatibleStyles": ["half-painterly-character-sheet", "school-romance-vn"],
     "similarStyles": ["screentone-manga-cover", "seinen-ink-drama"],
     "bestFor": ["构思展示", "过程感页面", "角色概念草图"],
-    "notRecommendedFor": ["成品宣传图", "强商业封面"],
-    "commonFailurePoints": ["线稿太乱导致层级不清", "草图感不足反而像画崩"],
     "preview": {
       "accent": "#d8c5ae",
       "glow": "#f3e6d7",
@@ -915,14 +876,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 服装细节堆叠过多没有主视觉, 材质处理平均导致贵气不足",
     "useCases": ["角色设定图", "海报", "封面头图"],
     "recommendedRatios": ["3:4", "2:3"],
-    "compatibleStyles": ["fantasy-rpg-card", "luxury-opera-gothic"],
     "similarStyles": ["half-painterly-character-sheet", "live2d-lobby-heroine"],
     "bestFor": ["商业主立绘", "角色卖点展示", "卡面封面"],
-    "notRecommendedFor": ["极简 icon", "轻日常场景"],
-    "commonFailurePoints": [
-      "服装细节堆叠过多没有主视觉",
-      "材质处理平均导致贵气不足"
-    ],
     "preview": {
       "accent": "#86ffe2",
       "glow": "#c2fff0",
@@ -1025,11 +980,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 厚涂过重盖掉二次元轮廓, 说明区排布混乱像拼贴",
     "useCases": ["角色设定图", "概念展示", "团队评审图"],
     "recommendedRatios": ["4:5", "16:10"],
-    "compatibleStyles": ["hand-draft-manga", "premium-gacha-illustration"],
     "similarStyles": ["fantasy-rpg-card", "live2d-lobby-heroine"],
     "bestFor": ["角色设定页", "服装展示", "开发中概念稿"],
-    "notRecommendedFor": ["壁纸氛围图", "纯头像特写"],
-    "commonFailurePoints": ["厚涂过重盖掉二次元轮廓", "说明区排布混乱像拼贴"],
     "preview": {
       "accent": "#9cc2ff",
       "glow": "#d8e6ff",
@@ -1113,11 +1065,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 特效范围过大把人物吃掉, 装备细节没有主副节奏",
     "useCases": ["海报", "角色设定图", "卡面头图"],
     "recommendedRatios": ["3:4", "4:5"],
-    "compatibleStyles": ["theatrical-anime-poster", "xianxia-sword-maiden"],
     "similarStyles": ["premium-gacha-illustration", "gothic-cathedral-anime"],
     "bestFor": ["奇幻角色", "卡面插画", "技能主题封面"],
-    "notRecommendedFor": ["低饱和日常", "超简洁品牌页"],
-    "commonFailurePoints": ["特效范围过大把人物吃掉", "装备细节没有主副节奏"],
     "preview": {
       "accent": "#d0a6ff",
       "glow": "#ead7ff",
@@ -1201,14 +1150,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 肢体动作过大不适合 UI 站位, 背景元素太多削弱亲和度",
     "useCases": ["角色设定图", "海报", "公众号封面"],
     "recommendedRatios": ["9:16", "3:4"],
-    "compatibleStyles": ["school-romance-vn", "urban-fashion-webtoon"],
     "similarStyles": ["premium-gacha-illustration", "chibi-idol-mascot"],
     "bestFor": ["大厅角色", "半身互动角色", "UI 中心位角色"],
-    "notRecommendedFor": ["群像史诗图", "超宽场景图"],
-    "commonFailurePoints": [
-      "肢体动作过大不适合 UI 站位",
-      "背景元素太多削弱角色亲和度"
-    ],
     "preview": {
       "accent": "#75f8c8",
       "glow": "#c9ffec",
@@ -1292,11 +1235,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 金属面太平像塑料, 背景结构复杂但缺少焦点",
     "useCases": ["桌面壁纸", "海报", "概念展示"],
     "recommendedRatios": ["16:9", "21:9"],
-    "compatibleStyles": ["neon-city-anime", "digital-space-idol"],
     "similarStyles": ["shonen-impact-manga", "hologram-fashion-lab"],
     "bestFor": ["机甲题材", "宽屏海报", "科幻概念页"],
-    "notRecommendedFor": ["萌系头像", "柔光恋爱图"],
-    "commonFailurePoints": ["金属面太平像塑料", "背景结构复杂但缺少焦点"],
     "preview": {
       "accent": "#7cb4ff",
       "glow": "#b9d7ff",
@@ -1380,14 +1320,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 背景像素材图与不融合, 站姿过僵缺少对话感",
     "useCases": ["角色设定图", "海报", "封面头图"],
     "recommendedRatios": ["16:9", "3:4"],
-    "compatibleStyles": ["shojo-sparkle-manga", "live2d-lobby-heroine"],
     "similarStyles": ["healing-visual-novel", "tv-cut-anime-frame"],
     "bestFor": ["剧情封面", "恋爱视觉页", "校园角色展示"],
-    "notRecommendedFor": ["暗黑悬疑海报", "极简 icon"],
-    "commonFailurePoints": [
-      "背景像素材图与角色不融合",
-      "角色站姿过僵缺少对话感"
-    ],
     "preview": {
       "accent": "#ffb3b8",
       "glow": "#ffe0e3",
@@ -1471,14 +1405,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 线索元素太显眼失去悬疑感, 冷色覆盖过头让肤色发灰",
     "useCases": ["海报", "故事封面", "桌面壁纸"],
     "recommendedRatios": ["16:9", "4:5"],
-    "compatibleStyles": ["seinen-ink-drama", "gothic-cathedral-anime"],
     "similarStyles": ["school-romance-vn", "moonlit-reverie-anime"],
     "bestFor": ["悬疑剧情图", "推理封面", "对峙场景"],
-    "notRecommendedFor": ["可爱贴纸", "明快节庆图"],
-    "commonFailurePoints": [
-      "线索元素太显眼失去悬疑感",
-      "冷色覆盖过头让肤色发灰"
-    ],
     "preview": {
       "accent": "#89a8ff",
       "glow": "#cad8ff",
@@ -1562,11 +1490,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 暖雾过重让物体边界发虚, 室内摆件太乱抢掉",
     "useCases": ["桌面壁纸", "封面头图", "灵感看板"],
     "recommendedRatios": ["16:9", "4:3"],
-    "compatibleStyles": ["soft-healing-room", "watercolor-dream-anime"],
     "similarStyles": ["school-romance-vn", "healing-cloudscape-anime"],
     "bestFor": ["舒缓场景", "室内氛围页", "背景+角色组合"],
-    "notRecommendedFor": ["高冲突战斗图", "高密度商业卡面"],
-    "commonFailurePoints": ["暖雾过重让物体边界发虚", "室内摆件太乱抢掉主体"],
     "preview": {
       "accent": "#ffc991",
       "glow": "#ffe5c6",
@@ -1650,14 +1575,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 靠边过近导致 UI 空间不足, 细节集中不够让立绘显得廉价",
     "useCases": ["角色设定图", "海报", "公众号封面"],
     "recommendedRatios": ["3:4", "9:16"],
-    "compatibleStyles": ["live2d-lobby-heroine", "urban-fashion-webtoon"],
     "similarStyles": ["school-romance-vn", "premium-gacha-illustration"],
     "bestFor": ["游戏对话角色", "UI 适配立绘", "半身主视觉"],
-    "notRecommendedFor": ["超宽屏场景", "复杂环境叙事"],
-    "commonFailurePoints": [
-      "角色靠边过近导致 UI 空间不足",
-      "细节集中不够让立绘显得廉价"
-    ],
     "preview": {
       "accent": "#9cf7ff",
       "glow": "#d9fcff",
@@ -1741,14 +1660,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 颜色过多导致视觉噪声高, 比例不统一让不够可爱",
     "useCases": ["头像", "表情包", "贴纸"],
     "recommendedRatios": ["1:1", "3:4"],
-    "compatibleStyles": ["pastel-sticker-pack", "blind-box-vinyl-toy"],
     "similarStyles": ["plush-mascot-anime", "minimal-line-buddy"],
     "bestFor": ["贴纸", "表情图", "轻 IP 角色"],
-    "notRecommendedFor": ["史诗场景", "成熟戏剧题材"],
-    "commonFailurePoints": [
-      "颜色过多导致视觉噪声高",
-      "比例不统一让角色不够可爱"
-    ],
     "preview": {
       "accent": "#ffde59",
       "glow": "#fff2b8",
@@ -1828,11 +1741,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 白边过薄导致裁切感差, 表情不够夸张失去贴纸价值",
     "useCases": ["贴纸", "表情包", "小红书封面"],
     "recommendedRatios": ["1:1", "4:5"],
-    "compatibleStyles": ["chibi-idol-mascot", "soft-gummy-character"],
     "similarStyles": ["minimal-line-buddy", "plush-mascot-anime"],
     "bestFor": ["贴纸合集", "轻运营物料", "社交表情包"],
-    "notRecommendedFor": ["厚重背景海报", "写实材质展示"],
-    "commonFailurePoints": ["白边过薄导致裁切感差", "表情不够夸张失去贴纸价值"],
     "preview": {
       "accent": "#bda8ff",
       "glow": "#e4dbff",
@@ -1912,11 +1822,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 毛绒质感太弱像普通 Q 版, 边缘蓬松过度变脏",
     "useCases": ["头像", "贴纸", "公众号封面"],
     "recommendedRatios": ["1:1", "3:4"],
-    "compatibleStyles": ["plush-anime-render", "pastel-sticker-pack"],
     "similarStyles": ["chibi-idol-mascot", "soft-gummy-character"],
     "bestFor": ["IP 角色", "品牌 mascot", "温和治愈小图"],
-    "notRecommendedFor": ["硬核机甲", "高冲突剧情图"],
-    "commonFailurePoints": ["毛绒质感太弱像普通 Q 版", "边缘蓬松过度变脏"],
     "preview": {
       "accent": "#ffd28d",
       "glow": "#ffebc5",
@@ -2000,14 +1907,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 极简过头导致没记忆点, 纯色块比例失衡导致不耐看",
     "useCases": ["头像", "贴纸", "公众号封面"],
     "recommendedRatios": ["1:1", "4:5"],
-    "compatibleStyles": ["pastel-sticker-pack", "blind-box-vinyl-toy"],
     "similarStyles": ["chibi-idol-mascot", "soft-gummy-character"],
     "bestFor": ["头像图标", "轻量品牌角标", "极简萌系角色"],
-    "notRecommendedFor": ["高细节立绘", "复杂场景海报"],
-    "commonFailurePoints": [
-      "极简过头导致角色没记忆点",
-      "纯色块比例失衡导致不耐看"
-    ],
     "preview": {
       "accent": "#8ef2ff",
       "glow": "#d2fbff",
@@ -2087,14 +1988,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 塑料反光太假像橡胶, 底座存在感不足失去收藏品语境",
     "useCases": ["海报", "公众号封面", "桌面壁纸"],
     "recommendedRatios": ["3:4", "4:5"],
-    "compatibleStyles": ["blind-box-vinyl-toy", "premium-gacha-illustration"],
     "similarStyles": ["nendoroid-showcase", "plush-anime-render"],
     "bestFor": ["手办展示页", "收藏感角色图", "产品式海报"],
-    "notRecommendedFor": ["平面纸感漫画", "日常背景剧情图"],
-    "commonFailurePoints": [
-      "塑料反光太假像橡胶",
-      "底座存在感不足失去收藏品语境"
-    ],
     "preview": {
       "accent": "#c7ffe9",
       "glow": "#ecfff8",
@@ -2174,11 +2069,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 比例不够统一像普通 3D, 塑料面太哑缺少收藏感",
     "useCases": ["头像", "贴纸", "封面头图"],
     "recommendedRatios": ["1:1", "4:5"],
-    "compatibleStyles": ["anime-figure-render", "chibi-idol-mascot"],
     "similarStyles": ["blind-box-vinyl-toy", "soft-gummy-character"],
     "bestFor": ["可爱收藏图", "玩具海报", "产品橱窗视觉"],
-    "notRecommendedFor": ["长腿立绘", "现实风景场景"],
-    "commonFailurePoints": ["比例不够统一像普通 3D", "塑料面太哑缺少收藏感"],
     "preview": {
       "accent": "#ffd4ec",
       "glow": "#fff0f7",
@@ -2262,11 +2154,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 潮玩轮廓不够干净, 背景太写实破坏产品化观感",
     "useCases": ["海报", "贴纸", "小红书封面"],
     "recommendedRatios": ["1:1", "4:5"],
-    "compatibleStyles": ["anime-figure-render", "minimal-line-buddy"],
     "similarStyles": ["nendoroid-showcase", "soft-gummy-character"],
     "bestFor": ["潮玩品牌视觉", "陈列主题封面", "轻商业运营图"],
-    "notRecommendedFor": ["复杂剧情场景", "高写实角色脸"],
-    "commonFailurePoints": ["潮玩轮廓不够干净", "背景太写实破坏产品化观感"],
     "preview": {
       "accent": "#9cf0d0",
       "glow": "#dcfff2",
@@ -2346,11 +2235,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 毛绒纤维方向混乱显脏, 五官太平失去动漫精气神",
     "useCases": ["头像", "桌面壁纸", "品牌封面"],
     "recommendedRatios": ["1:1", "3:4"],
-    "compatibleStyles": ["plush-mascot-anime", "soft-gummy-character"],
     "similarStyles": ["anime-figure-render", "nendoroid-showcase"],
     "bestFor": ["治愈 IP", "桌面收藏图", "柔软风角色展示"],
-    "notRecommendedFor": ["硬金属科幻", "高反差黑白图"],
-    "commonFailurePoints": ["毛绒纤维方向混乱显脏", "五官太平失去动漫精气神"],
     "preview": {
       "accent": "#ffca9d",
       "glow": "#ffe7d0",
@@ -2441,11 +2327,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 透明度过高像玻璃不是软糖, 高光位置杂乱显廉价",
     "useCases": ["贴纸", "海报", "封面头图"],
     "recommendedRatios": ["1:1", "4:5"],
-    "compatibleStyles": ["blind-box-vinyl-toy", "pastel-sticker-pack"],
     "similarStyles": ["plush-anime-render", "nendoroid-showcase"],
     "bestFor": ["可爱商业物料", "糖果感品牌视觉", "轻产品化主角"],
-    "notRecommendedFor": ["写实古风", "复杂环境大场景"],
-    "commonFailurePoints": ["透明度过高像玻璃不是软糖", "高光位置杂乱显廉价"],
     "preview": {
       "accent": "#f5a9ff",
       "glow": "#fbd6ff",
@@ -2529,14 +2412,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 霓虹色杂乱导致不突出, 建筑重复度太高像素材拼接",
     "useCases": ["桌面壁纸", "海报", "封面头图"],
     "recommendedRatios": ["16:9", "21:9"],
-    "compatibleStyles": ["rainlit-cinematic-anime", "digital-space-idol"],
     "similarStyles": ["mecha-hangar-anime", "hologram-fashion-lab"],
     "bestFor": ["赛博壁纸", "城市头图", "未来感氛围页"],
-    "notRecommendedFor": ["极简贴纸", "暖色治愈室内"],
-    "commonFailurePoints": [
-      "霓虹色杂乱导致主体不突出",
-      "建筑重复度太高像素材拼接"
-    ],
     "preview": {
       "accent": "#00f0ff",
       "glow": "#9fffff",
@@ -2623,14 +2500,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 全息元素太碎让脸部失焦, 服装科技细节堆砌但轮廓不清",
     "useCases": ["海报", "头像", "小红书封面"],
     "recommendedRatios": ["4:5", "3:4"],
-    "compatibleStyles": ["neon-city-anime", "high-gloss-webtoon"],
     "similarStyles": ["hologram-fashion-lab", "premium-gacha-illustration"],
     "bestFor": ["未来偶像海报", "角色主视觉", "数字舞台感封面"],
-    "notRecommendedFor": ["古风仙侠", "纸质黑白漫画"],
-    "commonFailurePoints": [
-      "全息元素太碎让脸部失焦",
-      "服装科技细节堆砌但轮廓不清"
-    ],
     "preview": {
       "accent": "#72d6ff",
       "glow": "#d8f3ff",
@@ -2714,11 +2585,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 透明材质边界不清像塑料壳, 姿态太平像商品目录",
     "useCases": ["海报", "封面头图", "角色设定图"],
     "recommendedRatios": ["4:5", "16:9"],
-    "compatibleStyles": ["digital-space-idol", "urban-fashion-webtoon"],
     "similarStyles": ["neon-city-anime", "mecha-hangar-anime"],
     "bestFor": ["时尚科技封面", "角色概念发布图", "高冷未来题材"],
-    "notRecommendedFor": ["温暖治愈风", "Q 版贴纸"],
-    "commonFailurePoints": ["透明材质边界不清像塑料壳", "姿态太平像商品目录"],
     "preview": {
       "accent": "#9bf3ff",
       "glow": "#ecffff",
@@ -2813,14 +2681,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 羽翼结构太碎像粒子噪声, 神圣元素和科技元素比例失衡",
     "useCases": ["海报", "角色设定图", "桌面壁纸"],
     "recommendedRatios": ["2:3", "16:9"],
-    "compatibleStyles": ["digital-space-idol", "gothic-cathedral-anime"],
     "similarStyles": ["hologram-fashion-lab", "black-gold-witchcore"],
     "bestFor": ["幻想科技主视觉", "舞台感角色海报", "未来宗教感封面"],
-    "notRecommendedFor": ["极简贴纸", "写意水墨场景"],
-    "commonFailurePoints": [
-      "羽翼结构太碎像粒子噪声",
-      "神圣元素和科技元素比例失衡"
-    ],
     "preview": {
       "accent": "#c4fbff",
       "glow": "#f0ffff",
@@ -2904,17 +2766,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 黑金比例失衡像土豪风, 符号元素太散导致主题不聚焦",
     "useCases": ["海报", "头像", "封面头图"],
     "recommendedRatios": ["4:5", "3:4"],
-    "compatibleStyles": [
-      "premium-gacha-illustration",
-      "gothic-cathedral-anime"
-    ],
     "similarStyles": ["luxury-opera-gothic", "vampire-moon-anime"],
     "bestFor": ["暗黑角色主视觉", "时装型魔法题材", "高辨识海报"],
-    "notRecommendedFor": ["儿童贴纸", "低对比日常场景"],
-    "commonFailurePoints": [
-      "黑金比例失衡像土豪风",
-      "符号元素太散导致主题不聚焦"
-    ],
     "preview": {
       "accent": "#d8ad48",
       "glow": "#f7e4a8",
@@ -3012,11 +2865,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 红色点缀太多破坏优雅冷感, 月光过亮导致肤色死白",
     "useCases": ["海报", "桌面壁纸", "头像"],
     "recommendedRatios": ["2:3", "16:9"],
-    "compatibleStyles": ["mystery-vn-noir", "moonlit-reverie-anime"],
     "similarStyles": ["black-gold-witchcore", "gothic-cathedral-anime"],
     "bestFor": ["暗夜题材海报", "冷调角色壁纸", "戏剧特写"],
-    "notRecommendedFor": ["糖果色运营图", "轻量品牌 icon"],
-    "commonFailurePoints": ["红色点缀太多破坏优雅冷感", "月光过亮导致肤色死白"],
     "preview": {
       "accent": "#ff6a7f",
       "glow": "#ffc0cb",
@@ -3100,11 +2950,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 建筑细节过多抢掉, 彩窗光色混乱导致脏",
     "useCases": ["海报", "桌面壁纸", "封面头图"],
     "recommendedRatios": ["16:9", "2:3"],
-    "compatibleStyles": ["black-gold-witchcore", "fantasy-rpg-card"],
     "similarStyles": ["vampire-moon-anime", "luxury-opera-gothic"],
     "bestFor": ["大场景海报", "暗黑幻想设定", "宗教空间题材"],
-    "notRecommendedFor": ["极简头像", "贴纸运营图"],
-    "commonFailurePoints": ["建筑细节过多抢掉角色", "彩窗光色混乱导致画面脏"],
     "preview": {
       "accent": "#92b0ff",
       "glow": "#dfe8ff",
@@ -3188,11 +3035,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 珠饰细节均匀铺满没有重点, 酒红过多让肤色显脏",
     "useCases": ["海报", "头像", "封面头图"],
     "recommendedRatios": ["4:5", "2:3"],
-    "compatibleStyles": ["premium-gacha-illustration", "digital-space-idol"],
     "similarStyles": ["black-gold-witchcore", "vampire-moon-anime"],
     "bestFor": ["高戏剧服饰海报", "角色奢华主视觉", "舞台题材封面"],
-    "notRecommendedFor": ["校园日常", "极简 icon"],
-    "commonFailurePoints": ["珠饰细节均匀铺满没有重点", "酒红过多让肤色显脏"],
     "preview": {
       "accent": "#c75971",
       "glow": "#efbcc6",
@@ -3276,11 +3120,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 亮度过高失去层次, 云形过于平均像素材拼接",
     "useCases": ["桌面壁纸", "手机壁纸", "封面头图"],
     "recommendedRatios": ["16:9", "9:16"],
-    "compatibleStyles": ["rainlit-cinematic-anime", "healing-visual-novel"],
     "similarStyles": ["moonlit-reverie-anime", "watercolor-dream-anime"],
     "bestFor": ["背景壁纸", "舒缓头图", "梦境场景"],
-    "notRecommendedFor": ["暗黑角色海报", "黑白漫画页"],
-    "commonFailurePoints": ["亮度过高失去层次", "云形过于平均像素材拼接"],
     "preview": {
       "accent": "#92d8ff",
       "glow": "#def5ff",
@@ -3360,11 +3201,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 晕染太散导致五官糊化, 纸纹过强压制",
     "useCases": ["海报", "头像", "小红书封面"],
     "recommendedRatios": ["4:5", "1:1"],
-    "compatibleStyles": ["shojo-sparkle-manga", "healing-visual-novel"],
     "similarStyles": ["healing-cloudscape-anime", "soft-healing-room"],
     "bestFor": ["梦境人物图", "柔和封面", "轻文艺主题"],
-    "notRecommendedFor": ["硬边机甲", "超商业产品渲染"],
-    "commonFailurePoints": ["晕染太散导致五官糊化", "纸纹过强压制主体"],
     "preview": {
       "accent": "#b8b5ff",
       "glow": "#e4e3ff",
@@ -3444,11 +3282,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 摆件太多导致拥堵, 暖光泛黄过度像旧滤镜",
     "useCases": ["桌面壁纸", "公众号封面", "灵感看板"],
     "recommendedRatios": ["16:9", "4:3"],
-    "compatibleStyles": ["healing-visual-novel", "school-romance-vn"],
     "similarStyles": ["watercolor-dream-anime", "healing-cloudscape-anime"],
     "bestFor": ["室内壁纸", "情绪背景", "舒缓氛围图"],
-    "notRecommendedFor": ["群像战斗", "高饱和科幻"],
-    "commonFailurePoints": ["摆件太多导致画面拥堵", "暖光泛黄过度像旧滤镜"],
     "preview": {
       "accent": "#ffd8a1",
       "glow": "#fff0d6",
@@ -3532,11 +3367,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 紫色过多变俗气, 月光打点不清导致灰平",
     "useCases": ["桌面壁纸", "头像", "封面头图"],
     "recommendedRatios": ["16:9", "1:1"],
-    "compatibleStyles": ["vampire-moon-anime", "healing-cloudscape-anime"],
     "similarStyles": ["watercolor-dream-anime", "mystery-vn-noir"],
     "bestFor": ["夜间治愈图", "安静封面", "情绪人物图"],
-    "notRecommendedFor": ["高亮产品图", "强对抗戏剧图"],
-    "commonFailurePoints": ["紫色过多变俗气", "月光打点不清导致画面灰平"],
     "preview": {
       "accent": "#9ea3ff",
       "glow": "#d8dbff",
@@ -3616,11 +3448,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 暖光分布太平均失去焦点, 树影细节过乱让场景显脏",
     "useCases": ["桌面壁纸", "封面头图", "灵感看板"],
     "recommendedRatios": ["16:9", "4:3"],
-    "compatibleStyles": ["soft-healing-room", "ink-wash-spiritscape"],
     "similarStyles": ["healing-cloudscape-anime", "moonlit-reverie-anime"],
     "bestFor": ["静谧场景壁纸", "治愈幻想封面", "环境氛围图"],
-    "notRecommendedFor": ["高光时装肖像", "硬边机甲图"],
-    "commonFailurePoints": ["暖光分布太平均失去焦点", "树影细节过乱让场景显脏"],
     "preview": {
       "accent": "#d9b96f",
       "glow": "#f7ead0",
@@ -3704,11 +3533,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 服装元素乱堆没有形体主线, 云雾太厚导致人物漂浮",
     "useCases": ["海报", "角色设定图", "桌面壁纸"],
     "recommendedRatios": ["2:3", "16:9"],
-    "compatibleStyles": ["fantasy-rpg-card", "ink-wash-spiritscape"],
     "similarStyles": ["neo-guochao-anime", "palace-fantasy-portrait"],
     "bestFor": ["仙侠主角海报", "东方幻想封面", "国风立绘"],
-    "notRecommendedFor": ["现代都市漫画", "贴纸表情包"],
-    "commonFailurePoints": ["服装元素乱堆没有形体主线", "云雾太厚导致人物漂浮"],
     "preview": {
       "accent": "#88f3d3",
       "glow": "#d6fff2",
@@ -3806,11 +3632,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 墨色太实失去空灵感, 和背景风格断裂",
     "useCases": ["海报", "桌面壁纸", "封面头图"],
     "recommendedRatios": ["16:9", "3:4"],
-    "compatibleStyles": ["watercolor-dream-anime", "xianxia-sword-maiden"],
     "similarStyles": ["neo-guochao-anime", "healing-cloudscape-anime"],
     "bestFor": ["东方场景图", "意境封面", "长卷感视觉"],
-    "notRecommendedFor": ["高反光 3D 玩具", "高饱和霓虹都市场景"],
-    "commonFailurePoints": ["墨色太实失去空灵感", "角色和背景风格断裂"],
     "preview": {
       "accent": "#c7d3dc",
       "glow": "#eef3f7",
@@ -3894,11 +3717,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 红金比例失衡导致俗气, 传统纹样密度过高压住脸部",
     "useCases": ["海报", "小红书封面", "角色设定图"],
     "recommendedRatios": ["4:5", "3:4"],
-    "compatibleStyles": ["black-gold-witchcore", "premium-gacha-illustration"],
     "similarStyles": ["xianxia-sword-maiden", "palace-fantasy-portrait"],
     "bestFor": ["国潮封面", "节庆主题图", "文化向主视觉"],
-    "notRecommendedFor": ["极简线稿图标", "冷色赛博空间"],
-    "commonFailurePoints": ["红金比例失衡导致俗气", "传统纹样密度过高压住脸部"],
     "preview": {
       "accent": "#ff7f4e",
       "glow": "#ffc8aa",
@@ -3978,11 +3798,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 发饰细节均匀堆满没有主次, 妆面高光处理僵硬",
     "useCases": ["头像", "海报", "封面头图"],
     "recommendedRatios": ["1:1", "4:5"],
-    "compatibleStyles": ["premium-gacha-illustration", "luxury-opera-gothic"],
     "similarStyles": ["neo-guochao-anime", "xianxia-sword-maiden"],
     "bestFor": ["华丽肖像", "古风角色海报", "精致头像"],
-    "notRecommendedFor": ["超宽场景", "玩具化衍生风"],
-    "commonFailurePoints": ["发饰细节均匀堆满没有主次", "妆面高光处理僵硬"],
     "preview": {
       "accent": "#ffb47c",
       "glow": "#ffe1c0",
@@ -4066,11 +3883,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 皮肤高光太塑料, 服装和背景同色导致人物不跳",
     "useCases": ["头像", "海报", "小红书封面"],
     "recommendedRatios": ["4:5", "3:4"],
-    "compatibleStyles": ["premium-ui-vn-portrait", "hologram-fashion-lab"],
     "similarStyles": ["romance-webtoon", "high-gloss-webtoon"],
     "bestFor": ["都市人物封面", "时装角色图", "社交媒体角色页"],
-    "notRecommendedFor": ["古风仙侠", "硬核机甲"],
-    "commonFailurePoints": ["皮肤高光太塑料", "服装和背景同色导致人物不跳"],
     "preview": {
       "accent": "#7dd3ff",
       "glow": "#d5f2ff",
@@ -4150,11 +3964,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 皮肤磨皮过度像滤镜图, 双人构图主次关系含糊",
     "useCases": ["头像", "海报", "封面头图"],
     "recommendedRatios": ["4:5", "1:1"],
-    "compatibleStyles": ["shojo-sparkle-manga", "school-romance-vn"],
     "similarStyles": ["urban-fashion-webtoon", "high-gloss-webtoon"],
     "bestFor": ["恋爱封面", "角色关系图", "温柔近景人像"],
-    "notRecommendedFor": ["战斗主视觉", "黑白网点漫画"],
-    "commonFailurePoints": ["皮肤磨皮过度像滤镜图", "双人构图主次关系含糊"],
     "preview": {
       "accent": "#ff94bf",
       "glow": "#ffd5e8",
@@ -4223,11 +4034,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 高光分布不真实像涂油, 五官修饰过头失去个性",
     "useCases": ["头像", "海报", "小红书封面"],
     "recommendedRatios": ["1:1", "4:5"],
-    "compatibleStyles": ["urban-fashion-webtoon", "digital-space-idol"],
     "similarStyles": ["romance-webtoon", "premium-ui-vn-portrait"],
     "bestFor": ["精修头像", "角色封面", "美型展示图"],
-    "notRecommendedFor": ["粗粝黑白漫画", "朴素室内治愈图"],
-    "commonFailurePoints": ["高光分布不真实像涂油", "五官修饰过头失去个性"],
     "preview": {
       "accent": "#8ef7ef",
       "glow": "#d8fffb",
@@ -4296,14 +4104,8 @@
     "avoidPrompt": "text, watermark, logo, muddy rendering, 纵向节奏平均缺少高潮段, 残影和特效重叠让动作看不清",
     "useCases": ["手机壁纸", "海报", "剧情卡面"],
     "recommendedRatios": ["9:16", "4:5"],
-    "compatibleStyles": ["shonen-impact-manga", "neon-city-anime"],
     "similarStyles": ["urban-fashion-webtoon", "high-gloss-webtoon"],
     "bestFor": ["纵向动作封面", "卷轴式主视觉", "节奏感展示页"],
-    "notRecommendedFor": ["头像近景", "静态治愈室内"],
-    "commonFailurePoints": [
-      "纵向节奏平均缺少高潮段",
-      "残影和特效重叠让动作看不清"
-    ],
     "preview": {
       "accent": "#a0ff7b",
       "glow": "#dcffc8",

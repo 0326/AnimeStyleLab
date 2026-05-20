@@ -38,10 +38,6 @@
     "16:9",
     "2:3"
   ],
-  "compatibleStyles": [
-    "black-gold-witchcore",
-    "fantasy-rpg-card"
-  ],
   "similarStyles": [
     "vampire-moon-anime",
     "luxury-opera-gothic"
@@ -50,14 +46,6 @@
     "大场景海报",
     "暗黑幻想设定",
     "宗教空间题材"
-  ],
-  "notRecommendedFor": [
-    "极简头像",
-    "贴纸运营图"
-  ],
-  "commonFailurePoints": [
-    "建筑细节过多抢掉角色",
-    "彩窗光色混乱导致画面脏"
   ],
   "preview": {
     "accent": "#92b0ff",

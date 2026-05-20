@@ -38,10 +38,6 @@
     "2:3",
     "16:9"
   ],
-  "compatibleStyles": [
-    "fantasy-rpg-card",
-    "ink-wash-spiritscape"
-  ],
   "similarStyles": [
     "neo-guochao-anime",
     "palace-fantasy-portrait"
@@ -50,14 +46,6 @@
     "仙侠主角海报",
     "东方幻想封面",
     "国风立绘"
-  ],
-  "notRecommendedFor": [
-    "现代都市漫画",
-    "贴纸表情包"
-  ],
-  "commonFailurePoints": [
-    "服装元素乱堆没有形体主线",
-    "云雾太厚导致人物漂浮"
   ],
   "preview": {
     "accent": "#88f3d3",

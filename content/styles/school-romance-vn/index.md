@@ -38,10 +38,6 @@
     "16:9",
     "3:4"
   ],
-  "compatibleStyles": [
-    "shojo-sparkle-manga",
-    "live2d-lobby-heroine"
-  ],
   "similarStyles": [
     "healing-visual-novel",
     "tv-cut-anime-frame"
@@ -50,14 +46,6 @@
     "剧情封面",
     "恋爱视觉页",
     "校园角色展示"
-  ],
-  "notRecommendedFor": [
-    "暗黑悬疑海报",
-    "极简 icon"
-  ],
-  "commonFailurePoints": [
-    "背景像素材图与角色不融合",
-    "角色站姿过僵缺少对话感"
   ],
   "preview": {
     "accent": "#ffb3b8",

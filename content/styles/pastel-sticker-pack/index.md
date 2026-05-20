@@ -38,10 +38,6 @@
     "1:1",
     "4:5"
   ],
-  "compatibleStyles": [
-    "chibi-idol-mascot",
-    "soft-gummy-character"
-  ],
   "similarStyles": [
     "minimal-line-buddy",
     "plush-mascot-anime"
@@ -50,14 +46,6 @@
     "贴纸合集",
     "轻运营物料",
     "社交表情包"
-  ],
-  "notRecommendedFor": [
-    "厚重背景海报",
-    "写实材质展示"
-  ],
-  "commonFailurePoints": [
-    "白边过薄导致裁切感差",
-    "表情不够夸张失去贴纸价值"
   ],
   "preview": {
     "accent": "#bda8ff",

@@ -38,10 +38,6 @@
     "1:1",
     "4:5"
   ],
-  "compatibleStyles": [
-    "premium-gacha-illustration",
-    "luxury-opera-gothic"
-  ],
   "similarStyles": [
     "neo-guochao-anime",
     "xianxia-sword-maiden"
@@ -50,14 +46,6 @@
     "华丽肖像",
     "古风角色海报",
     "精致头像"
-  ],
-  "notRecommendedFor": [
-    "超宽场景",
-    "玩具化衍生风"
-  ],
-  "commonFailurePoints": [
-    "发饰细节均匀堆满没有主次",
-    "妆面高光处理僵硬"
   ],
   "preview": {
     "accent": "#ffb47c",

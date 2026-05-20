@@ -38,10 +38,6 @@
     "2:3",
     "4:5"
   ],
-  "compatibleStyles": [
-    "retro-90s-anime",
-    "action-webtoon-panel"
-  ],
   "similarStyles": [
     "shojo-sparkle-manga",
     "seinen-ink-drama"
@@ -50,14 +46,6 @@
     "黑白封面",
     "漫画品牌感",
     "角色主题页"
-  ],
-  "notRecommendedFor": [
-    "高饱和梦幻图",
-    "3D 材质展示"
-  ],
-  "commonFailurePoints": [
-    "网点尺度失控导致摩尔纹感",
-    "黑白层次不清让主体糊成一片"
   ],
   "preview": {
     "accent": "#f5f1e6",

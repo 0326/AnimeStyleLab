@@ -38,10 +38,6 @@
     "16:9",
     "3:2"
   ],
-  "compatibleStyles": [
-    "school-romance-vn",
-    "soft-healing-room"
-  ],
   "similarStyles": [
     "theatrical-anime-poster",
     "cel-shine-anime"
@@ -50,14 +46,6 @@
     "剧情感单帧",
     "场景叙事",
     "参考镜头"
-  ],
-  "notRecommendedFor": [
-    "商业大海报",
-    "强商品展示"
-  ],
-  "commonFailurePoints": [
-    "场景信息不足像半成品",
-    "角色姿态僵硬缺少生活感"
   ],
   "preview": {
     "accent": "#ffd56a",

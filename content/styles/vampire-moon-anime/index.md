@@ -38,10 +38,6 @@
     "2:3",
     "16:9"
   ],
-  "compatibleStyles": [
-    "mystery-vn-noir",
-    "moonlit-reverie-anime"
-  ],
   "similarStyles": [
     "black-gold-witchcore",
     "gothic-cathedral-anime"
@@ -50,14 +46,6 @@
     "暗夜题材海报",
     "冷调角色壁纸",
     "戏剧特写"
-  ],
-  "notRecommendedFor": [
-    "糖果色运营图",
-    "轻量品牌 icon"
-  ],
-  "commonFailurePoints": [
-    "红色点缀太多破坏优雅冷感",
-    "月光过亮导致肤色死白"
   ],
   "preview": {
     "accent": "#ff6a7f",

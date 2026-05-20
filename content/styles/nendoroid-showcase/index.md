@@ -38,10 +38,6 @@
     "1:1",
     "4:5"
   ],
-  "compatibleStyles": [
-    "anime-figure-render",
-    "chibi-idol-mascot"
-  ],
   "similarStyles": [
     "blind-box-vinyl-toy",
     "soft-gummy-character"
@@ -50,14 +46,6 @@
     "可爱收藏图",
     "玩具海报",
     "产品橱窗视觉"
-  ],
-  "notRecommendedFor": [
-    "长腿立绘",
-    "现实风景场景"
-  ],
-  "commonFailurePoints": [
-    "比例不够统一像普通 3D",
-    "塑料面太哑缺少收藏感"
   ],
   "preview": {
     "accent": "#ffd4ec",

@@ -89,11 +89,8 @@ const requiredStringArrayFields = [
   "promptKeywords",
   "useCases",
   "recommendedRatios",
-  "compatibleStyles",
   "similarStyles",
   "bestFor",
-  "notRecommendedFor",
-  "commonFailurePoints",
 ];
 
 function splitCsv(text) {

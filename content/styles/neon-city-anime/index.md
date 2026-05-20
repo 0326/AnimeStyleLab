@@ -38,10 +38,6 @@
     "16:9",
     "21:9"
   ],
-  "compatibleStyles": [
-    "rainlit-cinematic-anime",
-    "digital-space-idol"
-  ],
   "similarStyles": [
     "mecha-hangar-anime",
     "hologram-fashion-lab"
@@ -50,14 +46,6 @@
     "赛博壁纸",
     "城市头图",
     "未来感氛围页"
-  ],
-  "notRecommendedFor": [
-    "极简贴纸",
-    "暖色治愈室内"
-  ],
-  "commonFailurePoints": [
-    "霓虹色杂乱导致主体不突出",
-    "建筑重复度太高像素材拼接"
   ],
   "preview": {
     "accent": "#00f0ff",

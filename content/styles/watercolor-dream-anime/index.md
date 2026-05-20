@@ -38,10 +38,6 @@
     "4:5",
     "1:1"
   ],
-  "compatibleStyles": [
-    "shojo-sparkle-manga",
-    "healing-visual-novel"
-  ],
   "similarStyles": [
     "healing-cloudscape-anime",
     "soft-healing-room"
@@ -50,14 +46,6 @@
     "梦境人物图",
     "柔和封面",
     "轻文艺主题"
-  ],
-  "notRecommendedFor": [
-    "硬边机甲",
-    "超商业产品渲染"
-  ],
-  "commonFailurePoints": [
-    "晕染太散导致五官糊化",
-    "纸纹过强压制主体"
   ],
   "preview": {
     "accent": "#b8b5ff",

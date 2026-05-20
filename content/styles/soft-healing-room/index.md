@@ -38,10 +38,6 @@
     "16:9",
     "4:3"
   ],
-  "compatibleStyles": [
-    "healing-visual-novel",
-    "school-romance-vn"
-  ],
   "similarStyles": [
     "watercolor-dream-anime",
     "healing-cloudscape-anime"
@@ -50,14 +46,6 @@
     "室内壁纸",
     "情绪背景",
     "舒缓氛围图"
-  ],
-  "notRecommendedFor": [
-    "群像战斗",
-    "高饱和科幻"
-  ],
-  "commonFailurePoints": [
-    "摆件太多导致画面拥堵",
-    "暖光泛黄过度像旧滤镜"
   ],
   "preview": {
     "accent": "#ffd8a1",

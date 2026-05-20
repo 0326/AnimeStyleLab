@@ -38,10 +38,6 @@
     "9:16",
     "3:4"
   ],
-  "compatibleStyles": [
-    "school-romance-vn",
-    "urban-fashion-webtoon"
-  ],
   "similarStyles": [
     "premium-gacha-illustration",
     "chibi-idol-mascot"
@@ -50,14 +46,6 @@
     "大厅角色",
     "半身互动角色",
     "UI 中心位角色"
-  ],
-  "notRecommendedFor": [
-    "群像史诗图",
-    "超宽场景图"
-  ],
-  "commonFailurePoints": [
-    "肢体动作过大不适合 UI 站位",
-    "背景元素太多削弱角色亲和度"
   ],
   "preview": {
     "accent": "#75f8c8",

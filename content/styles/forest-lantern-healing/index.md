@@ -38,10 +38,6 @@
     "16:9",
     "4:3"
   ],
-  "compatibleStyles": [
-    "soft-healing-room",
-    "ink-wash-spiritscape"
-  ],
   "similarStyles": [
     "healing-cloudscape-anime",
     "moonlit-reverie-anime"
@@ -50,14 +46,6 @@
     "静谧场景壁纸",
     "治愈幻想封面",
     "环境氛围图"
-  ],
-  "notRecommendedFor": [
-    "高光时装肖像",
-    "硬边机甲图"
-  ],
-  "commonFailurePoints": [
-    "暖光分布太平均失去焦点",
-    "树影细节过乱让场景显脏"
   ],
   "preview": {
     "accent": "#d9b96f",

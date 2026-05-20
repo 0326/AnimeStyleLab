@@ -38,10 +38,6 @@
     "16:9",
     "3:4"
   ],
-  "compatibleStyles": [
-    "watercolor-dream-anime",
-    "xianxia-sword-maiden"
-  ],
   "similarStyles": [
     "neo-guochao-anime",
     "healing-cloudscape-anime"
@@ -50,14 +46,6 @@
     "东方场景图",
     "意境封面",
     "长卷感视觉"
-  ],
-  "notRecommendedFor": [
-    "高反光 3D 玩具",
-    "高饱和霓虹都市场景"
-  ],
-  "commonFailurePoints": [
-    "墨色太实失去空灵感",
-    "角色和背景风格断裂"
   ],
   "preview": {
     "accent": "#c7d3dc",

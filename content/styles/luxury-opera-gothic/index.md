@@ -38,10 +38,6 @@
     "4:5",
     "2:3"
   ],
-  "compatibleStyles": [
-    "premium-gacha-illustration",
-    "digital-space-idol"
-  ],
   "similarStyles": [
     "black-gold-witchcore",
     "vampire-moon-anime"
@@ -50,14 +46,6 @@
     "高戏剧服饰海报",
     "角色奢华主视觉",
     "舞台题材封面"
-  ],
-  "notRecommendedFor": [
-    "校园日常",
-    "极简 icon"
-  ],
-  "commonFailurePoints": [
-    "珠饰细节均匀铺满没有重点",
-    "酒红过多让肤色显脏"
   ],
   "preview": {
     "accent": "#c75971",

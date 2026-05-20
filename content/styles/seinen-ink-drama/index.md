@@ -38,10 +38,6 @@
     "4:5",
     "16:9"
   ],
-  "compatibleStyles": [
-    "mystery-vn-noir",
-    "ruin-apocalypse-anime"
-  ],
   "similarStyles": [
     "shonen-impact-manga",
     "screentone-manga-cover"
@@ -50,14 +46,6 @@
     "悬疑主题",
     "成人向视觉",
     "黑白高压场景"
-  ],
-  "notRecommendedFor": [
-    "萌系贴纸",
-    "糖果色场景"
-  ],
-  "commonFailurePoints": [
-    "纯黑区域过大丢失信息",
-    "人物五官写实过头失去二次元感"
   ],
   "preview": {
     "accent": "#b8c0cc",

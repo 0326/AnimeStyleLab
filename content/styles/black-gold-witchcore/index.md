@@ -38,10 +38,6 @@
     "4:5",
     "3:4"
   ],
-  "compatibleStyles": [
-    "premium-gacha-illustration",
-    "gothic-cathedral-anime"
-  ],
   "similarStyles": [
     "luxury-opera-gothic",
     "vampire-moon-anime"
@@ -50,14 +46,6 @@
     "暗黑角色主视觉",
     "时装型魔法题材",
     "高辨识海报"
-  ],
-  "notRecommendedFor": [
-    "儿童贴纸",
-    "低对比日常场景"
-  ],
-  "commonFailurePoints": [
-    "黑金比例失衡像土豪风",
-    "符号元素太散导致主题不聚焦"
   ],
   "preview": {
     "accent": "#d8ad48",

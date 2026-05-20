@@ -38,10 +38,6 @@
     "9:16",
     "4:5"
   ],
-  "compatibleStyles": [
-    "shonen-impact-manga",
-    "neon-city-anime"
-  ],
   "similarStyles": [
     "urban-fashion-webtoon",
     "high-gloss-webtoon"
@@ -50,14 +46,6 @@
     "纵向动作封面",
     "卷轴式主视觉",
     "节奏感展示页"
-  ],
-  "notRecommendedFor": [
-    "头像近景",
-    "静态治愈室内"
-  ],
-  "commonFailurePoints": [
-    "纵向节奏平均缺少高潮段",
-    "残影和特效重叠让动作看不清"
   ],
   "preview": {
     "accent": "#a0ff7b",

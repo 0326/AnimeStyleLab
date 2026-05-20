@@ -38,10 +38,6 @@
     "1:1",
     "3:4"
   ],
-  "compatibleStyles": [
-    "romance-webtoon",
-    "school-romance-vn"
-  ],
   "similarStyles": [
     "screentone-manga-cover",
     "watercolor-dream-anime"
@@ -50,14 +46,6 @@
     "情绪特写",
     "恋爱主题封面",
     "角色立面海报"
-  ],
-  "notRecommendedFor": [
-    "硬核战斗场景",
-    "高机械密度画面"
-  ],
-  "commonFailurePoints": [
-    "闪片元素过量压住五官",
-    "线条过软导致脸部结构塌陷"
   ],
   "preview": {
     "accent": "#ff8fc7",

@@ -38,10 +38,6 @@
     "16:9",
     "4:3"
   ],
-  "compatibleStyles": [
-    "soft-healing-room",
-    "watercolor-dream-anime"
-  ],
   "similarStyles": [
     "school-romance-vn",
     "healing-cloudscape-anime"
@@ -50,14 +46,6 @@
     "舒缓场景",
     "室内氛围页",
     "背景+角色组合"
-  ],
-  "notRecommendedFor": [
-    "高冲突战斗图",
-    "高密度商业卡面"
-  ],
-  "commonFailurePoints": [
-    "暖雾过重让物体边界发虚",
-    "室内摆件太乱抢掉主体"
   ],
   "preview": {
     "accent": "#ffc991",

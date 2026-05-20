@@ -38,10 +38,6 @@
     "4:5",
     "16:10"
   ],
-  "compatibleStyles": [
-    "hand-draft-manga",
-    "premium-gacha-illustration"
-  ],
   "similarStyles": [
     "fantasy-rpg-card",
     "live2d-lobby-heroine"
@@ -50,14 +46,6 @@
     "角色设定页",
     "服装展示",
     "开发中概念稿"
-  ],
-  "notRecommendedFor": [
-    "壁纸氛围图",
-    "纯头像特写"
-  ],
-  "commonFailurePoints": [
-    "厚涂过重盖掉二次元轮廓",
-    "说明区排布混乱像拼贴"
   ],
   "preview": {
     "accent": "#9cc2ff",

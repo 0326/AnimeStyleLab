@@ -38,10 +38,6 @@
     "4:5",
     "1:1"
   ],
-  "compatibleStyles": [
-    "shojo-sparkle-manga",
-    "school-romance-vn"
-  ],
   "similarStyles": [
     "urban-fashion-webtoon",
     "high-gloss-webtoon"
@@ -50,14 +46,6 @@
     "恋爱封面",
     "角色关系图",
     "温柔近景人像"
-  ],
-  "notRecommendedFor": [
-    "战斗主视觉",
-    "黑白网点漫画"
-  ],
-  "commonFailurePoints": [
-    "皮肤磨皮过度像滤镜图",
-    "双人构图主次关系含糊"
   ],
   "preview": {
     "accent": "#ff94bf",

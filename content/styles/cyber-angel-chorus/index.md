@@ -38,10 +38,6 @@
     "2:3",
     "16:9"
   ],
-  "compatibleStyles": [
-    "digital-space-idol",
-    "gothic-cathedral-anime"
-  ],
   "similarStyles": [
     "hologram-fashion-lab",
     "black-gold-witchcore"
@@ -50,14 +46,6 @@
     "幻想科技主视觉",
     "舞台感角色海报",
     "未来宗教感封面"
-  ],
-  "notRecommendedFor": [
-    "极简贴纸",
-    "写意水墨场景"
-  ],
-  "commonFailurePoints": [
-    "羽翼结构太碎像粒子噪声",
-    "神圣元素和科技元素比例失衡"
   ],
   "preview": {
     "accent": "#c4fbff",

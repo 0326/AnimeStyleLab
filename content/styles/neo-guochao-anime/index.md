@@ -38,10 +38,6 @@
     "4:5",
     "3:4"
   ],
-  "compatibleStyles": [
-    "black-gold-witchcore",
-    "premium-gacha-illustration"
-  ],
   "similarStyles": [
     "xianxia-sword-maiden",
     "palace-fantasy-portrait"
@@ -50,14 +46,6 @@
     "国潮封面",
     "节庆主题图",
     "文化向主视觉"
-  ],
-  "notRecommendedFor": [
-    "极简线稿图标",
-    "冷色赛博空间"
-  ],
-  "commonFailurePoints": [
-    "红金比例失衡导致俗气",
-    "传统纹样密度过高压住脸部"
   ],
   "preview": {
     "accent": "#ff7f4e",

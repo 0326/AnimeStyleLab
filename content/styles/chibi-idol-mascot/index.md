@@ -38,10 +38,6 @@
     "1:1",
     "3:4"
   ],
-  "compatibleStyles": [
-    "pastel-sticker-pack",
-    "blind-box-vinyl-toy"
-  ],
   "similarStyles": [
     "plush-mascot-anime",
     "minimal-line-buddy"
@@ -50,14 +46,6 @@
     "贴纸",
     "表情图",
     "轻 IP 角色"
-  ],
-  "notRecommendedFor": [
-    "史诗场景",
-    "成熟戏剧题材"
-  ],
-  "commonFailurePoints": [
-    "颜色过多导致视觉噪声高",
-    "比例不统一让角色不够可爱"
   ],
   "preview": {
     "accent": "#ffde59",

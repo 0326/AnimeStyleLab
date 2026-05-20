@@ -38,10 +38,6 @@
     "16:9",
     "4:5"
   ],
-  "compatibleStyles": [
-    "seinen-ink-drama",
-    "gothic-cathedral-anime"
-  ],
   "similarStyles": [
     "school-romance-vn",
     "moonlit-reverie-anime"
@@ -50,14 +46,6 @@
     "悬疑剧情图",
     "推理封面",
     "对峙场景"
-  ],
-  "notRecommendedFor": [
-    "可爱贴纸",
-    "明快节庆图"
-  ],
-  "commonFailurePoints": [
-    "线索元素太显眼失去悬疑感",
-    "冷色覆盖过头让肤色发灰"
   ],
   "preview": {
     "accent": "#89a8ff",

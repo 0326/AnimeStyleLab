@@ -38,10 +38,6 @@
     "1:1",
     "4:5"
   ],
-  "compatibleStyles": [
-    "anime-figure-render",
-    "minimal-line-buddy"
-  ],
   "similarStyles": [
     "nendoroid-showcase",
     "soft-gummy-character"
@@ -50,14 +46,6 @@
     "潮玩品牌视觉",
     "陈列主题封面",
     "轻商业运营图"
-  ],
-  "notRecommendedFor": [
-    "复杂剧情场景",
-    "高写实角色脸"
-  ],
-  "commonFailurePoints": [
-    "潮玩轮廓不够干净",
-    "背景太写实破坏产品化观感"
   ],
   "preview": {
     "accent": "#9cf0d0",

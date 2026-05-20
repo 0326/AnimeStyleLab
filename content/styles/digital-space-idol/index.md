@@ -38,10 +38,6 @@
     "4:5",
     "3:4"
   ],
-  "compatibleStyles": [
-    "neon-city-anime",
-    "high-gloss-webtoon"
-  ],
   "similarStyles": [
     "hologram-fashion-lab",
     "premium-gacha-illustration"
@@ -50,14 +46,6 @@
     "未来偶像海报",
     "角色主视觉",
     "数字舞台感封面"
-  ],
-  "notRecommendedFor": [
-    "古风仙侠",
-    "纸质黑白漫画"
-  ],
-  "commonFailurePoints": [
-    "全息元素太碎让脸部失焦",
-    "服装科技细节堆砌但轮廓不清"
   ],
   "preview": {
     "accent": "#72d6ff",

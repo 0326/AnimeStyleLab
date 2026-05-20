@@ -38,10 +38,6 @@
     "1:1",
     "3:4"
   ],
-  "compatibleStyles": [
-    "plush-mascot-anime",
-    "soft-gummy-character"
-  ],
   "similarStyles": [
     "anime-figure-render",
     "nendoroid-showcase"
@@ -50,14 +46,6 @@
     "治愈 IP",
     "桌面收藏图",
     "柔软风角色展示"
-  ],
-  "notRecommendedFor": [
-    "硬金属科幻",
-    "高反差黑白图"
-  ],
-  "commonFailurePoints": [
-    "毛绒纤维方向混乱显脏",
-    "五官太平失去动漫精气神"
   ],
   "preview": {
     "accent": "#ffca9d",
