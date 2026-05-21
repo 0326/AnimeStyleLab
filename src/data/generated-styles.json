@@ -4146,5 +4146,523 @@
       "gptGuidance": "Describe the subject, camera framing, and mood in full sentences. Preserve action webtoon and vertical panel.",
       "nanoGuidance": "State composition and intended use early. Keep action webtoon and vertical panel visible in the final image."
     }
+  },
+  {
+    "id": "donghua-cg-heroine",
+    "slug": "donghua-cg-heroine",
+    "nameZh": "国漫3D主角立绘",
+    "nameEn": "Donghua CG Heroine",
+    "category": "chinese-anime",
+    "summary": "偏国漫长剧主角海报的 3D 二次元角色表达。",
+    "tags": ["国漫3D", "主角", "建模感", "体积光"],
+    "visualFeatures": [
+      "半写实二次元五官",
+      "高密度发丝层次",
+      "影视级轮廓光",
+      "布料与饰件三维转面清楚",
+      "角色主角感强"
+    ],
+    "promptKeywords": [
+      "donghua 3d heroine",
+      "chinese anime cg",
+      "semi realistic anime face",
+      "volumetric rim light",
+      "ornate costume detail",
+      "hero key visual"
+    ],
+    "basePrompt": "donghua cg heroine aesthetic, donghua 3d heroine, chinese anime cg, semi realistic anime face, volumetric rim light, ornate costume detail, hero key visual, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 五官太写实像真人海报, 饰件堆砌过满压住人物主线",
+    "useCases": ["角色设定图", "海报", "封面头图"],
+    "recommendedRatios": ["3:4", "4:5"],
+    "similarStyles": ["xianxia-sword-maiden", "premium-gacha-illustration"],
+    "bestFor": ["国漫女主视觉", "角色主海报", "东方幻想立绘"],
+    "preview": {
+      "accent": "#78d8ff",
+      "glow": "#d8f4ff",
+      "surface": "#12202c",
+      "label": "CG"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 半写实二次元五官 和 影视级轮廓光。",
+      "nanoBanana": "指令中优先写清 角色设定图 的构图约束，再强调避免 五官太写实像真人海报。"
+    },
+    "description": "国漫3D主角立绘 强调 半写实二次元五官、高密度发丝层次、影视级轮廓光。整体属于国风二次元路径，但明显偏向国漫 CG 建模与长剧海报语境，适合需要 国漫女主视觉、角色主海报 的画面。相比相近风格，它更突出 国漫3D、主角、建模感，在 PC 端风格库中能快速形成鲜明识别。新中式、仙侠、水墨与国潮配色驱动的东方幻想表达。",
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/donghua-cg-heroine/thumb/01-cover.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/donghua-cg-heroine/previews/01-cover.png",
+        "altZh": "国漫3D主角立绘风格预览1",
+        "altEn": "Donghua CG Heroine preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 600,
+        "height": 450
+      }
+    ],
+    "modelInput": {
+      "stylePrompt": "donghua cg heroine aesthetic, donghua 3d heroine, chinese anime cg, semi realistic anime face, volumetric rim light, ornate costume detail, hero key visual, clean anime composition, high detail illustration",
+      "styleGoal": "Prioritize Eastern fantasy motifs, elegant costume flow, and coherent environment storytelling.",
+      "featureKeywords": [
+        "donghua 3d heroine",
+        "chinese anime cg",
+        "semi realistic anime face",
+        "volumetric rim light",
+        "ornate costume detail",
+        "hero key visual"
+      ],
+      "mustPreserve": [
+        "donghua 3d heroine",
+        "chinese anime cg",
+        "semi realistic anime face"
+      ],
+      "negativeKeywords": ["text", "watermark", "logo", "muddy rendering"],
+      "gptGuidance": "Describe the subject, camera framing, and mood in full sentences. Preserve donghua 3d heroine and chinese anime cg.",
+      "nanoGuidance": "State composition and intended use early. Keep donghua 3d heroine and chinese anime cg visible in the final image."
+    }
+  },
+  {
+    "id": "celestial-palace-cg",
+    "slug": "celestial-palace-cg",
+    "nameZh": "仙宫华服3D国漫",
+    "nameEn": "Celestial Palace CG",
+    "category": "chinese-anime",
+    "summary": "仙宫礼服、珠玉材质和高空神殿光感结合的国漫 3D 路线。",
+    "tags": ["仙宫", "华服", "珠玉", "神殿"],
+    "visualFeatures": [
+      "珠玉金属饰件",
+      "高空神殿背景",
+      "冷白体积光",
+      "长裙大袖飘垂",
+      "神性秩序感"
+    ],
+    "promptKeywords": [
+      "celestial palace cg",
+      "donghua royal costume",
+      "jade gold ornaments",
+      "heavenly temple scene",
+      "flowing hanfu silhouette",
+      "divine chinese fantasy"
+    ],
+    "basePrompt": "celestial palace cg aesthetic, celestial palace cg, donghua royal costume, jade gold ornaments, heavenly temple scene, flowing hanfu silhouette, divine chinese fantasy, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 服饰材质像塑料贴图, 神殿背景过满抢走人物视觉中心",
+    "useCases": ["海报", "壁纸", "节庆主视觉"],
+    "recommendedRatios": ["4:5", "16:9"],
+    "similarStyles": ["palace-fantasy-portrait", "donghua-cg-heroine"],
+    "bestFor": ["仙宫主视觉", "华服角色海报", "神话题材封面"],
+    "preview": {
+      "accent": "#b8d6ff",
+      "glow": "#eef5ff",
+      "surface": "#151c2d",
+      "label": "PALACE"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 珠玉金属饰件 和 冷白体积光。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 服饰材质像塑料贴图。"
+    },
+    "description": "仙宫华服3D国漫 强调 珠玉金属饰件、高空神殿背景、冷白体积光。整体属于国风二次元路径，但更偏国漫神话宫阙与 3D 华服角色包装，适合需要 仙宫主视觉、华服角色海报 的画面。相比相近风格，它更突出 仙宫、华服、珠玉，在 PC 端风格库中能快速形成鲜明识别。新中式、仙侠、水墨与国潮配色驱动的东方幻想表达。",
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/celestial-palace-cg/thumb/01-cover.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/celestial-palace-cg/previews/01-cover.png",
+        "altZh": "仙宫华服3D国漫风格预览1",
+        "altEn": "Celestial Palace CG preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 600,
+        "height": 450
+      }
+    ],
+    "modelInput": {
+      "stylePrompt": "celestial palace cg aesthetic, celestial palace cg, donghua royal costume, jade gold ornaments, heavenly temple scene, flowing hanfu silhouette, divine chinese fantasy, clean anime composition, high detail illustration",
+      "styleGoal": "Prioritize Eastern fantasy motifs, elegant costume flow, and coherent environment storytelling.",
+      "featureKeywords": [
+        "celestial palace cg",
+        "donghua royal costume",
+        "jade gold ornaments",
+        "heavenly temple scene",
+        "flowing hanfu silhouette",
+        "divine chinese fantasy"
+      ],
+      "mustPreserve": [
+        "celestial palace cg",
+        "donghua royal costume",
+        "jade gold ornaments"
+      ],
+      "negativeKeywords": ["text", "watermark", "logo", "muddy rendering"],
+      "gptGuidance": "Describe the subject, camera framing, and mood in full sentences. Preserve celestial palace cg and donghua royal costume.",
+      "nanoGuidance": "State composition and intended use early. Keep celestial palace cg and donghua royal costume visible in the final image."
+    }
+  },
+  {
+    "id": "wuxia-cinematic-cg",
+    "slug": "wuxia-cinematic-cg",
+    "nameZh": "武侠电影感3D国漫",
+    "nameEn": "Wuxia Cinematic CG",
+    "category": "chinese-anime",
+    "summary": "更强调动作张力、兵器速度线和电影镜头的国漫 3D 武侠风格。",
+    "tags": ["武侠", "动作", "电影感", "兵器"],
+    "visualFeatures": [
+      "疾冲式人物姿态",
+      "兵器寒光拖尾",
+      "风沙雨雪环境动势",
+      "广角电影镜头",
+      "强前后景层次"
+    ],
+    "promptKeywords": [
+      "wuxia cinematic cg",
+      "donghua martial arts",
+      "dynamic sword motion",
+      "wide lens action shot",
+      "flying fabric movement",
+      "epic chinese fantasy battle"
+    ],
+    "basePrompt": "wuxia cinematic cg aesthetic, wuxia cinematic cg, donghua martial arts, dynamic sword motion, wide lens action shot, flying fabric movement, epic chinese fantasy battle, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 动作冻结像摆拍, 特效拖尾太多遮住人物结构",
+    "useCases": ["海报", "桌面壁纸", "剧情封面"],
+    "recommendedRatios": ["16:9", "2:3"],
+    "similarStyles": ["xianxia-sword-maiden", "theatrical-anime-poster"],
+    "bestFor": ["武侠战斗海报", "动作场景封面", "高张力主视觉"],
+    "preview": {
+      "accent": "#9fd3ff",
+      "glow": "#e1f2ff",
+      "surface": "#111927",
+      "label": "WUXIA"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 疾冲式人物姿态 和 兵器寒光拖尾。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 动作冻结像摆拍。"
+    },
+    "description": "武侠电影感3D国漫 强调 疾冲式人物姿态、兵器寒光拖尾、风沙雨雪环境动势。整体属于国风二次元路径，但更偏国漫 3D 动作戏与电影分镜语言，适合需要 武侠战斗海报、动作场景封面 的画面。相比相近风格，它更突出 武侠、动作、电影感，在 PC 端风格库中能快速形成鲜明识别。新中式、仙侠、水墨与国潮配色驱动的东方幻想表达。",
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/wuxia-cinematic-cg/thumb/01-cover.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/wuxia-cinematic-cg/previews/01-cover.png",
+        "altZh": "武侠电影感3D国漫风格预览1",
+        "altEn": "Wuxia Cinematic CG preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 600,
+        "height": 450
+      }
+    ],
+    "modelInput": {
+      "stylePrompt": "wuxia cinematic cg aesthetic, wuxia cinematic cg, donghua martial arts, dynamic sword motion, wide lens action shot, flying fabric movement, epic chinese fantasy battle, clean anime composition, high detail illustration",
+      "styleGoal": "Prioritize Eastern fantasy motifs, elegant costume flow, and coherent environment storytelling.",
+      "featureKeywords": [
+        "wuxia cinematic cg",
+        "donghua martial arts",
+        "dynamic sword motion",
+        "wide lens action shot",
+        "flying fabric movement",
+        "epic chinese fantasy battle"
+      ],
+      "mustPreserve": [
+        "wuxia cinematic cg",
+        "donghua martial arts",
+        "dynamic sword motion"
+      ],
+      "negativeKeywords": ["text", "watermark", "logo", "muddy rendering"],
+      "gptGuidance": "Describe the subject, camera framing, and mood in full sentences. Preserve wuxia cinematic cg and donghua martial arts.",
+      "nanoGuidance": "State composition and intended use early. Keep wuxia cinematic cg and donghua martial arts visible in the final image."
+    }
+  },
+  {
+    "id": "spirit-beast-bond-cg",
+    "slug": "spirit-beast-bond-cg",
+    "nameZh": "灵兽契约3D国漫",
+    "nameEn": "Spirit Beast Bond CG",
+    "category": "chinese-anime",
+    "summary": "人物与灵兽共场、能量脉冲和玄幻世界观并重的国漫 3D 风格。",
+    "tags": ["灵兽", "契约", "玄幻", "共场"],
+    "visualFeatures": [
+      "人物与灵兽主从构图",
+      "能量纹路或法阵",
+      "兽类毛羽鳞片细节",
+      "夜色秘境光效",
+      "世界观叙事感"
+    ],
+    "promptKeywords": [
+      "spirit beast bond cg",
+      "donghua fantasy creature",
+      "hero with guardian beast",
+      "mystic sigil energy",
+      "eastern fantasy wilderness",
+      "anime creature partnership"
+    ],
+    "basePrompt": "spirit beast bond cg aesthetic, spirit beast bond cg, donghua fantasy creature, hero with guardian beast, mystic sigil energy, eastern fantasy wilderness, anime creature partnership, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 灵兽比例失控压过主体, 能量法阵太亮像游戏 UI 特效",
+    "useCases": ["海报", "封面头图", "世界观宣传图"],
+    "recommendedRatios": ["16:9", "3:4"],
+    "similarStyles": ["ink-wash-spiritscape", "wuxia-cinematic-cg"],
+    "bestFor": ["灵兽题材主视觉", "玄幻场景海报", "人物关系世界观图"],
+    "preview": {
+      "accent": "#7ce0d5",
+      "glow": "#dffcf7",
+      "surface": "#12231f",
+      "label": "BEAST"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 人物与灵兽主从构图 和 能量纹路或法阵。",
+      "nanoBanana": "指令中优先写清 世界观宣传图 的构图约束，再强调避免 灵兽比例失控压过主体。"
+    },
+    "description": "灵兽契约3D国漫 强调 人物与灵兽主从构图、能量纹路或法阵、兽类毛羽鳞片细节。整体属于国风二次元路径，但更偏国漫玄幻 CG 世界观表达，适合需要 灵兽题材主视觉、玄幻场景海报 的画面。相比相近风格，它更突出 灵兽、契约、玄幻，在 PC 端风格库中能快速形成鲜明识别。新中式、仙侠、水墨与国潮配色驱动的东方幻想表达。",
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/spirit-beast-bond-cg/thumb/01-cover.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/spirit-beast-bond-cg/previews/01-cover.png",
+        "altZh": "灵兽契约3D国漫风格预览1",
+        "altEn": "Spirit Beast Bond CG preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 600,
+        "height": 450
+      }
+    ],
+    "modelInput": {
+      "stylePrompt": "spirit beast bond cg aesthetic, spirit beast bond cg, donghua fantasy creature, hero with guardian beast, mystic sigil energy, eastern fantasy wilderness, anime creature partnership, clean anime composition, high detail illustration",
+      "styleGoal": "Prioritize Eastern fantasy motifs, elegant costume flow, and coherent environment storytelling.",
+      "featureKeywords": [
+        "spirit beast bond cg",
+        "donghua fantasy creature",
+        "hero with guardian beast",
+        "mystic sigil energy",
+        "eastern fantasy wilderness",
+        "anime creature partnership"
+      ],
+      "mustPreserve": [
+        "spirit beast bond cg",
+        "donghua fantasy creature",
+        "hero with guardian beast"
+      ],
+      "negativeKeywords": ["text", "watermark", "logo", "muddy rendering"],
+      "gptGuidance": "Describe the subject, camera framing, and mood in full sentences. Preserve spirit beast bond cg and donghua fantasy creature.",
+      "nanoGuidance": "State composition and intended use early. Keep spirit beast bond cg and donghua fantasy creature visible in the final image."
+    }
+  },
+  {
+    "id": "urban-spirit-detective-cg",
+    "slug": "urban-spirit-detective-cg",
+    "nameZh": "都市灵探3D国漫",
+    "nameEn": "Urban Spirit Detective CG",
+    "category": "chinese-anime",
+    "summary": "把现代都市夜景、符阵术式和国漫 3D 主角感结合起来的都市玄幻路线。",
+    "tags": ["都市玄幻", "灵探", "夜景", "术式"],
+    "visualFeatures": [
+      "霓虹都市夜色",
+      "悬浮符阵或符纸",
+      "现代服饰混合东方法器",
+      "蓝青色能量边光",
+      "追查悬疑气氛"
+    ],
+    "promptKeywords": [
+      "urban spirit detective cg",
+      "donghua urban fantasy",
+      "neon city talisman",
+      "modern exorcist anime",
+      "mystic sigil glow",
+      "chinese supernatural night scene"
+    ],
+    "basePrompt": "urban spirit detective cg aesthetic, urban spirit detective cg, donghua urban fantasy, neon city talisman, modern exorcist anime, mystic sigil glow, chinese supernatural night scene, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 都市元素太普通像通用赛博图, 术式特效太散没有侦探主角焦点",
+    "useCases": ["海报", "封面头图", "剧情宣传图"],
+    "recommendedRatios": ["4:5", "16:9"],
+    "similarStyles": ["spirit-beast-bond-cg", "neon-city-anime"],
+    "bestFor": ["都市玄幻主视觉", "夜景角色海报", "悬疑题材封面"],
+    "preview": {
+      "accent": "#6ed6ff",
+      "glow": "#d9f7ff",
+      "surface": "#101d27",
+      "label": "URBAN"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 霓虹都市夜色 和 悬浮符阵或符纸。",
+      "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 都市元素太普通像通用赛博图。"
+    },
+    "description": "都市灵探3D国漫 强调 霓虹都市夜色、悬浮符阵或符纸、现代服饰混合东方法器。整体属于国风二次元路径，但明显偏向现代都市玄幻与国漫 3D 长剧宣传物料，适合需要 都市玄幻主视觉、夜景角色海报 的画面。相比相近风格，它更突出 都市玄幻、灵探、夜景，在 PC 端风格库中能快速形成鲜明识别。新中式、仙侠、水墨与国潮配色驱动的东方幻想表达。",
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/urban-spirit-detective-cg/thumb/01-cover.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/urban-spirit-detective-cg/previews/01-cover.png",
+        "altZh": "都市灵探3D国漫风格预览1",
+        "altEn": "Urban Spirit Detective CG preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 600,
+        "height": 450
+      }
+    ],
+    "modelInput": {
+      "stylePrompt": "urban spirit detective cg aesthetic, urban spirit detective cg, donghua urban fantasy, neon city talisman, modern exorcist anime, mystic sigil glow, chinese supernatural night scene, clean anime composition, high detail illustration",
+      "styleGoal": "Prioritize Eastern fantasy motifs, elegant costume flow, and coherent environment storytelling.",
+      "featureKeywords": [
+        "urban spirit detective cg",
+        "donghua urban fantasy",
+        "neon city talisman",
+        "modern exorcist anime",
+        "mystic sigil glow",
+        "chinese supernatural night scene"
+      ],
+      "mustPreserve": [
+        "urban spirit detective cg",
+        "donghua urban fantasy",
+        "neon city talisman"
+      ],
+      "negativeKeywords": ["text", "watermark", "logo", "muddy rendering"],
+      "gptGuidance": "Describe the subject, camera framing, and mood in full sentences. Preserve urban spirit detective cg and donghua urban fantasy.",
+      "nanoGuidance": "State composition and intended use early. Keep urban spirit detective cg and donghua urban fantasy visible in the final image."
+    }
+  },
+  {
+    "id": "cultivation-academy-cg",
+    "slug": "cultivation-academy-cg",
+    "nameZh": "修炼学院3D国漫",
+    "nameEn": "Cultivation Academy CG",
+    "category": "chinese-anime",
+    "summary": "少年修炼、学院阶梯和宗门考核气氛更强的国漫 3D 校园玄幻路线。",
+    "tags": ["学院", "修炼", "少年", "宗门"],
+    "visualFeatures": [
+      "年轻主角群像",
+      "学院或山门建筑层级",
+      "灵力轨迹与试炼光效",
+      "校服式宗门服装",
+      "成长题材朝气感"
+    ],
+    "promptKeywords": [
+      "cultivation academy cg",
+      "donghua training school",
+      "young cultivator anime",
+      "sect uniform fantasy",
+      "trial arena energy",
+      "coming of age chinese fantasy"
+    ],
+    "basePrompt": "cultivation academy cg aesthetic, cultivation academy cg, donghua training school, young cultivator anime, sect uniform fantasy, trial arena energy, coming of age chinese fantasy, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 学院背景像普通古装景区, 少年角色年龄感不清变成熟角色",
+    "useCases": ["海报", "剧情封面", "世界观宣传图"],
+    "recommendedRatios": ["3:4", "16:9"],
+    "similarStyles": ["donghua-cg-heroine", "wuxia-cinematic-cg"],
+    "bestFor": ["少年成长主视觉", "学院篇章封面", "修炼题材群像图"],
+    "preview": {
+      "accent": "#8cd1ff",
+      "glow": "#e4f4ff",
+      "surface": "#14202a",
+      "label": "ACADEMY"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 年轻主角群像 和 学院或山门建筑层级。",
+      "nanoBanana": "指令中优先写清 世界观宣传图 的构图约束，再强调避免 学院背景像普通古装景区。"
+    },
+    "description": "修炼学院3D国漫 强调 年轻主角群像、学院或山门建筑层级、灵力轨迹与试炼光效。整体属于国风二次元路径，但更偏国创少年成长线和学院修炼叙事，适合需要 少年成长主视觉、学院篇章封面 的画面。相比相近风格，它更突出 学院、修炼、少年，在 PC 端风格库中能快速形成鲜明识别。新中式、仙侠、水墨与国潮配色驱动的东方幻想表达。",
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/cultivation-academy-cg/thumb/01-cover.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/cultivation-academy-cg/previews/01-cover.png",
+        "altZh": "修炼学院3D国漫风格预览1",
+        "altEn": "Cultivation Academy CG preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 600,
+        "height": 450
+      }
+    ],
+    "modelInput": {
+      "stylePrompt": "cultivation academy cg aesthetic, cultivation academy cg, donghua training school, young cultivator anime, sect uniform fantasy, trial arena energy, coming of age chinese fantasy, clean anime composition, high detail illustration",
+      "styleGoal": "Prioritize Eastern fantasy motifs, elegant costume flow, and coherent environment storytelling.",
+      "featureKeywords": [
+        "cultivation academy cg",
+        "donghua training school",
+        "young cultivator anime",
+        "sect uniform fantasy",
+        "trial arena energy",
+        "coming of age chinese fantasy"
+      ],
+      "mustPreserve": [
+        "cultivation academy cg",
+        "donghua training school",
+        "young cultivator anime"
+      ],
+      "negativeKeywords": ["text", "watermark", "logo", "muddy rendering"],
+      "gptGuidance": "Describe the subject, camera framing, and mood in full sentences. Preserve cultivation academy cg and donghua training school.",
+      "nanoGuidance": "State composition and intended use early. Keep cultivation academy cg and donghua training school visible in the final image."
+    }
+  },
+  {
+    "id": "hot-blood-donghua-squad",
+    "slug": "hot-blood-donghua-squad",
+    "nameZh": "热血团战3D国漫",
+    "nameEn": "Hot-Blood Donghua Squad",
+    "category": "chinese-anime",
+    "summary": "偏少年热血番群像站位、爆发技能和团队关系的国漫 3D 路线。",
+    "tags": ["热血", "团战", "群像", "爆发"],
+    "visualFeatures": [
+      "前后排团队站位",
+      "多角色技能色彩区分",
+      "爆发式能量冲击",
+      "少年系表情张力",
+      "竞技式主视觉节奏"
+    ],
+    "promptKeywords": [
+      "hot blood donghua squad",
+      "team battle chinese anime",
+      "youth action ensemble",
+      "multi character power burst",
+      "competitive fantasy anime",
+      "donghua squad poster"
+    ],
+    "basePrompt": "hot blood donghua squad aesthetic, hot blood donghua squad, team battle chinese anime, youth action ensemble, multi character power burst, competitive fantasy anime, donghua squad poster, clean anime composition, high detail illustration",
+    "avoidPrompt": "text, watermark, logo, muddy rendering, 群像平均排开像合影, 技能颜色混在一起失去角色区分",
+    "useCases": ["海报", "封面头图", "活动主视觉"],
+    "recommendedRatios": ["16:9", "4:5"],
+    "similarStyles": ["cultivation-academy-cg", "wuxia-cinematic-cg"],
+    "bestFor": ["少年热血群像海报", "团战题材主视觉", "高能剧情宣传图"],
+    "preview": {
+      "accent": "#7eb8ff",
+      "glow": "#deecff",
+      "surface": "#131d2b",
+      "label": "SQUAD"
+    },
+    "modelTips": {
+      "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 前后排团队站位 和 多角色技能色彩区分。",
+      "nanoBanana": "指令中优先写清 活动主视觉 的构图约束，再强调避免 群像平均排开像合影。"
+    },
+    "description": "热血团战3D国漫 强调 前后排团队站位、多角色技能色彩区分、爆发式能量冲击。整体属于国风二次元路径，但更偏少年热血长篇和团战宣传图语境，适合需要 少年热血群像海报、团战题材主视觉 的画面。相比相近风格，它更突出 热血、团战、群像，在 PC 端风格库中能快速形成鲜明识别。新中式、仙侠、水墨与国潮配色驱动的东方幻想表达。",
+    "previewImages": [
+      {
+        "id": "cover",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/hot-blood-donghua-squad/thumb/01-cover.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/hot-blood-donghua-squad/previews/01-cover.png",
+        "altZh": "热血团战3D国漫风格预览1",
+        "altEn": "Hot-Blood Donghua Squad preview 1",
+        "label": "Hero",
+        "focus": "overall-style",
+        "width": 600,
+        "height": 450
+      }
+    ],
+    "modelInput": {
+      "stylePrompt": "hot blood donghua squad aesthetic, hot blood donghua squad, team battle chinese anime, youth action ensemble, multi character power burst, competitive fantasy anime, donghua squad poster, clean anime composition, high detail illustration",
+      "styleGoal": "Prioritize Eastern fantasy motifs, elegant costume flow, and coherent environment storytelling.",
+      "featureKeywords": [
+        "hot blood donghua squad",
+        "team battle chinese anime",
+        "youth action ensemble",
+        "multi character power burst",
+        "competitive fantasy anime",
+        "donghua squad poster"
+      ],
+      "mustPreserve": [
+        "hot blood donghua squad",
+        "team battle chinese anime",
+        "youth action ensemble"
+      ],
+      "negativeKeywords": ["text", "watermark", "logo", "muddy rendering"],
+      "gptGuidance": "Describe the subject, camera framing, and mood in full sentences. Preserve hot blood donghua squad and team battle chinese anime.",
+      "nanoGuidance": "State composition and intended use early. Keep hot blood donghua squad and team battle chinese anime visible in the final image."
+    }
   }
 ]
