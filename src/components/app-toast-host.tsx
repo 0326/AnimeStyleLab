@@ -2,11 +2,19 @@
 
 import { useEffect, useState } from "react";
 
-const APP_TOAST_EVENT = "app-toast";
+export const APP_TOAST_EVENT = "app-toast";
 
 type ToastPayload = {
   message: string;
 };
+
+export function showAppToast(message: string) {
+  window.dispatchEvent(
+    new CustomEvent(APP_TOAST_EVENT, {
+      detail: { message },
+    }),
+  );
+}
 
 export function AppToastHost() {
   const [message, setMessage] = useState("");

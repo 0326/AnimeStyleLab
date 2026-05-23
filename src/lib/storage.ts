@@ -1,11 +1,14 @@
 export const FAVORITES_KEY = "anime-style-lab:favorites";
 export const WORKBENCH_KEY = "anime-style-lab:workbench";
 
+export type WorkbenchSource = "builder" | "wallpaper";
+
 export type WorkbenchEntry = {
   id: string;
   label: string;
   prompt: string;
   model: "gpt-image" | "nano-banana";
+  source: WorkbenchSource;
   createdAt: string;
 };
 

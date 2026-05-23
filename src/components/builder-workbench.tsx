@@ -71,7 +71,7 @@ export function BuilderWorkbench() {
   const [color, setColor] = useState(colorOptions[0]);
   const [composition, setComposition] = useState(compositionOptions[0]);
   const [useCase, setUseCase] = useState(useCaseOptions[0]);
-  const { entries, saveEntry } = useWorkbench();
+  const { saveEntry } = useWorkbench();
   const { dictionary, locale } = useLocale();
   const localizedLabelKey = locale === "zh" ? "labelZh" : "labelEn";
 
@@ -161,6 +161,7 @@ export function BuilderWorkbench() {
       </aside>
       <div className="space-y-6">
         <PromptPanel
+          saveSource="builder"
           onSave={saveEntry}
           outputs={[
             {
@@ -175,47 +176,6 @@ export function BuilderWorkbench() {
             },
           ]}
         />
-        <section className="panel p-6">
-          <div className="flex items-end justify-between gap-4">
-            <div>
-              <p className="eyebrow">{dictionary.builder.workbenchEyebrow}</p>
-              <h3 className="mt-2 font-display text-3xl text-white">
-                {dictionary.builder.workbenchTitle}
-              </h3>
-            </div>
-            <p className="text-sm text-[oklch(76%_0.026_226)]">
-              {dictionary.builder.workbenchMeta}
-            </p>
-          </div>
-          <div className="mt-6 grid gap-4">
-            {entries.length ? (
-              entries.map((entry) => (
-                <div
-                  key={entry.id}
-                  className="border border-[var(--line)] bg-[var(--surface-soft)] p-4"
-                >
-                  <div className="flex items-center justify-between gap-4">
-                    <div>
-                      <p className="text-sm font-medium text-white">
-                        {entry.label}
-                      </p>
-                      <p className="mt-1 text-xs uppercase tracking-[0.12em] text-[oklch(70%_0.026_226)]">
-                        {entry.model}
-                      </p>
-                    </div>
-                  </div>
-                  <p className="mt-3 font-mono text-xs leading-6 text-[oklch(78%_0.026_226)]">
-                    {entry.prompt}
-                  </p>
-                </div>
-              ))
-            ) : (
-              <p className="text-sm leading-6 text-[oklch(78%_0.026_226)]">
-                {dictionary.builder.emptyHistory}
-              </p>
-            )}
-          </div>
-        </section>
       </div>
     </div>
   );

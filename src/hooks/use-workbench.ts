@@ -6,13 +6,21 @@ import {
   readJson,
   WORKBENCH_KEY,
   type WorkbenchEntry,
+  type WorkbenchSource,
   writeJson,
 } from "@/lib/storage";
 
 const WORKBENCH_EVENT = "anime-style-lab:workbench-changed";
 
 function readEntries() {
-  return readJson<WorkbenchEntry[]>(WORKBENCH_KEY, []);
+  const rawEntries = readJson<
+    Array<WorkbenchEntry | Omit<WorkbenchEntry, "source">>
+  >(WORKBENCH_KEY, []);
+
+  return rawEntries.map((entry) => ({
+    ...entry,
+    source: ("source" in entry ? entry.source : "builder") as WorkbenchSource,
+  }));
 }
 
 export function useWorkbench() {

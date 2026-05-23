@@ -172,17 +172,6 @@
         "focus": "style-variation",
         "width": 450,
         "height": 600
-      },
-      {
-        "id": "preview-3",
-        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/rainlit-cinematic-anime/thumb/900x1200.webp",
-        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/rainlit-cinematic-anime/previews/900x1200.png",
-        "altZh": "雨夜电影感动画风格预览3",
-        "altEn": "Rainlit Cinematic Anime preview 3",
-        "label": "View 3",
-        "focus": "style-variation",
-        "width": 450,
-        "height": 600
       }
     ]
   },
@@ -240,22 +229,11 @@
       },
       {
         "id": "preview-2",
-        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/tv-cut-anime-frame/thumb/02.webp",
-        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/tv-cut-anime-frame/previews/02.png",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/tv-cut-anime-frame/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/tv-cut-anime-frame/previews/1086x1448.png",
         "altZh": "TV 动画截图风风格预览2",
         "altEn": "TV Cut Anime Frame preview 2",
         "label": "View 2",
-        "focus": "style-variation",
-        "width": 600,
-        "height": 450
-      },
-      {
-        "id": "preview-3",
-        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/tv-cut-anime-frame/thumb/1086x1448.webp",
-        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/tv-cut-anime-frame/previews/1086x1448.png",
-        "altZh": "TV 动画截图风风格预览3",
-        "altEn": "TV Cut Anime Frame preview 3",
-        "label": "View 3",
         "focus": "style-variation",
         "width": 450,
         "height": 600
@@ -936,17 +914,6 @@
         "altZh": "高端手游立绘风格预览2",
         "altEn": "Premium Gacha Illustration preview 2",
         "label": "View 2",
-        "focus": "style-variation",
-        "width": 450,
-        "height": 600
-      },
-      {
-        "id": "preview-3",
-        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/premium-gacha-illustration/thumb/900x1200.webp",
-        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/premium-gacha-illustration/previews/900x1200.png",
-        "altZh": "高端手游立绘风格预览3",
-        "altEn": "Premium Gacha Illustration preview 3",
-        "label": "View 3",
         "focus": "style-variation",
         "width": 450,
         "height": 600
@@ -2612,22 +2579,11 @@
       },
       {
         "id": "preview-2",
-        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/hologram-fashion-lab/thumb/02.webp",
-        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/hologram-fashion-lab/previews/02.png",
+        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/hologram-fashion-lab/thumb/1086x1448.webp",
+        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/hologram-fashion-lab/previews/1086x1448.png",
         "altZh": "全息时装实验室风格预览2",
         "altEn": "Hologram Fashion Lab preview 2",
         "label": "View 2",
-        "focus": "style-variation",
-        "width": 600,
-        "height": 450
-      },
-      {
-        "id": "preview-3",
-        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/hologram-fashion-lab/thumb/1086x1448.webp",
-        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/hologram-fashion-lab/previews/1086x1448.png",
-        "altZh": "全息时装实验室风格预览3",
-        "altEn": "Hologram Fashion Lab preview 3",
-        "label": "View 3",
         "focus": "style-variation",
         "width": 450,
         "height": 600
@@ -2821,17 +2777,6 @@
         "altZh": "黑金魔女系风格预览2",
         "altEn": "Black Gold Witchcore preview 2",
         "label": "View 2",
-        "focus": "style-variation",
-        "width": 450,
-        "height": 600
-      },
-      {
-        "id": "preview-3",
-        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/black-gold-witchcore/thumb/900x1200.webp",
-        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/black-gold-witchcore/previews/900x1200.png",
-        "altZh": "黑金魔女系风格预览3",
-        "altEn": "Black Gold Witchcore preview 3",
-        "label": "View 3",
         "focus": "style-variation",
         "width": 450,
         "height": 600
@@ -3588,17 +3533,6 @@
         "altZh": "仙侠执剑少女风格预览2",
         "altEn": "Xianxia Sword Maiden preview 2",
         "label": "View 2",
-        "focus": "style-variation",
-        "width": 450,
-        "height": 600
-      },
-      {
-        "id": "preview-3",
-        "src": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/xianxia-sword-maiden/thumb/900x1200.webp",
-        "originalSrc": "https://cdn.jsdelivr.net/gh/0326/animestylelab@main/content/styles/xianxia-sword-maiden/previews/900x1200.png",
-        "altZh": "仙侠执剑少女风格预览3",
-        "altEn": "Xianxia Sword Maiden preview 3",
-        "label": "View 3",
         "focus": "style-variation",
         "width": 450,
         "height": 600

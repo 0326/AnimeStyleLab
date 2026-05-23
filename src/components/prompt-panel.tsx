@@ -1,8 +1,9 @@
 "use client";
 
 import type { PromptResult, TargetModel } from "@/lib/prompt-builder";
-import type { WorkbenchEntry } from "@/lib/storage";
+import type { WorkbenchEntry, WorkbenchSource } from "@/lib/storage";
 
+import { showAppToast } from "./app-toast-host";
 import { CopyButton } from "./copy-button";
 import { useLocale } from "./locale-provider";
 import { PromptModelTabs } from "./prompt-model-tabs";
@@ -16,9 +17,10 @@ type PromptPanelOutput = {
 type PromptPanelProps = {
   outputs: [PromptPanelOutput, PromptPanelOutput];
   onSave?: (entry: WorkbenchEntry) => void;
+  saveSource: WorkbenchSource;
 };
 
-export function PromptPanel({ outputs, onSave }: PromptPanelProps) {
+export function PromptPanel({ outputs, onSave, saveSource }: PromptPanelProps) {
   const { dictionary } = useLocale();
 
   function handleSave(output: PromptPanelOutput) {
@@ -29,8 +31,10 @@ export function PromptPanel({ outputs, onSave }: PromptPanelProps) {
       label: output.saveLabel,
       prompt: output.result.prompt,
       model: output.model,
+      source: saveSource,
       createdAt: new Date().toISOString(),
     });
+    showAppToast(dictionary.actions.saveToWorkbenchSuccess);
   }
 
   return (

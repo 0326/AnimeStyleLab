@@ -32,6 +32,9 @@ export const dictionaries = {
       savedSuccess: "Saved",
       removedSuccess: "Removed",
       saveToWorkbench: "Save to Workbench",
+      saveToWorkbenchSuccess: "Saved to workbench",
+      myPrompts: "My Prompts",
+      closeWorkbench: "Close saved prompts",
     },
     home: {
       eyebrow: "Anime Style Atlas",
@@ -130,6 +133,8 @@ export const dictionaries = {
       output: "Output",
       ratio: "Ratio",
       placement: "Placement",
+      emptyHistory:
+        "Save wallpaper prompts here to keep layout-specific outputs separate from the prompt builder.",
     },
     detail: {
       notFound: "Style Not Found",
@@ -179,6 +184,9 @@ export const dictionaries = {
       savedSuccess: "收藏成功",
       removedSuccess: "已取消收藏",
       saveToWorkbench: "保存到工作台",
+      saveToWorkbenchSuccess: "已保存到工作台",
+      myPrompts: "我的提示词",
+      closeWorkbench: "关闭已保存提示词",
     },
     home: {
       eyebrow: "动漫风格图谱",
@@ -276,6 +284,8 @@ export const dictionaries = {
       output: "输出",
       ratio: "比例",
       placement: "构图位置",
+      emptyHistory:
+        "保存壁纸提示词后，会单独展示在这里，方便和提示词生成器结果分开查看。",
     },
     detail: {
       notFound: "未找到风格",

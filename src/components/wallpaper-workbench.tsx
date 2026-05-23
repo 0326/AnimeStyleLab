@@ -93,6 +93,7 @@ export function WallpaperWorkbench() {
       </aside>
       <div className="space-y-6">
         <PromptPanel
+          saveSource="wallpaper"
           onSave={saveEntry}
           outputs={[
             {
