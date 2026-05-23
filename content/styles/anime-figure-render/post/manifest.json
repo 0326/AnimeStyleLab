@@ -1,0 +1,13 @@
+{
+  "series": "动漫风格图谱 日更系列",
+  "episode": "10",
+  "styleSlug": "anime-figure-render",
+  "styleNameZh": "动漫手办渲染",
+  "title": "动漫手办渲染：手办展示页",
+  "site": "asl.hajimikitty.com",
+  "assets": {
+    "cover": "cover.png",
+    "effect1": "effect-01.png",
+    "effect2": "effect-02.png"
+  }
+}

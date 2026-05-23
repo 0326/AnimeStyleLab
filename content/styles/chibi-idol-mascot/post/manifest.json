@@ -1,0 +1,13 @@
+{
+  "series": "动漫风格图谱 日更系列",
+  "episode": "11",
+  "styleSlug": "chibi-idol-mascot",
+  "styleNameZh": "Q版偶像吉祥物",
+  "title": "Q版偶像吉祥物：贴纸",
+  "site": "asl.hajimikitty.com",
+  "assets": {
+    "cover": "cover.png",
+    "effect1": "effect-01.png",
+    "effect2": "effect-02.png"
+  }
+}

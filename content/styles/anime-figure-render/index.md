@@ -17,7 +17,10 @@
     "底座展示感",
     "三维转面清楚",
     "摄影棚背景",
-    "收藏品打光"
+    "收藏品打光",
+    "大块雕塑发件",
+    "可量产分件逻辑",
+    "装饰克制"
   ],
   "promptKeywords": [
     "anime figure render",
@@ -25,10 +28,14 @@
     "display base",
     "studio product light",
     "collectible anime",
-    "toy photography look"
+    "toy photography look",
+    "manufacturable scale figure",
+    "grouped sculpted bangs",
+    "smooth molded hair parts",
+    "restrained ornament count"
   ],
-  "basePrompt": "anime figure render aesthetic, anime figure render, pvc toy gloss, display base, studio product light, collectible anime, toy photography look, clean anime composition, high detail illustration",
-  "avoidPrompt": "text, watermark, logo, muddy rendering, 塑料反光太假像橡胶, 底座存在感不足失去收藏品语境",
+  "basePrompt": "anime figure render aesthetic, premium manufacturable anime scale figure, pvc toy gloss, visible display base, studio product light, collectible figure photography, grouped sculpted bangs, smooth molded hair parts, restrained ornament count, clear part separation, clean gray showroom background, toy photography look",
+  "avoidPrompt": "text, watermark, logo, muddy rendering, 塑料反光太假像橡胶, 底座存在感不足失去收藏品语境, 细发丝过多像插画, 刘海碎丝过细不利于手办工艺, 装饰件堆砌过多无法量产, 布料褶皱像真实软布而不是硬质分件, 微观细节过密导致不像PVC手办",
   "useCases": [
     "海报",
     "公众号封面",
@@ -54,8 +61,8 @@
     "label": "FIG"
   },
   "modelTips": {
-    "gptImage": "用完整句子描述主体、镜头、氛围，并明确保留 PVC 高光 和 底座展示感。",
-    "nanoBanana": "指令中优先写清 海报 的构图约束，再强调避免 塑料反光太假像橡胶。"
+    "gptImage": "用完整句子描述这是可量产的高端 PVC 手办产品图，明确保留 PVC 高光、底座展示感、大块雕塑发件，并强调不要出现细发丝和过密装饰。",
+    "nanoBanana": "指令中优先写清 1/7 比例手办、摄影棚产品打光、圆形底座和可量产复杂度，再强调避免 塑料像橡胶、发丝过细、装饰过多。"
   },
   "order": 24
 }

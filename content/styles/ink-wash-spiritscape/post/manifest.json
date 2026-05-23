@@ -1,0 +1,13 @@
+{
+  "series": "动漫风格图谱 日更系列",
+  "episode": "12",
+  "styleSlug": "ink-wash-spiritscape",
+  "styleNameZh": "水墨灵境二次元",
+  "title": "水墨灵境二次元：东方场景",
+  "site": "asl.hajimikitty.com",
+  "assets": {
+    "cover": "cover.png",
+    "effect1": "effect-01.png",
+    "effect2": "effect-02.png"
+  }
+}

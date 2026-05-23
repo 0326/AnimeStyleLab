@@ -1,0 +1,13 @@
+{
+  "series": "动漫风格图谱 日更系列",
+  "episode": "15",
+  "styleSlug": "half-painterly-character-sheet",
+  "styleNameZh": "半厚涂角色设定",
+  "title": "半厚涂角色设定：角色设定页",
+  "site": "asl.hajimikitty.com",
+  "assets": {
+    "cover": "cover.png",
+    "effect1": "effect-01.png",
+    "effect2": "effect-02.png"
+  }
+}
