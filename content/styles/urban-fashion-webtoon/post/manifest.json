@@ -1,0 +1,13 @@
+{
+  "series": "动漫风格图谱 日更系列",
+  "episode": "02",
+  "styleSlug": "urban-fashion-webtoon",
+  "styleNameZh": "都市时装韩漫",
+  "title": "都市时装韩漫：都市人物封面",
+  "site": "asl.hajimikitty.com",
+  "assets": {
+    "cover": "cover.png",
+    "effect1": "effect-01.png",
+    "effect2": "effect-02.png"
+  }
+}

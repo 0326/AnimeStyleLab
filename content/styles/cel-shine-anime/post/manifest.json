@@ -1,0 +1,13 @@
+{
+  "series": "动漫风格图谱 日更系列",
+  "episode": "03",
+  "styleSlug": "cel-shine-anime",
+  "styleNameZh": "高亮赛璐璐",
+  "title": "高亮赛璐璐：角色封面",
+  "site": "asl.hajimikitty.com",
+  "assets": {
+    "cover": "cover.png",
+    "effect1": "effect-01.png",
+    "effect2": "effect-02.png"
+  }
+}

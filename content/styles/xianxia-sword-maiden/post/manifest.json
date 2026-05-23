@@ -1,0 +1,12 @@
+{
+  "series": "动漫风格图谱 日更系列",
+  "episode": "01",
+  "styleSlug": "xianxia-sword-maiden",
+  "styleNameZh": "仙侠执剑少女",
+  "title": "仙侠执剑少女：仙侠主角海报",
+  "assets": {
+    "cover": "cover.png",
+    "effect1": "effect-01.png",
+    "effect2": "effect-02.png"
+  }
+}
