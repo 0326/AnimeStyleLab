@@ -1,0 +1,13 @@
+{
+  "series": "动漫风格图谱 日更系列",
+  "episode": "17",
+  "styleSlug": "shojo-sparkle-manga",
+  "styleNameZh": "少女漫画闪光感",
+  "title": "少女漫画闪光感：情绪特写",
+  "site": "asl.hajimikitty.com",
+  "assets": {
+    "cover": "cover.png",
+    "effect1": "effect-01.png",
+    "effect2": "effect-02.png"
+  }
+}
