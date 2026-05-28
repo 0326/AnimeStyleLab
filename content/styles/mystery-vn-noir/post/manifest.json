@@ -1,0 +1,24 @@
+{
+  "series": "动漫风格图谱 日更系列",
+  "episode": "18",
+  "styleSlug": "mystery-vn-noir",
+  "styleNameZh": "悬疑视觉小说",
+  "title": "悬疑视觉小说：悬疑剧情",
+  "site": "asl.hajimikitty.com",
+  "sourceTargetFolder": "/Users/quanfengmini/Desktop/AnimeStyleLab/content/styles/mystery-vn-noir/post",
+  "stagingFolder": "/Users/quanfengmini/Documents/SocialPost/automation-staging/mystery-vn-noir/post",
+  "generatedRunId": "019e6505-1cbe-7893-a86a-249e981067f2",
+  "generatedOriginals": {
+    "cover": "/Users/quanfengmini/.codex/generated_images/019e6505-1cbe-7893-a86a-249e981067f2/ig_011b194d2e7d467f016a15c41a92448191b0763693cce00dc3.png",
+    "effect1": "/Users/quanfengmini/.codex/generated_images/019e6505-1cbe-7893-a86a-249e981067f2/ig_011b194d2e7d467f016a15c46e3b9081919bbf432b594694ba.png",
+    "effect2": "/Users/quanfengmini/.codex/generated_images/019e6505-1cbe-7893-a86a-249e981067f2/ig_011b194d2e7d467f016a15c4c802208191a00fa87818b83e5b.png"
+  },
+  "assets": {
+    "cover": "cover.png",
+    "effect1": "effect-01.png",
+    "effect2": "effect-02.png"
+  },
+  "blockers": [
+    "Desktop style library path is outside writable roots for this run, so direct updates to /Users/quanfengmini/Desktop/AnimeStyleLab/content/styles/mystery-vn-noir/post are blocked by sandbox policy."
+  ]
+}

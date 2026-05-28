@@ -1,0 +1,24 @@
+{
+  "series": "动漫风格图谱 日更系列",
+  "episode": "19",
+  "styleSlug": "digital-space-idol",
+  "styleNameZh": "数字空间偶像",
+  "title": "数字空间偶像：未来偶像海报",
+  "site": "asl.hajimikitty.com",
+  "sourceTargetFolder": "/Users/quanfengmini/Desktop/AnimeStyleLab/content/styles/digital-space-idol/post",
+  "stagingFolder": "/Users/quanfengmini/Documents/SocialPost/automation-staging/digital-space-idol/post",
+  "generatedRunId": "019e6a2c-276d-79a2-90ea-2723a396c43b",
+  "generatedOriginals": {
+    "cover": "/Users/quanfengmini/.codex/generated_images/019e6a2c-276d-79a2-90ea-2723a396c43b/ig_00359ed76df5c88b016a171600af7081919514919627859727.png",
+    "effect1": "/Users/quanfengmini/.codex/generated_images/019e6a2c-276d-79a2-90ea-2723a396c43b/ig_00359ed76df5c88b016a1716599f8081919d861a453932f220.png",
+    "effect2": "/Users/quanfengmini/.codex/generated_images/019e6a2c-276d-79a2-90ea-2723a396c43b/ig_00359ed76df5c88b016a1716aaedf08191b969874fe539abc9.png"
+  },
+  "assets": {
+    "cover": "cover.png",
+    "effect1": "effect-01.png",
+    "effect2": "effect-02.png"
+  },
+  "wechatDraftCreated": true,
+  "wechatMediaId": "utejCfEGGTzCqPz1Di961d3SL568KxPrognQ2HoWz8gPSbEVwbGaZmLgl7iMK-AJ",
+  "blockers": []
+}
